@@ -4,6 +4,7 @@ import { zodToJsonSchema } from "zod-to-json-schema";
 
 export default {
     name: "add",
+    rawSchema: MathInputSchema,
     inputSchema: zodToJsonSchema(MathInputSchema),
     callback: async ({ a, b }) => {
         return {

@@ -1,6 +1,6 @@
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { ListToolsRequestSchema } from "@modelcontextprotocol/sdk/types.js";
+import { ListToolsRequestSchema, CallToolRequestSchema } from "@modelcontextprotocol/sdk/types.js";
 
 import { tools } from './tools/index.js';
 
@@ -32,6 +32,39 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
     //         }
     //     }]
     // }
+
+});
+
+server.setRequestHandler(CallToolRequestSchema, async (request) => {
+    const { params: { name } } = request;
+    let tool = tools.find(t => t.name === name);
+    if (!tool) {
+       return {
+        error: {
+            code: "tool_not_found",
+            message: `Tool ${name} not found.`
+        }
+       };
+    }
+    const Schema = tool.rawSchema;
+
+    try {
+       const input = Schema.parse(request.params.arguments);
+
+       // @ts-ignore
+       const result = await tool.callback(input);
+
+       return {
+          content: [{ type: "text", text: `Tool ${name} called with arguments: ${JSON.stringify(input)}, result: ${JSON.stringify(result)}` }]
+      };
+    } catch (error) {
+       return {
+          error: {
+             code: "invalid_arguments",
+             message: `Invalid arguments for tool ${name}: ${error instanceof Error ? error.message : String(error)}`
+          }
+    };
+   }
 
 });
 
