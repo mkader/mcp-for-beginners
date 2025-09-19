@@ -19,7 +19,7 @@ app.use((req, res, next) => {
     if(!isValid(token)) {
         res.status(403).send('Forbidden');
         return;
-    }
+    }  
 
     console.log('Middleware executed');
     next();
