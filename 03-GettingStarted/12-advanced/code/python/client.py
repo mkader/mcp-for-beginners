@@ -20,37 +20,8 @@ async def run():
             # Initialize the connection
             await session.initialize()
 
-            # List available prompts
-            # prompts = await session.list_prompts()
-            # print(f"Available prompts: {[p.name for p in prompts.prompts]}")
-
-            # # Get a prompt (greet_user prompt from fastmcp_quickstart)
-            # if prompts.prompts:
-            #     prompt = await session.get_prompt("greet_user", arguments={"name": "Alice", "style": "friendly"})
-            #     print(f"Prompt result: {prompt.messages[0].content}")
-
-            # # List available resources
-            # resources = await session.list_resources()
-            # print(f"Available resources: {[r.uri for r in resources.resources]}")
-
-            # List available tools
             tools = await session.list_tools()
             print(f"Available tools: {[t.name for t in tools.tools]}")
-
-            # Read a resource (greeting resource from fastmcp_quickstart)
-            # resource_content = await session.read_resource(AnyUrl("greeting://World"))
-            # content_block = resource_content.contents[0]
-            # if isinstance(content_block, types.TextContent):
-            #     print(f"Resource content: {content_block.text}")
-
-            # # Call a tool (add tool from fastmcp_quickstart)
-            # result = await session.call_tool("add", arguments={"a": 5, "b": 3})
-            # result_unstructured = result.content[0]
-            # if isinstance(result_unstructured, types.TextContent):
-            #     print(f"Tool result: {result_unstructured.text}")
-            # result_structured = result.structuredContent
-            # print(f"Structured tool result: {result_structured}")
-
 
 def main():
     """Entry point for the client script."""
