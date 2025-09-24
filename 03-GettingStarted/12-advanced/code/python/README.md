@@ -18,3 +18,10 @@ pip install "mcp[cli]"
 ```sh
 python client.py
 ```
+
+You should see the text:
+
+```text
+Available tools: ['add']
+Result of add tool: meta=None content=[TextContent(type='text', text='8.0', annotations=None, meta=None)] structuredContent=None isError=False
+```

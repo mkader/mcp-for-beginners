@@ -23,6 +23,9 @@ async def run():
             tools = await session.list_tools()
             print(f"Available tools: {[t.name for t in tools.tools]}")
 
+            result = await session.call_tool("add", { "a": 5, "b": 3 })
+            print(f"Result of add tool: {result}")
+
 def main():
     """Entry point for the client script."""
     asyncio.run(run())

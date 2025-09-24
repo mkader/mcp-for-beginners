@@ -1,5 +1,5 @@
-from .add import tool_add
+from .add import add
 
 tools = {
-  tool_add["name"] : tool_add
+  add["name"] : add
 }

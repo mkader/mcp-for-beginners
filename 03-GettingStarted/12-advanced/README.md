@@ -314,7 +314,6 @@ In this exercise, we will do the following:
 1. Create a low-level server handling listing of tools and calling of tools.
 1. Implement an architecture you can build upon.
 1. Add validation to ensure your tool calls are properly validated.
-1. Consume it from a client and Visual Studio Code.
 
 ### -1- Create an architecture
 

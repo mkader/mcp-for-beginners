@@ -44,10 +44,10 @@ async def handle_call_tool(
 ) -> list[types.TextContent]:
     
     # tools is a dictionary with tool names as keys
-    if name not in tools.tools:
+    if name not in tools:
         raise ValueError(f"Unknown tool: {name}")
     
-    tool = tools.tools[name]
+    tool = tools[name]
 
     result = "default"
     try:

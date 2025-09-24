@@ -12,7 +12,7 @@ async def add_handler(args) -> float:
     """Handler function for the add tool."""
     return float(input_model.a) + float(input_model.b)
 
-tool_add = {
+add = {
     "name": "add",
     "description": "Adds two numbers",
     "input_schema": AddInputModel,
