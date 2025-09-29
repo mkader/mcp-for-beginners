@@ -336,6 +336,26 @@ We need to:
 - Interact with the request `req` to check the passed credential in the `Authorization` property.
 - Validate the credential, and if so let the request continue and have the client's MCP request do what it should (e.g list tools, read resource or anything other MCP related).
 
+Here, we're checking if the `Authorization` header is present and if not, we stop the request from going through:
+
+```typescript
+if(!req.headers["authorization"]) {
+    res.status(401).send('Unauthorized');
+    return;
+}
+```
+
+Next, we check if the credential is valid, if not we again stop the request but with a slightly different message:
+
+```typescript
+if(!isValid(token)) {
+    res.status(403).send('Forbidden');
+    return;
+} 
+```
+
+Here's the full code:
+
 ```typescript
 app.use((req, res, next) => {
     console.log('Request received:', req.method, req.url, req.headers);
@@ -363,12 +383,54 @@ Now, we have set up the web server to accept a middleware to check the credentia
 
 **Python**
 
+For the client, we need to pass a header with our credential like so:
+
 ```python
+token = "secret-token"
+
+async with streamablehttp_client(
+        url = f"http://localhost:{port}/mcp",
+        headers = {"Authorization": f"Bearer {token}"}
+    ) as (
+        read_stream,
+        write_stream,
+        session_callback,
+    ):
+        async with ClientSession(
+            read_stream,
+            write_stream
+        ) as session:
+            await session.initialize()
+      
+            # TODO, what you want done in the client, e.g list tools, call tools etc.
 ```
+
+Note how we populate the `headers` property like so ` headers = {"Authorization": f"Bearer {token}"}`.
 
 **TypeScript**
 
+We can solve this in two steps:
+
+1. Populate a configuration object with our credential.
+2. Pass the configuration object to the transport.
+
 ```typescript
+// define a client transport option object
+let options: StreamableHTTPClientTransportOptions = {
+  sessionId: sessionId,
+  requestInit: {
+    headers: {
+      "Authorization": "secret123"
+    }
+  }
+};
+
+// pass the options object to the transport
+async function main() {
+   const transport = new StreamableHTTPClientTransport(
+      new URL(serverUrl),
+      options
+   );
 ```
 
 ## JSON Web Tokens, JWT
