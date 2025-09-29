@@ -433,13 +433,263 @@ async function main() {
    );
 ```
 
+How do we improve it from here though? Well, the current implementation has some issues. First off, passing a credential like this is pretty risky unless you at minimum have HTTPS. Even then, the credential can be stolen so you need a system where you can easily revoke the token and add additional checks like where in the world is it coming from, does the request happen way too often (bot-like behavior), in short, there's a whole host of concerns. It should be said though, for very simple APIs where you don't want anyone calling your API without being authenticated this is a good start. 
+
+With that said, let's try to harden the security a little bit by using a standardized format like JSON Web Token, also known as JWT or "JOT" tokens.
+
 ## JSON Web Tokens, JWT
 
-The same token could also tells what permissions this person has interacting with us. A common format for this is JSON Web Tokens (JWT) coloqually referred to as "Jot" tokens. What do these tokens look like then?
+So, we're trying to improve things from sending very simple credentials. What's the immediate improvements we get adopting JWT?
 
-## Exercise: support JWT
+- **Security improvements**. In basic auth, you send the username and password as a base64 encoded token over and over which increase the risk. With JWT, you send your username and password and gets a token in return and it's also time bound meaning it will expire. JWT lets you easily use fine-grained access control using roles, scopes and permissions. 
+- **Statelessness and scalability**. JWTs are self-contained, they carry all user info and eliminates the need to store server-side session storage. Token can also be validated locally.
+- **Interoperability and federation**. JWTs is central of Open ID Connect and is used with known identity providers like Entra ID, Google Identity and Auth0. They also make it possible to use single sign on and much more making it enterprise-grade.
+- **Modularity and flexibility**. JWTs can also be used with API Gateways like Azure API Management, NGINX and more. It also supports use authentication scenarios and server-to-service communication including impersonation and delegation scenarios.
+- **Performance and caching**. JWTs can be cavhed after decoding which reduces the need for parsing. This helps specifically with high-traffic apps as it improves throughput and reduced load on your chosen infrastructure.
+- **Advanced features**. It also supports introspection (checking validity on server) and revocation (making a token invalid).
+
+With all of these benefits, let's see how we can take our implementation to the next level.
+
+## Turning basic auth into JWT
+
+So, the changes we need to at mile-high level is to:
+
+- **Learn to construct a JWT token** and make it ready for being sent from client to server.
+- **Validate a JWT token**, and if so, let the client have our resources.
+- **Secure token storage**. How we store this token.
+- **Protect the routes**. We need to protect the routes, in our case, we need to protect routes and specific MCP features.
+- **Add refresh tokens**. Ensure we create tokens that are short-lived but refresh tokens that are long-lived that can be used to acquire new tokens if they expire. Also ensure there's a refresh endpoint and a rotation strategy.
+
+### -1- Construct a JWT token
+
+First off, a JWT token has the following parts:
+
+- **header**, algorithm used and token type.
+- **payload**, claimes, like sub (the user or entity the token represents. In an auth scenario this typically the userid), exp (when it expires) role (the role)
+- **signature**, signed with a secret or private key.
+
+**Python**
+
+```python
+
+import jwt
+from jwt import ExpiredSignatureError, InvalidTokenError
+import datetime
+
+# Secret key used to sign the JWT
+secret_key = 'your-secret-key'
+
+header = {
+    "alg": "HS256",
+    "typ": "JWT"
+}
+
+# the user info andits claims and expiry time
+payload = {
+    "sub": "1234567890",               # Subject (user ID)
+    "name": "User Userson",                # Custom claim
+    "admin": True,                     # Custom claim
+    "iat": datetime.datetime.utcnow(),# Issued at
+    "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1)  # Expiry
+}
+
+# encode it
+encoded_jwt = jwt.encode(payload, secret_key, algorithm="HS256", headers=header)
+```
+
+**TypeScript**
+
+Dependencies
+
+```sh
+
+npm install jsonwebtoken
+npm install --save-dev @types/jsonwebtoken
+```
+
+```typescript
+import jwt from 'jsonwebtoken';
+
+const secretKey = 'your-secret-key'; // Use env vars in production
+
+// Define the payload
+const payload = {
+  sub: '1234567890',
+  name: 'User usersson',
+  admin: true,
+  iat: Math.floor(Date.now() / 1000), // Issued at
+  exp: Math.floor(Date.now() / 1000) + 60 * 60 // Expires in 1 hour
+};
+
+// Define the header (optional, jsonwebtoken sets defaults)
+const header = {
+  alg: 'HS256',
+  typ: 'JWT'
+};
+
+// Create the token
+const token = jwt.sign(payload, secretKey, {
+  algorithm: 'HS256',
+  header: header
+});
+
+console.log('JWT:', token);
+```
+
+This token is:
+
+Signed using HS256
+Valid for 1 hour
+Includes claims like sub, name, admin, iat, and exp
+
+### -2- Validate a token
+
+To validate a token, we need to decode it so we can read it and then start checking its validity
+
+**Python**
+
+```python
+
+# Decode and verify the JWT
+try:
+    decoded = jwt.decode(token, secret_key, algorithms=["HS256"])
+    print("✅ Token is valid.")
+    print("Decoded claims:")
+    for key, value in decoded.items():
+        print(f"  {key}: {value}")
+except ExpiredSignatureError:
+    print("❌ Token has expired.")
+except InvalidTokenError as e:
+    print(f"❌ Invalid token: {e}")
+
+```
+
+**TypeScript**
+
+```typescript
+
+try {
+  const decoded = jwt.verify(token, secretKey);
+  console.log('Decoded Payload:', decoded);
+} catch (err) {
+  console.error('Token verification failed:', err);
+}
+```
+
+## Adding role based access control
+
+### Define roles, groups, permissions
+### Validate the token and permissions
+
+**Python**
+
+```python
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.responses import JSONResponse
+import jwt
+
+SECRET_KEY = "your-secret-key"
+REQUIRED_PERMISSION = "User.Read"
+
+class JWTPermissionMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request, call_next):
+        auth_header = request.headers.get("Authorization")
+        if not auth_header or not auth_header.startswith("Bearer "):
+            return JSONResponse({"error": "Missing or invalid Authorization header"}, status_code=401)
+
+        token = auth_header.split(" ")[1]
+        try:
+            decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        except jwt.ExpiredSignatureError:
+            return JSONResponse({"error": "Token expired"}, status_code=401)
+        except jwt.InvalidTokenError:
+            return JSONResponse({"error": "Invalid token"}, status_code=401)
+
+        permissions = decoded.get("permissions", [])
+        if REQUIRED_PERMISSION not in permissions:
+            return JSONResponse({"error": "Permission denied"}, status_code=403)
+
+        request.state.user = decoded
+        return await call_next(request)
 
 
+# add middleware
+# todo
+
+```
+
+**TypeScript**
+
+```typescript
+const express = require('express');
+const jwt = require('express-jwt');
+const guard = require('express-jwt-permissions')();
+
+const app = express();
+const secretKey = 'your-secret-key';
+
+// Decode JWT and attach to req.user
+app.use(jwt({ secret: secretKey, algorithms: ['HS256'] }));
+
+// Check for User.Read permission
+app.use(guard.check('User.Read'));
+
+// multiple permissions
+// app.use(guard.check(['User.Read', 'Admin.Access']));
+
+app.get('/protected', (req, res) => {
+  res.json({ message: `Welcome ${req.user.name}` });
+});
+
+// Error handler
+app.use((err, req, res, next) => {
+  if (err.code === 'permission_denied') {
+    return res.status(403).send('Forbidden');
+  }
+  next(err);
+});
+```
+
+## Assignment 1: Build an mcp server and mcp client using basic authentication
+
+Here you will take what you've learnt in terms of sending credentials through headers.
+
+## Assignment 2: Upgrade the solution from Assignment 1 to use JWT
+
+Take the first solution but this time, let's improve upon it. 
+
+Here's how it should work, you should have a /login route and a /resource.
+
+```mermaid
+sequenceDiagram
+   participant Client
+   participant Server
+
+   Client->>Server: logging in, /login
+   Server-->>Client: here's your token
+   Client->>Server: get me my resources /resource, here's my token
+```
+
+Below is roughly what gets sent between client and server and what output to expect.
+
+```
+
+POST /login
+{
+  "username": "jane.doe",
+  "password": "secure123"
+}
+→ Server responds with:
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "refreshToken": "..."
+}
+
+GET /resource
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+→ Server validates token and returns protected data
+
+```
 
 
 
