@@ -473,7 +473,8 @@ First off, a JWT token has the following parts:
 ```python
 
 import jwt
-from jwt import ExpiredSignatureError, InvalidTokenError
+import jwt
+from jwt.exceptions import ExpiredSignatureError, InvalidTokenError
 import datetime
 
 # Secret key used to sign the JWT
@@ -578,8 +579,13 @@ try {
 
 ## Adding role based access control
 
-### Define roles, groups, permissions
-### Validate the token and permissions
+The idea is that we want to express that different roles have different permissions. For example, we assume an admin can do everything and that a normal users can do read/write and that a guest can only read. Therefore, here are some possible permission levels:
+
+- Admin.Write 
+- User.Read
+- Guest.Read
+
+Let's look at how we can implement such a control with middleware. Middlewares can be added per route as well as for all routes.
 
 **Python**
 
@@ -588,7 +594,7 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import JSONResponse
 import jwt
 
-SECRET_KEY = "your-secret-key"
+SECRET_KEY = "your-secret-key" # put this in env variable
 REQUIRED_PERMISSION = "User.Read"
 
 class JWTPermissionMiddleware(BaseHTTPMiddleware):
@@ -614,7 +620,7 @@ class JWTPermissionMiddleware(BaseHTTPMiddleware):
 
 
 # add middleware
-# todo
+# todo, add to one specific route
 
 ```
 
@@ -626,7 +632,7 @@ const jwt = require('express-jwt');
 const guard = require('express-jwt-permissions')();
 
 const app = express();
-const secretKey = 'your-secret-key';
+const secretKey = 'your-secret-key'; // put this in env variable
 
 // Decode JWT and attach to req.user
 app.use(jwt({ secret: secretKey, algorithms: ['HS256'] }));
@@ -648,17 +654,64 @@ app.use((err, req, res, next) => {
   }
   next(err);
 });
+
+// todo, add to one specific route
+```
+
+### -3- Add RBAC to MCP
+
+You've seen so far how you can add RBAC via middleware, however, for MCP there's no easy way to add a per MCP feature RBAC, so what do we do? Well, we just have to add code like this that checks in this case whether the client has the rights to call a specific tool:
+
+**python**
+
+```python
+@tool()
+def delete_product(id: int):
+    try:
+        check_permissions(role="Admin.Write", request)
+    catch:
+      pass # client failed authorization, raise authorization error
+```
+
+**typescript**
+
+```typescript
+server.registerTool(
+  "delete-product",
+  {
+    title: Delete a product",
+    description: "Deletes a product",
+    inputSchema: { id: z.number() }
+  },
+  async ({ id }) => {
+    
+    try {
+       checkPermissions("Admin.Write", request);
+       // todo, send id to productService and remote entry
+    } catch(Exception e) {
+      console.log("Authorization error, you're not allowed");  
+    }
+
+    return {
+      content: [{ type: "text", text: `Deletected product with id ${id}` }]
+    };
+  }
+);
 ```
 
 ## Assignment 1: Build an mcp server and mcp client using basic authentication
 
 Here you will take what you've learnt in terms of sending credentials through headers.
 
+## Solution 1
+
+[Solution 1](./solution/basic/README.md)
+
 ## Assignment 2: Upgrade the solution from Assignment 1 to use JWT
 
 Take the first solution but this time, let's improve upon it. 
 
-Here's how it should work, you should have a /login route and a /resource.
+Here's how it should work, you should have a /login route and a /resource route.
 
 ```mermaid
 sequenceDiagram
@@ -668,6 +721,7 @@ sequenceDiagram
    Client->>Server: logging in, /login
    Server-->>Client: here's your token
    Client->>Server: get me my resources /resource, here's my token
+   Server-->>Client: here's your resources
 ```
 
 Below is roughly what gets sent between client and server and what output to expect.
@@ -691,14 +745,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 ```
 
+## Solution 2
 
-
-## Role based access control, RBAC
-
-## Exercise: Implement authorization
-
-## Improve our security posture
-
-## Assignment
+[Solution 2](./solution/jwt-solution/README.md)
 
 ## Summary
