@@ -119,7 +119,45 @@ app.use((req, res, next) => {
 
 ## Exercise: Implement authentication
 
-TODO
+- Server: Create a web server and MCP instance.
+- Server: Implement a middleware for the server.
+- Client: Send web request with credential via header.
+
+### -1- Create a web server and MCP instance
+
+**Python**
+
+```python
+```
+
+**TypeScript**
+
+```typescript
+```
+
+### -2- Implement a middleware for the server
+
+**Python**
+
+```python
+```
+
+**TypeScript**
+
+```typescript
+```
+
+### -3- Send web request with credential via header
+
+**Python**
+
+```python
+```
+
+**TypeScript**
+
+```typescript
+```
 
 ## JSON Web Tokens, JWT
 
