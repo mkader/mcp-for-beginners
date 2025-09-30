@@ -6,6 +6,14 @@ import mcp.types as types
 from mcp.shared.session import RequestResponder
 import requests
 import logging
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+token = os.getenv("TOKEN")
+if not token:
+    print("TOKEN not found in .env file, run util.py to generate one.")
+    raise ValueError("TOKEN not found in .env file")
 
 # Configure logging
 logging.basicConfig(
@@ -45,7 +53,7 @@ async def main():
     logger.info("Starting client...")
     async with streamablehttp_client(
         url = f"http://localhost:{port}/mcp",
-        headers = {"Authorization": "Bearer secret-token"}
+        headers = {"Authorization": f"Bearer {token}"}
     ) as (
         read_stream,
         write_stream,

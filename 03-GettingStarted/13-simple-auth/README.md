@@ -750,3 +750,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 [Solution 2](./solution/jwt-solution/README.md)
 
 ## Summary
+
+You've hopefully learned a lot in this chapter, from no security at all, to basic security, to JWT and how it can be added to MCP.
+
+We’ve built a solid foundation with custom JWTs, but as we scale, we’re moving toward a standards-based identity model. Adopting an IdP like Entra or Keycloak lets us offload token issuance, validation, and lifecycle management to a trusted platform — freeing us to focus on app logic and user experience.
+
+For that, we have a more [advanced chapter on Entra](../../05-AdvancedTopics/mcp-security-entra/README.md)
