@@ -8,8 +8,6 @@ import datetime
 # Secret key used to sign the JWT
 secret_key = 'your-secret-key'
 
-
-
 def generate_token():
     header = {
         "alg": "HS256",
@@ -21,7 +19,8 @@ def generate_token():
         "name": "User Userson",                # Custom claim
         "admin": True,                     # Custom claim
         "iat": datetime.datetime.utcnow(),# Issued at
-        "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1)  # Expiry
+        "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1),  # Expiry
+        "scopes": ["Admin.Write", "User.Read"]  # Custom claim for scopes/permissions
     }
 
     # encode it
@@ -29,19 +28,19 @@ def generate_token():
     print("Encoded JWT:", encoded_jwt)
     return encoded_jwt   
 
-def validate_token(token: str) -> bool:
+def validate_token(token: str) -> str | None:
     try:
         decoded = jwt.decode(token, secret_key, algorithms=["HS256"])
-        print("✅ Token is valid.")
-        print("Decoded claims:")
-        for key, value in decoded.items():
-            print(f"  {key}: {value}")
-        return True
+        # print("✅ Token is valid.")
+        # print("Decoded claims:")
+        # for key, value in decoded.items():
+        #     print(f"  {key}: {value}")
+        return decoded
     except ExpiredSignatureError:
         print("❌ Token has expired.")
     except InvalidTokenError as e:
         print(f"❌ Invalid token: {e}")
-    return False
+    return None
 
 if __name__ == "__main__":
     token = generate_token()

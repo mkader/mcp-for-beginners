@@ -25,17 +25,34 @@ settings = {
     "server_url": AnyHttpUrl("http://localhost:8000"),
 }
 
+users = ["User Userson", "Admin Adminson"]
+
+def is_user(token: str) -> bool:
+    decodedToken = validate_token(token[7:])
+    if not decodedToken:
+        return False
+    return decodedToken["name"] in users
+
+def has_scope(token: str, scope: str) -> bool:
+    token = token[7:]
+    token = validate_token(token)
+
+    if not token:
+        return False
+    # very naive scope check, in real life parse the token and check scopes properly
+    return  scope in token["scopes"]
+
 def validate_jwt(token: str) -> bool:
     token = token[7:]
-    print("Validating token:", token)
-    return validate_token(token)
+    # print("Validating token:", token)
+    return validate_token(token) != None
    
 
 class CustomHeaderMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request, call_next):
 
         has_header = request.headers.get("Authorization")
-        print("Authorization header:", has_header)
+        # print("Authorization header:", has_header)
         if not has_header:
             print("-> Missing Authorization header!")
             return Response(status_code=401, content="Unauthorized")
@@ -45,6 +62,18 @@ class CustomHeaderMiddleware(BaseHTTPMiddleware):
             return Response(status_code=403, content="Forbidden")
 
         print("Valid token, proceeding...")
+
+        if not is_user(has_header):
+            print("-> User does not exist!")
+            return Response(status_code=403, content="Forbidden - user does not exist")
+        print("User exists, proceeding...")
+
+        if not has_scope(has_header, "Admin.Write"):
+            print("-> Missing required scope!")
+            return Response(status_code=403, content="Forbidden - insufficient scopes")
+
+        print("User has required scope, proceeding...")
+
         print(f"-> Received {request.method} {request.url}")
         response = await call_next(request)
         response.headers['Custom'] = 'Example'
