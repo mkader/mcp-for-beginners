@@ -805,7 +805,7 @@ There's quite a few things we can let our middleware and that our middleware SHO
 
 Have a think which additional checks you should be doing, but these are the absolute minimum of checks you should be doing.
 
-Using Express as a web framework is a common choices. There are helpers library when you use JWT so you can write less code.
+Using Express as a web framework is a common choice. There are helpers library when you use JWT so you can write less code.
 
 - `express-jwt`, helper library that provides a middleware that helps decode your token.
 - `express-jwt-permissions`, this provides a middleware `guard` that helps check if a certain permission is on the token.
@@ -957,49 +957,21 @@ Here you will take what you've learnt in terms of sending credentials through he
 
 ## Solution 1
 
-[Solution 1](./solution/basic/README.md)
+[Solution 1](./code/basic/README.md)
 
 ## Assignment 2: Upgrade the solution from Assignment 1 to use JWT
 
 Take the first solution but this time, let's improve upon it. 
 
-Here's how it should work, you should have a /login route and a /resource route.
-
-```mermaid
-sequenceDiagram
-   participant Client
-   participant Server
-
-   Client->>Server: logging in, /login
-   Server-->>Client: here's your token
-   Client->>Server: get me my resources /resource, here's my token
-   Server-->>Client: here's your resources
-```
-
-Below is roughly what gets sent between client and server and what output to expect.
-
-```
-
-POST /login
-{
-  "username": "jane.doe",
-  "password": "secure123"
-}
-→ Server responds with:
-{
-  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-  "refreshToken": "..."
-}
-
-GET /resource
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
-→ Server validates token and returns protected data
-
-```
+Instead of using Basic Auth, let's use JWT. 
 
 ## Solution 2
 
 [Solution 2](./solution/jwt-solution/README.md)
+
+## Challenge
+
+Add the RBAC per tool that we describe in section "Add RBAC to MCP".
 
 ## Summary
 

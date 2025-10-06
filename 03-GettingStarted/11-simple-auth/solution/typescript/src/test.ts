@@ -1,6 +1,8 @@
+
+// used to test the token in .env
+
 import { config } from "dotenv";
 import { verifyToken } from "./util.js";
-import { decode } from "punycode";
 
 config();
 

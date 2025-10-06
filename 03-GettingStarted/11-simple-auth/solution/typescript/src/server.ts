@@ -59,6 +59,7 @@ app.use((req, res, next) => {
 
     if(!hasScopes(token, ["User.Read"])){
         res.status(403).send('Forbidden - insufficient scopes');
+        return;
     }
 
     console.log("User has required scopes");
