@@ -492,7 +492,7 @@ With that said, let's try to harden the security a little bit by using a standar
 
 So, we're trying to improve things from sending very simple credentials. What's the immediate improvements we get adopting JWT?
 
-- **Security improvements**. In basic auth, you send the username and password as a base64 encoded token over and over which increase the risk. With JWT, you send your username and password and gets a token in return and it's also time bound meaning it will expire. JWT lets you easily use fine-grained access control using roles, scopes and permissions. 
+- **Security improvements**. In basic auth, you send the username and password as a base64 encoded token (or you send an API key) over and over which increase the risk. With JWT, you send your username and password and gets a token in return and it's also time bound meaning it will expire. JWT lets you easily use fine-grained access control using roles, scopes and permissions. 
 - **Statelessness and scalability**. JWTs are self-contained, they carry all user info and eliminates the need to store server-side session storage. Token can also be validated locally.
 - **Interoperability and federation**. JWTs is central of Open ID Connect and is used with known identity providers like Entra ID, Google Identity and Auth0. They also make it possible to use single sign on and much more making it enterprise-grade.
 - **Modularity and flexibility**. JWTs can also be used with API Gateways like Azure API Management, NGINX and more. It also supports use authentication scenarios and server-to-service communication including impersonation and delegation scenarios.
@@ -518,6 +518,8 @@ First off, a JWT token has the following parts:
 - **header**, algorithm used and token type.
 - **payload**, claimes, like sub (the user or entity the token represents. In an auth scenario this typically the userid), exp (when it expires) role (the role)
 - **signature**, signed with a secret or private key.
+
+For this, we will need to construct the header, payload and the encoded token.
 
 **Python**
 
@@ -549,7 +551,14 @@ payload = {
 encoded_jwt = jwt.encode(payload, secret_key, algorithm="HS256", headers=header)
 ```
 
+In the above code we've:
+
+- Defined a header using HS256 as algorithm and type to be JWT.
+- Constructed a payload that contains a subject or iser id, a username, a role, when it was issues and when it's set to expire thereby implementing the time bound aspect we mentioned earlier. 
+
 **TypeScript**
+
+Here we will need some dependencies that will help us construct the JWT token.
 
 Dependencies
 
@@ -558,6 +567,8 @@ Dependencies
 npm install jsonwebtoken
 npm install --save-dev @types/jsonwebtoken
 ```
+
+Now that we have that in place, let's create the header, payload and through that create the encoded token.
 
 ```typescript
 import jwt from 'jsonwebtoken';
@@ -592,11 +603,13 @@ This token is:
 
 Signed using HS256
 Valid for 1 hour
-Includes claims like sub, name, admin, iat, and exp
+Includes claims like sub, name, admin, iat, and exp.
 
 ### -2- Validate a token
 
-To validate a token, we need to decode it so we can read it and then start checking its validity
+We will also need to validate a token, this is something we should do on the server to ensure what the client is sending us is in fact valid. There are many checks we should do here from validating its structure to its validity. You're also encouraged to add other checks to see if the user is in your system and more.
+
+To validate a token, we need to decode it so we can read it and then start checking its validity:
 
 **Python**
 
@@ -616,7 +629,11 @@ except InvalidTokenError as e:
 
 ```
 
+In this code, we call `jwt.decode` using the token, the secret key and the chosen algorithm as input. Note how we use a try-catch construct as a failed validation leads to an error being raised.
+
 **TypeScript**
+
+Here we need to call `jwt.verify` to get a decoded version of the token that we can analyze further. If this call fails, that means the structure of the token is incorrect or it's no longer valid. 
 
 ```typescript
 
@@ -627,6 +644,10 @@ try {
   console.error('Token verification failed:', err);
 }
 ```
+
+NOTE: as mentioned previously, we should perform additional checks to ensure this token points out a user in our system and ensure the user has the rights it claims to have.
+
+Next, let's look into role based access control, also known as RBAC.
 
 ## Adding role based access control
 
@@ -645,6 +666,7 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import JSONResponse
 import jwt
 
+# DON'T have the secret in the code like, this is for demonstration purposes only. Read it from a safe place.
 SECRET_KEY = "your-secret-key" # put this in env variable
 REQUIRED_PERMISSION = "User.Read"
 
@@ -670,12 +692,125 @@ class JWTPermissionMiddleware(BaseHTTPMiddleware):
         return await call_next(request)
 
 
-# add middleware
-# todo, add to one specific route
+```
 
+There a few different ways to add the middleware like below:
+
+```python
+
+# Alt 1: add middleware while constructing starlette app
+middleware = [
+    Middleware(JWTPermissionMiddleware)
+]
+
+app = Starlette(routes=routes, middleware=middleware)
+
+# Alt 2: add middleware after starlette app is a already constructed
+starlette_app.add_middleware(JWTPermissionMiddleware)
+
+# Alt 3: add middleware per route
+routes = [
+    Route(
+        "/mcp",
+        endpoint=..., # handler
+        middleware=[Middleware(JWTPermissionMiddleware)]
+    )
+]
 ```
 
 **TypeScript**
+
+We can use `app.use` and a middleware that will run for all requests. 
+
+```typescript
+app.use((req, res, next) => {
+    console.log('Request received:', req.method, req.url, req.headers);
+    console.log('Headers:', req.headers["authorization"]);
+
+    // 1. Check if authorization header has been sent
+
+    if(!req.headers["authorization"]) {
+        res.status(401).send('Unauthorized');
+        return;
+    }
+    
+    let token = req.headers["authorization"];
+
+    // 2. Check if token is valid
+    if(!isValid(token)) {
+        res.status(403).send('Forbidden');
+        return;
+    }  
+
+    // 3. Check if token user exist in our system
+    if(!isExistingUser(token)) {
+        res.status(403).send('Forbidden');
+        console.log("User does not exist");
+        return;
+    }
+    console.log("User exists");
+
+    // 4. Verify the token has the right permissions
+    if(!hasScopes(token, ["User.Read"])){
+        res.status(403).send('Forbidden - insufficient scopes');
+    }
+
+    console.log("User has required scopes");
+
+    console.log('Middleware executed');
+    next();
+});
+
+```
+
+There's quite a few things we can let our middleware and that our middleware SHOULD do, namely:
+
+1. Check if authorization header is present
+2. Check if token is valid, we call `isValid` which is a method we wrote that check integrity and validity of JWT token.
+3. Verify the user exist in our system, we should check this.
+
+   ```typescript
+    // users in DB
+   const users = [
+     "user1",
+     "User usersson",
+   ]
+
+   function isExistingUser(token) {
+     let decodedToken = verifyToken(token);
+
+     // TODO, check if user exists in DB
+     return users.includes(decodedToken?.name || "");
+   }
+   ```
+
+   Above, we've created a very simple `users` list, which should be in a database obviously.
+
+4. Additionally, we should also check the token has the right permissions.
+
+   ```typescript
+   if(!hasScopes(token, ["User.Read"])){
+        res.status(403).send('Forbidden - insufficient scopes');
+   }
+   ```
+
+   In this code above from the middleware, we check that the token contains User.Read permission, if not we send a 403 error. Below is the `hasScopes` helper method.
+
+   ```typescript
+   function hasScopes(scope: string, requiredScopes: string[]) {
+     let decodedToken = verifyToken(scope);
+    return requiredScopes.every(scope => decodedToken?.scopes.includes(scope));
+  }
+   ```
+
+Have a think which additional checks you should be doing, but these are the absolute minimum of checks you should be doing.
+
+Using Express as a web framework is a common choices. There are helpers library when you use JWT so you can write less code.
+
+- `express-jwt`, helper library that provides a middleware that helps decode your token.
+- `express-jwt-permissions`, this provides a middleware `guard` that helps check if a certain permission is on the token.
+
+Here's what these libraries can look like when used:
 
 ```typescript
 const express = require('express');
@@ -706,49 +841,115 @@ app.use((err, req, res, next) => {
   next(err);
 });
 
-// todo, add to one specific route
 ```
+
+Now you have seen how middleware can be used for both authentication and authorization, what about MCP though, does it change how we do auth? Let's find out in the next section.
 
 ### -3- Add RBAC to MCP
 
 You've seen so far how you can add RBAC via middleware, however, for MCP there's no easy way to add a per MCP feature RBAC, so what do we do? Well, we just have to add code like this that checks in this case whether the client has the rights to call a specific tool:
 
-**python**
+You have a few different choices on how to accomplish per feature RBAC, here are some:
 
-```python
-@tool()
-def delete_product(id: int):
-    try:
-        check_permissions(role="Admin.Write", request)
-    catch:
-      pass # client failed authorization, raise authorization error
-```
+- Add a check for each tool, resource, prompt where you need to check permission level.
 
-**typescript**
+   **python**
 
-```typescript
-server.registerTool(
-  "delete-product",
-  {
-    title: Delete a product",
-    description: "Deletes a product",
-    inputSchema: { id: z.number() }
-  },
-  async ({ id }) => {
-    
-    try {
-       checkPermissions("Admin.Write", request);
-       // todo, send id to productService and remote entry
-    } catch(Exception e) {
-      console.log("Authorization error, you're not allowed");  
+   ```python
+   @tool()
+   def delete_product(id: int):
+      try:
+          check_permissions(role="Admin.Write", request)
+      catch:
+        pass # client failed authorization, raise authorization error
+   ```
+
+   **typescript**
+
+   ```typescript
+   server.registerTool(
+    "delete-product",
+    {
+      title: Delete a product",
+      description: "Deletes a product",
+      inputSchema: { id: z.number() }
+    },
+    async ({ id }) => {
+      
+      try {
+        checkPermissions("Admin.Write", request);
+        // todo, send id to productService and remote entry
+      } catch(Exception e) {
+        console.log("Authorization error, you're not allowed");  
+      }
+
+      return {
+        content: [{ type: "text", text: `Deletected product with id ${id}` }]
+      };
     }
+   );
+   ```
 
-    return {
-      content: [{ type: "text", text: `Deletected product with id ${id}` }]
-    };
-  }
-);
-```
+
+- Use advanced server approach and the request handlers so you minimize how many places you need to make the check.
+
+   **Python**
+
+   ```python
+   
+   tool_permission = {
+      "create_product": ["User.Write", "Admin.Write"],
+      "delete_product": ["Admin.Write"]
+   }
+
+   def has_permission(user_permissions, required_permissions) -> bool:
+      # user_permissions: list of permissions the user has
+      # required_permissions: list of permissions required for the tool
+      return any(perm in user_permissions for perm in required_permissions)
+
+   @server.call_tool()
+   async def handle_call_tool(
+     name: str, arguments: dict[str, str] | None
+   ) -> list[types.TextContent]:
+    # Assume request.user.permissions is a list of permissions for the user
+     user_permissions = request.user.permissions
+     required_permissions = tool_permission.get(name, [])
+     if not has_permission(user_permissions, required_permissions):
+        # Raise error "You don't have permission to call tool {name}"
+        raise Exception(f"You don't have permission to call tool {name}")
+     # carry on and call tool
+     # ...
+   ```   
+   
+
+   **TypeScript**
+
+   ```typescript
+   function hasPermission(userPermissions: string[], requiredPermissions: string[]): boolean {
+       if (!Array.isArray(userPermissions) || !Array.isArray(requiredPermissions)) return false;
+       // Return true if user has at least one required permission
+       
+       return requiredPermissions.some(perm => userPermissions.includes(perm));
+   }
+  
+   server.setRequestHandler(CallToolRequestSchema, async (request) => {
+      const { params: { name } } = request;
+  
+      let permissions = request.user.permissions;
+  
+      if (!hasPermission(permissions, toolPermissions[name])) {
+         return new Error(`You don't have permission to call ${name}`);
+      }
+  
+      // carry on..
+   });
+   ```
+
+   Note, you will need to ensure your middleware assigns a decoded token to the request's user property so the code above is made simple.
+
+### Summing up
+
+Now that we discussed how to add support for RBAC in general and for MCP in particular, it's time to try to implement security on your own to ensure you understood the concepts presented to you.
 
 ## Assignment 1: Build an mcp server and mcp client using basic authentication
 
