@@ -209,6 +209,13 @@ graph TD
         ToolsB[Tools]
     end
 ```
+### Universal Connector
+
+Cross-server interoperability: The use of the term universal connector is simply highlighting that MCP servers can communicate or share capabilities with each other, not just with the LLM. This could mean ServerA can delegate tasks to ServerB or access its tools and knowledge.
+
+Tool and knowledge federation: The connector implies that tools and data aren’t siloed per server. Instead, they can be accessed across servers, enabling more scalable and modular agentic architectures.
+
+Dynamic discovery and routing: Since MCP standardizes tool exposure, a “Universal Connector” could allow agents or hosts to dynamically discover and route requests between servers without hardcoding integrations.
 
 ### 🔄 Advanced MCP Scenarios with Client-Side LLM Integration
 
