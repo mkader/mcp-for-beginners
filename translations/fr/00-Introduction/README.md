@@ -1,29 +1,29 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "0df1ee78a6dd8300f3a040ca5b411c2e",
-  "translation_date": "2025-08-12T07:41:55+00:00",
+  "original_hash": "9678e0c6945b8e0c23586869b0e26783",
+  "translation_date": "2025-10-06T10:48:12+00:00",
   "source_file": "00-Introduction/README.md",
   "language_code": "fr"
 }
 -->
-# Introduction au protocole de contexte de modèle (MCP) : Pourquoi il est essentiel pour des applications d'IA évolutives
+# Introduction au protocole de contexte de modèle (MCP) : Pourquoi il est essentiel pour des applications IA évolutives
 
 [![Introduction au protocole de contexte de modèle](../../../translated_images/01.a467036d886b5fb5b9cf7b39bac0e743b6ca0a4a18a492de90061daaf0cc55f0.fr.png)](https://youtu.be/agBbdiOPLQA)
 
 _(Cliquez sur l'image ci-dessus pour visionner la vidéo de cette leçon)_
 
-Les applications d'IA générative représentent une avancée majeure, car elles permettent souvent à l'utilisateur d'interagir avec l'application via des invites en langage naturel. Cependant, à mesure que davantage de temps et de ressources sont investis dans ces applications, il est crucial de s'assurer que vous pouvez intégrer facilement des fonctionnalités et des ressources de manière extensible, que votre application puisse prendre en charge plusieurs modèles, et qu'elle gère les spécificités de chaque modèle. En résumé, construire des applications d'IA générative est simple au départ, mais à mesure qu'elles se développent et deviennent plus complexes, il devient nécessaire de définir une architecture et probablement de s'appuyer sur une norme pour garantir une construction cohérente. C'est là que le MCP intervient pour organiser les choses et fournir une norme.
+Les applications d'IA générative représentent une avancée majeure, car elles permettent souvent à l'utilisateur d'interagir avec l'application via des invites en langage naturel. Cependant, à mesure que davantage de temps et de ressources sont investis dans ces applications, il est crucial de garantir une intégration facile des fonctionnalités et des ressources, de manière à ce qu'elles soient extensibles, capables de prendre en charge plusieurs modèles et de gérer les complexités spécifiques à chaque modèle. En bref, construire des applications d'IA générative est simple au départ, mais à mesure qu'elles se développent et deviennent plus complexes, il devient nécessaire de définir une architecture et probablement de s'appuyer sur une norme pour garantir une construction cohérente. C'est là que le MCP intervient pour organiser les choses et fournir une norme.
 
 ---
 
 ## **🔍 Qu'est-ce que le protocole de contexte de modèle (MCP) ?**
 
-Le **protocole de contexte de modèle (MCP)** est une **interface ouverte et standardisée** qui permet aux modèles de langage de grande taille (LLMs) d'interagir de manière fluide avec des outils externes, des API et des sources de données. Il offre une architecture cohérente pour améliorer les fonctionnalités des modèles d'IA au-delà de leurs données d'entraînement, permettant des systèmes d'IA plus intelligents, évolutifs et réactifs.
+Le **protocole de contexte de modèle (MCP)** est une **interface ouverte et standardisée** qui permet aux modèles de langage étendu (LLMs) d'interagir de manière fluide avec des outils externes, des API et des sources de données. Il offre une architecture cohérente pour améliorer les fonctionnalités des modèles d'IA au-delà de leurs données d'entraînement, permettant des systèmes d'IA plus intelligents, évolutifs et réactifs.
 
 ---
 
-## **🎯 Pourquoi la standardisation en IA est importante**
+## **🎯 Pourquoi la standardisation dans l'IA est importante**
 
 À mesure que les applications d'IA générative deviennent plus complexes, il est essentiel d'adopter des normes qui garantissent **l'évolutivité, l'extensibilité, la maintenabilité** et **l'évitement de l'enfermement propriétaire**. Le MCP répond à ces besoins en :
 
@@ -31,7 +31,7 @@ Le **protocole de contexte de modèle (MCP)** est une **interface ouverte et sta
 - Réduisant les solutions personnalisées fragiles et ponctuelles
 - Permettant à plusieurs modèles de différents fournisseurs de coexister dans un même écosystème
 
-**Note :** Bien que le MCP se présente comme une norme ouverte, il n'existe aucun plan pour le standardiser via des organismes de normalisation existants tels que l'IEEE, l'IETF, le W3C, l'ISO ou tout autre organisme.
+**Note :** Bien que le MCP se présente comme une norme ouverte, il n'existe aucun plan pour le standardiser via des organismes de normalisation existants tels que IEEE, IETF, W3C, ISO ou tout autre organisme de normalisation.
 
 ---
 
@@ -41,23 +41,23 @@ Le **protocole de contexte de modèle (MCP)** est une **interface ouverte et sta
 
 - Définir le **protocole de contexte de modèle (MCP)** et ses cas d'utilisation
 - Comprendre comment le MCP standardise la communication entre modèles et outils
-- Identifier les composants clés de l'architecture MCP
+- Identifier les composants principaux de l'architecture MCP
 - Explorer des applications concrètes du MCP dans des contextes d'entreprise et de développement
 
 ---
 
 ## **💡 Pourquoi le protocole de contexte de modèle (MCP) est révolutionnaire**
 
-### **🔗 Le MCP résout la fragmentation des interactions en IA**
+### **🔗 Le MCP résout la fragmentation dans les interactions IA**
 
 Avant le MCP, intégrer des modèles avec des outils nécessitait :
 
 - Du code personnalisé pour chaque paire outil-modèle
-- Des API non standardisées pour chaque fournisseur
+- Des API non standard pour chaque fournisseur
 - Des interruptions fréquentes dues aux mises à jour
-- Une évolutivité limitée avec l'ajout de nouveaux outils
+- Une évolutivité limitée avec davantage d'outils
 
-### **✅ Avantages de la standardisation avec le MCP**
+### **✅ Avantages de la standardisation MCP**
 
 | **Avantage**              | **Description**                                                                |
 |---------------------------|--------------------------------------------------------------------------------|
@@ -68,7 +68,7 @@ Avant le MCP, intégrer des modèles avec des outils nécessitait :
 
 ---
 
-## **🧱 Vue d'ensemble de l'architecture MCP**
+## **🧱 Aperçu de l'architecture MCP à haut niveau**
 
 Le MCP suit un modèle **client-serveur**, où :
 
@@ -93,15 +93,15 @@ Les serveurs MCP fonctionnent de la manière suivante :
     1. Une requête est initiée par un utilisateur final ou un logiciel agissant en son nom.
     2. Le **client MCP** envoie la requête à un **hôte MCP**, qui gère l'exécution du modèle d'IA.
     3. Le **modèle d'IA** reçoit l'invite utilisateur et peut demander l'accès à des outils ou données externes via un ou plusieurs appels d'outils.
-    4. L'**hôte MCP**, et non le modèle directement, communique avec le(s) **serveur(s) MCP** approprié(s) en utilisant le protocole standardisé.
+    4. L'**hôte MCP**, et non directement le modèle, communique avec les **serveurs MCP** appropriés en utilisant le protocole standardisé.
 - **Fonctionnalités de l'hôte MCP** :
     - **Registre d'outils** : Maintient un catalogue des outils disponibles et de leurs capacités.
     - **Authentification** : Vérifie les permissions pour l'accès aux outils.
-    - **Gestionnaire de requêtes** : Traite les requêtes d'outils provenant du modèle.
+    - **Gestionnaire de requêtes** : Traite les demandes d'outils provenant du modèle.
     - **Formateur de réponses** : Structure les sorties des outils dans un format compréhensible par le modèle.
 - **Exécution du serveur MCP** :
-    - L'**hôte MCP** redirige les appels d'outils vers un ou plusieurs **serveurs MCP**, chacun exposant des fonctions spécialisées (par exemple, recherche, calculs, requêtes de base de données).
-    - Les **serveurs MCP** effectuent leurs opérations respectives et renvoient les résultats à l'**hôte MCP** dans un format cohérent.
+    - L'**hôte MCP** dirige les appels d'outils vers un ou plusieurs **serveurs MCP**, chacun exposant des fonctions spécialisées (par exemple, recherche, calculs, requêtes de base de données).
+    - Les **serveurs MCP** exécutent leurs opérations respectives et renvoient les résultats à l'**hôte MCP** dans un format cohérent.
     - L'**hôte MCP** formate et transmet ces résultats au **modèle d'IA**.
 - **Finalisation de la réponse** :
     - Le **modèle d'IA** intègre les sorties des outils dans une réponse finale.
@@ -152,7 +152,7 @@ graph TD
 
 Les serveurs MCP permettent d'étendre les capacités des LLMs en fournissant des données et des fonctionnalités.
 
-Prêt à essayer ? Voici des SDK spécifiques à des langages ou stacks avec des exemples pour créer des serveurs MCP simples :
+Prêt à essayer ? Voici des SDK spécifiques à des langages et/ou stacks avec des exemples de création de serveurs MCP simples dans différents langages/stacks :
 
 - **SDK Python** : https://github.com/modelcontextprotocol/python-sdk
 
@@ -162,8 +162,6 @@ Prêt à essayer ? Voici des SDK spécifiques à des langages ou stacks avec des
 
 - **SDK C#/.NET** : https://github.com/modelcontextprotocol/csharp-sdk
 
----
-
 ## 🌍 Cas d'utilisation concrets du MCP
 
 Le MCP permet une large gamme d'applications en étendant les capacités de l'IA :
@@ -171,23 +169,23 @@ Le MCP permet une large gamme d'applications en étendant les capacités de l'IA
 | **Application**              | **Description**                                                                |
 |------------------------------|--------------------------------------------------------------------------------|
 | Intégration de données d'entreprise | Connecter les LLMs à des bases de données, CRM ou outils internes              |
-| Systèmes d'IA agentiques     | Permettre à des agents autonomes d'accéder à des outils et de suivre des flux de travail décisionnels |
-| Applications multimodales    | Combiner des outils de texte, image et audio dans une seule application d'IA unifiée |
-| Intégration de données en temps réel | Intégrer des données en direct dans les interactions IA pour des résultats plus précis et actuels |
+| Systèmes d'IA agentiques     | Permettre à des agents autonomes d'accéder à des outils et de suivre des flux de décision |
+| Applications multimodales    | Combiner des outils texte, image et audio dans une seule application IA unifiée |
+| Intégration de données en temps réel | Apporter des données en direct dans les interactions IA pour des résultats plus précis et actuels |
 
-### 🧠 MCP = Norme universelle pour les interactions en IA
+### 🧠 MCP = Norme universelle pour les interactions IA
 
-Le protocole de contexte de modèle (MCP) agit comme une norme universelle pour les interactions en IA, tout comme l'USB-C a standardisé les connexions physiques pour les appareils. Dans le domaine de l'IA, le MCP fournit une interface cohérente, permettant aux modèles (clients) de s'intégrer de manière fluide avec des outils externes et des fournisseurs de données (serveurs). Cela élimine le besoin de protocoles divers et personnalisés pour chaque API ou source de données.
+Le protocole de contexte de modèle (MCP) agit comme une norme universelle pour les interactions IA, tout comme l'USB-C a standardisé les connexions physiques pour les appareils. Dans le monde de l'IA, le MCP fournit une interface cohérente, permettant aux modèles (clients) de s'intégrer facilement avec des outils externes et des fournisseurs de données (serveurs). Cela élimine le besoin de protocoles divers et personnalisés pour chaque API ou source de données.
 
-Sous MCP, un outil compatible MCP (appelé serveur MCP) suit une norme unifiée. Ces serveurs peuvent lister les outils ou actions qu'ils offrent et exécuter ces actions lorsqu'ils sont sollicités par un agent d'IA. Les plateformes d'agents d'IA prenant en charge le MCP sont capables de découvrir les outils disponibles sur les serveurs et de les invoquer via ce protocole standardisé.
+Avec le MCP, un outil compatible MCP (appelé serveur MCP) suit une norme unifiée. Ces serveurs peuvent répertorier les outils ou actions qu'ils offrent et exécuter ces actions lorsqu'ils sont sollicités par un agent IA. Les plateformes d'agents IA qui prennent en charge le MCP sont capables de découvrir les outils disponibles sur les serveurs et de les invoquer via ce protocole standard.
 
-### 💡 Facilite l'accès à la connaissance
+### 💡 Facilite l'accès au savoir
 
-Au-delà de l'offre d'outils, le MCP facilite également l'accès à la connaissance. Il permet aux applications de fournir un contexte aux modèles de langage de grande taille (LLMs) en les reliant à diverses sources de données. Par exemple, un serveur MCP pourrait représenter le dépôt de documents d'une entreprise, permettant aux agents de récupérer des informations pertinentes à la demande. Un autre serveur pourrait gérer des actions spécifiques comme l'envoi d'e-mails ou la mise à jour de dossiers. Du point de vue de l'agent, ce ne sont que des outils qu'il peut utiliser : certains outils renvoient des données (contexte de connaissance), tandis que d'autres exécutent des actions. Le MCP gère efficacement les deux.
+Au-delà de la fourniture d'outils, le MCP facilite également l'accès au savoir. Il permet aux applications de fournir un contexte aux modèles de langage étendu (LLMs) en les reliant à diverses sources de données. Par exemple, un serveur MCP pourrait représenter un dépôt de documents d'entreprise, permettant aux agents de récupérer des informations pertinentes à la demande. Un autre serveur pourrait gérer des actions spécifiques comme l'envoi d'e-mails ou la mise à jour de dossiers. Du point de vue de l'agent, ce sont simplement des outils qu'il peut utiliser—certains outils renvoient des données (contexte de savoir), tandis que d'autres exécutent des actions. Le MCP gère efficacement les deux.
 
-Un agent se connectant à un serveur MCP apprend automatiquement les capacités disponibles et les données accessibles via un format standard. Cette standardisation permet une disponibilité dynamique des outils. Par exemple, l'ajout d'un nouveau serveur MCP au système d'un agent rend ses fonctions immédiatement utilisables sans nécessiter de personnalisation supplémentaire des instructions de l'agent.
+Un agent se connectant à un serveur MCP apprend automatiquement les capacités disponibles et les données accessibles du serveur via un format standard. Cette standardisation permet une disponibilité dynamique des outils. Par exemple, ajouter un nouveau serveur MCP au système d'un agent rend ses fonctions immédiatement utilisables sans nécessiter de personnalisation supplémentaire des instructions de l'agent.
 
-Cette intégration simplifiée s'aligne avec le flux illustré dans le diagramme suivant, où les serveurs fournissent à la fois des outils et des connaissances, assurant une collaboration fluide entre les systèmes.
+Cette intégration simplifiée s'aligne avec le flux représenté dans le diagramme suivant, où les serveurs fournissent à la fois des outils et des connaissances, assurant une collaboration fluide entre les systèmes.
 
 ### 👉 Exemple : Solution d'agent évolutive
 
@@ -217,10 +215,13 @@ graph TD
         ToolsB[Tools]
     end
 ```
+Le connecteur universel permet aux serveurs MCP de communiquer et de partager leurs capacités entre eux, permettant au ServeurA de déléguer des tâches au ServeurB ou d'accéder à ses outils et connaissances. Cela fédère les outils et les données entre les serveurs, soutenant des architectures d'agents évolutives et modulaires. Parce que le MCP standardise l'exposition des outils, les agents peuvent découvrir dynamiquement et router les requêtes entre les serveurs sans intégrations codées en dur.
+
+Fédération des outils et des connaissances : Les outils et les données peuvent être accessibles entre les serveurs, permettant des architectures agentiques plus évolutives et modulaires.
 
 ### 🔄 Scénarios avancés MCP avec intégration LLM côté client
 
-Au-delà de l'architecture MCP de base, il existe des scénarios avancés où le client et le serveur contiennent des LLMs, permettant des interactions plus sophistiquées. Dans le diagramme suivant, l'**application cliente** pourrait être un IDE avec plusieurs outils MCP disponibles pour l'utilisation par le LLM :
+Au-delà de l'architecture MCP de base, il existe des scénarios avancés où le client et le serveur contiennent des LLMs, permettant des interactions plus sophistiquées. Dans le diagramme suivant, **Client App** pourrait être un IDE avec un certain nombre d'outils MCP disponibles pour l'utilisateur via le LLM :
 
 ```mermaid
 ---
@@ -284,48 +285,40 @@ sequenceDiagram
     end
 ```
 
----
-
 ## 🔐 Avantages pratiques du MCP
 
 Voici les avantages pratiques de l'utilisation du MCP :
 
 - **Actualité** : Les modèles peuvent accéder à des informations à jour au-delà de leurs données d'entraînement
 - **Extension des capacités** : Les modèles peuvent utiliser des outils spécialisés pour des tâches pour lesquelles ils n'ont pas été entraînés
-- **Réduction des hallucinations** : Les sources de données externes fournissent une base factuelle
-- **Confidentialité** : Les données sensibles peuvent rester dans des environnements sécurisés au lieu d'être intégrées dans des invites
-
----
+- **Réduction des hallucinations** : Les sources de données externes fournissent un ancrage factuel
+- **Confidentialité** : Les données sensibles peuvent rester dans des environnements sécurisés au lieu d'être intégrées dans les invites
 
 ## 📌 Points clés à retenir
 
-Voici les points clés à retenir sur le MCP :
+Les points clés suivants résument l'utilisation du MCP :
 
 - Le **MCP** standardise la manière dont les modèles d'IA interagissent avec les outils et les données
-- Il favorise **l'extensibilité, la cohérence et l'interopérabilité**
+- Favorise **l'extensibilité, la cohérence et l'interopérabilité**
 - Le MCP aide à **réduire le temps de développement, améliorer la fiabilité et étendre les capacités des modèles**
-- L'architecture client-serveur **permet des applications d'IA flexibles et extensibles**
-
----
+- L'architecture client-serveur **permet des applications IA flexibles et extensibles**
 
 ## 🧠 Exercice
 
-Réfléchissez à une application d'IA que vous souhaitez développer.
+Réfléchissez à une application IA que vous souhaitez créer.
 
 - Quels **outils ou données externes** pourraient améliorer ses capacités ?
-- Comment le MCP pourrait-il rendre l'intégration **plus simple et plus fiable** ?
-
----
+- Comment le MCP pourrait-il rendre l'intégration **plus simple et fiable** ?
 
 ## Ressources supplémentaires
 
-- [Dépôt GitHub du MCP](https://github.com/modelcontextprotocol)
+- [Répertoire GitHub MCP](https://github.com/modelcontextprotocol)
 
----
-
-## Et après ?
+## Et après
 
 Prochain chapitre : [Chapitre 1 : Concepts de base](../01-CoreConcepts/README.md)
 
+---
+
 **Avertissement** :  
-Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de faire appel à une traduction humaine professionnelle. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.
+Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction humaine professionnelle. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.
