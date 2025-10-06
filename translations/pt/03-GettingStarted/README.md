@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "1197b6dbde36773e04a5ae826557fdb9",
-  "translation_date": "2025-08-26T17:36:26+00:00",
+  "original_hash": "94b861de00829c34912ac36140f6183e",
+  "translation_date": "2025-10-06T14:08:08+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "pt"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Crie o Seu Primeiro Servidor MCP](../../../translated_images/04.0ea920069efd979a0b2dad51e72c1df7ead9c57b3305796068a6cee1f0dd6674.pt.png)](https://youtu.be/sNDZO9N4m9Y)
 
-_(Clique na imagem acima para assistir ao vídeo desta lição)_
+_(Clique na imagem acima para ver o vídeo desta lição)_
 
 Esta secção consiste em várias lições:
 
@@ -25,13 +25,15 @@ Esta secção consiste em várias lições:
 
 - **5 Servidor com transporte stdio**. O transporte stdio é o padrão recomendado para comunicação entre servidor e cliente MCP na especificação atual, proporcionando comunicação segura baseada em subprocessos, [para a lição](05-stdio-server/README.md)
 
-- **6 Streaming HTTP com MCP (HTTP Streamable)**. Aprenda sobre streaming HTTP moderno, notificações de progresso e como implementar servidores e clientes MCP escaláveis e em tempo real usando HTTP Streamable, [para a lição](06-http-streaming/README.md)
+- **6 Streaming HTTP com MCP (HTTP Streamable)**. Aprenda sobre streaming HTTP moderno, notificações de progresso e como implementar servidores e clientes MCP escaláveis e em tempo real usando HTTP Streamable. [para a lição](06-http-streaming/README.md)
 
-- **7 Utilizar o AI Toolkit para VSCode** para consumir e testar os seus Clientes e Servidores MCP, [para a lição](07-aitk/README.md)
+- **7 Utilizar o AI Toolkit para VSCode** para consumir e testar os seus Clientes e Servidores MCP [para a lição](07-aitk/README.md)
 
 - **8 Testes**. Aqui iremos focar especialmente em como podemos testar o nosso servidor e cliente de diferentes formas, [para a lição](08-testing/README.md)
 
 - **9 Implementação**. Este capítulo irá explorar diferentes formas de implementar as suas soluções MCP, [para a lição](09-deployment/README.md)
+
+- **10 Uso avançado do servidor**. Este capítulo aborda o uso avançado do servidor, [para a lição](./10-advanced/README.md)
 
 O Model Context Protocol (MCP) é um protocolo aberto que padroniza como as aplicações fornecem contexto aos LLMs. Pense no MCP como uma porta USB-C para aplicações de IA - ele fornece uma forma padronizada de conectar modelos de IA a diferentes fontes de dados e ferramentas.
 
@@ -57,7 +59,7 @@ Antes de mergulhar no desenvolvimento MCP, certifique-se de que tem:
 - **Ambiente de Desenvolvimento**: Para a linguagem escolhida (C#, Java, Python, TypeScript ou JavaScript)
 - **IDE/Editor**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm ou qualquer editor de código moderno
 - **Gestores de Pacotes**: NuGet, Maven/Gradle, pip ou npm/yarn
-- **Chaves de API**: Para quaisquer serviços de IA que planeia utilizar nas suas aplicações anfitriãs
+- **Chaves de API**: Para quaisquer serviços de IA que planeia usar nas suas aplicações anfitriãs
 
 ### SDKs Oficiais
 
@@ -66,13 +68,13 @@ Nos capítulos seguintes, verá soluções construídas usando Python, TypeScrip
 O MCP fornece SDKs oficiais para várias linguagens:
 - [C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) - Mantido em colaboração com a Microsoft
 - [Java SDK](https://github.com/modelcontextprotocol/java-sdk) - Mantido em colaboração com Spring AI
-- [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - Implementação oficial em TypeScript
-- [Python SDK](https://github.com/modelcontextprotocol/python-sdk) - Implementação oficial em Python
-- [Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk) - Implementação oficial em Kotlin
+- [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - A implementação oficial em TypeScript
+- [Python SDK](https://github.com/modelcontextprotocol/python-sdk) - A implementação oficial em Python
+- [Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk) - A implementação oficial em Kotlin
 - [Swift SDK](https://github.com/modelcontextprotocol/swift-sdk) - Mantido em colaboração com Loopwork AI
-- [Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) - Implementação oficial em Rust
+- [Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) - A implementação oficial em Rust
 
-## Pontos-Chave
+## Pontos Principais
 
 - Configurar um ambiente de desenvolvimento MCP é simples com SDKs específicos para cada linguagem
 - Construir servidores MCP envolve criar e registar ferramentas com esquemas claros
@@ -82,7 +84,7 @@ O MCP fornece SDKs oficiais para várias linguagens:
 
 ## Prática
 
-Temos um conjunto de exemplos que complementa os exercícios que verá em todos os capítulos desta secção. Além disso, cada capítulo também tem os seus próprios exercícios e tarefas.
+Temos um conjunto de exemplos que complementam os exercícios que verá em todos os capítulos desta secção. Além disso, cada capítulo também tem os seus próprios exercícios e tarefas.
 
 - [Calculadora em Java](./samples/java/calculator/README.md)
 - [Calculadora em .Net](../../../03-GettingStarted/samples/csharp)
@@ -92,7 +94,7 @@ Temos um conjunto de exemplos que complementa os exercícios que verá em todos 
 
 ## Recursos Adicionais
 
-- [Crie Agentes usando Model Context Protocol no Azure](https://learn.microsoft.com/azure/developer/ai/intro-agents-mcp)
+- [Construir Agentes usando Model Context Protocol no Azure](https://learn.microsoft.com/azure/developer/ai/intro-agents-mcp)
 - [MCP remoto com Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
 - [Agente MCP OpenAI em .NET](https://learn.microsoft.com/samples/azure-samples/openai-mcp-agent-dotnet/openai-mcp-agent-dotnet/)
 
@@ -102,5 +104,5 @@ Próximo: [Criar o seu primeiro Servidor MCP](01-first-server/README.md)
 
 ---
 
-**Aviso Legal**:  
-Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, é importante ter em conta que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes da utilização desta tradução.
+**Aviso**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, é importante notar que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes da utilização desta tradução.

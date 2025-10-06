@@ -1,27 +1,27 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "57f7b15640bb96ef2f6f09003eec935e",
-  "translation_date": "2025-08-18T17:59:34+00:00",
+  "original_hash": "4d846ebb88fbb0f00549e2ff8cc3f746",
+  "translation_date": "2025-10-06T14:19:47+00:00",
   "source_file": "03-GettingStarted/03-llm-client/README.md",
   "language_code": "tr"
 }
 -->
-# Bir LLM ile istemci oluşturma
+# LLM ile bir istemci oluşturma
 
-Şimdiye kadar, bir sunucu ve istemci oluşturmayı gördünüz. İstemci, sunucuyu açıkça çağırarak araçlarını, kaynaklarını ve istemlerini listeleyebiliyordu. Ancak, bu çok pratik bir yaklaşım değildir. Kullanıcınız, ajanlık çağında yaşıyor ve istemleri kullanmayı ve bir LLM ile iletişim kurmayı bekliyor. Kullanıcınız için, yeteneklerinizi MCP kullanarak saklayıp saklamadığınız önemli değil, ancak doğal dil kullanarak etkileşim kurmayı bekliyorlar. Peki, bunu nasıl çözeriz? Çözüm, istemciye bir LLM eklemekle ilgilidir.
+Şimdiye kadar bir sunucu ve bir istemci nasıl oluşturulacağını gördünüz. İstemci, sunucuyu açıkça çağırarak araçlarını, kaynaklarını ve istemlerini listeleyebiliyordu. Ancak, bu çok pratik bir yaklaşım değil. Kullanıcınız artık ajanlık çağında yaşıyor ve istemleri kullanmayı ve bir LLM ile iletişim kurmayı bekliyor. Kullanıcınız için MCP kullanıp kullanmadığınız önemli değil; ancak doğal dil kullanarak etkileşim kurmayı bekliyorlar. Peki bunu nasıl çözeriz? Çözüm, istemciye bir LLM eklemekten geçiyor.
 
 ## Genel Bakış
 
-Bu derste, istemcinize bir LLM eklemeye odaklanıyoruz ve bunun kullanıcılarınız için nasıl çok daha iyi bir deneyim sağladığını gösteriyoruz.
+Bu derste, istemcinize bir LLM eklemeye odaklanıyoruz ve bunun kullanıcı deneyimini nasıl çok daha iyi hale getirdiğini gösteriyoruz.
 
 ## Öğrenme Hedefleri
 
 Bu dersin sonunda şunları yapabileceksiniz:
 
-- Bir LLM ile bir istemci oluşturmak.
-- Bir LLM kullanarak bir MCP sunucusuyla sorunsuz bir şekilde etkileşim kurmak.
-- İstemci tarafında daha iyi bir son kullanıcı deneyimi sağlamak.
+- LLM ile bir istemci oluşturmak.
+- LLM kullanarak bir MCP sunucusuyla sorunsuz bir şekilde etkileşim kurmak.
+- İstemci tarafında daha iyi bir son kullanıcı deneyimi sunmak.
 
 ## Yaklaşım
 
@@ -39,23 +39,23 @@ Hangi yaklaşımı benimsememiz gerektiğini anlamaya çalışalım. Bir LLM ekl
 
 Harika, şimdi bunu yüksek seviyede nasıl yapabileceğimizi anladık, aşağıdaki alıştırmada bunu deneyelim.
 
-## Alıştırma: Bir LLM ile istemci oluşturma
+## Alıştırma: LLM ile bir istemci oluşturma
 
-Bu alıştırmada, istemcimize bir LLM eklemeyi öğreneceğiz.
+Bu alıştırmada, istemcinize bir LLM eklemeyi öğreneceğiz.
 
-### GitHub Kişisel Erişim Jetonu ile Kimlik Doğrulama
+### GitHub Kişisel Erişim Token'ı ile Kimlik Doğrulama
 
-GitHub jetonu oluşturmak basit bir işlemdir. İşte nasıl yapılacağı:
+GitHub token'ı oluşturmak basit bir işlemdir. İşte nasıl yapacağınız:
 
 - GitHub Ayarlarına gidin – Sağ üst köşedeki profil resminize tıklayın ve Ayarlar'ı seçin.
 - Geliştirici Ayarlarına gidin – Aşağı kaydırın ve Geliştirici Ayarlarına tıklayın.
-- Kişisel Erişim Jetonlarını seçin – Kişisel erişim jetonlarına tıklayın ve ardından Yeni jeton oluşturun.
-- Jetonunuzu Yapılandırın – Referans için bir not ekleyin, bir son kullanma tarihi belirleyin ve gerekli kapsamları (izinleri) seçin.
-- Jetonu Oluşturun ve Kopyalayın – Jeton oluştur'a tıklayın ve hemen kopyaladığınızdan emin olun, çünkü daha sonra tekrar göremeyeceksiniz.
+- Kişisel Erişim Token'larını seçin – İnce ayarlı token'lara tıklayın ve yeni bir token oluşturun.
+- Token'ınızı yapılandırın – Referans için bir not ekleyin, bir son kullanma tarihi belirleyin ve gerekli kapsamları (izinleri) seçin. Bu durumda, Modeller iznini eklediğinizden emin olun.
+- Token'ı oluşturun ve kopyalayın – Token oluştur'a tıklayın ve hemen kopyaladığınızdan emin olun, çünkü daha sonra göremeyeceksiniz.
 
-### -1- Sunucuya Bağlanma
+### -1- Sunucuya bağlanın
 
-Öncelikle istemcimizi oluşturalım:
+Önce istemcimizi oluşturalım:
 
 #### TypeScript
 
@@ -95,7 +95,7 @@ class MCPClient {
 Yukarıdaki kodda şunları yaptık:
 
 - Gerekli kütüphaneleri içe aktardık.
-- `client` ve `openai` adında iki üyesi olan bir sınıf oluşturduk, bunlar sırasıyla bir istemciyi yönetmemize ve bir LLM ile etkileşim kurmamıza yardımcı olacak.
+- Bir istemciyi yönetmek ve bir LLM ile etkileşim kurmak için iki üyesi olan bir sınıf oluşturduk: `client` ve `openai`.
 - LLM örneğimizi GitHub Modellerini kullanacak şekilde yapılandırdık ve `baseUrl`'i çıkarım API'sine işaret edecek şekilde ayarladık.
 
 #### Python
@@ -156,7 +156,7 @@ await using var mcpClient = await McpClientFactory.CreateAsync(clientTransport);
 
 #### Java
 
-Öncelikle, `pom.xml` dosyanıza LangChain4j bağımlılıklarını eklemeniz gerekecek. MCP entegrasyonu ve GitHub Modelleri desteği için bu bağımlılıkları ekleyin:
+Öncelikle, `pom.xml` dosyanıza LangChain4j bağımlılıklarını eklemeniz gerekiyor. MCP entegrasyonu ve GitHub Modelleri desteğini etkinleştirmek için bu bağımlılıkları ekleyin:
 
 ```xml
 <properties>
@@ -193,7 +193,7 @@ await using var mcpClient = await McpClientFactory.CreateAsync(clientTransport);
 </dependencies>
 ```
 
-Ardından Java istemci sınıfınızı oluşturun:
+Sonra Java istemci sınıfınızı oluşturun:
 
 ```java
 import dev.langchain4j.mcp.McpToolProvider;
@@ -239,16 +239,16 @@ Yukarıdaki kodda şunları yaptık:
 
 - **LangChain4j bağımlılıklarını ekledik**: MCP entegrasyonu, OpenAI resmi istemcisi ve GitHub Modelleri desteği için gerekli.
 - **LangChain4j kütüphanelerini içe aktardık**: MCP entegrasyonu ve OpenAI sohbet modeli işlevselliği için.
-- **Bir `ChatLanguageModel` oluşturduk**: GitHub Modellerini GitHub jetonunuzla kullanacak şekilde yapılandırıldı.
+- **Bir `ChatLanguageModel` oluşturduk**: GitHub Modellerini GitHub token'ınızla kullanacak şekilde yapılandırıldı.
 - **HTTP taşımayı ayarladık**: MCP sunucusuna bağlanmak için Sunucu Tarafından Gönderilen Olaylar (SSE) kullanıldı.
 - **Bir MCP istemcisi oluşturduk**: Sunucuyla iletişimi yönetecek.
 - **LangChain4j'nin yerleşik MCP desteğini kullandık**: LLM'ler ve MCP sunucuları arasındaki entegrasyonu basitleştirir.
 
 #### Rust
 
-Bu örnek, bir Rust tabanlı MCP sunucusunun çalıştığını varsayar. Eğer bir sunucunuz yoksa, [01-first-server](../01-first-server/README.md) dersine geri dönerek sunucuyu oluşturabilirsiniz.
+Bu örnek, Rust tabanlı bir MCP sunucunuzun çalıştığını varsayar. Eğer yoksa, [01-first-server](../01-first-server/README.md) dersine geri dönerek sunucuyu oluşturabilirsiniz.
 
-Rust MCP sunucunuz olduğunda, bir terminal açın ve sunucuyla aynı dizine gidin. Ardından yeni bir LLM istemci projesi oluşturmak için şu komutu çalıştırın:
+Rust MCP sunucunuz olduğunda, bir terminal açın ve sunucuyla aynı dizine gidin. Ardından yeni bir LLM istemci projesi oluşturmak için aşağıdaki komutu çalıştırın:
 
 ```bash
 mkdir calculator-llmclient
@@ -256,7 +256,7 @@ cd calculator-llmclient
 cargo init
 ```
 
-`Cargo.toml` dosyanıza şu bağımlılıkları ekleyin:
+`Cargo.toml` dosyanıza aşağıdaki bağımlılıkları ekleyin:
 
 ```toml
 [dependencies]
@@ -267,9 +267,9 @@ tokio = { version = "1.46.1", features = ["rt-multi-thread"] }
 ```
 
 > [!NOTE]
-> OpenAI için resmi bir Rust kütüphanesi yoktur, ancak `async-openai` paketi [topluluk tarafından sürdürülen bir kütüphanedir](https://platform.openai.com/docs/libraries/rust#rust) ve yaygın olarak kullanılır.
+> OpenAI için resmi bir Rust kütüphanesi yoktur, ancak `async-openai` crate'i [topluluk tarafından sürdürülen bir kütüphane](https://platform.openai.com/docs/libraries/rust#rust) olup yaygın olarak kullanılır.
 
-`src/main.rs` dosyasını açın ve içeriğini şu kodla değiştirin:
+`src/main.rs` dosyasını açın ve içeriğini aşağıdaki kodla değiştirin:
 
 ```rust
 use async_openai::{Client, config::OpenAIConfig};
@@ -319,20 +319,20 @@ async fn main() -> Result<(), Box<dyn Error>> {
 }
 ```
 
-Bu kod, bir MCP sunucusuna ve GitHub Modellerine bağlanacak temel bir Rust uygulaması oluşturur.
+Bu kod, bir MCP sunucusuna ve GitHub Modellerine bağlanacak temel bir Rust uygulaması kurar.
 
 > [!IMPORTANT]
-> Uygulamayı çalıştırmadan önce `OPENAI_API_KEY` ortam değişkenini GitHub jetonunuzla ayarladığınızdan emin olun.
+> Uygulamayı çalıştırmadan önce `OPENAI_API_KEY` ortam değişkenini GitHub token'ınızla ayarladığınızdan emin olun.
 
-Harika, bir sonraki adımımızda sunucudaki yetenekleri listeleyeceğiz.
+Harika, bir sonraki adımda sunucudaki yetenekleri listeleyeceğiz.
 
-### -2- Sunucu Yeteneklerini Listeleme
+### -2- Sunucu yeteneklerini listeleyin
 
-Şimdi sunucuya bağlanıp yeteneklerini soracağız:
+Şimdi sunucuya bağlanacağız ve yeteneklerini soracağız:
 
 #### TypeScript
 
-Aynı sınıfa şu yöntemleri ekleyin:
+Aynı sınıfa aşağıdaki yöntemleri ekleyin:
 
 ```typescript
 async connectToServer(transport: Transport) {
@@ -352,7 +352,7 @@ async run() {
 Yukarıdaki kodda şunları yaptık:
 
 - Sunucuya bağlanmak için `connectToServer` kodunu ekledik.
-- Uygulama akışımızı yöneten bir `run` yöntemi oluşturduk. Şu ana kadar sadece araçları listeliyor, ancak yakında daha fazlasını ekleyeceğiz.
+- Uygulama akışımızı yönetecek `run` yöntemini oluşturduk. Şu ana kadar sadece araçları listeliyor, ancak kısa süre içinde daha fazlasını ekleyeceğiz.
 
 #### Python
 
@@ -373,7 +373,7 @@ for tool in tools.tools:
 
 Eklediğimiz şeyler:
 
-- Kaynakları ve araçları listeledik ve yazdırdık. Araçlar için ayrıca daha sonra kullanacağımız `inputSchema`yı listeledik.
+- Kaynakları ve araçları listeledik ve yazdırdık. Araçlar için daha sonra kullanacağımız `inputSchema`yı da listeledik.
 
 #### .NET
 
@@ -401,7 +401,7 @@ async Task<List<ChatCompletionsToolDefinition>> GetMcpTools()
 Yukarıdaki kodda şunları yaptık:
 
 - MCP Sunucusunda mevcut araçları listeledik.
-- Her araç için ad, açıklama ve şemasını listeledik. Şema, araçları çağırmak için kısa süre sonra kullanacağımız bir şeydir.
+- Her araç için ad, açıklama ve şemasını listeledik. Şema, araçları çağırmak için kullanacağımız bir şeydir.
 
 #### Java
 
@@ -425,20 +425,20 @@ Yukarıdaki kodda şunları yaptık:
 
 #### Rust
 
-MCP sunucusundan araçları almak `list_tools` yöntemi kullanılarak yapılır. MCP istemcisini ayarladıktan sonra, `main` fonksiyonunuza şu kodu ekleyin:
+MCP sunucusundan araçları almak `list_tools` yöntemi kullanılarak yapılır. MCP istemcisini ayarladıktan sonra, `main` işlevinize aşağıdaki kodu ekleyin:
 
 ```rust
 // Get MCP tool listing 
 let tools = mcp_client.list_tools(Default::default()).await?;
 ```
 
-### -3- Sunucu Yeteneklerini LLM Araçlarına Dönüştürme
+### -3- Sunucu yeteneklerini LLM araçlarına dönüştürün
 
 Sunucu yeteneklerini listeledikten sonraki adım, bunları LLM'nin anlayabileceği bir formata dönüştürmektir. Bunu yaptıktan sonra, bu yetenekleri LLM'ye araç olarak sağlayabiliriz.
 
 #### TypeScript
 
-1. MCP Sunucusundan gelen yanıtı LLM'nin kullanabileceği bir araç formatına dönüştürmek için şu kodu ekleyin:
+1. MCP Sunucusundan gelen yanıtı LLM'nin kullanabileceği bir araç formatına dönüştürmek için aşağıdaki kodu ekleyin:
 
     ```typescript
     openAiToolAdapter(tool: {
@@ -465,9 +465,9 @@ Sunucu yeteneklerini listeledikten sonraki adım, bunları LLM'nin anlayabilece�
 
     ```
 
-    Yukarıdaki kod, MCP Sunucusundan gelen bir yanıtı alır ve bunu LLM'nin anlayabileceği bir araç tanımı formatına dönüştürür.
+    Yukarıdaki kod, MCP Sunucusundan gelen yanıtı LLM'nin anlayabileceği bir araç tanımı formatına dönüştürür.
 
-1. Ardından, `run` yöntemini sunucu yeteneklerini listeleyecek şekilde güncelleyelim:
+1. Ardından, `run` yöntemini güncelleyelim ve sunucu yeteneklerini listeleyelim:
 
     ```typescript
     async run() {
@@ -483,11 +483,11 @@ Sunucu yeteneklerini listeledikten sonraki adım, bunları LLM'nin anlayabilece�
     }
     ```
 
-    Yukarıdaki kodda, sonucu haritalamak ve her giriş için `openAiToolAdapter` çağırmak üzere `run` yöntemini güncelledik.
+    Yukarıdaki kodda, sonucu haritalamak ve her bir giriş için `openAiToolAdapter` çağırmak üzere `run` yöntemini güncelledik.
 
 #### Python
 
-1. Öncelikle şu dönüştürücü fonksiyonu oluşturalım:
+1. Öncelikle aşağıdaki dönüştürücü işlevi oluşturalım:
 
     ```python
     def convert_to_llm_tool(tool):
@@ -507,9 +507,9 @@ Sunucu yeteneklerini listeledikten sonraki adım, bunları LLM'nin anlayabilece�
         return tool_schema
     ```
 
-    Yukarıdaki `convert_to_llm_tools` fonksiyonunda, bir MCP araç yanıtını alır ve bunu LLM'nin anlayabileceği bir formata dönüştürürüz.
+    Yukarıdaki `convert_to_llm_tools` işlevinde, bir MCP araç yanıtını alıyor ve bunu LLM'nin anlayabileceği bir formata dönüştürüyoruz.
 
-1. Ardından, istemci kodumuzu bu fonksiyondan yararlanacak şekilde güncelleyelim:
+1. Ardından, istemci kodumuzu bu işlevi kullanacak şekilde güncelleyelim:
 
     ```python
     for tool in tools.tools:
@@ -547,10 +547,10 @@ ChatCompletionsToolDefinition ConvertFrom(string name, string description, JsonE
 
 Yukarıdaki kodda şunları yaptık:
 
-- `ConvertFrom` adında bir fonksiyon oluşturduk, bu fonksiyon ad, açıklama ve giriş şemasını alır.
-- Bir ChatCompletionsDefinition'a geçirilen bir FunctionDefinition oluşturan işlevselliği tanımladık. Bu, LLM'nin anlayabileceği bir şeydir.
+- Ad, açıklama ve giriş şemasını alan bir `ConvertFrom` işlevi oluşturduk.
+- Bir ChatCompletionsDefinition'a iletilen bir FunctionDefinition oluşturan işlevselliği tanımladık. Bu, LLM'nin anlayabileceği bir şeydir.
 
-1. Mevcut kodu bu fonksiyondan yararlanacak şekilde nasıl güncelleyebileceğimizi görelim:
+1. Yukarıdaki işlevden yararlanmak için mevcut kodu nasıl güncelleyebileceğimizi görelim:
 
     ```csharp
     async Task<List<ChatCompletionsToolDefinition>> GetMcpTools()
@@ -578,11 +578,9 @@ Yukarıdaki kodda şunları yaptık:
 
         return toolDefinitions;
     }
-    ```
+    ```    In the preceding code, we've:
 
-    Yukarıdaki kodda şunları yaptık:
-
-    - MCP araç yanıtını bir LLM aracına dönüştürmek için fonksiyonu güncelledik. Eklediğimiz kodu vurgulayalım:
+    - Update the function to convert the MCP tool response to an LLm tool. Let's highlight the code we added:
 
         ```csharp
         JsonElement propertiesElement;
@@ -593,7 +591,7 @@ Yukarıdaki kodda şunları yaptık:
         toolDefinitions.Add(def);
         ```
 
-        Giriş şeması araç yanıtının bir parçasıdır, ancak "properties" özniteliğinde bulunur, bu nedenle çıkarmamız gerekir. Ayrıca, araç ayrıntılarıyla `ConvertFrom` çağrısı yapıyoruz. Şimdi ağır işleri tamamladık, bir kullanıcı istemini işlerken her şeyin nasıl bir araya geldiğini görelim.
+        The input schema is part of the tool response but on the "properties" attribute, so we need to extract. Furthermore, we now call `ConvertFrom` with the tool details. Now we've done the heavy lifting, let's see how it call comes together as we handle a user prompt next.
 
 #### Java
 
@@ -613,13 +611,13 @@ Bot bot = AiServices.builder(Bot.class)
 Yukarıdaki kodda şunları yaptık:
 
 - Doğal dil etkileşimleri için basit bir `Bot` arayüzü tanımladık.
-- LangChain4j'nin `AiServices`'ini kullanarak LLM'yi MCP araç sağlayıcısıyla otomatik olarak bağladık.
-- Çerçeve, araç şeması dönüştürme ve işlev çağrısını sahne arkasında otomatik olarak yönetir.
-- Bu yaklaşım, MCP araçlarını LLM uyumlu bir formata dönüştürme sürecini ortadan kaldırır - LangChain4j, MCP araçlarını LLM uyumlu bir formata dönüştürmenin tüm karmaşıklığını yönetir.
+- LangChain4j'nin `AiServices`'ini kullanarak LLM'yi MCP araç sağlayıcısına otomatik olarak bağladık.
+- Çerçeve, araç şeması dönüşümünü ve işlev çağrısını sahne arkasında otomatik olarak yönetir.
+- Bu yaklaşım, manuel araç dönüşümünü ortadan kaldırır - LangChain4j, MCP araçlarını LLM uyumlu formata dönüştürmenin tüm karmaşıklığını yönetir.
 
 #### Rust
 
-MCP araç yanıtını LLM'nin anlayabileceği bir formata dönüştürmek için, araç listesini biçimlendiren bir yardımcı fonksiyon ekleyeceğiz. Bu, LLM'ye istek yaparken çağrılacaktır:
+MCP araç yanıtını LLM'nin anlayabileceği bir formata dönüştürmek için, araç listesini biçimlendiren bir yardımcı işlev ekleyeceğiz. Bu işlevi `main.rs` dosyanızdaki `main` işlevinin altına ekleyin. Bu, LLM'ye istek yaparken çağrılacaktır:
 
 ```rust
 async fn format_tools(tools: &ListToolsResult) -> Result<Vec<Value>, Box<dyn Error>> {
@@ -654,9 +652,9 @@ async fn format_tools(tools: &ListToolsResult) -> Result<Vec<Value>, Box<dyn Err
 }
 ```
 
-Harika, artık kullanıcı isteklerini işlemek için hazırız, o zaman bir sonraki adımı ele alalım.
+Harika, artık herhangi bir kullanıcı isteğini işlemek için ayarlandık, o zaman bir sonraki adımda bunu ele alalım.
 
-### -4- Kullanıcı İstemini İşleme
+### -4- Kullanıcı istemi isteğini işleyin
 
 Bu kod bölümünde, kullanıcı isteklerini işleyeceğiz.
 
@@ -693,7 +691,7 @@ Bu kod bölümünde, kullanıcı isteklerini işleyeceğiz.
 
     Yukarıdaki kodda şunları yaptık:
 
-    - `callTools` adında bir yöntem ekledik.
+    - `callTools` adlı bir yöntem ekledik.
     - Yöntem, bir LLM yanıtını alır ve herhangi bir araç çağrılıp çağrılmadığını kontrol eder:
 
         ```typescript
@@ -722,7 +720,7 @@ Bu kod bölümünde, kullanıcı isteklerini işleyeceğiz.
         // TODO  
         ```
 
-1. `run` yöntemini LLM çağrılarını ve `callTools` çağrılarını içerecek şekilde güncelleyin:
+1. `run` yöntemini LLM çağrılarını ve `callTools` çağrısını içerecek şekilde güncelleyin:
 
     ```typescript
 
@@ -897,7 +895,7 @@ client.connectToServer(transport);
 
 #### Python
 
-1. LLM'yi çağırmak için gereken bazı içe aktarmaları ekleyelim:
+1. LLM'yi çağırmak için gereken bazı ithalatları ekleyelim:
 
     ```python
     # llm
@@ -908,7 +906,7 @@ client.connectToServer(transport);
     import json
     ```
 
-1. Ardından, LLM'yi çağıracak fonksiyonu ekleyelim:
+1. Ardından, LLM'yi çağıracak işlevi ekleyelim:
 
     ```python
     # llm
@@ -960,9 +958,9 @@ client.connectToServer(transport);
 
     Yukarıdaki kodda şunları yaptık:
 
-    - MCP sunucusundan bulduğumuz ve dönüştürdüğümüz işlevleri LLM'ye ilettik.
+    - MCP sunucusunda bulduğumuz ve dönüştürdüğümüz işlevleri LLM'ye ilettik.
     - Ardından, bu işlevlerle LLM'yi çağırdık.
-    - Daha sonra, sonucu inceleyerek çağrılması gereken işlevleri kontrol ettik.
+    - Daha sonra, sonucu inceleyerek hangi işlevlerin çağrılması gerektiğini kontrol ettik.
     - Son olarak, çağrılacak işlevlerin bir dizisini ilettik.
 
 1. Son adım, ana kodumuzu güncelleyelim:
@@ -979,14 +977,14 @@ client.connectToServer(transport);
         print("TOOLS result: ", result.content)
     ```
 
-    İşte bu, son adımdı. Yukarıdaki kodda şunları yapıyoruz:
+    Yukarıdaki kodda şunları yaptık:
 
-    - LLM'nin çağrılması gerektiğini düşündüğü bir işlevi kullanarak `call_tool` aracılığıyla bir MCP aracını çağırıyoruz.
-    - MCP Sunucusuna yapılan araç çağrısının sonucunu yazdırıyoruz.
+    - LLM'nin istemimize dayanarak çağrılması gerektiğini düşündüğü bir işlevi kullanarak MCP aracını `call_tool` ile çağırdık.
+    - MCP Sunucusuna yapılan araç çağrısının sonucunu yazdırdık.
 
 #### .NET
 
-1. Bir LLM istemi isteği yapmak için bazı kodlar gösterelim:
+1. LLM istemi isteği yapmak için bazı kodlar gösterelim:
 
     ```csharp
     var tools = await GetMcpTools();
@@ -1027,7 +1025,7 @@ client.connectToServer(transport);
     - Model ve araçları belirten bir seçenekler nesnesi oluşturduk.
     - LLM'ye bir istek yaptık.
 
-1. Son bir adım, LLM'nin bir işlev çağrısı yapmamız gerektiğini düşünüp düşünmediğini görelim:
+1. Son bir adım, LLM'nin bir işlev çağırmamız gerektiğini düşünüp düşünmediğini görelim:
 
     ```csharp
     // 4. Check if the response contains a function call
@@ -1052,10 +1050,10 @@ client.connectToServer(transport);
 
     Yukarıdaki kodda şunları yaptık:
 
-    - Bir işlev çağrıları listesi arasında döngü yaptık.
-    - Her araç çağrısı için, adı ve argümanları ayrıştırdık ve MCP istemcisini kullanarak MCP sunucusundaki aracı çağırdık. Son olarak sonuçları yazdırdık.
+    - Bir işlev çağrıları listesini döngüye aldık.
+    - Her araç çağrısı için, adı ve argümanları ayrıştırarak MCP istemcisi kullanarak MCP sunucusundaki aracı çağırdık. Son olarak sonuçları yazdırdık.
 
-İşte tam kod:
+İşte kodun tamamı:
 
 ```csharp
 using Azure;
@@ -1202,13 +1200,13 @@ try {
 
 Yukarıdaki kodda şunları yaptık:
 
-- MCP sunucusu araçlarıyla etkileşim kurmak için basit doğal dil istemlerini kullandık.
+- MCP sunucu araçlarıyla etkileşim kurmak için basit doğal dil istemlerini kullandık.
 - LangChain4j çerçevesi otomatik olarak şunları yönetir:
-  - Kullanıcı istemlerini gerektiğinde araç çağrılarına dönüştürme.
-  - LLM'nin kararına göre uygun MCP araçlarını çağırma.
-  - LLM ve MCP sunucusu arasındaki konuşma akışını yönetme.
+  - Kullanıcı istemlerini gerektiğinde araç çağrılarına dönüştürmek.
+  - LLM'nin kararına göre uygun MCP araçlarını çağırmak.
+  - LLM ile MCP sunucusu arasındaki konuşma akışını yönetmek.
 - `bot.chat()` yöntemi, MCP araç yürütmelerinden gelen sonuçları içerebilecek doğal dil yanıtları döndürür.
-- Bu yaklaşım, kullanıcıların temel MCP uygulamasını bilmesine gerek kalmadan sorunsuz bir kullanıcı deneyimi sağlar.
+- Bu yaklaşım, kullanıcıların temel MCP uygulaması hakkında bilgi sahibi olmalarını gerektirmeyen sorunsuz bir kullanıcı deneyimi sağlar.
 
 Tam kod örneği:
 
@@ -1261,8 +1259,9 @@ public class LangChain4jClient {
 
 #### Rust
 
-Burada işin çoğu gerçekleşir. Başlangıçtaki kullanıcı istemiyle LLM'yi çağıracağız, ardından yanıtı işleyerek herhangi bir aracın çağrılması gerekip gerekmediğini kontrol edeceğiz. Eğer gerekiyorsa, bu araçları çağıracağız ve LLM ile nihai bir yanıt alana kadar konuşmaya devam edeceğiz.
-Ana dosyanıza aşağıdaki işlevi ekleyerek LLM çağrısını gerçekleştirecek bir işlev tanımlayalım:
+Burada işin büyük kısmı gerçekleşir. İlk kullanıcı istemiyle LLM'yi çağıracağız, ardından yanıtı işleyerek herhangi bir aracın çağrılması gerekip gerekmediğini kontrol edeceğiz. Eğer gerekiyorsa, bu araçları çağıracağız ve LLM ile konuşmaya devam edeceğiz. Ta ki daha fazla araç çağrısına gerek kalmayana ve nihai bir yanıt alana kadar.
+
+LLM'ye birden fazla çağrı yapacağımız için, LLM çağrısını yönetecek bir işlev tanımlayalım. Bu işlevi `main.rs` dosyanıza ekleyin:
 
 ```rust
 async fn call_llm(
@@ -1282,9 +1281,8 @@ async fn call_llm(
 }
 ```
 
-Bu işlev, LLM istemcisini, kullanıcı istemi dahil olmak üzere bir mesaj listesini, MCP sunucusundan araçları alır ve LLM'e bir istek göndererek yanıtı döndürür.
-
-LLM'den gelen yanıt, `choices` adlı bir dizi içerecektir. Sonuçları işleyerek herhangi bir `tool_calls` olup olmadığını kontrol etmemiz gerekecek. Bu, LLM'in belirli bir aracın argümanlarla çağrılmasını istediğini gösterir. LLM yanıtını işlemek için ana dosyanızın sonuna aşağıdaki kodu ekleyerek bir işlev tanımlayın:
+Bu işlev, LLM istemcisini, mesajlar listesini (kullanıcı istemi dahil), MCP sunucusundan araçları alır ve LLM'ye bir istek göndererek yanıtı döndürür.
+LLM'nin yanıtı bir `choices` dizisi içerecektir. Sonuçları işleyerek herhangi bir `tool_calls` olup olmadığını kontrol etmemiz gerekecek. Bu, LLM'nin belirli bir aracın argümanlarla çağrılmasını istediğini anlamamızı sağlar. `main.rs` dosyanızın en altına aşağıdaki kodu ekleyerek LLM yanıtını işlemek için bir fonksiyon tanımlayın:
 
 ```rust
 async fn process_llm_response(
@@ -1347,9 +1345,9 @@ async fn process_llm_response(
 }
 ```
 
-Eğer `tool_calls` mevcutsa, araç bilgilerini çıkarır, MCP sunucusuna araç isteğiyle çağrı yapar ve sonuçları konuşma mesajlarına ekler. Daha sonra LLM ile konuşmaya devam eder ve mesajlar, asistanın yanıtı ve araç çağrısı sonuçları ile güncellenir.
+Eğer `tool_calls` mevcutsa, araç bilgilerini çıkarır, MCP sunucusunu araç isteğiyle çağırır ve sonuçları konuşma mesajlarına ekler. Ardından LLM ile konuşmaya devam eder ve mesajlar, asistanın yanıtı ve araç çağrısı sonuçlarıyla güncellenir.
 
-LLM'in MCP çağrıları için döndürdüğü araç çağrısı bilgilerini çıkarmak için, çağrı yapmak için gereken her şeyi çıkaran bir yardımcı işlev ekleyeceğiz. Ana dosyanızın sonuna aşağıdaki kodu ekleyin:
+LLM'nin MCP çağrıları için döndürdüğü araç çağrısı bilgilerini çıkarmak için, çağrı yapmak için gereken her şeyi çıkaran başka bir yardımcı fonksiyon ekleyeceğiz. `main.rs` dosyanızın en altına aşağıdaki kodu ekleyin:
 
 ```rust
 fn extract_tool_call_info(tool_call: &Value) -> Result<(String, String, String), Box<dyn Error>> {
@@ -1373,7 +1371,7 @@ fn extract_tool_call_info(tool_call: &Value) -> Result<(String, String, String),
 }
 ```
 
-Tüm parçalar hazır olduğunda, artık ilk kullanıcı istemini işleyebilir ve LLM'i çağırabiliriz. `main` işlevinizi aşağıdaki kodu ekleyerek güncelleyin:
+Tüm parçalar yerine oturduğunda, artık ilk kullanıcı istemini işleyebilir ve LLM'yi çağırabiliriz. `main` fonksiyonunuzu aşağıdaki kodu ekleyerek güncelleyin:
 
 ```rust
 // LLM conversation with tool calls
@@ -1388,22 +1386,22 @@ process_llm_response(
 .await?;
 ```
 
-Bu, iki sayının toplamını sormak için ilk kullanıcı istemiyle LLM'i sorgular ve yanıtı işleyerek araç çağrılarını dinamik olarak yönetir.
+Bu, iki sayının toplamını sormak için LLM'yi ilk kullanıcı istemiyle sorgular ve yanıtı işleyerek araç çağrılarını dinamik bir şekilde yönetir.
 
 Harika, başardınız!
 
 ## Görev
 
-Egzersizdeki kodu alarak sunucuyu daha fazla araçla geliştirin. Ardından, egzersizde olduğu gibi bir LLM içeren bir istemci oluşturun ve sunucu araçlarınızın dinamik olarak çağrıldığından emin olmak için farklı istemlerle test edin. Bu tür bir istemci oluşturmak, son kullanıcıya harika bir kullanıcı deneyimi sağlar çünkü istemleri kullanabilirler ve herhangi bir MCP sunucusunun çağrıldığından habersiz olurlar.
+Egzersizdeki kodu alıp sunucuyu daha fazla araçla geliştirin. Ardından, egzersizde olduğu gibi bir LLM ile bir istemci oluşturun ve sunucu araçlarınızın dinamik bir şekilde çağrıldığından emin olmak için farklı istemlerle test edin. Bu tür bir istemci oluşturmak, son kullanıcıya harika bir deneyim sunar çünkü kullanıcılar istemler kullanabilir, kesin istemci komutlarına ihtiyaç duymaz ve herhangi bir MCP sunucusunun çağrıldığından habersiz olur.
 
 ## Çözüm
 
 [Çözüm](/03-GettingStarted/03-llm-client/solution/README.md)
 
-## Önemli Noktalar
+## Önemli Çıkarımlar
 
 - İstemcinize bir LLM eklemek, kullanıcıların MCP Sunucuları ile etkileşim kurması için daha iyi bir yol sağlar.
-- MCP Sunucusu yanıtını LLM'in anlayabileceği bir forma dönüştürmeniz gerekir.
+- MCP Sunucusu yanıtını LLM'nin anlayabileceği bir forma dönüştürmeniz gerekir.
 
 ## Örnekler
 
@@ -1416,9 +1414,11 @@ Egzersizdeki kodu alarak sunucuyu daha fazla araçla geliştirin. Ardından, egz
 
 ## Ek Kaynaklar
 
-## Sırada Ne Var
+## Sıradaki Adım
 
 - Sıradaki: [Visual Studio Code kullanarak bir sunucu tüketmek](../04-vscode/README.md)
 
+---
+
 **Feragatname**:  
-Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlıklar içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalardan sorumlu değiliz.
+Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlık içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalar için sorumluluk kabul etmiyoruz.

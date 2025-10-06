@@ -2,6 +2,87 @@
 
 This document serves as a record of all significant changes made to the Model Context Protocol (MCP) for Beginners curriculum. Changes are documented in reverse chronological order (newest changes first).
 
+## September 29, 2025
+
+### MCP Server Database Integration Labs - Comprehensive Hands-On Learning Path
+
+#### 11-MCPServerHandsOnLabs - New Complete Database Integration Curriculum
+- **Complete 13-Lab Learning Path**: Added comprehensive hands-on curriculum for building production-ready MCP servers with PostgreSQL database integration
+  - **Real-World Implementation**: Zava Retail analytics use case demonstrating enterprise-grade patterns
+  - **Structured Learning Progression**:
+    - **Labs 00-03: Foundations** - Introduction, Core Architecture, Security & Multi-Tenancy, Environment Setup
+    - **Labs 04-06: Building the MCP Server** - Database Design & Schema, MCP Server Implementation, Tool Development  
+    - **Labs 07-09: Advanced Features** - Semantic Search Integration, Testing & Debugging, VS Code Integration
+    - **Labs 10-12: Production & Best Practices** - Deployment Strategies, Monitoring & Observability, Best Practices & Optimization
+  - **Enterprise Technologies**: FastMCP framework, PostgreSQL with pgvector, Azure OpenAI embeddings, Azure Container Apps, Application Insights
+  - **Advanced Features**: Row Level Security (RLS), semantic search, multi-tenant data access, vector embeddings, real-time monitoring
+
+#### Terminology Standardization - Module to Lab Conversion
+- **Comprehensive Documentation Update**: Systematically updated all README files in 11-MCPServerHandsOnLabs to use "Lab" terminology instead of "Module"
+  - **Section Headers**: Updated "What This Module Covers" to "What This Lab Covers" across all 13 labs
+  - **Content Description**: Changed "This module provides..." to "This lab provides..." throughout documentation
+  - **Learning Objectives**: Updated "By the end of this module..." to "By the end of this lab..." 
+  - **Navigation Links**: Converted all "Module XX:" references to "Lab XX:" in cross-references and navigation
+  - **Completion Tracking**: Updated "After completing this module..." to "After completing this lab..."
+  - **Preserved Technical References**: Maintained Python module references in configuration files (e.g., `"module": "mcp_server.main"`)
+
+#### Study Guide Enhancement (study_guide.md)
+- **Visual Curriculum Map**: Added new "11. Database Integration Labs" section with comprehensive lab structure visualization
+- **Repository Structure**: Updated from ten to eleven main sections with detailed 11-MCPServerHandsOnLabs description
+- **Learning Path Guidance**: Enhanced navigation instructions to cover sections 00-11
+- **Technology Coverage**: Added FastMCP, PostgreSQL, Azure services integration details
+- **Learning Outcomes**: Emphasized production-ready server development, database integration patterns, and enterprise security
+
+#### Main README Structure Enhancement
+- **Lab-Based Terminology**: Updated main README.md in 11-MCPServerHandsOnLabs to consistently use "Lab" structure
+- **Learning Path Organization**: Clear progression from foundational concepts through advanced implementation to production deployment
+- **Real-World Focus**: Emphasis on practical, hands-on learning with enterprise-grade patterns and technologies
+
+### Documentation Quality & Consistency Improvements
+- **Hands-On Learning Emphasis**: Reinforced practical, lab-based approach throughout documentation
+- **Enterprise Patterns Focus**: Highlighted production-ready implementations and enterprise security considerations
+- **Technology Integration**: Comprehensive coverage of modern Azure services and AI integration patterns
+- **Learning Progression**: Clear, structured path from basic concepts to production deployment
+
+## September 26, 2025
+
+### Case Studies Enhancement - GitHub MCP Registry Integration
+
+#### Case Studies (09-CaseStudy/) - Ecosystem Development Focus
+- **README.md**: Major expansion with comprehensive GitHub MCP Registry case study
+  - **GitHub MCP Registry Case Study**: New comprehensive case study examining GitHub's MCP Registry launch in September 2025
+    - **Problem Analysis**: Detailed examination of fragmented MCP server discovery and deployment challenges
+    - **Solution Architecture**: GitHub's centralized registry approach with one-click VS Code installation
+    - **Business Impact**: Measurable improvements in developer onboarding and productivity
+    - **Strategic Value**: Focus on modular agent deployment and cross-tool interoperability
+    - **Ecosystem Development**: Positioning as foundational platform for agentic integration
+  - **Enhanced Case Study Structure**: Updated all seven case studies with consistent formatting and comprehensive descriptions
+    - Azure AI Travel Agents: Multi-agent orchestration emphasis
+    - Azure DevOps Integration: Workflow automation focus
+    - Real-Time Documentation Retrieval: Python console client implementation
+    - Interactive Study Plan Generator: Chainlit conversational web app
+    - In-Editor Documentation: VS Code and GitHub Copilot integration
+    - Azure API Management: Enterprise API integration patterns
+    - GitHub MCP Registry: Ecosystem development and community platform
+  - **Comprehensive Conclusion**: Rewritten conclusion section highlighting seven case studies spanning multiple MCP implementation dimensions
+    - Enterprise Integration, Multi-Agent Orchestration, Developer Productivity
+    - Ecosystem Development, Educational Applications categorization
+    - Enhanced insights into architectural patterns, implementation strategies, and best practices
+    - Emphasis on MCP as mature, production-ready protocol
+
+#### Study Guide Updates (study_guide.md)
+- **Visual Curriculum Map**: Updated mindmap to include GitHub MCP Registry in Case Studies section
+- **Case Studies Description**: Enhanced from generic descriptions to detailed breakdown of seven comprehensive case studies
+- **Repository Structure**: Updated section 10 to reflect comprehensive case study coverage with specific implementation details
+- **Changelog Integration**: Added September 26, 2025 entry documenting GitHub MCP Registry addition and case study enhancements
+- **Date Updates**: Updated footer timestamp to reflect latest revision (September 26, 2025)
+
+### Documentation Quality Improvements
+- **Consistency Enhancement**: Standardized case study formatting and structure across all seven examples
+- **Comprehensive Coverage**: Case studies now span enterprise, developer productivity, and ecosystem development scenarios
+- **Strategic Positioning**: Enhanced focus on MCP as foundational platform for agentic system deployment
+- **Resource Integration**: Updated additional resources to include GitHub MCP Registry link
+
 ## September 15, 2025
 
 ### Advanced Topics Expansion - Custom Transports & Context Engineering

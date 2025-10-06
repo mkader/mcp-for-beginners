@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "1197b6dbde36773e04a5ae826557fdb9",
-  "translation_date": "2025-08-26T17:01:44+00:00",
+  "original_hash": "94b861de00829c34912ac36140f6183e",
+  "translation_date": "2025-10-06T13:14:56+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "fr"
 }
 -->
-## Commencer  
+## Premiers Pas  
 
 [![Créer votre premier serveur MCP](../../../translated_images/04.0ea920069efd979a0b2dad51e72c1df7ead9c57b3305796068a6cee1f0dd6674.fr.png)](https://youtu.be/sNDZO9N4m9Y)
 
-_(Cliquez sur l'image ci-dessus pour voir la vidéo de cette leçon)_
+_(Cliquez sur l'image ci-dessus pour visionner la vidéo de cette leçon)_
 
 Cette section comprend plusieurs leçons :
 
@@ -19,21 +19,23 @@ Cette section comprend plusieurs leçons :
 
 - **2 Client**, dans cette leçon, vous apprendrez à écrire un client capable de se connecter à votre serveur, [vers la leçon](02-client/README.md)
 
-- **3 Client avec LLM**, une manière encore meilleure de créer un client consiste à y ajouter un LLM afin qu'il puisse "négocier" avec votre serveur sur les actions à effectuer, [vers la leçon](03-llm-client/README.md)
+- **3 Client avec LLM**, une méthode encore meilleure pour écrire un client consiste à y ajouter un LLM afin qu'il puisse "négocier" avec votre serveur sur les actions à entreprendre, [vers la leçon](03-llm-client/README.md)
 
-- **4 Consommer un serveur en mode Agent GitHub Copilot dans Visual Studio Code**. Ici, nous examinons l'exécution de notre serveur MCP depuis Visual Studio Code, [vers la leçon](04-vscode/README.md)
+- **4 Consommer un serveur en mode Agent GitHub Copilot dans Visual Studio Code**. Ici, nous examinons l'exécution de notre serveur MCP directement depuis Visual Studio Code, [vers la leçon](04-vscode/README.md)
 
 - **5 Serveur de transport stdio**. Le transport stdio est la norme recommandée pour la communication serveur-client MCP dans la spécification actuelle, offrant une communication sécurisée basée sur des sous-processus, [vers la leçon](05-stdio-server/README.md)
 
-- **6 Streaming HTTP avec MCP (HTTP Streamable)**. Découvrez le streaming HTTP moderne, les notifications de progression et comment implémenter des serveurs et clients MCP évolutifs en temps réel en utilisant HTTP Streamable, [vers la leçon](06-http-streaming/README.md)
+- **6 Streaming HTTP avec MCP (HTTP Streamable)**. Découvrez le streaming HTTP moderne, les notifications de progression, et comment implémenter des serveurs et clients MCP évolutifs en temps réel en utilisant HTTP Streamable, [vers la leçon](06-http-streaming/README.md)
 
-- **7 Utiliser l'AI Toolkit pour VSCode** pour consommer et tester vos clients et serveurs MCP, [vers la leçon](07-aitk/README.md)
+- **7 Utilisation de l'AI Toolkit pour VSCode** pour consommer et tester vos clients et serveurs MCP, [vers la leçon](07-aitk/README.md)
 
-- **8 Tests**. Ici, nous nous concentrerons sur les différentes manières de tester votre serveur et votre client, [vers la leçon](08-testing/README.md)
+- **8 Tests**. Ici, nous nous concentrerons sur les différentes façons de tester votre serveur et votre client, [vers la leçon](08-testing/README.md)
 
 - **9 Déploiement**. Ce chapitre examinera les différentes façons de déployer vos solutions MCP, [vers la leçon](09-deployment/README.md)
 
-Le protocole Model Context Protocol (MCP) est un protocole ouvert qui standardise la manière dont les applications fournissent un contexte aux LLMs. Pensez au MCP comme à un port USB-C pour les applications d'IA - il offre une manière standardisée de connecter des modèles d'IA à différentes sources de données et outils.
+- **10 Utilisation avancée du serveur**. Ce chapitre couvre les usages avancés du serveur, [vers la leçon](./10-advanced/README.md)
+
+Le protocole Model Context Protocol (MCP) est un protocole ouvert qui standardise la manière dont les applications fournissent un contexte aux LLMs. Pensez au MCP comme à un port USB-C pour les applications d'IA - il offre une méthode standardisée pour connecter des modèles d'IA à différentes sources de données et outils.
 
 ## Objectifs d'apprentissage
 
@@ -57,13 +59,13 @@ Avant de plonger dans le développement MCP, assurez-vous d'avoir :
 - **Environnement de développement** : Pour le langage de votre choix (C#, Java, Python, TypeScript ou JavaScript)
 - **IDE/Éditeur** : Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm ou tout éditeur de code moderne
 - **Gestionnaires de paquets** : NuGet, Maven/Gradle, pip ou npm/yarn
-- **Clés API** : Pour les services d'IA que vous prévoyez d'utiliser dans vos applications hôtes
+- **Clés API** : Pour tout service d'IA que vous prévoyez d'utiliser dans vos applications hôtes
 
 ### SDKs officiels
 
-Dans les chapitres suivants, vous verrez des solutions construites en utilisant Python, TypeScript, Java et .NET. Voici tous les SDKs officiellement pris en charge.
+Dans les chapitres à venir, vous verrez des solutions construites en Python, TypeScript, Java et .NET. Voici tous les SDKs officiellement pris en charge.
 
-MCP fournit des SDKs officiels pour plusieurs langages :
+MCP propose des SDKs officiels pour plusieurs langages :
 - [SDK C#](https://github.com/modelcontextprotocol/csharp-sdk) - Maintenu en collaboration avec Microsoft
 - [SDK Java](https://github.com/modelcontextprotocol/java-sdk) - Maintenu en collaboration avec Spring AI
 - [SDK TypeScript](https://github.com/modelcontextprotocol/typescript-sdk) - L'implémentation officielle en TypeScript
@@ -72,9 +74,9 @@ MCP fournit des SDKs officiels pour plusieurs langages :
 - [SDK Swift](https://github.com/modelcontextprotocol/swift-sdk) - Maintenu en collaboration avec Loopwork AI
 - [SDK Rust](https://github.com/modelcontextprotocol/rust-sdk) - L'implémentation officielle en Rust
 
-## Points clés
+## Points clés à retenir
 
-- Configurer un environnement de développement MCP est simple avec des SDKs spécifiques à chaque langage
+- Configurer un environnement de développement MCP est simple grâce aux SDKs spécifiques à chaque langage
 - Construire des serveurs MCP implique de créer et d'enregistrer des outils avec des schémas clairs
 - Les clients MCP se connectent aux serveurs et modèles pour exploiter des capacités étendues
 - Les tests et le débogage sont essentiels pour des implémentations MCP fiables
@@ -96,11 +98,11 @@ Nous avons un ensemble d'exemples qui complètent les exercices que vous verrez 
 - [MCP à distance avec Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
 - [Agent MCP OpenAI .NET](https://learn.microsoft.com/samples/azure-samples/openai-mcp-agent-dotnet/openai-mcp-agent-dotnet/)
 
-## Et après
+## Et après ?
 
 Suivant : [Créer votre premier serveur MCP](01-first-server/README.md)
 
 ---
 
 **Avertissement** :  
-Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de faire appel à une traduction professionnelle humaine. Nous ne sommes pas responsables des malentendus ou des interprétations erronées résultant de l'utilisation de cette traduction.
+Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction humaine professionnelle. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.

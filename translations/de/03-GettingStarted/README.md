@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "1197b6dbde36773e04a5ae826557fdb9",
-  "translation_date": "2025-08-26T17:05:01+00:00",
+  "original_hash": "94b861de00829c34912ac36140f6183e",
+  "translation_date": "2025-10-06T13:20:08+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "de"
 }
@@ -11,29 +11,31 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Erstellen Sie Ihren ersten MCP-Server](../../../translated_images/04.0ea920069efd979a0b2dad51e72c1df7ead9c57b3305796068a6cee1f0dd6674.de.png)](https://youtu.be/sNDZO9N4m9Y)
 
-_(Klicken Sie auf das Bild oben, um das Video zu dieser Lektion anzusehen)_
+_(Klicken Sie auf das obige Bild, um das Video zu dieser Lektion anzusehen)_
 
 Dieser Abschnitt besteht aus mehreren Lektionen:
 
-- **1 Ihr erster Server**: In dieser ersten Lektion lernen Sie, wie Sie Ihren ersten Server erstellen und ihn mit dem Inspektor-Tool überprüfen können – eine wertvolle Methode, um Ihren Server zu testen und zu debuggen. [Zur Lektion](01-first-server/README.md)
+- **1 Ihr erster Server**: In dieser ersten Lektion lernen Sie, wie Sie Ihren ersten Server erstellen und ihn mit dem Inspektor-Tool untersuchen können – eine wertvolle Methode, um Ihren Server zu testen und zu debuggen. [Zur Lektion](01-first-server/README.md)
 
 - **2 Client**: In dieser Lektion lernen Sie, wie Sie einen Client schreiben, der sich mit Ihrem Server verbinden kann. [Zur Lektion](02-client/README.md)
 
 - **3 Client mit LLM**: Eine noch bessere Möglichkeit, einen Client zu schreiben, besteht darin, ein LLM hinzuzufügen, damit es mit Ihrem Server „verhandeln“ kann, was zu tun ist. [Zur Lektion](03-llm-client/README.md)
 
-- **4 Nutzung des GitHub Copilot Agent-Modus in Visual Studio Code**: Hier betrachten wir, wie Sie Ihren MCP-Server direkt in Visual Studio Code ausführen können. [Zur Lektion](04-vscode/README.md)
+- **4 Nutzung des GitHub Copilot Agent-Modus in Visual Studio Code**: Hier betrachten wir, wie unser MCP-Server direkt in Visual Studio Code ausgeführt werden kann. [Zur Lektion](04-vscode/README.md)
 
-- **5 stdio Transport Server**: Der stdio-Transport ist der empfohlene Standard für die Kommunikation zwischen MCP-Server und -Client in der aktuellen Spezifikation und bietet eine sichere, auf Subprozessen basierende Kommunikation. [Zur Lektion](05-stdio-server/README.md)
+- **5 stdio Transport Server**: Der stdio-Transport ist der empfohlene Standard für die Kommunikation zwischen MCP-Server und -Client in der aktuellen Spezifikation und bietet eine sichere, subprocess-basierte Kommunikation. [Zur Lektion](05-stdio-server/README.md)
 
-- **6 HTTP-Streaming mit MCP (Streamable HTTP)**: Lernen Sie modernes HTTP-Streaming, Fortschrittsbenachrichtigungen und wie Sie skalierbare, Echtzeit-MCP-Server und -Clients mit Streamable HTTP implementieren können. [Zur Lektion](06-http-streaming/README.md)
+- **6 HTTP-Streaming mit MCP (Streamable HTTP)**: Lernen Sie modernes HTTP-Streaming, Fortschrittsbenachrichtigungen und die Implementierung skalierbarer, Echtzeit-MCP-Server und -Clients mit Streamable HTTP kennen. [Zur Lektion](06-http-streaming/README.md)
 
-- **7 Nutzung des AI-Toolkits für VSCode**: Konsumieren und testen Sie Ihre MCP-Clients und -Server. [Zur Lektion](07-aitk/README.md)
+- **7 Nutzung des AI Toolkits für VSCode**: Konsumieren und testen Sie Ihre MCP-Clients und -Server. [Zur Lektion](07-aitk/README.md)
 
-- **8 Testen**: Hier konzentrieren wir uns besonders darauf, wie wir unseren Server und Client auf verschiedene Arten testen können. [Zur Lektion](08-testing/README.md)
+- **8 Testen**: Hier konzentrieren wir uns speziell darauf, wie wir unseren Server und Client auf verschiedene Arten testen können. [Zur Lektion](08-testing/README.md)
 
-- **9 Bereitstellung**: Dieses Kapitel beleuchtet verschiedene Möglichkeiten, Ihre MCP-Lösungen bereitzustellen. [Zur Lektion](09-deployment/README.md)
+- **9 Bereitstellung**: Dieses Kapitel behandelt verschiedene Möglichkeiten, Ihre MCP-Lösungen bereitzustellen. [Zur Lektion](09-deployment/README.md)
 
-Das Model Context Protocol (MCP) ist ein offenes Protokoll, das standardisiert, wie Anwendungen Kontext für LLMs bereitstellen. Denken Sie an MCP wie an einen USB-C-Anschluss für KI-Anwendungen – es bietet eine standardisierte Möglichkeit, KI-Modelle mit verschiedenen Datenquellen und Tools zu verbinden.
+- **10 Erweiterte Servernutzung**: Dieses Kapitel behandelt die erweiterte Nutzung von Servern. [Zur Lektion](./10-advanced/README.md)
+
+Das Model Context Protocol (MCP) ist ein offenes Protokoll, das standardisiert, wie Anwendungen Kontext für LLMs bereitstellen. Stellen Sie sich MCP wie einen USB-C-Anschluss für KI-Anwendungen vor – es bietet eine standardisierte Möglichkeit, KI-Modelle mit verschiedenen Datenquellen und Tools zu verbinden.
 
 ## Lernziele
 
@@ -46,7 +48,7 @@ Am Ende dieser Lektion werden Sie in der Lage sein:
 - Häufige Einrichtungsprobleme und deren Lösungen zu verstehen
 - Ihre MCP-Implementierungen mit beliebten LLM-Diensten zu verbinden
 
-## Einrichtung Ihrer MCP-Umgebung
+## Einrichten Ihrer MCP-Umgebung
 
 Bevor Sie mit MCP arbeiten, ist es wichtig, Ihre Entwicklungsumgebung vorzubereiten und den grundlegenden Workflow zu verstehen. Dieser Abschnitt führt Sie durch die ersten Schritte, um einen reibungslosen Start mit MCP zu gewährleisten.
 
@@ -74,7 +76,7 @@ MCP bietet offizielle SDKs für mehrere Sprachen:
 
 ## Wichtige Erkenntnisse
 
-- Die Einrichtung einer MCP-Entwicklungsumgebung ist mit sprachspezifischen SDKs unkompliziert
+- Das Einrichten einer MCP-Entwicklungsumgebung ist mit sprachspezifischen SDKs unkompliziert
 - Der Aufbau von MCP-Servern umfasst das Erstellen und Registrieren von Tools mit klaren Schemata
 - MCP-Clients verbinden sich mit Servern und Modellen, um erweiterte Funktionen zu nutzen
 - Testen und Debuggen sind entscheidend für zuverlässige MCP-Implementierungen
@@ -82,7 +84,7 @@ MCP bietet offizielle SDKs für mehrere Sprachen:
 
 ## Üben
 
-Wir haben eine Reihe von Beispielen, die die Übungen in allen Kapiteln dieses Abschnitts ergänzen. Zusätzlich hat jedes Kapitel eigene Übungen und Aufgaben.
+Wir haben eine Reihe von Beispielen, die die Übungen in allen Kapiteln dieses Abschnitts ergänzen. Zusätzlich hat jedes Kapitel auch eigene Übungen und Aufgaben.
 
 - [Java-Rechner](./samples/java/calculator/README.md)
 - [.Net-Rechner](../../../03-GettingStarted/samples/csharp)
@@ -93,7 +95,7 @@ Wir haben eine Reihe von Beispielen, die die Übungen in allen Kapiteln dieses A
 ## Zusätzliche Ressourcen
 
 - [Erstellen von Agents mit dem Model Context Protocol auf Azure](https://learn.microsoft.com/azure/developer/ai/intro-agents-mcp)
-- [Remote-MCP mit Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
+- [Remote MCP mit Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
 - [.NET OpenAI MCP Agent](https://learn.microsoft.com/samples/azure-samples/openai-mcp-agent-dotnet/openai-mcp-agent-dotnet/)
 
 ## Was kommt als Nächstes?

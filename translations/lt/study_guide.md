@@ -1,21 +1,21 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "e2c6ed897fa98fa08e0146101776c7ff",
-  "translation_date": "2025-08-26T18:33:06+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T15:34:59+00:00",
   "source_file": "study_guide.md",
   "language_code": "lt"
 }
 -->
-# Modelio Konteksto Protokolas (MCP) pradedantiesiems – Mokymosi vadovas
+# Modelio konteksto protokolas (MCP) pradedantiesiems – mokymosi vadovas
 
-Šis mokymosi vadovas pateikia apžvalgą apie saugyklos struktūrą ir turinį, skirtą „Modelio Konteksto Protokolas (MCP) pradedantiesiems“ mokymo programai. Naudokite šį vadovą, kad efektyviai naršytumėte saugykloje ir maksimaliai išnaudotumėte turimus išteklius.
+Šis mokymosi vadovas pateikia apžvalgą apie saugyklos struktūrą ir turinį, skirtą „Modelio konteksto protokolas (MCP) pradedantiesiems“ mokymo programai. Naudokite šį vadovą, kad efektyviai naršytumėte saugyklą ir maksimaliai išnaudotumėte turimus išteklius.
 
 ## Saugyklos apžvalga
 
-Modelio Konteksto Protokolas (MCP) yra standartizuota sistema, skirta sąveikai tarp dirbtinio intelekto modelių ir klientų programų. Iš pradžių sukurtas „Anthropic“, MCP dabar prižiūri platesnė MCP bendruomenė per oficialią „GitHub“ organizaciją. Šioje saugykloje pateikiama išsami mokymo programa su praktiniais kodo pavyzdžiais C#, Java, JavaScript, Python ir TypeScript kalbomis, skirta DI kūrėjams, sistemų architektams ir programinės įrangos inžinieriams.
+Modelio konteksto protokolas (MCP) yra standartizuota sistema, skirta sąveikai tarp AI modelių ir klientų programų. Iš pradžių sukurtas „Anthropic“, MCP dabar prižiūrimas platesnės MCP bendruomenės per oficialią GitHub organizaciją. Ši saugykla siūlo išsamią mokymo programą su praktiniais kodo pavyzdžiais C#, Java, JavaScript, Python ir TypeScript kalbomis, skirtą AI kūrėjams, sistemų architektams ir programinės įrangos inžinieriams.
 
-## Vizualus mokymo programos žemėlapis
+## Vizualinis mokymo programos žemėlapis
 
 ```mermaid
 mindmap
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -100,6 +101,8 @@ mindmap
       (AI Travel Agent)
       (Azure DevOps Integration)
       (Documentation MCP)
+      (GitHub MCP Registry)
+      (VS Code Integration)
       (Real-world Implementations)
     10. Hands-on Workshop
       ::icon(fa fa-laptop)
@@ -108,15 +111,24 @@ mindmap
       (AI Toolkit Integration)
       (Production Deployment)
       (4-Lab Structure)
+    11. Database Integration Labs
+      ::icon(fa fa-database)
+      (PostgreSQL Integration)
+      (Retail Analytics Use Case)
+      (Row Level Security)
+      (Semantic Search)
+      (Production Deployment)
+      (13-Lab Structure)
+      (Hands-on Learning)
 ```
 
 ## Saugyklos struktūra
 
-Saugykla suskirstyta į dešimt pagrindinių skyrių, kuriuose nagrinėjami skirtingi MCP aspektai:
+Saugykla suskirstyta į vienuolika pagrindinių skyrių, kiekvienas skirtas skirtingiems MCP aspektams:
 
 1. **Įvadas (00-Introduction/)**
-   - Modelio Konteksto Protokolo apžvalga
-   - Kodėl standartizacija svarbi DI procesuose
+   - Modelio konteksto protokolo apžvalga
+   - Kodėl standartizacija yra svarbi AI procesams
    - Praktiniai naudojimo atvejai ir nauda
 
 2. **Pagrindinės sąvokos (01-CoreConcepts/)**
@@ -125,110 +137,127 @@ Saugykla suskirstyta į dešimt pagrindinių skyrių, kuriuose nagrinėjami skir
    - MCP žinučių perdavimo modeliai
 
 3. **Saugumas (02-Security/)**
-   - Saugumo grėsmės MCP pagrindu veikiančiose sistemose
-   - Geriausios praktikos saugumui užtikrinti
+   - Saugumo grėsmės MCP pagrįstose sistemose
+   - Geriausios praktikos saugiam įgyvendinimui
    - Autentifikavimo ir autorizacijos strategijos
-   - **Išsami saugumo dokumentacija**:
+   - **Išsamūs saugumo dokumentai**:
      - MCP saugumo geriausios praktikos 2025
      - Azure turinio saugumo įgyvendinimo vadovas
      - MCP saugumo kontrolės ir technikos
-     - MCP greitosios nuorodos į geriausias praktikas
+     - MCP greitosios geriausios praktikos nuoroda
    - **Pagrindinės saugumo temos**:
-     - Įterptinių komandų ir įrankių užnuodijimo atakos
-     - Sesijų užgrobimas ir „suklaidinto pavaduotojo“ problemos
+     - Įvesties injekcijos ir įrankių užnuodijimo atakos
+     - Sesijos užgrobimas ir klaidingo atstovo problemos
      - Žetonų perdavimo pažeidžiamumai
      - Pernelyg dideli leidimai ir prieigos kontrolė
-     - Tiekimo grandinės saugumas DI komponentams
+     - Tiekimo grandinės saugumas AI komponentams
      - Microsoft Prompt Shields integracija
 
-4. **Darbo pradžia (03-GettingStarted/)**
+4. **Pradžia (03-GettingStarted/)**
    - Aplinkos nustatymas ir konfigūravimas
    - Pagrindinių MCP serverių ir klientų kūrimas
    - Integracija su esamomis programomis
-   - Apima skyrius apie:
-     - Pirmojo serverio įgyvendinimą
-     - Kliento kūrimą
-     - LLM kliento integraciją
-     - VS Code integraciją
-     - Serverio siunčiamų įvykių (SSE) serverį
-     - HTTP srautą
-     - DI įrankių rinkinio integraciją
-     - Testavimo strategijas
-     - Diegimo gaires
+   - Apima skyrius:
+     - Pirmojo serverio įgyvendinimas
+     - Kliento kūrimas
+     - LLM kliento integracija
+     - VS Code integracija
+     - Serverio siunčiami įvykiai (SSE) serveris
+     - Pažangus serverio naudojimas
+     - HTTP srautinė perdavimo funkcija
+     - AI įrankių rinkinio integracija
+     - Testavimo strategijos
+     - Diegimo gairės
 
 5. **Praktinis įgyvendinimas (04-PracticalImplementation/)**
    - SDK naudojimas skirtingose programavimo kalbose
    - Derinimo, testavimo ir validavimo technikos
-   - Pakartotinai naudojamų komandų šablonų ir darbo eigų kūrimas
+   - Daugkartinio naudojimo šablonų ir darbo eigų kūrimas
    - Pavyzdiniai projektai su įgyvendinimo pavyzdžiais
 
 6. **Pažangios temos (05-AdvancedTopics/)**
    - Konteksto inžinerijos technikos
    - Foundry agento integracija
-   - Daugiarūšiai DI darbo srautai
+   - Daugiarūšiai AI darbo procesai
    - OAuth2 autentifikavimo demonstracijos
    - Realaus laiko paieškos galimybės
-   - Realaus laiko srautiniai duomenys
+   - Realaus laiko srautinė perdavimo funkcija
    - Pagrindinių kontekstų įgyvendinimas
    - Maršrutizavimo strategijos
-   - Mėginių ėmimo technikos
-   - Skalavimo metodai
+   - Imties technikos
+   - Mastelio didinimo metodai
    - Saugumo aspektai
    - Entra ID saugumo integracija
-   - Žiniatinklio paieškos integracija
+   - Interneto paieškos integracija
 
 7. **Bendruomenės indėlis (06-CommunityContributions/)**
    - Kaip prisidėti prie kodo ir dokumentacijos
-   - Bendradarbiavimas per „GitHub“
+   - Bendradarbiavimas per GitHub
    - Bendruomenės inicijuoti patobulinimai ir atsiliepimai
-   - Darbas su įvairiais MCP klientais (Claude Desktop, Cline, VSCode)
+   - MCP klientų naudojimas (Claude Desktop, Cline, VSCode)
    - Darbas su populiariais MCP serveriais, įskaitant vaizdų generavimą
 
 8. **Pamokos iš ankstyvojo pritaikymo (07-LessonsfromEarlyAdoption/)**
    - Realūs įgyvendinimai ir sėkmės istorijos
-   - MCP pagrindu veikiančių sprendimų kūrimas ir diegimas
+   - MCP pagrįstų sprendimų kūrimas ir diegimas
    - Tendencijos ir ateities planai
    - **Microsoft MCP serverių vadovas**: Išsamus vadovas apie 10 gamybai paruoštų Microsoft MCP serverių, įskaitant:
-     - Microsoft Learn Docs MCP serverį
-     - Azure MCP serverį (15+ specializuotų jungčių)
-     - GitHub MCP serverį
-     - Azure DevOps MCP serverį
-     - MarkItDown MCP serverį
-     - SQL Server MCP serverį
-     - Playwright MCP serverį
-     - Dev Box MCP serverį
-     - Azure AI Foundry MCP serverį
-     - Microsoft 365 Agents Toolkit MCP serverį
+     - Microsoft Learn Docs MCP serveris
+     - Azure MCP serveris (15+ specializuotų jungčių)
+     - GitHub MCP serveris
+     - Azure DevOps MCP serveris
+     - MarkItDown MCP serveris
+     - SQL Server MCP serveris
+     - Playwright MCP serveris
+     - Dev Box MCP serveris
+     - Azure AI Foundry MCP serveris
+     - Microsoft 365 Agents Toolkit MCP serveris
 
 9. **Geriausios praktikos (08-BestPractices/)**
    - Našumo optimizavimas
-   - Atsparių MCP sistemų kūrimas
+   - Gedimams atsparių MCP sistemų projektavimas
    - Testavimo ir atsparumo strategijos
 
 10. **Atvejų analizės (09-CaseStudy/)**
-    - Azure API valdymo integracijos pavyzdys
-    - Kelionių agento įgyvendinimo pavyzdys
-    - Azure DevOps integracija su „YouTube“ atnaujinimais
-    - Dokumentacijos MCP įgyvendinimo pavyzdžiai
-    - Įgyvendinimo pavyzdžiai su išsamia dokumentacija
+    - **Septynios išsamios atvejų analizės**, demonstruojančios MCP universalumą įvairiose situacijose:
+    - **Azure AI kelionių agentai**: Daugiagentinė orkestracija su Azure OpenAI ir AI paieška
+    - **Azure DevOps integracija**: Darbo procesų automatizavimas naudojant YouTube duomenų atnaujinimus
+    - **Realaus laiko dokumentų paieška**: Python konsolės klientas su HTTP srautinė perdavimo funkcija
+    - **Interaktyvus mokymosi plano generatorius**: Chainlit internetinė programa su pokalbių AI
+    - **Dokumentacija redaktoriuje**: VS Code integracija su GitHub Copilot darbo eigomis
+    - **Azure API valdymas**: Įmonės API integracija su MCP serverio kūrimu
+    - **GitHub MCP registras**: Ekosistemos plėtra ir agentinė integracijos platforma
+    - Įgyvendinimo pavyzdžiai, apimantys įmonės integraciją, kūrėjų produktyvumą ir ekosistemos plėtrą
 
 11. **Praktinis seminaras (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
-    - Išsamus praktinis seminaras, jungiantis MCP su DI įrankių rinkiniu
-    - Išmaniųjų programų kūrimas, jungiant DI modelius su realaus pasaulio įrankiais
-    - Praktiniai moduliai, apimantys pagrindus, individualių serverių kūrimą ir diegimo strategijas
-    - **Laboratorijų struktūra**:
+    - Išsamus praktinis seminaras, derinantis MCP su AI įrankių rinkiniu
+    - Intelektualių programų kūrimas, jungiant AI modelius su realaus pasaulio įrankiais
+    - Praktiniai moduliai, apimantys pagrindus, individualų serverio kūrimą ir gamybos diegimo strategijas
+    - **Laboratorijos struktūra**:
       - Laboratorija 1: MCP serverio pagrindai
       - Laboratorija 2: Pažangus MCP serverio kūrimas
-      - Laboratorija 3: DI įrankių rinkinio integracija
-      - Laboratorija 4: Diegimas ir skalavimas gamyboje
+      - Laboratorija 3: AI įrankių rinkinio integracija
+      - Laboratorija 4: Gamybos diegimas ir mastelio didinimas
     - Mokymasis laboratorijose su žingsnis po žingsnio instrukcijomis
+
+12. **MCP serverio duomenų bazės integracijos laboratorijos (11-MCPServerHandsOnLabs/)**
+    - **Išsamus 13 laboratorijų mokymosi kelias**, skirtas gamybai paruoštų MCP serverių kūrimui su PostgreSQL integracija
+    - **Realaus pasaulio mažmeninės prekybos analizės įgyvendinimas**, naudojant Zava Retail atvejį
+    - **Įmonės lygio modeliai**, įskaitant eilutės lygio saugumą (RLS), semantinę paiešką ir daugiabučių duomenų prieigą
+    - **Pilna laboratorijų struktūra**:
+      - **Laboratorijos 00-03: Pagrindai** - Įvadas, architektūra, saugumas, aplinkos nustatymas
+      - **Laboratorijos 04-06: MCP serverio kūrimas** - Duomenų bazės dizainas, MCP serverio įgyvendinimas, įrankių kūrimas
+      - **Laboratorijos 07-09: Pažangios funkcijos** - Semantinė paieška, testavimas ir derinimas, VS Code integracija
+      - **Laboratorijos 10-12: Gamyba ir geriausios praktikos** - Diegimas, stebėjimas, optimizavimas
+    - **Naudojamos technologijos**: FastMCP sistema, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
+    - **Mokymosi rezultatai**: Gamybai paruošti MCP serveriai, duomenų bazės integracijos modeliai, AI pagrįsta analizė, įmonės saugumas
 
 ## Papildomi ištekliai
 
-Saugykloje pateikiami papildomi ištekliai:
+Saugykla apima papildomus išteklius:
 
 - **Vaizdų aplankas**: Sudėtyje yra diagramos ir iliustracijos, naudojamos visoje mokymo programoje
-- **Vertimai**: Daugiakalbė parama su automatizuotais dokumentacijos vertimais
+- **Vertimai**: Daugiakalbė dokumentacijos palaikymas su automatizuotais vertimais
 - **Oficialūs MCP ištekliai**:
   - [MCP dokumentacija](https://modelcontextprotocol.io/)
   - [MCP specifikacija](https://spec.modelcontextprotocol.io/)
@@ -236,21 +265,21 @@ Saugykloje pateikiami papildomi ištekliai:
 
 ## Kaip naudotis šia saugykla
 
-1. **Nuoseklus mokymasis**: Sekite skyrius iš eilės (nuo 00 iki 10), kad gautumėte struktūruotą mokymosi patirtį.
-2. **Kalbai skirtas dėmesys**: Jei jus domina konkreti programavimo kalba, tyrinėkite pavyzdžių katalogus, skirtus jūsų pasirinktai kalbai.
-3. **Praktinis įgyvendinimas**: Pradėkite nuo „Darbo pradžia“ skyriaus, kad nustatytumėte aplinką ir sukurtumėte pirmąjį MCP serverį bei klientą.
-4. **Pažangus tyrinėjimas**: Kai įvaldysite pagrindus, gilinkitės į pažangias temas, kad praplėstumėte savo žinias.
-5. **Bendruomenės įsitraukimas**: Prisijunkite prie MCP bendruomenės per „GitHub“ diskusijas ir „Discord“ kanalus, kad susisiektumėte su ekspertais ir kitais kūrėjais.
+1. **Nuoseklus mokymasis**: Sekite skyrius iš eilės (00–11), kad mokymasis būtų struktūruotas.
+2. **Kalbai specifinis dėmesys**: Jei jus domina tam tikra programavimo kalba, peržiūrėkite pavyzdžių aplankus, kad rastumėte įgyvendinimus jūsų pasirinkta kalba.
+3. **Praktinis įgyvendinimas**: Pradėkite nuo „Pradžia“ skyriaus, kad nustatytumėte aplinką ir sukurtumėte pirmąjį MCP serverį bei klientą.
+4. **Pažangus tyrinėjimas**: Kai susipažinsite su pagrindais, gilinkitės į pažangias temas, kad praplėstumėte žinias.
+5. **Bendruomenės įsitraukimas**: Prisijunkite prie MCP bendruomenės per GitHub diskusijas ir Discord kanalus, kad susisiektumėte su ekspertais ir kitais kūrėjais.
 
 ## MCP klientai ir įrankiai
 
 Mokymo programa apima įvairius MCP klientus ir įrankius:
 
 1. **Oficialūs klientai**:
-   - Visual Studio Code
+   - Visual Studio Code 
    - MCP Visual Studio Code aplinkoje
    - Claude Desktop
-   - Claude Visual Studio Code aplinkoje
+   - Claude VSCode aplinkoje 
    - Claude API
 
 2. **Bendruomenės klientai**:
@@ -267,7 +296,7 @@ Mokymo programa apima įvairius MCP klientus ir įrankius:
 
 ## Populiarūs MCP serveriai
 
-Saugykloje pristatomi įvairūs MCP serveriai, įskaitant:
+Saugykla pristato įvairius MCP serverius, įskaitant:
 
 1. **Oficialūs Microsoft MCP serveriai**:
    - Microsoft Learn Docs MCP serveris
@@ -281,11 +310,11 @@ Saugykloje pristatomi įvairūs MCP serveriai, įskaitant:
    - Azure AI Foundry MCP serveris
    - Microsoft 365 Agents Toolkit MCP serveris
 
-2. **Oficialūs pavyzdiniai serveriai**:
+2. **Oficialūs referenciniai serveriai**:
    - Failų sistema
    - Fetch
    - Atmintis
-   - Sekvencinis mąstymas
+   - Nuoseklus mąstymas
 
 3. **Vaizdų generavimas**:
    - Azure OpenAI DALL-E 3
@@ -306,19 +335,22 @@ Saugykloje pristatomi įvairūs MCP serveriai, įskaitant:
 
 Ši saugykla kviečia bendruomenės narius prisidėti. Žr. skyrių „Bendruomenės indėlis“, kad sužinotumėte, kaip efektyviai prisidėti prie MCP ekosistemos.
 
-## Pakeitimų žurnalas
+## Pakeitimų istorija
 
 | Data | Pakeitimai |
-|------|-----------|
-| 2025 m. liepos 18 d. | - Atnaujinta saugyklos struktūra, įtraukiant Microsoft MCP serverių vadovą<br>- Pridėtas išsamus 10 gamybai paruoštų Microsoft MCP serverių sąrašas<br>- Patobulintas Populiarių MCP serverių skyrius su oficialiais Microsoft MCP serveriais<br>- Atnaujintas Atvejų analizės skyrius su faktiniais failų pavyzdžiais<br>- Pridėta laboratorijų struktūros detalės praktiniam seminarui |
-| 2025 m. liepos 16 d. | - Atnaujinta saugyklos struktūra, atspindinti dabartinį turinį<br>- Pridėtas MCP klientų ir įrankių skyrius<br>- Pridėtas Populiarių MCP serverių skyrius<br>- Atnaujintas Vizualus mokymo programos žemėlapis su visomis dabartinėmis temomis<br>- Patobulintas Pažangių temų skyrius su visomis specializuotomis sritimis<br>- Atnaujintos Atvejų analizės su faktiniais pavyzdžiais<br>- Paaiškinta MCP kilmė kaip sukurta „Anthropic“ |
-| 2025 m. birželio 11 d. | - Sukurtas pradinis mokymosi vadovas<br>- Pridėtas Vizualus mokymo programos žemėlapis<br>- Apibrėžta saugyklos struktūra<br>- Įtraukti pavyzdiniai projektai ir papildomi ištekliai |
+|------|---------||
+| 2025 m. rugsėjo 29 d. | - Pridėtas 11-MCPServerHandsOnLabs skyrius su išsamia 13 laboratorijų duomenų bazės integracijos mokymosi kelio apžvalga<br>- Atnaujintas vizualinis mokymo programos žemėlapis, įtraukiant duomenų bazės integracijos laboratorijas<br>- Patobulinta saugyklos struktūra, atspindinti vienuolika pagrindinių skyrių<br>- Pridėtas išsamus PostgreSQL integracijos, mažmeninės prekybos analizės atvejo ir įmonės modelių aprašymas<br>- Atnaujintos navigacijos gairės, įtraukiant skyrius 00–11 |
+| 2025 m. rugsėjo 26 d. | - Pridėta GitHub MCP registracijos atvejo analizė į 09-CaseStudy skyrių<br>- Atnaujintos atvejų analizės, įtraukiant septynias išsamias atvejų analizes<br>- Patobulinti atvejų analizės aprašymai su konkrečiais įgyvendinimo duomenimis<br>- Atnaujintas vizualinis mokymo programos žemėlapis, įtraukiant GitHub MCP registraciją<br>- Peržiūrėta mokymosi vadovo struktūra, atspindinti ekosistemos plėtros dėmesį |
+| 2025 m. liepos 18 d. | - Atnaujinta saugyklos struktūra, įtraukiant Microsoft MCP serverių vadovą<br>- Pridėtas išsamus 10 gamybai paruoštų Microsoft MCP serverių sąrašas<br>- Patobulintas populiarių MCP serverių skyrius, įtraukiant oficialius Microsoft MCP serverius<br>- Atnaujintas atvejų analizės skyrius su faktiniais failų pavyzdžiais<br>- Pridėta laboratorijų struktūros detalė praktiniam seminarui |
+| 2025 m. liepos 16 d. | - Atnaujinta saugyklos struktūra, atspindinti dabartinį turinį<br>- Pridėtas MCP klientų ir įrankių skyrius<br>- Pridėtas populiarių MCP serverių skyrius<br>- Atnaujintas vizualinis mokymo programos žemėlapis su visomis dabartinėmis temomis<br>- Patobulintas pažangių temų skyrius su visomis specializuotomis sritimis<br>- Atnaujintos atvejų analizės, atspindinčios faktinius pavyzdžius<br>- Paaiškinta MCP kilmė kaip sukurtas „Anthropic“ |
+| 2025 m. birželio 11 d. | - Sukurtas mokymosi vadovas<br>- Pridėtas vizualinis mokymo programos žemėlapis<br>- Apibrėžta saugyklos struktūra<br>- Įtraukti pavyzdiniai projektai ir papildomi ištekliai |
+| 2025 m. spalio 6 d. | Pridėta pamoka apie pažangų serverio naudojimą |
 
 ---
 
-*Šis mokymosi vadovas buvo atnaujintas 2025 m. liepos 18 d. ir pateikia saugyklos apžvalgą pagal tą datą. Saugyklos turinys gali būti atnaujintas po šios datos.*
+*Šis mokymosi vadovas buvo atnaujintas 2025 m. rugsėjo 29 d. ir pateikia saugyklos apžvalgą pagal tą datą. Saugyklos turinys gali būti atnaujintas po šios datos.*
 
 ---
 
-**Atsakomybės apribojimas**:  
-Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama profesionali žmogaus vertimo paslauga. Mes neprisiimame atsakomybės už nesusipratimus ar klaidingus interpretavimus, atsiradusius naudojant šį vertimą.
+**Atsakomybės atsisakymas**:  
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama profesionali žmogaus vertimo paslauga. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingus aiškinimus, atsiradusius dėl šio vertimo naudojimo.

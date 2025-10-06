@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "1197b6dbde36773e04a5ae826557fdb9",
-  "translation_date": "2025-08-26T18:05:32+00:00",
+  "original_hash": "94b861de00829c34912ac36140f6183e",
+  "translation_date": "2025-10-06T14:52:56+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "ms"
 }
@@ -21,18 +21,19 @@ Bahagian ini terdiri daripada beberapa pelajaran:
 
 - **3 Klien dengan LLM**, cara yang lebih baik untuk menulis klien adalah dengan menambah LLM supaya ia boleh "berunding" dengan pelayan anda tentang apa yang perlu dilakukan, [ke pelajaran](03-llm-client/README.md)
 
-- **4 Menggunakan pelayan dalam mod GitHub Copilot Agent di Visual Studio Code**. Di sini, kita akan melihat cara menjalankan Pelayan MCP kita dari dalam Visual Studio Code, [ke pelajaran](04-vscode/README.md)
+- **4 Menggunakan pelayan dalam mod GitHub Copilot Agent di Visual Studio Code**. Di sini, kita akan melihat cara menjalankan Pelayan MCP dari dalam Visual Studio Code, [ke pelajaran](04-vscode/README.md)
 
 - **5 Pelayan Pengangkutan stdio** stdio transport adalah standard yang disyorkan untuk komunikasi pelayan-ke-klien MCP dalam spesifikasi semasa, menyediakan komunikasi berasaskan subprocess yang selamat [ke pelajaran](05-stdio-server/README.md)
 
-- **6 Penstriman HTTP dengan MCP (HTTP Boleh Distrim)**. Pelajari tentang penstriman HTTP moden, pemberitahuan kemajuan, dan cara melaksanakan pelayan dan klien MCP yang boleh diskalakan secara masa nyata menggunakan HTTP Boleh Distrim. [ke pelajaran](06-http-streaming/README.md)
+- **6 Penstriman HTTP dengan MCP (HTTP Boleh Distrim)**. Ketahui tentang penstriman HTTP moden, pemberitahuan kemajuan, dan cara melaksanakan pelayan dan klien MCP yang boleh diskalakan secara masa nyata menggunakan HTTP Boleh Distrim. [ke pelajaran](06-http-streaming/README.md)
 
 - **7 Menggunakan AI Toolkit untuk VSCode** untuk menggunakan dan menguji Klien dan Pelayan MCP anda [ke pelajaran](07-aitk/README.md)
 
 - **8 Pengujian**. Di sini kita akan memberi tumpuan kepada cara kita boleh menguji pelayan dan klien kita dengan pelbagai cara, [ke pelajaran](08-testing/README.md)
 
-- **9 Penerapan**. Bab ini akan melihat pelbagai cara untuk menerapkan penyelesaian MCP anda, [ke pelajaran](09-deployment/README.md)
+- **9 Penggunaan**. Bab ini akan melihat pelbagai cara untuk menggunakan penyelesaian MCP anda, [ke pelajaran](09-deployment/README.md)
 
+- **10 Penggunaan pelayan lanjutan**. Bab ini merangkumi penggunaan pelayan lanjutan, [ke pelajaran](./10-advanced/README.md)
 
 Protokol Model Context (MCP) adalah protokol terbuka yang menyeragamkan cara aplikasi menyediakan konteks kepada LLM. Fikirkan MCP seperti port USB-C untuk aplikasi AI - ia menyediakan cara standard untuk menyambungkan model AI kepada pelbagai sumber data dan alat.
 
@@ -41,7 +42,7 @@ Protokol Model Context (MCP) adalah protokol terbuka yang menyeragamkan cara apl
 Menjelang akhir pelajaran ini, anda akan dapat:
 
 - Menyediakan persekitaran pembangunan untuk MCP dalam C#, Java, Python, TypeScript, dan JavaScript
-- Membina dan menerapkan pelayan MCP asas dengan ciri tersuai (sumber, arahan, dan alat)
+- Membina dan menggunakan pelayan MCP asas dengan ciri tersuai (sumber, arahan, dan alat)
 - Mencipta aplikasi hos yang berhubung dengan pelayan MCP
 - Menguji dan menyahpepijat pelaksanaan MCP
 - Memahami cabaran persediaan biasa dan penyelesaiannya
@@ -53,26 +54,25 @@ Sebelum anda mula bekerja dengan MCP, adalah penting untuk menyediakan persekita
 
 ### Prasyarat
 
-Sebelum mendalami pembangunan MCP, pastikan anda mempunyai:
+Sebelum memulakan pembangunan MCP, pastikan anda mempunyai:
 
 - **Persekitaran Pembangunan**: Untuk bahasa pilihan anda (C#, Java, Python, TypeScript, atau JavaScript)
-- **IDE/Editor**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm, atau mana-mana editor kod moden
+- **IDE/Penyunting**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm, atau mana-mana penyunting kod moden
 - **Pengurus Pakej**: NuGet, Maven/Gradle, pip, atau npm/yarn
-- **Kunci API**: Untuk sebarang perkhidmatan AI yang anda rancang untuk digunakan dalam aplikasi hos anda
-
+- **Kunci API**: Untuk mana-mana perkhidmatan AI yang anda rancang untuk digunakan dalam aplikasi hos anda
 
 ### SDK Rasmi
 
 Dalam bab-bab yang akan datang, anda akan melihat penyelesaian yang dibina menggunakan Python, TypeScript, Java dan .NET. Berikut adalah semua SDK yang disokong secara rasmi.
 
 MCP menyediakan SDK rasmi untuk pelbagai bahasa:
-- [C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) - Diselenggara bersama Microsoft
-- [Java SDK](https://github.com/modelcontextprotocol/java-sdk) - Diselenggara bersama Spring AI
-- [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - Pelaksanaan rasmi TypeScript
-- [Python SDK](https://github.com/modelcontextprotocol/python-sdk) - Pelaksanaan rasmi Python
-- [Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk) - Pelaksanaan rasmi Kotlin
-- [Swift SDK](https://github.com/modelcontextprotocol/swift-sdk) - Diselenggara bersama Loopwork AI
-- [Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) - Pelaksanaan rasmi Rust
+- [C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) - Diselenggara dengan kerjasama Microsoft
+- [Java SDK](https://github.com/modelcontextprotocol/java-sdk) - Diselenggara dengan kerjasama Spring AI
+- [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - Pelaksanaan TypeScript rasmi
+- [Python SDK](https://github.com/modelcontextprotocol/python-sdk) - Pelaksanaan Python rasmi
+- [Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk) - Pelaksanaan Kotlin rasmi
+- [Swift SDK](https://github.com/modelcontextprotocol/swift-sdk) - Diselenggara dengan kerjasama Loopwork AI
+- [Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) - Pelaksanaan Rust rasmi
 
 ## Poin Penting
 
@@ -80,7 +80,7 @@ MCP menyediakan SDK rasmi untuk pelbagai bahasa:
 - Membina pelayan MCP melibatkan penciptaan dan pendaftaran alat dengan skema yang jelas
 - Klien MCP berhubung dengan pelayan dan model untuk memanfaatkan keupayaan lanjutan
 - Pengujian dan penyahpepijatan adalah penting untuk pelaksanaan MCP yang boleh dipercayai
-- Pilihan penerapan merangkumi pembangunan tempatan hingga penyelesaian berasaskan awan
+- Pilihan penggunaan merangkumi pembangunan tempatan hingga penyelesaian berasaskan awan
 
 ## Latihan
 
@@ -98,11 +98,11 @@ Kami mempunyai set sampel yang melengkapi latihan yang akan anda lihat dalam sem
 - [MCP Jarak Jauh dengan Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
 - [.NET OpenAI MCP Agent](https://learn.microsoft.com/samples/azure-samples/openai-mcp-agent-dotnet/openai-mcp-agent-dotnet/)
 
-## Apa Seterusnya
+## Apa yang seterusnya
 
 Seterusnya: [Mencipta Pelayan MCP Pertama Anda](01-first-server/README.md)
 
 ---
 
 **Penafian**:  
-Dokumen ini telah diterjemahkan menggunakan perkhidmatan terjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Walaupun kami berusaha untuk memastikan ketepatan, sila ambil perhatian bahawa terjemahan automatik mungkin mengandungi kesilapan atau ketidaktepatan. Dokumen asal dalam bahasa asalnya harus dianggap sebagai sumber yang berwibawa. Untuk maklumat penting, terjemahan manusia profesional adalah disyorkan. Kami tidak bertanggungjawab atas sebarang salah faham atau salah tafsir yang timbul daripada penggunaan terjemahan ini.  
+Dokumen ini telah diterjemahkan menggunakan perkhidmatan terjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Walaupun kami berusaha untuk memastikan ketepatan, sila ambil perhatian bahawa terjemahan automatik mungkin mengandungi kesilapan atau ketidaktepatan. Dokumen asal dalam bahasa asalnya harus dianggap sebagai sumber yang berwibawa. Untuk maklumat yang kritikal, terjemahan manusia profesional adalah disyorkan. Kami tidak bertanggungjawab atas sebarang salah faham atau salah tafsir yang timbul daripada penggunaan terjemahan ini.
