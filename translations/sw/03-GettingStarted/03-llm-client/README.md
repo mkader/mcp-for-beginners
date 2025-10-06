@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "57f7b15640bb96ef2f6f09003eec935e",
-  "translation_date": "2025-08-19T14:40:52+00:00",
+  "original_hash": "4d846ebb88fbb0f00549e2ff8cc3f746",
+  "translation_date": "2025-10-06T14:59:11+00:00",
   "source_file": "03-GettingStarted/03-llm-client/README.md",
   "language_code": "sw"
 }
 -->
-# Kuunda mteja na LLM
+# Kuunda Mteja na LLM
 
-Hadi sasa, umejifunza jinsi ya kuunda seva na mteja. Mteja amekuwa na uwezo wa kuwasiliana na seva moja kwa moja ili kuorodhesha zana, rasilimali, na maelekezo yake. Hata hivyo, hii si njia ya vitendo sana. Mtumiaji wako anaishi katika enzi ya mawakala na anatarajia kutumia maelekezo na kuwasiliana na LLM kufanya hivyo. Kwa mtumiaji wako, haijalishi kama unatumia MCP kuhifadhi uwezo wako au la, lakini wanatarajia kutumia lugha ya kawaida kuingiliana. Je, tunatatua hili vipi? Suluhisho ni kuongeza LLM kwa mteja.
+Hadi sasa, umejifunza jinsi ya kuunda seva na mteja. Mteja amekuwa na uwezo wa kuwasiliana na seva moja kwa moja ili kuorodhesha zana, rasilimali, na maelekezo yake. Hata hivyo, njia hii si ya vitendo sana. Mtumiaji wako anaishi katika enzi ya mawakala na anatarajia kutumia maelekezo na kuwasiliana na LLM kufanya hivyo. Kwa mtumiaji wako, haijalishi kama unatumia MCP kuhifadhi uwezo wako au la, lakini wanatarajia kutumia lugha ya kawaida kuingiliana. Je, tunatatua hili vipi? Suluhisho ni kuongeza LLM kwa mteja.
 
 ## Muhtasari
 
@@ -25,7 +25,7 @@ Mwisho wa somo hili, utaweza:
 
 ## Njia
 
-Hebu tujaribu kuelewa njia tunayotakiwa kuchukua. Kuongeza LLM inaonekana rahisi, lakini je, tutafanya hivyo kweli?
+Hebu tujaribu kuelewa njia tunayotakiwa kuchukua. Kuongeza LLM kunaonekana rahisi, lakini je, tutafanya hivyo kwa kweli?
 
 Hivi ndivyo mteja atakavyowasiliana na seva:
 
@@ -37,7 +37,7 @@ Hivi ndivyo mteja atakavyowasiliana na seva:
 
 1. Kushughulikia maelekezo ya mtumiaji kwa kuyapitisha kwa LLM pamoja na zana zilizoorodheshwa na mteja.
 
-Vizuri, sasa tunaelewa jinsi tunavyoweza kufanya hili kwa kiwango cha juu, hebu tujaribu hili katika zoezi lililo hapa chini.
+Vizuri, sasa tunaelewa jinsi tunavyoweza kufanya hili kwa kiwango cha juu, hebu tujaribu katika zoezi lililo hapa chini.
 
 ## Zoezi: Kuunda mteja na LLM
 
@@ -49,8 +49,8 @@ Kuunda tokeni ya GitHub ni mchakato rahisi. Hivi ndivyo unavyoweza kufanya:
 
 - Nenda kwenye Mipangilio ya GitHub – Bofya kwenye picha yako ya wasifu kwenye kona ya juu kulia na uchague Mipangilio.
 - Tembea hadi Mipangilio ya Wasanidi – Shuka chini na bofya Mipangilio ya Wasanidi.
-- Chagua Personal Access Tokens – Bofya Personal access tokens kisha Generate new token.
-- Sanidi Tokeni Yako – Ongeza maelezo kwa kumbukumbu, weka tarehe ya kumalizika muda, na uchague mawanda muhimu (ruhusa).
+- Chagua Personal Access Tokens – Bofya kwenye Fine-grained tokens kisha Generate new token.
+- Sanidi Tokeni Yako – Ongeza maelezo kwa kumbukumbu, weka tarehe ya kumalizika muda, na uchague mawanda muhimu (ruhusa). Katika kesi hii hakikisha umeongeza ruhusa ya Models.
 - Tengeneza na Nakili Tokeni – Bofya Generate token, na hakikisha unainakili mara moja, kwani hautaweza kuiona tena.
 
 ### -1- Unganisha na seva
@@ -95,7 +95,7 @@ class MCPClient {
 Katika msimbo uliotangulia tumefanya:
 
 - Kuingiza maktaba zinazohitajika.
-- Kuunda darasa lenye wanachama wawili, `client` na `openai`, ambao watatusaidia kusimamia mteja na kuingiliana na LLM.
+- Kuunda darasa lenye wanachama wawili, `client` na `openai` ambao watatusaidia kusimamia mteja na kuingiliana na LLM.
 - Kuseti mfano wa LLM kutumia GitHub Models kwa kuweka `baseUrl` kuelekeza kwenye API ya inference.
 
 #### Python
@@ -237,18 +237,18 @@ public class LangChain4jClient {
 
 Katika msimbo uliotangulia tumefanya:
 
-- **Kuongeza utegemezi wa LangChain4j**: Inahitajika kwa ujumuishaji wa MCP, mteja rasmi wa OpenAI, na msaada wa GitHub Models.
+- **Kuongeza utegemezi wa LangChain4j**: Zinazohitajika kwa ujumuishaji wa MCP, mteja rasmi wa OpenAI, na msaada wa GitHub Models.
 - **Kuingiza maktaba za LangChain4j**: Kwa ujumuishaji wa MCP na utendaji wa modeli ya mazungumzo ya OpenAI.
 - **Kuunda `ChatLanguageModel`**: Kuseti kutumia GitHub Models na tokeni yako ya GitHub.
-- **Kuseti usafirishaji wa HTTP**: Kutumia Server-Sent Events (SSE) kuungana na seva ya MCP.
+- **Kuseti usafirishaji wa HTTP**: Kutumia Server-Sent Events (SSE) kuunganishwa na seva ya MCP.
 - **Kuunda mteja wa MCP**: Ambaye atashughulikia mawasiliano na seva.
-- **Kutumia msaada wa MCP wa LangChain4j**: Ambayo inarahisisha ujumuishaji kati ya LLM na seva za MCP.
+- **Kutumia msaada wa MCP wa LangChain4j**: Ambayo inarahisisha ujumuishaji kati ya LLMs na seva za MCP.
 
 #### Rust
 
 Mfano huu unadhani una seva ya MCP inayotumia Rust. Ikiwa huna, rejelea somo la [01-first-server](../01-first-server/README.md) kuunda seva.
 
-Mara tu unapokuwa na seva ya MCP inayotumia Rust, fungua terminal na nenda kwenye saraka sawa na seva. Kisha endesha amri ifuatayo kuunda mradi mpya wa mteja wa LLM:
+Mara tu unapokuwa na seva yako ya MCP inayotumia Rust, fungua terminal na nenda kwenye saraka sawa na seva. Kisha endesha amri ifuatayo kuunda mradi mpya wa mteja wa LLM:
 
 ```bash
 mkdir calculator-llmclient
@@ -269,7 +269,7 @@ tokio = { version = "1.46.1", features = ["rt-multi-thread"] }
 > [!NOTE]
 > Hakuna maktaba rasmi ya Rust kwa OpenAI, hata hivyo, `async-openai` ni [maktaba inayosimamiwa na jamii](https://platform.openai.com/docs/libraries/rust#rust) ambayo hutumika mara kwa mara.
 
-Fungua faili ya `src/main.rs` na badilisha yaliyomo na msimbo ufuatao:
+Fungua faili ya `src/main.rs` na badilisha maudhui yake na msimbo ufuatao:
 
 ```rust
 use async_openai::{Client, config::OpenAIConfig};
@@ -319,16 +319,16 @@ async fn main() -> Result<(), Box<dyn Error>> {
 }
 ```
 
-Msimbo huu unaseti programu ya msingi ya Rust ambayo itaungana na seva ya MCP na GitHub Models kwa mwingiliano wa LLM.
+Msimbo huu unaseti programu ya msingi ya Rust ambayo itaunganishwa na seva ya MCP na GitHub Models kwa mwingiliano wa LLM.
 
 > [!IMPORTANT]
-> Hakikisha umeweka mazingira ya `OPENAI_API_KEY` na tokeni yako ya GitHub kabla ya kuendesha programu.
+> Hakikisha umeweka kigezo cha mazingira `OPENAI_API_KEY` na tokeni yako ya GitHub kabla ya kuendesha programu.
 
 Vizuri, kwa hatua yetu inayofuata, hebu tuorodheshe uwezo kwenye seva.
 
 ### -2- Orodhesha uwezo wa seva
 
-Sasa tutaungana na seva na kuuliza uwezo wake:
+Sasa tutaunganishwa na seva na kuuliza kuhusu uwezo wake:
 
 #### TypeScript
 
@@ -351,7 +351,7 @@ async run() {
 
 Katika msimbo uliotangulia tumefanya:
 
-- Kuongeza msimbo wa kuungana na seva, `connectToServer`.
+- Kuongeza msimbo wa kuunganishwa na seva, `connectToServer`.
 - Kuunda mbinu ya `run` inayohusika na mtiririko wa programu yetu. Hadi sasa inaorodhesha zana tu lakini tutaongeza zaidi hivi karibuni.
 
 #### Python
@@ -401,7 +401,7 @@ async Task<List<ChatCompletionsToolDefinition>> GetMcpTools()
 Katika msimbo uliotangulia tumefanya:
 
 - Kuorodhesha zana zinazopatikana kwenye seva ya MCP.
-- Kwa kila zana, kuorodhesha jina, maelezo, na muundo wake. Muundo ni kitu ambacho tutatumia kuita zana hivi karibuni.
+- Kwa kila zana, kuorodhesha jina, maelezo, na muundo wake. Muundo huu ni kitu ambacho tutatumia kuita zana hivi karibuni.
 
 #### Java
 
@@ -425,7 +425,7 @@ Katika msimbo uliotangulia tumefanya:
 
 #### Rust
 
-Kupata zana kutoka seva ya MCP hufanywa kwa kutumia mbinu ya `list_tools`. Katika kazi yako ya `main`, baada ya kuseti mteja wa MCP, ongeza msimbo ufuatao:
+Kupata zana kutoka seva ya MCP kunafanywa kwa kutumia mbinu ya `list_tools`. Katika kazi yako ya `main`, baada ya kuseti mteja wa MCP, ongeza msimbo ufuatao:
 
 ```rust
 // Get MCP tool listing 
@@ -467,7 +467,7 @@ Hatua inayofuata baada ya kuorodhesha uwezo wa seva ni kuubadilisha kuwa fomati 
 
     Msimbo hapo juu unachukua majibu kutoka seva ya MCP na kuyabadilisha kuwa ufafanuzi wa zana ambayo LLM inaweza kuelewa.
 
-1. Hebu sasisha mbinu ya `run` ili kuorodhesha uwezo wa seva:
+1. Hebu tusasishe mbinu ya `run` ili kuorodhesha uwezo wa seva:
 
     ```typescript
     async run() {
@@ -487,7 +487,7 @@ Hatua inayofuata baada ya kuorodhesha uwezo wa seva ni kuubadilisha kuwa fomati 
 
 #### Python
 
-1. Kwanza, hebu tuunde kazi ya kubadilisha zifuatazo:
+1. Kwanza, hebu tuunde kazi ya kubadilisha ifuatayo:
 
     ```python
     def convert_to_llm_tool(tool):
@@ -509,7 +509,7 @@ Hatua inayofuata baada ya kuorodhesha uwezo wa seva ni kuubadilisha kuwa fomati 
 
     Katika kazi hapo juu `convert_to_llm_tools` tunachukua majibu ya zana ya MCP na kuyabadilisha kuwa fomati ambayo LLM inaweza kuelewa.
 
-1. Kisha, hebu sasisha msimbo wa mteja wetu kutumia kazi hii kama ifuatavyo:
+1. Kisha, hebu tusasishe msimbo wa mteja wetu kutumia kazi hii kama ifuatavyo:
 
     ```python
     for tool in tools.tools:
@@ -522,7 +522,7 @@ Hatua inayofuata baada ya kuorodhesha uwezo wa seva ni kuubadilisha kuwa fomati 
 
 #### .NET
 
-1. Hebu ongeze msimbo wa kubadilisha majibu ya zana ya MCP kuwa kitu ambacho LLM inaweza kuelewa:
+1. Hebu tuongeze msimbo wa kubadilisha majibu ya zana ya MCP kuwa kitu ambacho LLM inaweza kuelewa:
 
 ```csharp
 ChatCompletionsToolDefinition ConvertFrom(string name, string description, JsonElement jsonElement)
@@ -548,7 +548,7 @@ ChatCompletionsToolDefinition ConvertFrom(string name, string description, JsonE
 Katika msimbo uliotangulia tumefanya:
 
 - Kuunda kazi `ConvertFrom` inayochukua jina, maelezo, na muundo wa pembejeo.
-- Kufafanua utendaji unaounda FunctionDefinition ambayo hupitishwa kwa ChatCompletionsDefinition. Hii ni kitu ambacho LLM inaweza kuelewa.
+- Kufafanua utendaji unaounda FunctionDefinition ambayo inapita kwa ChatCompletionsDefinition. Hii ni kitu ambacho LLM inaweza kuelewa.
 
 1. Hebu tuone jinsi tunavyoweza kusasisha msimbo uliopo kutumia kazi hii hapo juu:
 
@@ -578,11 +578,9 @@ Katika msimbo uliotangulia tumefanya:
 
         return toolDefinitions;
     }
-    ```
+    ```    In the preceding code, we've:
 
-    Katika msimbo uliotangulia tumefanya:
-
-    - Kusasisha kazi kubadilisha majibu ya zana ya MCP kuwa zana ya LLM. Hebu tuangazie msimbo tuliouongeza:
+    - Update the function to convert the MCP tool response to an LLm tool. Let's highlight the code we added:
 
         ```csharp
         JsonElement propertiesElement;
@@ -593,7 +591,7 @@ Katika msimbo uliotangulia tumefanya:
         toolDefinitions.Add(def);
         ```
 
-        Muundo wa pembejeo ni sehemu ya majibu ya zana lakini kwenye sifa ya "properties", kwa hivyo tunahitaji kuiondoa. Zaidi ya hayo, sasa tunaita `ConvertFrom` na maelezo ya zana. Sasa tumefanya kazi ngumu, hebu tuone jinsi inavyokuja pamoja tunaposhughulikia maelekezo ya mtumiaji baadaye.
+        The input schema is part of the tool response but on the "properties" attribute, so we need to extract. Furthermore, we now call `ConvertFrom` with the tool details. Now we've done the heavy lifting, let's see how it call comes together as we handle a user prompt next.
 
 #### Java
 
@@ -614,8 +612,8 @@ Katika msimbo uliotangulia tumefanya:
 
 - Kufafanua kiolesura rahisi cha `Bot` kwa mwingiliano wa lugha ya kawaida.
 - Kutumia `AiServices` ya LangChain4j kuunganisha LLM na mtoa zana wa MCP moja kwa moja.
-- Mfumo hushughulikia ubadilishaji wa miundo ya zana na mwito wa kazi kwa nyuma.
-- Njia hii huondoa ubadilishaji wa zana wa mwongozo - LangChain4j hushughulikia ugumu wote wa kubadilisha zana za MCP kuwa fomati inayolingana na LLM.
+- Mfumo hushughulikia ubadilishaji wa muundo wa zana na mwito wa kazi kwa nyuma.
+- Njia hii inafuta ubadilishaji wa zana wa mwongozo - LangChain4j hushughulikia ugumu wote wa kubadilisha zana za MCP kuwa fomati inayolingana na LLM.
 
 #### Rust
 
@@ -654,7 +652,7 @@ async fn format_tools(tools: &ListToolsResult) -> Result<Vec<Value>, Box<dyn Err
 }
 ```
 
-Vizuri, sasa tumejiandaa kushughulikia maombi yoyote ya mtumiaji, kwa hivyo hebu tushughulikie hilo baadaye.
+Vizuri, sasa tumejiandaa kushughulikia maombi yoyote ya mtumiaji, kwa hivyo hebu tushughulikie hilo.
 
 ### -4- Shughulikia maombi ya maelekezo ya mtumiaji
 
@@ -897,7 +895,7 @@ client.connectToServer(transport);
 
 #### Python
 
-1. Hebu tuongeze uingizaji unaohitajika kuita LLM:
+1. Hebu tuongeze baadhi ya uingizaji unaohitajika kuita LLM:
 
     ```python
     # llm
@@ -960,12 +958,12 @@ client.connectToServer(transport);
 
     Katika msimbo uliotangulia tumefanya:
 
-    - Kupitisha kazi zetu, ambazo tulizipata kwenye seva ya MCP na kuzibadilisha, kwa LLM.
-    - Kisha tunaita LLM na kazi hizo.
+    - Kupitisha kazi zetu, ambazo tulipata kwenye seva ya MCP na kuzibadilisha, kwa LLM.
+    - Kisha tuliiita LLM na kazi hizo.
     - Kisha, tunachunguza matokeo kuona ni kazi gani tunapaswa kuita, ikiwa zipo.
     - Hatimaye, tunapita safu ya kazi za kuita.
 
-1. Hatua ya mwisho, hebu sasisha msimbo wetu mkuu:
+1. Hatua ya mwisho, hebu tusasishe msimbo wetu mkuu:
 
     ```python
     prompt = "Add 2 to 20"
@@ -1025,7 +1023,7 @@ client.connectToServer(transport);
     - Kupata zana kutoka seva ya MCP, `var tools = await GetMcpTools()`.
     - Kufafanua maelekezo ya mtumiaji `userMessage`.
     - Kuunda chaguo la chaguo linaloeleza modeli na zana.
-    - Kufanya maombi kuelekea LLM.
+    - Kufanya maombi kwa LLM.
 
 1. Hatua moja ya mwisho, hebu tuone kama LLM inafikiri tunapaswa kuita kazi:
 
@@ -1053,7 +1051,7 @@ client.connectToServer(transport);
     Katika msimbo uliotangulia tumefanya:
 
     - Kupitia orodha ya miito ya kazi.
-    - Kwa kila mwito wa zana, toa jina na hoja na kuita zana kwenye seva ya MCP kwa kutumia mteja wa MCP. Hatimaye tunachapisha matokeo.
+    - Kwa kila mwito wa zana, kuchambua jina na hoja na kuita zana kwenye seva ya MCP kwa kutumia mteja wa MCP. Hatimaye tunachapisha matokeo.
 
 Huu hapa msimbo wote:
 
@@ -1203,7 +1201,7 @@ try {
 Katika msimbo uliotangulia tumefanya:
 
 - Kutumia maelekezo rahisi ya lugha ya kawaida kuingiliana na zana za seva ya MCP.
-- Mfumo wa LangChain4j hushughulikia:
+- Mfumo wa LangChain4j hushughulikia moja kwa moja:
   - Kubadilisha maelekezo ya mtumiaji kuwa miito ya zana inapohitajika.
   - Kuita zana sahihi za MCP kulingana na uamuzi wa LLM.
   - Kusimamia mtiririko wa mazungumzo kati ya LLM na seva ya MCP.
@@ -1261,8 +1259,9 @@ public class LangChain4jClient {
 
 #### Rust
 
-Hapa ndipo kazi kubwa inafanyika. Tutaita LLM na maelekezo ya mtumiaji wa awali, kisha kuchakata majibu kuona kama kuna zana zinazohitaji kuitwa. Ikiwa zipo, tutaita zana hizo na kuendelea na mazungumzo na LLM hadi hakuna miito zaidi ya zana inayohitajika na tunapata jibu la mwisho.
-Tutakuwa tukifanya miito mingi kwa LLM, kwa hivyo hebu tuelezee kazi ya kushughulikia miito ya LLM. Ongeza kazi ifuatayo kwenye faili yako `main.rs`:
+Hapa ndipo kazi kubwa inafanyika. Tutaita LLM na maelekezo ya awali ya mtumiaji, kisha kuchakata majibu kuona kama kuna zana zinazohitaji kuitwa. Ikiwa zipo, tutaita zana hizo na kuendelea na mazungumzo na LLM hadi hakuna miito zaidi ya zana inayohitajika na tunapata jibu la mwisho.
+
+Tutafanya miito mingi kwa LLM, kwa hivyo hebu tufafanue kazi ambayo itashughulikia mwito wa LLM. Ongeza kazi ifuatayo kwenye faili yako ya `main.rs`:
 
 ```rust
 async fn call_llm(
@@ -1282,9 +1281,8 @@ async fn call_llm(
 }
 ```
 
-Kazi hii inachukua mteja wa LLM, orodha ya ujumbe (ikiwemo maelezo ya mtumiaji), zana kutoka kwa seva ya MCP, na kutuma ombi kwa LLM, ikirudisha majibu.
-
-Majibu kutoka kwa LLM yatakuwa na safu ya `choices`. Tutahitaji kuchakata matokeo ili kuona kama kuna `tool_calls` zilizopo. Hii inatuonyesha kuwa LLM inaomba zana maalum itumike na hoja. Ongeza msimbo ufuatao chini ya faili yako `main.rs` ili kufafanua kazi ya kushughulikia majibu ya LLM:
+Kazi hii inachukua mteja wa LLM, orodha ya ujumbe (ikiwemo maelekezo ya mtumiaji), zana kutoka seva ya MCP, na kutuma maombi kwa LLM, ikirudisha majibu.
+Majibu kutoka kwa LLM yatakuwa na safu ya `choices`. Tutahitaji kuchakata matokeo ili kuona kama kuna `tool_calls` zilizopo. Hii inatufahamisha kuwa LLM inaomba zana maalum itumike pamoja na hoja. Ongeza msimbo ufuatao chini ya faili yako ya `main.rs` ili kufafanua kazi ya kushughulikia majibu ya LLM:
 
 ```rust
 async fn process_llm_response(
@@ -1347,9 +1345,9 @@ async fn process_llm_response(
 }
 ```
 
-Ikiwa `tool_calls` zipo, inachukua taarifa za zana, inaita seva ya MCP na ombi la zana, na inaongeza matokeo kwenye ujumbe wa mazungumzo. Kisha inaendelea na mazungumzo na LLM na ujumbe unasasishwa na majibu ya msaidizi pamoja na matokeo ya miito ya zana.
+Ikiwa `tool_calls` zipo, inachukua taarifa za zana, inaita seva ya MCP na ombi la zana, na inaongeza matokeo kwenye ujumbe wa mazungumzo. Kisha inaendelea na mazungumzo na LLM, na ujumbe unasasishwa na majibu ya msaidizi pamoja na matokeo ya wito wa zana.
 
-Ili kuchukua taarifa za miito ya zana ambayo LLM inarudisha kwa miito ya MCP, tutaongeza kazi nyingine ya kusaidia kuchukua kila kitu kinachohitajika kufanya ombi. Ongeza msimbo ufuatao chini ya faili yako `main.rs`:
+Ili kuchukua taarifa za wito wa zana ambazo LLM inarudisha kwa wito wa MCP, tutaongeza kazi nyingine ya msaidizi ili kuchukua kila kitu kinachohitajika kufanya wito. Ongeza msimbo ufuatao chini ya faili yako ya `main.rs`:
 
 ```rust
 fn extract_tool_call_info(tool_call: &Value) -> Result<(String, String, String), Box<dyn Error>> {
@@ -1373,7 +1371,7 @@ fn extract_tool_call_info(tool_call: &Value) -> Result<(String, String, String),
 }
 ```
 
-Kwa vipande vyote vilivyowekwa, sasa tunaweza kushughulikia maelezo ya awali ya mtumiaji na kuita LLM. Sasisha kazi yako ya `main` ili kujumuisha msimbo ufuatao:
+Kwa kuwa vipande vyote vipo tayari, sasa tunaweza kushughulikia maelekezo ya awali ya mtumiaji na kuita LLM. Sasisha kazi yako ya `main` ili kujumuisha msimbo ufuatao:
 
 ```rust
 // LLM conversation with tool calls
@@ -1388,13 +1386,13 @@ process_llm_response(
 .await?;
 ```
 
-Hii itauliza LLM na maelezo ya awali ya mtumiaji akiuliza jumla ya nambari mbili, na itachakata majibu ili kushughulikia miito ya zana kwa njia ya kipekee.
+Hii itahoji LLM na maelekezo ya awali ya mtumiaji ya kuuliza jumla ya namba mbili, na itachakata majibu ili kushughulikia wito wa zana kwa njia ya kiotomatiki.
 
 Vizuri, umefanikiwa!
 
 ## Kazi
 
-Chukua msimbo kutoka zoezi hili na jenga seva yenye zana zaidi. Kisha unda mteja na LLM, kama ilivyo kwenye zoezi, na ujaribu na maelezo tofauti ili kuhakikisha zana zote za seva yako zinaitwa kwa njia ya kipekee. Njia hii ya kujenga mteja inamaanisha mtumiaji wa mwisho atakuwa na uzoefu mzuri wa mtumiaji kwa kuwa wanaweza kutumia maelezo badala ya amri halisi za mteja, na hawatakuwa na ufahamu wowote wa seva ya MCP inayoitwa.
+Chukua msimbo kutoka kwenye zoezi na jenga seva yenye zana zaidi. Kisha unda mteja na LLM, kama ilivyo kwenye zoezi, na ujaribu na maelekezo tofauti ili kuhakikisha zana zote za seva yako zinaitwa kwa njia ya kiotomatiki. Njia hii ya kujenga mteja inamaanisha mtumiaji wa mwisho atakuwa na uzoefu mzuri wa mtumiaji kwa kuwa wanaweza kutumia maelekezo badala ya amri za mteja za moja kwa moja, na hawatakuwa na ufahamu wowote wa seva ya MCP inayoitwa.
 
 ## Suluhisho
 
@@ -1420,5 +1418,7 @@ Chukua msimbo kutoka zoezi hili na jenga seva yenye zana zaidi. Kisha unda mteja
 
 - Kinachofuata: [Kutumia seva kwa kutumia Visual Studio Code](../04-vscode/README.md)
 
+---
+
 **Kanusho**:  
-Hati hii imetafsiriwa kwa kutumia huduma ya kutafsiri ya AI [Co-op Translator](https://github.com/Azure/co-op-translator). Ingawa tunajitahidi kuhakikisha usahihi, tafadhali fahamu kuwa tafsiri za kiotomatiki zinaweza kuwa na makosa au kutokuwa sahihi. Hati ya asili katika lugha yake ya awali inapaswa kuzingatiwa kama chanzo cha mamlaka. Kwa taarifa muhimu, tafsiri ya kitaalamu ya binadamu inapendekezwa. Hatutawajibika kwa kutoelewana au tafsiri zisizo sahihi zinazotokana na matumizi ya tafsiri hii.
+Hati hii imetafsiriwa kwa kutumia huduma ya tafsiri ya AI [Co-op Translator](https://github.com/Azure/co-op-translator). Ingawa tunajitahidi kuhakikisha usahihi, tafsiri za kiotomatiki zinaweza kuwa na makosa au kutokuwa sahihi. Hati ya asili katika lugha yake ya awali inapaswa kuchukuliwa kama chanzo cha mamlaka. Kwa taarifa muhimu, tafsiri ya kitaalamu ya binadamu inapendekezwa. Hatutawajibika kwa kutoelewana au tafsiri zisizo sahihi zinazotokana na matumizi ya tafsiri hii.

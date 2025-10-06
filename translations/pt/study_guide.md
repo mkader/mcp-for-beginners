@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T13:20:40+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T14:07:37+00:00",
   "source_file": "study_guide.md",
   "language_code": "pt"
 }
@@ -13,7 +13,7 @@ Este guia de estudo oferece uma visão geral da estrutura e do conteúdo do repo
 
 ## Visão Geral do Repositório
 
-O Protocolo de Contexto de Modelo (MCP) é uma estrutura padronizada para interações entre modelos de IA e aplicações cliente. Inicialmente criado pela Anthropic, o MCP agora é mantido pela comunidade MCP através da organização oficial no GitHub. Este repositório fornece um currículo abrangente com exemplos práticos de código em C#, Java, JavaScript, Python e TypeScript, projetado para desenvolvedores de IA, arquitetos de sistemas e engenheiros de software.
+O Protocolo de Contexto de Modelo (MCP) é uma estrutura padronizada para interações entre modelos de IA e aplicações cliente. Inicialmente criado pela Anthropic, o MCP é agora mantido pela comunidade MCP através da organização oficial no GitHub. Este repositório fornece um currículo abrangente com exemplos práticos de código em C#, Java, JavaScript, Python e TypeScript, projetado para desenvolvedores de IA, arquitetos de sistemas e engenheiros de software.
 
 ## Mapa Visual do Currículo
 
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -123,7 +124,7 @@ mindmap
 
 ## Estrutura do Repositório
 
-O repositório está organizado em onze seções principais, cada uma focando em diferentes aspectos do MCP:
+O repositório está organizado em onze seções principais, cada uma focada em diferentes aspectos do MCP:
 
 1. **Introdução (00-Introduction/)**
    - Visão geral do Protocolo de Contexto de Modelo
@@ -141,7 +142,7 @@ O repositório está organizado em onze seções principais, cada uma focando em
    - Estratégias de autenticação e autorização
    - **Documentação Abrangente de Segurança**:
      - Melhores Práticas de Segurança MCP 2025
-     - Guia de Implementação de Segurança de Conteúdo Azure
+     - Guia de Implementação de Segurança do Azure Content Safety
      - Controles e Técnicas de Segurança MCP
      - Referência Rápida de Melhores Práticas MCP
    - **Tópicos Principais de Segurança**:
@@ -162,6 +163,7 @@ O repositório está organizado em onze seções principais, cada uma focando em
      - Integração de cliente LLM
      - Integração com VS Code
      - Servidor de Eventos Enviados pelo Servidor (SSE)
+     - Uso avançado de servidor
      - Streaming HTTP
      - Integração com AI Toolkit
      - Estratégias de teste
@@ -200,7 +202,7 @@ O repositório está organizado em onze seções principais, cada uma focando em
    - Construção e implantação de soluções baseadas em MCP
    - Tendências e roadmap futuro
    - **Guia de Servidores MCP da Microsoft**: Guia abrangente de 10 servidores MCP prontos para produção da Microsoft, incluindo:
-     - Servidor MCP de Documentos do Microsoft Learn
+     - Servidor MCP do Microsoft Learn Docs
      - Servidor MCP do Azure (15+ conectores especializados)
      - Servidor MCP do GitHub
      - Servidor MCP do Azure DevOps
@@ -223,7 +225,7 @@ O repositório está organizado em onze seções principais, cada uma focando em
     - **Recuperação de Documentação em Tempo Real**: Cliente de console Python com streaming HTTP
     - **Gerador Interativo de Planos de Estudo**: Aplicação web Chainlit com IA conversacional
     - **Documentação no Editor**: Integração com VS Code e fluxos de trabalho do GitHub Copilot
-    - **Gestão de API do Azure**: Integração de API empresarial com criação de servidor MCP
+    - **Gestão de APIs do Azure**: Integração empresarial de API com criação de servidor MCP
     - **Registro MCP do GitHub**: Desenvolvimento de ecossistema e plataforma de integração agentic
     - Exemplos de implementação abrangendo integração empresarial, produtividade de desenvolvedores e desenvolvimento de ecossistemas
 
@@ -238,11 +240,11 @@ O repositório está organizado em onze seções principais, cada uma focando em
       - Laboratório 4: Implantação e Escalabilidade em Produção
     - Abordagem de aprendizado baseada em laboratório com instruções passo a passo
 
-12. **Laboratórios de Integração de Base de Dados com Servidor MCP (11-MCPServerHandsOnLabs/)**
+12. **Laboratórios de Integração de Servidor MCP com Base de Dados (11-MCPServerHandsOnLabs/)**
     - **Caminho de aprendizado abrangente com 13 laboratórios** para construção de servidores MCP prontos para produção com integração PostgreSQL
     - **Implementação de análise de varejo no mundo real** usando o caso de uso Zava Retail
     - **Padrões de nível empresarial** incluindo Segurança de Nível de Linha (RLS), busca semântica e acesso a dados multi-inquilino
-    - **Estrutura Completa dos Laboratórios**:
+    - **Estrutura Completa do Laboratório**:
       - **Laboratórios 00-03: Fundamentos** - Introdução, Arquitetura, Segurança, Configuração do Ambiente
       - **Laboratórios 04-06: Construção do Servidor MCP** - Design de Base de Dados, Implementação do Servidor MCP, Desenvolvimento de Ferramentas
       - **Laboratórios 07-09: Recursos Avançados** - Busca Semântica, Teste e Depuração, Integração com VS Code
@@ -264,14 +266,14 @@ O repositório inclui recursos de suporte:
 ## Como Utilizar Este Repositório
 
 1. **Aprendizado Sequencial**: Siga os capítulos na ordem (00 a 11) para uma experiência de aprendizado estruturada.
-2. **Foco Específico por Linguagem**: Se estiver interessado em uma linguagem de programação específica, explore os diretórios de exemplos para implementações na sua linguagem preferida.
+2. **Foco em Linguagem Específica**: Se estiver interessado em uma linguagem de programação específica, explore os diretórios de exemplos para implementações na sua linguagem preferida.
 3. **Implementação Prática**: Comece pela seção "Primeiros Passos" para configurar seu ambiente e criar seu primeiro servidor e cliente MCP.
 4. **Exploração Avançada**: Após dominar os fundamentos, mergulhe nos tópicos avançados para expandir seu conhecimento.
-5. **Engajamento Comunitário**: Participe da comunidade MCP através de discussões no GitHub e canais no Discord para conectar-se com especialistas e outros desenvolvedores.
+5. **Engajamento Comunitário**: Junte-se à comunidade MCP através de discussões no GitHub e canais no Discord para conectar-se com especialistas e outros desenvolvedores.
 
 ## Clientes e Ferramentas MCP
 
-O currículo abrange vários clientes e ferramentas MCP:
+O currículo aborda vários clientes e ferramentas MCP:
 
 1. **Clientes Oficiais**:
    - Visual Studio Code 
@@ -297,7 +299,7 @@ O currículo abrange vários clientes e ferramentas MCP:
 O repositório apresenta vários servidores MCP, incluindo:
 
 1. **Servidores MCP Oficiais da Microsoft**:
-   - Servidor MCP de Documentos do Microsoft Learn
+   - Servidor MCP do Microsoft Learn Docs
    - Servidor MCP do Azure (15+ conectores especializados)
    - Servidor MCP do GitHub
    - Servidor MCP do Azure DevOps
@@ -331,17 +333,18 @@ O repositório apresenta vários servidores MCP, incluindo:
 
 ## Contribuindo
 
-Este repositório acolhe contribuições da comunidade. Consulte a seção Contribuições da Comunidade para orientações sobre como contribuir de forma eficaz para o ecossistema MCP.
+Este repositório acolhe contribuições da comunidade. Consulte a seção Contribuições da Comunidade para orientações sobre como contribuir efetivamente para o ecossistema MCP.
 
 ## Registro de Alterações
 
 | Data | Alterações |
 |------|---------||
-| 29 de setembro de 2025 | - Adicionada a seção 11-MCPServerHandsOnLabs com caminho de aprendizado abrangente de 13 laboratórios de integração de base de dados<br>- Atualizado o Mapa Visual do Currículo para incluir Laboratórios de Integração de Base de Dados<br>- Estrutura do repositório aprimorada para refletir onze seções principais<br>- Adicionada descrição detalhada da integração PostgreSQL, caso de uso de análise de varejo e padrões empresariais<br>- Atualizada orientação de navegação para incluir seções 00-11 |
-| 26 de setembro de 2025 | - Adicionado estudo de caso Registro MCP do GitHub à seção 09-CaseStudy<br>- Atualizados Estudos de Caso para refletir sete estudos de caso abrangentes<br>- Descrições de estudos de caso aprimoradas com detalhes específicos de implementação<br>- Atualizado o Mapa Visual do Currículo para incluir Registro MCP do GitHub<br>- Estrutura do guia de estudo revisada para refletir foco no desenvolvimento de ecossistemas |
-| 18 de julho de 2025 | - Estrutura do repositório atualizada para incluir Guia de Servidores MCP da Microsoft<br>- Adicionada lista abrangente de 10 servidores MCP prontos para produção da Microsoft<br>- Seção Servidores MCP Populares aprimorada com Servidores MCP Oficiais da Microsoft<br>- Seção Estudos de Caso atualizada com exemplos reais de arquivos<br>- Adicionados detalhes da Estrutura do Laboratório para Workshop Prático |
-| 16 de julho de 2025 | - Estrutura do repositório atualizada para refletir conteúdo atual<br>- Adicionada seção Clientes e Ferramentas MCP<br>- Adicionada seção Servidores MCP Populares<br>- Atualizado o Mapa Visual do Currículo com todos os tópicos atuais<br>- Seção Tópicos Avançados aprimorada com todas as áreas especializadas<br>- Estudos de Caso atualizados para refletir exemplos reais<br>- Origem do MCP esclarecida como criado pela Anthropic |
-| 11 de junho de 2025 | - Criação inicial do guia de estudo<br>- Adicionado Mapa Visual do Currículo<br>- Estrutura do repositório delineada<br>- Incluídos projetos de exemplo e recursos adicionais |
+| 29 de setembro de 2025 | - Adicionada seção 11-MCPServerHandsOnLabs com caminho de aprendizado abrangente de 13 laboratórios de integração de base de dados<br>- Atualizado Mapa Visual do Currículo para incluir Laboratórios de Integração de Base de Dados<br>- Estrutura do repositório aprimorada para refletir onze seções principais<br>- Adicionada descrição detalhada da integração PostgreSQL, caso de uso de análise de varejo e padrões empresariais<br>- Orientação de navegação atualizada para incluir seções 00-11 |
+| 26 de setembro de 2025 | - Adicionado estudo de caso Registro MCP do GitHub à seção 09-CaseStudy<br>- Atualizados Estudos de Caso para refletir sete estudos de caso abrangentes<br>- Descrições de estudos de caso aprimoradas com detalhes específicos de implementação<br>- Atualizado Mapa Visual do Currículo para incluir Registro MCP do GitHub<br>- Estrutura do guia de estudo revisada para refletir foco no desenvolvimento de ecossistemas |
+| 18 de julho de 2025 | - Estrutura do repositório atualizada para incluir Guia de Servidores MCP da Microsoft<br>- Adicionada lista abrangente de 10 servidores MCP prontos para produção da Microsoft<br>- Seção Servidores MCP Populares aprimorada com Servidores MCP Oficiais da Microsoft<br>- Seção Estudos de Caso atualizada com exemplos reais de arquivos<br>- Detalhes da Estrutura do Laboratório adicionados para Workshop Prático |
+| 16 de julho de 2025 | - Estrutura do repositório atualizada para refletir conteúdo atual<br>- Adicionada seção Clientes e Ferramentas MCP<br>- Adicionada seção Servidores MCP Populares<br>- Atualizado Mapa Visual do Currículo com todos os tópicos atuais<br>- Seção Tópicos Avançados aprimorada com todas as áreas especializadas<br>- Estudos de Caso atualizados para refletir exemplos reais<br>- Origem do MCP esclarecida como criado pela Anthropic |
+| 11 de junho de 2025 | - Criação inicial do guia de estudo<br>- Adicionado Mapa Visual do Currículo<br>- Estrutura do repositório delineada<br>- Projetos de exemplo e recursos adicionais incluídos |
+| 6 de outubro de 2025 | Adicionada lição sobre uso avançado de servidor |
 
 ---
 
@@ -349,5 +352,5 @@ Este repositório acolhe contribuições da comunidade. Consulte a seção Contr
 
 ---
 
-**Aviso Legal**:  
-Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos pela precisão, esteja ciente de que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes do uso desta tradução.
+**Aviso**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos pela precisão, é importante notar que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes do uso desta tradução.

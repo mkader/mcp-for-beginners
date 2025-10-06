@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "14ff8da45161b7c294d7c0e60115c2b8",
-  "translation_date": "2025-10-03T07:31:15+00:00",
+  "original_hash": "981aa099b26f878952138b76f79c1eae",
+  "translation_date": "2025-10-06T14:20:37+00:00",
   "source_file": "README.md",
   "language_code": "el"
 }
@@ -45,11 +45,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 🔗 Επίσημοι Πόροι MCP
 
-- 📘 [Τεκμηρίωση MCP](https://modelcontextprotocol.io/) – Αναλυτικά μαθήματα και οδηγίες χρήσης  
+- 📘 [Τεκμηρίωση MCP](https://modelcontextprotocol.io/) – Αναλυτικά σεμινάρια και οδηγίες χρήσης  
 - 📜 [Προδιαγραφές MCP](https://modelcontextprotocol.io/docs/) – Αρχιτεκτονική πρωτοκόλλου και τεχνικές αναφορές  
 - 📜 [Αρχικές Προδιαγραφές MCP](https://spec.modelcontextprotocol.io/) – Τεχνικές αναφορές παλαιότερης έκδοσης (ενδέχεται να περιέχουν επιπλέον λεπτομέρειες)  
 - 🧑‍💻 [Repository MCP στο GitHub](https://github.com/modelcontextprotocol) – SDKs ανοιχτού κώδικα, εργαλεία και δείγματα κώδικα
-- 🌐 [Κοινότητα MCP](https://github.com/orgs/modelcontextprotocol/discussions) – Συμμετέχετε σε συζητήσεις και συμβάλετε στην κοινότητα
+- 🌐 [Κοινότητα MCP](https://github.com/orgs/modelcontextprotocol/discussions) – Συμμετοχή σε συζητήσεις και συνεισφορά στην κοινότητα
 
 ## 🧭 Επισκόπηση Εκπαιδευτικού Υλικού MCP
 
@@ -67,32 +67,33 @@ CO_OP_TRANSLATOR_METADATA:
 | 3.2 | Πρώτος Client | Αναπτύξτε έναν βασικό MCP client | [Οδηγός](./03-GettingStarted/02-client/README.md) |
 | 3.3 | Client με LLM | Ενσωματώστε μεγάλα γλωσσικά μοντέλα | [Οδηγός](./03-GettingStarted/03-llm-client/README.md) |
 | 3.4 | Ενσωμάτωση με VS Code | Χρησιμοποιήστε MCP servers στο VS Code | [Οδηγός](./03-GettingStarted/04-vscode/README.md) |
-| 3.5 | stdio Server | Δημιουργήστε servers χρησιμοποιώντας stdio transport | [Οδηγός](./03-GettingStarted/05-stdio-server/README.md) |
+| 3.5 | stdio Server | Δημιουργήστε servers χρησιμοποιώντας μεταφορά stdio | [Οδηγός](./03-GettingStarted/05-stdio-server/README.md) |
 | 3.6 | HTTP Streaming | Υλοποιήστε HTTP streaming στο MCP | [Οδηγός](./03-GettingStarted/06-http-streaming/README.md) |
 | 3.7 | AI Toolkit | Χρησιμοποιήστε το AI Toolkit με MCP | [Οδηγός](./03-GettingStarted/07-aitk/README.md) |
 | 3.8 | Δοκιμές | Δοκιμάστε την υλοποίηση του MCP server σας | [Οδηγός](./03-GettingStarted/08-testing/README.md) |
 | 3.9 | Ανάπτυξη | Αναπτύξτε MCP servers σε παραγωγή | [Οδηγός](./03-GettingStarted/09-deployment/README.md) |
+| 3.10 | Προχωρημένη χρήση server | Χρησιμοποιήστε προχωρημένους servers για βελτιωμένη αρχιτεκτονική και δυνατότητες | [Οδηγός](./03-GettingStarted/10-advanced/README.md) |
 | **Ενότητα 4-5: Πρακτική & Προχωρημένα Θέματα** | | | |
-| 04 | Πρακτική Υλοποίηση | SDKs, debugging, testing, επαναχρησιμοποιήσιμα πρότυπα prompts | [Διαβάστε περισσότερα](./04-PracticalImplementation/README.md) |
+| 04 | Πρακτική Υλοποίηση | SDKs, αποσφαλμάτωση, δοκιμές, επαναχρησιμοποιήσιμα πρότυπα προτροπών | [Διαβάστε περισσότερα](./04-PracticalImplementation/README.md) |
 | 05 | Προχωρημένα Θέματα στο MCP | Πολυτροπικό AI, κλιμάκωση, χρήση σε επιχειρήσεις | [Διαβάστε περισσότερα](./05-AdvancedTopics/README.md) |
 | 5.1 | Ενσωμάτωση με Azure | Ενσωμάτωση MCP με Azure | [Οδηγός](./05-AdvancedTopics/mcp-integration/README.md) |
 | 5.2 | Πολυτροπικότητα | Εργασία με πολλαπλές τροπικότητες | [Οδηγός](./05-AdvancedTopics/mcp-multi-modality/README.md) |
-| 5.3 | Παράδειγμα OAuth2 | Υλοποίηση αυθεντικοποίησης OAuth2 | [Οδηγός](./05-AdvancedTopics/mcp-oauth2-demo/README.md) |
-| 5.4 | Root Contexts | Κατανόηση και υλοποίηση root contexts | [Οδηγός](./05-AdvancedTopics/mcp-root-contexts/README.md) |
+| 5.3 | Επίδειξη OAuth2 | Υλοποίηση αυθεντικοποίησης OAuth2 | [Οδηγός](./05-AdvancedTopics/mcp-oauth2-demo/README.md) |
+| 5.4 | Ρίζες Context | Κατανόηση και υλοποίηση root contexts | [Οδηγός](./05-AdvancedTopics/mcp-root-contexts/README.md) |
 | 5.5 | Δρομολόγηση | Στρατηγικές δρομολόγησης MCP | [Οδηγός](./05-AdvancedTopics/mcp-routing/README.md) |
 | 5.6 | Δειγματοληψία | Τεχνικές δειγματοληψίας στο MCP | [Οδηγός](./05-AdvancedTopics/mcp-sampling/README.md) |
 | 5.7 | Κλιμάκωση | Κλιμάκωση υλοποιήσεων MCP | [Οδηγός](./05-AdvancedTopics/mcp-scaling/README.md) |
 | 5.8 | Ασφάλεια | Προχωρημένες σκέψεις για την ασφάλεια | [Οδηγός](./05-AdvancedTopics/mcp-security/README.md) |
-| 5.9 | Αναζήτηση στο Web | Υλοποίηση δυνατοτήτων αναζήτησης στο web | [Οδηγός](./05-AdvancedTopics/web-search-mcp/README.md) |
+| 5.9 | Αναζήτηση στον Ιστό | Υλοποίηση δυνατοτήτων αναζήτησης στον ιστό | [Οδηγός](./05-AdvancedTopics/web-search-mcp/README.md) |
 | 5.10 | Ροή σε Πραγματικό Χρόνο | Δημιουργία λειτουργικότητας ροής σε πραγματικό χρόνο | [Οδηγός](./05-AdvancedTopics/mcp-realtimestreaming/README.md) |
 | 5.11 | Αναζήτηση σε Πραγματικό Χρόνο | Υλοποίηση αναζήτησης σε πραγματικό χρόνο | [Οδηγός](./05-AdvancedTopics/mcp-realtimesearch/README.md) |
 | 5.12 | Αυθεντικοποίηση Entra ID | Αυθεντικοποίηση με Microsoft Entra ID | [Οδηγός](./05-AdvancedTopics/mcp-security-entra/README.md) |
 | 5.13 | Ενσωμάτωση Foundry | Ενσωμάτωση με Azure AI Foundry | [Οδηγός](./05-AdvancedTopics/mcp-foundry-agent-integration/README.md) |
 | 5.14 | Μηχανική Context | Τεχνικές για αποτελεσματική μηχανική context | [Οδηγός](./05-AdvancedTopics/mcp-contextengineering/README.md) |
-| 5.15 | MCP Custom Transport | Υλοποιήσεις Custom Transport | [Οδηγός](./05-AdvancedTopics/mcp-transport/README.md) |
+| 5.15 | Προσαρμοσμένη Μεταφορά MCP | Υλοποιήσεις Προσαρμοσμένης Μεταφοράς | [Οδηγός](./05-AdvancedTopics/mcp-transport/README.md) |
 | **Ενότητα 6-10: Κοινότητα & Βέλτιστες Πρακτικές** | | | |
-| 06 | Συνεισφορές Κοινότητας | Πώς να συμβάλετε στο οικοσύστημα MCP | [Οδηγός](./06-CommunityContributions/README.md) |
-| 07 | Συμπεράσματα από Πρώιμη Υιοθέτηση | Ιστορίες πραγματικής υλοποίησης | [Οδηγός](./07-LessonsFromEarlyAdoption/README.md) |
+| 06 | Συνεισφορές Κοινότητας | Πώς να συνεισφέρετε στο οικοσύστημα MCP | [Οδηγός](./06-CommunityContributions/README.md) |
+| 07 | Μαθήματα από Πρώιμη Υιοθέτηση | Ιστορίες πραγματικής υλοποίησης | [Οδηγός](./07-LessonsFromEarlyAdoption/README.md) |
 | 08 | Βέλτιστες Πρακτικές για MCP | Απόδοση, ανοχή σε σφάλματα, ανθεκτικότητα | [Οδηγός](./08-BestPractices/README.md) |
 | 09 | Μελέτες Περίπτωσης MCP | Παραδείγματα πρακτικής υλοποίησης | [Οδηγός](./09-CaseStudy/README.md) |
 | 10 | Εργαστήριο Πρακτικής | Δημιουργία MCP Server με AI Toolkit | [Εργαστήριο](./10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/README.md) |
@@ -114,37 +115,37 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 💻 Δείγματα Κώδικα
 
-#### Βασικά Δείγματα MCP Calculator
+#### Βασικά Δείγματα Υπολογιστή MCP
 
 | Γλώσσα | Περιγραφή | Σύνδεσμος |
 |--------|-----------|----------|
-| C# | Παράδειγμα MCP Server | [Δείτε τον Κώδικα](./03-GettingStarted/samples/csharp/README.md) |
-| Java | MCP Calculator | [Δείτε τον Κώδικα](./03-GettingStarted/samples/java/calculator/README.md) |
-| JavaScript | MCP Demo | [Δείτε τον Κώδικα](./03-GettingStarted/samples/javascript/README.md) |
-| Python | MCP Server | [Δείτε τον Κώδικα](../../03-GettingStarted/samples/python/mcp_calculator_server.py) |
-| TypeScript | Παράδειγμα MCP | [Δείτε τον Κώδικα](./03-GettingStarted/samples/typescript/README.md) |
-| Rust | Παράδειγμα MCP | [Δείτε τον Κώδικα](./03-GettingStarted/samples/rust/README.md) |
+| C# | Παράδειγμα MCP Server | [Προβολή Κώδικα](./03-GettingStarted/samples/csharp/README.md) |
+| Java | Υπολογιστής MCP | [Προβολή Κώδικα](./03-GettingStarted/samples/java/calculator/README.md) |
+| JavaScript | Επίδειξη MCP | [Προβολή Κώδικα](./03-GettingStarted/samples/javascript/README.md) |
+| Python | MCP Server | [Προβολή Κώδικα](../../03-GettingStarted/samples/python/mcp_calculator_server.py) |
+| TypeScript | Παράδειγμα MCP | [Προβολή Κώδικα](./03-GettingStarted/samples/typescript/README.md) |
+| Rust | Παράδειγμα MCP | [Προβολή Κώδικα](./03-GettingStarted/samples/rust/README.md) |
 
 #### Προχωρημένες Υλοποιήσεις MCP
 
 | Γλώσσα | Περιγραφή | Σύνδεσμος |
 |--------|-----------|----------|
-| C# | Προχωρημένο Παράδειγμα | [Δείτε τον Κώδικα](./04-PracticalImplementation/samples/csharp/README.md) |
-| Java με Spring | Παράδειγμα Container App | [Δείτε τον Κώδικα](./04-PracticalImplementation/samples/java/containerapp/README.md) |
-| JavaScript | Προχωρημένο Παράδειγμα | [Δείτε τον Κώδικα](./04-PracticalImplementation/samples/javascript/README.md) |
-| Python | Σύνθετη Υλοποίηση | [Δείτε τον Κώδικα](../../04-PracticalImplementation/samples/python/READMEmd) |
-| TypeScript | Παράδειγμα Container | [Δείτε τον Κώδικα](./04-PracticalImplementation/samples/typescript/README.md) |
+| C# | Προχωρημένο Παράδειγμα | [Προβολή Κώδικα](./04-PracticalImplementation/samples/csharp/README.md) |
+| Java με Spring | Παράδειγμα Εφαρμογής Container | [Προβολή Κώδικα](./04-PracticalImplementation/samples/java/containerapp/README.md) |
+| JavaScript | Προχωρημένο Παράδειγμα | [Προβολή Κώδικα](./04-PracticalImplementation/samples/javascript/README.md) |
+| Python | Σύνθετη Υλοποίηση | [Προβολή Κώδικα](../../04-PracticalImplementation/samples/python/READMEmd) |
+| TypeScript | Παράδειγμα Container | [Προβολή Κώδικα](./04-PracticalImplementation/samples/typescript/README.md) |
 
 ## 🎯 Προαπαιτούμενα για την Εκμάθηση MCP
 
 Για να αξιοποιήσετε στο έπακρο αυτό το πρόγραμμα σπουδών, θα πρέπει να έχετε:
 
-- Βασικές γνώσεις προγραμματισμού σε μία από τις ακόλουθες γλώσσες: C#, Java, JavaScript, Python ή TypeScript
+- Βασικές γνώσεις προγραμματισμού σε μία από τις εξής γλώσσες: C#, Java, JavaScript, Python ή TypeScript
 - Κατανόηση του μοντέλου πελάτη-διακομιστή και των APIs
 - Εξοικείωση με τις έννοιες REST και HTTP
 - (Προαιρετικά) Γνώσεις στις έννοιες AI/ML
 
-- Συμμετοχή στις συζητήσεις της κοινότητας για υποστήριξη
+- Συμμετοχή στις συζητήσεις της κοινότητάς μας για υποστήριξη
 
 ## 📚 Οδηγός Μελέτης & Πόροι
 
@@ -152,9 +153,9 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### Οδηγός Μελέτης
 
-Ένας ολοκληρωμένος [Οδηγός Μελέτης](./study_guide.md) είναι διαθέσιμος για να σας καθοδηγήσει στη χρήση αυτού του αποθετηρίου. Ο οδηγός περιλαμβάνει:
+Ένας ολοκληρωμένος [Οδηγός Μελέτης](./study_guide.md) είναι διαθέσιμος για να σας καθοδηγήσει στην πλοήγηση αυτού του αποθετηρίου. Ο οδηγός περιλαμβάνει:
 
-- Ένα οπτικό χάρτη του προγράμματος σπουδών με όλα τα θέματα που καλύπτονται
+- Ένα οπτικό χάρτη του προγράμματος σπουδών που δείχνει όλα τα θέματα που καλύπτονται
 - Λεπτομερή ανάλυση κάθε ενότητας του αποθετηρίου
 - Οδηγίες για τη χρήση των δειγμάτων έργων
 - Προτεινόμενες διαδρομές μάθησης για διαφορετικά επίπεδα δεξιοτήτων
@@ -175,23 +176,23 @@ CO_OP_TRANSLATOR_METADATA:
 
 1. Σαφείς εξηγήσεις των εννοιών MCP  
 2. Ζωντανά παραδείγματα κώδικα σε πολλές γλώσσες  
-3. Ασκήσεις για τη δημιουργία πραγματικών εφαρμογών MCP  
+3. Ασκήσεις για την ανάπτυξη πραγματικών εφαρμογών MCP  
 4. Επιπλέον πόρους για προχωρημένους μαθητές  
 
 ## Εκδηλώσεις 
 
 ### [MCP Dev Days Ιούλιος 2025](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
-#### [➡️Παρακολουθήστε On Demand - MCP Dev Days](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
-Ετοιμαστείτε για δύο ημέρες βαθιάς τεχνικής γνώσης, σύνδεσης με την κοινότητα και πρακτικής μάθησης στο MCP Dev Days, μια εικονική εκδήλωση αφιερωμένη στο Model Context Protocol (MCP) — το αναδυόμενο πρότυπο που γεφυρώνει τα μοντέλα AI και τα εργαλεία που βασίζονται σε αυτά.
-Μπορείτε να παρακολουθήσετε το MCP Dev Days εγγραφόμενοι στη σελίδα της εκδήλωσης: https://aka.ms/mcpdevdays. 
+#### [➡️Παρακολουθήστε Κατ' Απαίτηση - MCP Dev Days](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
+Ετοιμαστείτε για δύο ημέρες βαθιάς τεχνικής γνώσης, σύνδεσης με την κοινότητα και πρακτικής μάθησης στα MCP Dev Days, μια εικονική εκδήλωση αφιερωμένη στο Model Context Protocol (MCP) — το αναδυόμενο πρότυπο που γεφυρώνει τα μοντέλα AI και τα εργαλεία που βασίζονται σε αυτά.
+Μπορείτε να παρακολουθήσετε τα MCP Dev Days εγγραφόμενοι στη σελίδα της εκδήλωσης: https://aka.ms/mcpdevdays. 
 
 #### [Ημέρα 1: Παραγωγικότητα MCP, Εργαλεία Ανάπτυξης & Κοινότητα:](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 
-Αφορά την ενδυνάμωση των προγραμματιστών να χρησιμοποιούν το MCP στη ροή εργασίας τους και τον εορτασμό της εκπληκτικής κοινότητας MCP. Θα συμμετάσχουν μέλη της κοινότητας και συνεργάτες όπως Arcade, Block, Okta και Neon για να δούμε πώς συνεργάζονται με τη Microsoft για να διαμορφώσουν ένα ανοιχτό, επεκτάσιμο οικοσύστημα MCP.  
-Πραγματικά παραδείγματα σε VS Code, Visual Studio, GitHub Copilot και δημοφιλή εργαλεία της κοινότητας  
-Πρακτικές, προσανατολισμένες στο πλαίσιο ροές εργασίας ανάπτυξης  
-Συνεδρίες και πληροφορίες από την κοινότητα  
-Είτε ξεκινάτε τώρα με το MCP είτε ήδη δημιουργείτε με αυτό, η Ημέρα 1 θα θέσει τη βάση με έμπνευση και πρακτικά συμπεράσματα.
+Αφορά την ενδυνάμωση των προγραμματιστών να χρησιμοποιούν το MCP στη ροή εργασίας τους και τον εορτασμό της εκπληκτικής κοινότητας MCP. Θα συμμετάσχουν μέλη της κοινότητας και συνεργάτες όπως Arcade, Block, Okta και Neon για να δούμε πώς συνεργάζονται με τη Microsoft για να διαμορφώσουν ένα ανοιχτό, επεκτάσιμο οικοσύστημα MCP. 
+Πραγματικά παραδείγματα σε VS Code, Visual Studio, GitHub Copilot και δημοφιλή εργαλεία της κοινότητας
+Πρακτικές, προσανατολισμένες στο πλαίσιο ροές εργασίας ανάπτυξης
+Συνεδρίες και πληροφορίες από την κοινότητα
+Είτε ξεκινάτε τώρα με το MCP είτε ήδη δημιουργείτε με αυτό, η Ημέρα 1 θα θέσει τη βάση με έμπνευση και πρακτικές συμβουλές.
 
 #### [Ημέρα 2: Δημιουργία MCP Servers με Σιγουριά](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 
@@ -200,22 +201,22 @@ CO_OP_TRANSLATOR_METADATA:
 #### Θέματα περιλαμβάνουν:
 
 - Δημιουργία MCP Servers και ενσωμάτωσή τους σε εμπειρίες πρακτόρων
-- Ανάπτυξη με βάση τα prompts
+- Ανάπτυξη με βάση προτροπές
 - Βέλτιστες πρακτικές ασφάλειας
 - Χρήση δομικών στοιχείων όπως Functions, ACA και API Management
 - Ευθυγράμμιση μητρώου και εργαλεία (1P + 3P)
 
-Αν είστε προγραμματιστής, δημιουργός εργαλείων ή στρατηγικός σχεδιαστής προϊόντων AI, αυτή η ημέρα είναι γεμάτη με πληροφορίες που χρειάζεστε για να δημιουργήσετε κλιμακούμενες, ασφαλείς και έτοιμες για το μέλλον λύσεις MCP.
+Εάν είστε προγραμματιστής, δημιουργός εργαλείων ή στρατηγικός σχεδιαστής προϊόντων AI, αυτή η ημέρα είναι γεμάτη με πληροφορίες που χρειάζεστε για να δημιουργήσετε κλιμακούμενες, ασφαλείς και έτοιμες για το μέλλον λύσεις MCP.
 
 ### MCP Boot Camp Αύγουστος 2025
-Μάθετε σε εντατικές βιντεοσυνεδρίες πώς να δημιουργείτε MCP servers, να ενσωματώνετε με το VS Code και να αναπτύσσετε επαγγελματικά στο Azure, βασισμένοι στο περιεχόμενο του προγράμματος σπουδών MCP για αρχάριους. Αποκτήστε πρακτικές δεξιότητες σε μια τεχνολογία που ήδη χρησιμοποιούν μεγάλες εταιρείες.
+Μάθετε σε εντατικές βιντεοσυνεδρίες πώς να δημιουργείτε MCP servers, να ενσωματώνετε με το VS Code και να αναπτύσσετε επαγγελματικά στο Azure βασισμένοι στο περιεχόμενο του προγράμματος σπουδών MCP για αρχάριους. Αποκτήστε πρακτικές δεξιότητες σε μια τεχνολογία που ήδη χρησιμοποιούν μεγάλες εταιρείες.
 
-#### [➡️Παρακολουθήστε On Demand MCP Bootcamp | Αγγλικά](https://developer.microsoft.com/en-us/reactor/series/s-1568/)
-#### [➡️Παρακολουθήστε On Demand MCP Bootcamp | Βραζιλία](https://developer.microsoft.com/en-us/reactor/series/S-1566/)
-#### [➡️Παρακολουθήστε On Demand MCP Bootcamp | Ισπανικά](https://developer.microsoft.com/en-us/reactor/series/S-1567/)
+#### [➡️Παρακολουθήστε Κατ' Απαίτηση MCP Bootcamp | Αγγλικά](https://developer.microsoft.com/en-us/reactor/series/s-1568/)
+#### [➡️Παρακολουθήστε Κατ' Απαίτηση MCP Bootcamp | Βραζιλία](https://developer.microsoft.com/en-us/reactor/series/S-1566/)
+#### [➡️Παρακολουθήστε Κατ' Απαίτηση MCP Bootcamp | Ισπανικά](https://developer.microsoft.com/en-us/reactor/series/S-1567/)
 
 ### Ας Μάθουμε MCP με C# - Σειρά Μαθημάτων
-Ας μάθουμε για το Model Context Protocol (MCP), ένα πρωτοποριακό πλαίσιο σχεδιασμένο να τυποποιεί τις αλληλεπιδράσεις μεταξύ μοντέλων AI και εφαρμογών πελάτη. Μέσα από αυτή τη φιλική προς αρχάριους συνεδρία, θα σας εισάγουμε στο MCP και θα σας καθοδηγήσουμε στη δημιουργία του πρώτου σας MCP server.
+Ας μάθουμε για το Model Context Protocol (MCP), ένα πρωτοποριακό πλαίσιο σχεδιασμένο να τυποποιεί τις αλληλεπιδράσεις μεταξύ μοντέλων AI και εφαρμογών πελάτη. Μέσα από αυτή τη φιλική για αρχάριους συνεδρία, θα σας εισάγουμε στο MCP και θα σας καθοδηγήσουμε στη δημιουργία του πρώτου σας MCP server.
 #### C#: [https://aka.ms/letslearnmcp-csharp](https://aka.ms/letslearnmcp-csharp)
 #### Java: [https://aka.ms/letslearnmcp-java](https://aka.ms/letslearnmcp-java)
 #### JavaScript: [https://aka.ms/letslearnmcp-javascript](https://aka.ms/letslearnmcp-javascript)
@@ -223,7 +224,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 🌟 Ευχαριστίες στην Κοινότητα
 
-Ευχαριστούμε τον Microsoft Valued Professional [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) για τη συνεισφορά σημαντικών δειγμάτων κώδικα.
+Ευχαριστούμε τον Microsoft Valued Professional [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) για τη συνεισφορά σημαντικών δειγμάτων κώδικα. 
 
 ## 📜 Πληροφορίες Άδειας Χρήσης
 
@@ -232,16 +233,16 @@ CO_OP_TRANSLATOR_METADATA:
 ## 🤝 Οδηγίες Συνεισφοράς
 
 Αυτό το έργο καλωσορίζει συνεισφορές και προτάσεις. Οι περισσότερες συνεισφορές απαιτούν να συμφωνήσετε σε μια
-Συμφωνία Άδειας Χρήσης Συνεισφέροντος (CLA) δηλώνοντας ότι έχετε το δικαίωμα να, και πραγματικά, μας παραχωρείτε
-τα δικαιώματα να χρησιμοποιήσουμε τη συνεισφορά σας. Για λεπτομέρειες, επισκεφθείτε <https://cla.opensource.microsoft.com>.
+Συμφωνία Άδειας Χρήσης Συνεισφορέα (CLA) δηλώνοντας ότι έχετε το δικαίωμα να, και πραγματικά, μας παραχωρείτε
+τα δικαιώματα να χρησιμοποιούμε τη συνεισφορά σας. Για λεπτομέρειες, επισκεφθείτε <https://cla.opensource.microsoft.com>.
 
-Όταν υποβάλετε ένα pull request, ένα bot CLA θα καθορίσει αυτόματα αν χρειάζεται να παρέχετε
+Όταν υποβάλετε ένα pull request, ένα bot CLA θα καθορίσει αυτόματα εάν χρειάζεται να παρέχετε
 CLA και θα διακοσμήσει το PR ανάλογα (π.χ., έλεγχος κατάστασης, σχόλιο). Απλώς ακολουθήστε τις οδηγίες
 που παρέχονται από το bot. Θα χρειαστεί να το κάνετε αυτό μόνο μία φορά σε όλα τα αποθετήρια που χρησιμοποιούν το CLA μας.
 
 Αυτό το έργο έχει υιοθετήσει τον [Κώδικα Συμπεριφοράς Ανοιχτού Κώδικα της Microsoft](https://opensource.microsoft.com/codeofconduct/).
 Για περισσότερες πληροφορίες δείτε τις [Συχνές Ερωτήσεις για τον Κώδικα Συμπεριφοράς](https://opensource.microsoft.com/codeofconduct/faq/) ή
-επικοινωνήστε με [opencode@microsoft.com](mailto:opencode@microsoft.com) για οποιεσδήποτε επιπλέον ερωτήσεις ή σχόλια.
+επικοινωνήστε με [opencode@microsoft.com](mailto:opencode@microsoft.com) για οποιεσδήποτε πρόσθετες ερωτήσεις ή σχόλια.
 
 ## 📂 Δομή Αποθετηρίου
 
@@ -255,10 +256,10 @@ CLA και θα διακοσμήσει το PR ανάλογα (π.χ., έλεγ�
 - **study_guide.md**: Ολοκληρωμένος οδηγός για την πλοήγηση στο αποθετήριο
 - **changelog.md**: Καταγραφή όλων των σημαντικών αλλαγών στα υλικά του προγράμματος σπουδών
 - **mcp.json**: Αρχείο ρυθμίσεων για την προδιαγραφή MCP
-- **CODE_OF_CONDUCT.md, LICENSE, SECURITY.md, SUPPORT.md**: Έγγραφα διακυβέρνησης έργου
+- **CODE_OF_CONDUCT.md, LICENSE, SECURITY.md, SUPPORT.md**: Έγγραφα διακυβέρνησης του έργου
 
 ## 🎒 Άλλα Μαθήματα
-Η ομάδα μας δημιουργεί και άλλα μαθήματα! Δείτε:
+Η ομάδα μας παράγει και άλλα μαθήματα! Δείτε:
 
 - [**ΝΕΟ** Edge AI For Beginners](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
@@ -270,14 +271,12 @@ CLA και θα διακοσμήσει το PR ανάλογα (π.χ., έλεγ�
 - [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
 - [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
 - [Cybersecurity for Beginners](https://github.com/microsoft/Security-101?WT.mc_id=academic-96948-sayoung)
-- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR Development for Beginners](https://github.com/m
+- [Web Dev for Beginners](https://aka.ms/webdev-b
 ## ™️ Ειδοποίηση Εμπορικού Σήματος
 
-Αυτό το έργο μπορεί να περιέχει εμπορικά σήματα ή λογότυπα για έργα, προϊόντα ή υπηρεσίες. Η εξουσιοδοτημένη χρήση των εμπορικών σημάτων ή λογοτύπων της Microsoft υπόκειται και πρέπει να ακολουθεί τις 
-[Οδηγίες Χρήσης Εμπορικών Σημάτων & Επωνυμίας της Microsoft](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general). 
-Η χρήση εμπορικών σημάτων ή λογοτύπων της Microsoft σε τροποποιημένες εκδόσεις αυτού του έργου δεν πρέπει να προκαλεί σύγχυση ή να υπονοεί χορηγία από τη Microsoft. 
+Αυτό το έργο μπορεί να περιέχει εμπορικά σήματα ή λογότυπα για έργα, προϊόντα ή υπηρεσίες. Η εξουσιοδοτημένη χρήση των εμπορικών σημάτων ή λογοτύπων της Microsoft υπόκειται και πρέπει να ακολουθεί τις
+[Οδηγίες Χρήσης Εμπορικών Σημάτων & Επωνυμίας της Microsoft](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
+Η χρήση εμπορικών σημάτων ή λογοτύπων της Microsoft σε τροποποιημένες εκδόσεις αυτού του έργου δεν πρέπει να προκαλεί σύγχυση ή να υπονοεί χορηγία από τη Microsoft.
 Οποιαδήποτε χρήση εμπορικών σημάτων ή λογοτύπων τρίτων υπόκειται στις πολιτικές αυτών των τρίτων.
 
 ## Λήψη Βοήθειας
@@ -293,4 +292,4 @@ CLA και θα διακοσμήσει το PR ανάλογα (π.χ., έλεγ�
 ---
 
 **Αποποίηση ευθύνης**:  
-Αυτό το έγγραφο έχει μεταφραστεί χρησιμοποιώντας την υπηρεσία αυτόματης μετάφρασης [Co-op Translator](https://github.com/Azure/co-op-translator). Παρόλο που καταβάλλουμε προσπάθειες για ακρίβεια, παρακαλούμε να έχετε υπόψη ότι οι αυτοματοποιημένες μεταφράσεις ενδέχεται να περιέχουν λάθη ή ανακρίβειες. Το πρωτότυπο έγγραφο στη μητρική του γλώσσα θα πρέπει να θεωρείται η αυθεντική πηγή. Για κρίσιμες πληροφορίες, συνιστάται επαγγελματική ανθρώπινη μετάφραση. Δεν φέρουμε ευθύνη για τυχόν παρεξηγήσεις ή εσφαλμένες ερμηνείες που προκύπτουν από τη χρήση αυτής της μετάφρασης.
+Αυτό το έγγραφο έχει μεταφραστεί χρησιμοποιώντας την υπηρεσία αυτόματης μετάφρασης [Co-op Translator](https://github.com/Azure/co-op-translator). Παρόλο που καταβάλλουμε προσπάθειες για ακρίβεια, παρακαλούμε να έχετε υπόψη ότι οι αυτόματες μεταφράσεις ενδέχεται να περιέχουν λάθη ή ανακρίβειες. Το πρωτότυπο έγγραφο στη μητρική του γλώσσα θα πρέπει να θεωρείται η αυθεντική πηγή. Για κρίσιμες πληροφορίες, συνιστάται επαγγελματική ανθρώπινη μετάφραση. Δεν φέρουμε ευθύνη για τυχόν παρεξηγήσεις ή εσφαλμένες ερμηνείες που προκύπτουν από τη χρήση αυτής της μετάφρασης.

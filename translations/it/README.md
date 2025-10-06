@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "14ff8da45161b7c294d7c0e60115c2b8",
-  "translation_date": "2025-10-03T07:26:59+00:00",
+  "original_hash": "981aa099b26f878952138b76f79c1eae",
+  "translation_date": "2025-10-06T14:11:46+00:00",
   "source_file": "README.md",
   "language_code": "it"
 }
@@ -39,14 +39,14 @@ Segui questi passaggi per iniziare a utilizzare queste risorse:
 
 Il **Model Context Protocol (MCP)** è un framework all'avanguardia progettato per standardizzare le interazioni tra modelli di intelligenza artificiale e applicazioni client. Questo curriculum open-source offre un percorso di apprendimento strutturato, completo di esempi pratici di codice e casi d'uso reali, in linguaggi di programmazione popolari come C#, Java, JavaScript, TypeScript e Python.
 
-Che tu sia uno sviluppatore AI, un architetto di sistemi o un ingegnere software, questa guida è una risorsa completa per padroneggiare i fondamenti e le strategie di implementazione di MCP.
+Che tu sia uno sviluppatore AI, un architetto di sistemi o un ingegnere del software, questa guida è una risorsa completa per padroneggiare i fondamenti e le strategie di implementazione di MCP.
 
 ## 🔗 Risorse Ufficiali MCP
 
 - 📘 [Documentazione MCP](https://modelcontextprotocol.io/) – Tutorial dettagliati e guide per gli utenti  
 - 📜 [Specifiche MCP](https://modelcontextprotocol.io/docs/) – Architettura del protocollo e riferimenti tecnici  
 - 📜 [Specifiche Originali MCP](https://spec.modelcontextprotocol.io/) – Riferimenti tecnici legacy (potrebbero contenere dettagli aggiuntivi)  
-- 🧑‍💻 [Repository GitHub MCP](https://github.com/modelcontextprotocol) – SDK open-source, strumenti ed esempi di codice
+- 🧑‍💻 [Repository GitHub MCP](https://github.com/modelcontextprotocol) – SDK open-source, strumenti e esempi di codice
 - 🌐 [Community MCP](https://github.com/orgs/modelcontextprotocol/discussions) – Partecipa alle discussioni e contribuisci alla community
 
 ## 🧭 Panoramica del Curriculum MCP
@@ -64,12 +64,13 @@ Che tu sia uno sviluppatore AI, un architetto di sistemi o un ingegnere software
 | 3.1 | Primo Server | Crea il tuo primo server MCP | [Guida](./03-GettingStarted/01-first-server/README.md) |
 | 3.2 | Primo Client | Sviluppa un client MCP di base | [Guida](./03-GettingStarted/02-client/README.md) |
 | 3.3 | Client con LLM | Integra modelli di linguaggio di grandi dimensioni | [Guida](./03-GettingStarted/03-llm-client/README.md) |
-| 3.4 | Integrazione con VS Code | Utilizza server MCP in VS Code | [Guida](./03-GettingStarted/04-vscode/README.md) |
+| 3.4 | Integrazione con VS Code | Consuma server MCP in VS Code | [Guida](./03-GettingStarted/04-vscode/README.md) |
 | 3.5 | Server stdio | Crea server utilizzando il trasporto stdio | [Guida](./03-GettingStarted/05-stdio-server/README.md) |
 | 3.6 | Streaming HTTP | Implementa lo streaming HTTP in MCP | [Guida](./03-GettingStarted/06-http-streaming/README.md) |
-| 3.7 | Toolkit AI | Utilizza il Toolkit AI con MCP | [Guida](./03-GettingStarted/07-aitk/README.md) |
-| 3.8 | Test | Testa l'implementazione del tuo server MCP | [Guida](./03-GettingStarted/08-testing/README.md) |
+| 3.7 | Toolkit AI | Usa il Toolkit AI con MCP | [Guida](./03-GettingStarted/07-aitk/README.md) |
+| 3.8 | Testing | Testa l'implementazione del tuo server MCP | [Guida](./03-GettingStarted/08-testing/README.md) |
 | 3.9 | Deployment | Distribuisci server MCP in produzione | [Guida](./03-GettingStarted/09-deployment/README.md) |
+| 3.10 | Uso avanzato del server | Usa server avanzati per funzionalità avanzate e architetture migliorate | [Guida](./03-GettingStarted/10-advanced/README.md) |
 | **Modulo 4-5: Pratico e Avanzato** | | | |
 | 04 | Implementazione Pratica | SDK, debug, test, modelli di prompt riutilizzabili | [Leggi di più](./04-PracticalImplementation/README.md) |
 | 05 | Argomenti Avanzati in MCP | AI multi-modale, scalabilità, utilizzo aziendale | [Leggi di più](./05-AdvancedTopics/README.md) |
@@ -86,7 +87,7 @@ Che tu sia uno sviluppatore AI, un architetto di sistemi o un ingegnere software
 | 5.11 | Ricerca in Tempo Reale | Implementa la ricerca in tempo reale | [Guida](./05-AdvancedTopics/mcp-realtimesearch/README.md) |
 | 5.12 | Autenticazione Entra ID | Autenticazione con Microsoft Entra ID | [Guida](./05-AdvancedTopics/mcp-security-entra/README.md) |
 | 5.13 | Integrazione Foundry | Integra con Azure AI Foundry | [Guida](./05-AdvancedTopics/mcp-foundry-agent-integration/README.md) |
-| 5.14 | Ingegneria del Contesto | Tecniche per un'ingegneria del contesto efficace | [Guida](./05-AdvancedTopics/mcp-contextengineering/README.md) |
+| 5.14 | Ingegneria del Contesto | Tecniche per un'efficace ingegneria del contesto | [Guida](./05-AdvancedTopics/mcp-contextengineering/README.md) |
 | 5.15 | Trasporto Personalizzato MCP | Implementazioni di trasporto personalizzato | [Guida](./05-AdvancedTopics/mcp-transport/README.md) |
 | **Modulo 6-10: Community e Migliori Pratiche** | | | |
 | 06 | Contributi della Community | Come contribuire all'ecosistema MCP | [Guida](./06-CommunityContributions/README.md) |
@@ -95,17 +96,17 @@ Che tu sia uno sviluppatore AI, un architetto di sistemi o un ingegnere software
 | 09 | Studi di Caso MCP | Esempi pratici di implementazione | [Guida](./09-CaseStudy/README.md) |
 | 10 | Workshop Pratico | Costruire un server MCP con AI Toolkit | [Laboratorio](./10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/README.md) |
 | **Modulo 11: Laboratorio Pratico Server MCP** | | | |
-| 11 | Integrazione del Database Server MCP | Percorso di apprendimento pratico in 13 laboratori per l'integrazione con PostgreSQL | [Laboratori](./11-MCPServerHandsOnLabs/README.md) |
+| 11 | Integrazione del Database Server MCP | Percorso di apprendimento pratico completo di 13 laboratori per l'integrazione con PostgreSQL | [Laboratori](./11-MCPServerHandsOnLabs/README.md) |
 | 11.1 | Introduzione | Panoramica di MCP con integrazione del database e caso d'uso per analisi retail | [Laboratorio 00](./11-MCPServerHandsOnLabs/00-Introduction/README.md) |
 | 11.2 | Architettura Core | Comprendere l'architettura del server MCP, i livelli del database e i modelli di sicurezza | [Laboratorio 01](./11-MCPServerHandsOnLabs/01-Architecture/README.md) |
 | 11.3 | Sicurezza e Multi-Tenancy | Sicurezza a livello di riga, autenticazione e accesso ai dati multi-tenant | [Lab 02](./11-MCPServerHandsOnLabs/02-Security/README.md) |
 | 11.4 | Configurazione dell'Ambiente | Configurazione dell'ambiente di sviluppo, Docker, risorse Azure | [Lab 03](./11-MCPServerHandsOnLabs/03-Setup/README.md) |
 | 11.5 | Progettazione del Database | Configurazione di PostgreSQL, progettazione dello schema retail e dati di esempio | [Lab 04](./11-MCPServerHandsOnLabs/04-Database/README.md) |
 | 11.6 | Implementazione del Server MCP | Creazione del server FastMCP con integrazione del database | [Lab 05](./11-MCPServerHandsOnLabs/05-MCP-Server/README.md) |
-| 11.7 | Sviluppo di Strumenti | Creazione di strumenti per query di database e introspezione dello schema | [Lab 06](./11-MCPServerHandsOnLabs/06-Tools/README.md) |
+| 11.7 | Sviluppo di Strumenti | Creazione di strumenti per query al database e introspezione dello schema | [Lab 06](./11-MCPServerHandsOnLabs/06-Tools/README.md) |
 | 11.8 | Ricerca Semantica | Implementazione di embedding vettoriali con Azure OpenAI e pgvector | [Lab 07](./11-MCPServerHandsOnLabs/07-Semantic-Search/README.md) |
 | 11.9 | Test e Debugging | Strategie di test, strumenti di debugging e approcci di validazione | [Lab 08](./11-MCPServerHandsOnLabs/08-Testing/README.md) |
-| 11.10 | Integrazione con VS Code | Configurazione dell'integrazione MCP con VS Code e utilizzo di AI Chat | [Lab 09](./11-MCPServerHandsOnLabs/09-VS-Code/README.md) |
+| 11.10 | Integrazione con VS Code | Configurazione dell'integrazione MCP con VS Code e utilizzo della Chat AI | [Lab 09](./11-MCPServerHandsOnLabs/09-VS-Code/README.md) |
 | 11.11 | Strategie di Deployment | Deployment con Docker, Azure Container Apps e considerazioni sullo scaling | [Lab 10](./11-MCPServerHandsOnLabs/10-Deployment/README.md) |
 | 11.12 | Monitoraggio | Application Insights, logging e monitoraggio delle prestazioni | [Lab 11](./11-MCPServerHandsOnLabs/11-Monitoring/README.md) |
 | 11.13 | Best Practices | Ottimizzazione delle prestazioni, rafforzamento della sicurezza e consigli per la produzione | [Lab 12](./11-MCPServerHandsOnLabs/12-Best-Practices/README.md) |
@@ -153,7 +154,7 @@ Questo repository include diverse risorse per aiutarti a navigare e imparare eff
 Una [Guida allo Studio](./study_guide.md) completa è disponibile per aiutarti a navigare efficacemente in questo repository. La guida include:
 
 - Una mappa visiva del curriculum che mostra tutti gli argomenti trattati
-- Dettagliata suddivisione di ogni sezione del repository
+- Analisi dettagliata di ogni sezione del repository
 - Indicazioni su come utilizzare i progetti di esempio
 - Percorsi di apprendimento consigliati per diversi livelli di competenza
 - Risorse aggiuntive per completare il tuo percorso di apprendimento
@@ -162,7 +163,7 @@ Una [Guida allo Studio](./study_guide.md) completa è disponibile per aiutarti a
 
 Manteniamo un [Changelog](./changelog.md) dettagliato che traccia tutti gli aggiornamenti significativi ai materiali del curriculum, inclusi:
 
-- Nuovi contenuti aggiunti
+- Aggiunte di nuovi contenuti
 - Modifiche strutturali
 - Miglioramenti delle funzionalità
 - Aggiornamenti della documentazione
@@ -172,7 +173,7 @@ Manteniamo un [Changelog](./changelog.md) dettagliato che traccia tutti gli aggi
 Ogni lezione in questa guida include:
 
 1. Spiegazioni chiare dei concetti MCP  
-2. Esempi di codice live in più linguaggi  
+2. Esempi di codice dal vivo in più linguaggi  
 3. Esercizi per costruire applicazioni MCP reali  
 4. Risorse extra per studenti avanzati
 
@@ -185,11 +186,10 @@ Puoi guardare i MCP Dev Days registrandoti sulla nostra pagina dell'evento: http
 
 #### [Giorno 1: Produttività MCP, DevTools e Community:](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 
-È dedicato a potenziare gli sviluppatori nell'utilizzo di MCP nel loro flusso di lavoro e a celebrare la straordinaria community MCP. Saremo accompagnati da membri della community e partner come Arcade, Block, Okta e Neon per vedere come stanno collaborando con Microsoft per plasmare un ecosistema MCP aperto ed estensibile.  
-Demo reali su VS Code, Visual Studio, GitHub Copilot e strumenti popolari della community  
-Workflow di sviluppo pratici e orientati al contesto  
-Sessioni e approfondimenti guidati dalla community  
-Che tu stia iniziando con MCP o lo stia già utilizzando, il Giorno 1 offrirà ispirazione e spunti pratici.
+È dedicato a potenziare gli sviluppatori nell'utilizzo di MCP nel loro flusso di lavoro e a celebrare la straordinaria community MCP. Saremo accompagnati da membri della community e partner come Arcade, Block, Okta e Neon per vedere come stanno collaborando con Microsoft per plasmare un ecosistema MCP aperto ed estensibile. Demo reali su VS Code, Visual Studio, GitHub Copilot e strumenti popolari della community
+Workflow pratici e contestualizzati per gli sviluppatori
+Sessioni e approfondimenti guidati dalla community
+Che tu stia iniziando con MCP o stia già costruendo con esso, il Giorno 1 offrirà ispirazione e spunti pratici.
 
 #### [Giorno 2: Costruisci Server MCP con Fiducia](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 
@@ -213,7 +213,7 @@ Impara in sessioni video intensive come creare server MCP, integrare con VS Code
 #### [➡️Guarda On Demand MCP Bootcamp | Spagnolo](https://developer.microsoft.com/en-us/reactor/series/S-1567/)
 
 ### Impariamo MCP con C# - Serie di Tutorial
-Impariamo il Model Context Protocol (MCP), un framework all'avanguardia progettato per standardizzare le interazioni tra modelli AI e applicazioni client. Attraverso questa sessione per principianti, ti introdurremo a MCP e ti guideremo nella creazione del tuo primo server MCP.
+Impariamo il Model Context Protocol (MCP), un framework all'avanguardia progettato per standardizzare le interazioni tra modelli AI e applicazioni client. Attraverso questa sessione adatta ai principianti, ti introdurremo a MCP e ti guideremo nella creazione del tuo primo server MCP.
 #### C#: [https://aka.ms/letslearnmcp-csharp](https://aka.ms/letslearnmcp-csharp)
 #### Java: [https://aka.ms/letslearnmcp-java](https://aka.ms/letslearnmcp-java)
 #### JavaScript: [https://aka.ms/letslearnmcp-javascript](https://aka.ms/letslearnmcp-javascript)
@@ -245,7 +245,7 @@ contatta [opencode@microsoft.com](mailto:opencode@microsoft.com) per eventuali d
 Il repository è organizzato come segue:
 
 - **Core Curriculum (00-11)**: Contenuto principale organizzato in undici moduli sequenziali, inclusi laboratori completi di integrazione del database
-- **11-MCPServerHandsOnLabs/**: Percorso di apprendimento completo di 13 laboratori per costruire server MCP pronti per la produzione con integrazione PostgreSQL
+- **11-MCPServerHandsOnLabs/**: Percorso di apprendimento completo con 13 laboratori per costruire server MCP pronti per la produzione con integrazione PostgreSQL
 - **images/**: Diagrammi e illustrazioni utilizzati nel curriculum
 - **translations/**: Supporto multilingue con traduzioni automatiche
 - **translated_images/**: Versioni localizzate di diagrammi e illustrazioni
@@ -290,4 +290,4 @@ Se hai feedback sui prodotti o riscontri errori durante la creazione, visita:
 ---
 
 **Disclaimer**:  
-Questo documento è stato tradotto utilizzando il servizio di traduzione AI [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di notare che le traduzioni automatizzate possono contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un traduttore umano. Non siamo responsabili per eventuali incomprensioni o interpretazioni errate derivanti dall'uso di questa traduzione.
+Questo documento è stato tradotto utilizzando il servizio di traduzione automatica [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di notare che le traduzioni automatiche potrebbero contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un traduttore umano. Non siamo responsabili per eventuali incomprensioni o interpretazioni errate derivanti dall'uso di questa traduzione.

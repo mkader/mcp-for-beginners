@@ -1,19 +1,19 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T12:25:56+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T13:38:39+00:00",
   "source_file": "study_guide.md",
   "language_code": "hk"
 }
 -->
 # 初學者的模型上下文協議 (MCP) - 學習指南
 
-此學習指南概述了「初學者的模型上下文協議 (MCP)」課程的資料庫結構和內容。使用此指南可高效瀏覽資料庫並充分利用可用資源。
+此學習指南概述了「模型上下文協議 (MCP) 初學者」課程的存儲庫結構和內容。使用此指南可高效瀏覽存儲庫並充分利用可用資源。
 
-## 資料庫概覽
+## 存儲庫概述
 
-模型上下文協議 (MCP) 是一個標準化框架，用於 AI 模型與客戶端應用程式之間的互動。最初由 Anthropic 創建，現由更廣泛的 MCP 社群通過官方 GitHub 組織進行維護。本資料庫提供了全面的課程，包括 C#、Java、JavaScript、Python 和 TypeScript 的實作範例，專為 AI 開發者、系統架構師和軟體工程師設計。
+模型上下文協議 (MCP) 是一個標準化框架，用於 AI 模型與客戶端應用之間的交互。MCP 最初由 Anthropic 創建，現由更廣泛的 MCP 社群通過官方 GitHub 組織進行維護。此存儲庫提供了全面的課程，包括 C#、Java、JavaScript、Python 和 TypeScript 的實操代碼示例，專為 AI 開發者、系統架構師和軟件工程師設計。
 
 ## 視覺化課程地圖
 
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -121,168 +122,170 @@ mindmap
       (Hands-on Learning)
 ```
 
-## 資料庫結構
 
-資料庫分為十一個主要部分，每部分專注於 MCP 的不同方面：
+## 存儲庫結構
+
+存儲庫分為十一個主要部分，每部分專注於 MCP 的不同方面：
 
 1. **簡介 (00-Introduction/)**
    - 模型上下文協議概述
-   - 為什麼標準化對 AI 管道很重要
-   - 實際應用案例與優勢
+   - 為什麼標準化對 AI 管道至關重要
+   - 實際應用案例和優勢
 
 2. **核心概念 (01-CoreConcepts/)**
-   - 客戶端-伺服器架構
-   - 協議的關鍵組件
-   - MCP 中的消息傳遞模式
+   - 客戶端-服務器架構
+   - 協議的關鍵組成部分
+   - MCP 中的消息模式
 
 3. **安全性 (02-Security/)**
    - MCP 系統中的安全威脅
-   - 實作安全的最佳實踐
-   - 驗證與授權策略
+   - 實施安全的最佳做法
+   - 身份驗證和授權策略
    - **全面的安全文檔**：
      - MCP 安全最佳實踐 2025
-     - Azure 內容安全實作指南
-     - MCP 安全控制與技術
+     - Azure 內容安全實施指南
+     - MCP 安全控制和技術
      - MCP 快速參考最佳實踐
    - **關鍵安全主題**：
-     - 提示注入與工具中毒攻擊
-     - 會話劫持與混淆代理問題
-     - Token 傳遞漏洞
-     - 過度權限與存取控制
-     - AI 元件的供應鏈安全
-     - Microsoft Prompt Shields 整合
+     - 提示注入和工具中毒攻擊
+     - 會話劫持和混淆代理問題
+     - 令牌透傳漏洞
+     - 過度授權和訪問控制
+     - AI 組件的供應鏈安全
+     - Microsoft Prompt Shields 集成
 
 4. **入門 (03-GettingStarted/)**
-   - 環境設置與配置
-   - 創建基本的 MCP 伺服器與客戶端
-   - 與現有應用程式的整合
+   - 環境設置和配置
+   - 創建基本的 MCP 服務器和客戶端
+   - 與現有應用集成
    - 包括以下部分：
-     - 第一個伺服器實作
+     - 首次服務器實現
      - 客戶端開發
-     - LLM 客戶端整合
-     - VS Code 整合
-     - 伺服器推送事件 (SSE) 伺服器
-     - HTTP 串流
-     - AI 工具包整合
+     - LLM 客戶端集成
+     - VS Code 集成
+     - 服務器推送事件 (SSE) 服務器
+     - 高級服務器使用
+     - HTTP 流式傳輸
+     - AI 工具包集成
      - 測試策略
      - 部署指南
 
 5. **實際應用 (04-PracticalImplementation/)**
-   - 使用不同程式語言的 SDK
-   - 偵錯、測試與驗證技術
-   - 設計可重用的提示模板與工作流程
-   - 包含實作範例的專案
+   - 使用不同編程語言的 SDK
+   - 調試、測試和驗證技術
+   - 創建可重用的提示模板和工作流
+   - 帶有實現示例的樣本項目
 
-6. **進階主題 (05-AdvancedTopics/)**
+6. **高級主題 (05-AdvancedTopics/)**
    - 上下文工程技術
-   - Foundry 代理整合
-   - 多模態 AI 工作流程
-   - OAuth2 驗證示範
-   - 即時搜尋功能
-   - 即時串流
-   - 根上下文實作
+   - Foundry 代理集成
+   - 多模態 AI 工作流
+   - OAuth2 身份驗證演示
+   - 實時搜索功能
+   - 實時流式傳輸
+   - 根上下文實現
    - 路由策略
    - 抽樣技術
    - 擴展方法
    - 安全考量
-   - Entra ID 安全整合
-   - 網頁搜尋整合
+   - Entra ID 安全集成
+   - 網絡搜索集成
 
 7. **社群貢獻 (06-CommunityContributions/)**
-   - 如何貢獻程式碼與文檔
+   - 如何貢獻代碼和文檔
    - 通過 GitHub 協作
-   - 社群驅動的增強與反饋
-   - 使用各種 MCP 客戶端 (Claude Desktop、Cline、VSCode)
-   - 使用流行的 MCP 伺服器，包括圖像生成
+   - 社群驅動的增強和反饋
+   - 使用各種 MCP 客戶端（Claude 桌面版、Cline、VSCode）
+   - 使用流行的 MCP 服務器，包括圖像生成
 
 8. **早期採用的經驗教訓 (07-LessonsfromEarlyAdoption/)**
-   - 實際應用與成功案例
-   - 構建與部署基於 MCP 的解決方案
-   - 趨勢與未來路線圖
-   - **Microsoft MCP 伺服器指南**：10 個生產就緒的 Microsoft MCP 伺服器的全面指南，包括：
-     - Microsoft Learn Docs MCP 伺服器
-     - Azure MCP 伺服器 (15+ 專用連接器)
-     - GitHub MCP 伺服器
-     - Azure DevOps MCP 伺服器
-     - MarkItDown MCP 伺服器
-     - SQL Server MCP 伺服器
-     - Playwright MCP 伺服器
-     - Dev Box MCP 伺服器
-     - Azure AI Foundry MCP 伺服器
-     - Microsoft 365 Agents Toolkit MCP 伺服器
+   - 實際應用和成功案例
+   - 構建和部署基於 MCP 的解決方案
+   - 趨勢和未來路線圖
+   - **Microsoft MCP 服務器指南**：10 個生產就緒的 Microsoft MCP 服務器的全面指南，包括：
+     - Microsoft Learn Docs MCP 服務器
+     - Azure MCP 服務器（15+ 專用連接器）
+     - GitHub MCP 服務器
+     - Azure DevOps MCP 服務器
+     - MarkItDown MCP 服務器
+     - SQL Server MCP 服務器
+     - Playwright MCP 服務器
+     - Dev Box MCP 服務器
+     - Azure AI Foundry MCP 服務器
+     - Microsoft 365 Agents Toolkit MCP 服務器
 
 9. **最佳實踐 (08-BestPractices/)**
-   - 性能調優與優化
-   - 設計容錯的 MCP 系統
-   - 測試與韌性策略
+   - 性能調優和優化
+   - 設計容錯 MCP 系統
+   - 測試和韌性策略
 
 10. **案例研究 (09-CaseStudy/)**
-    - **七個全面的案例研究**展示 MCP 在不同場景中的多功能性：
-    - **Azure AI 旅行代理**：使用 Azure OpenAI 和 AI 搜尋進行多代理協作
-    - **Azure DevOps 整合**：自動化工作流程處理 YouTube 數據更新
-    - **即時文檔檢索**：帶有 HTTP 串流的 Python 控制台客戶端
-    - **互動學習計劃生成器**：使用 Chainlit 網頁應用程式與對話式 AI
-    - **編輯器內文檔**：與 GitHub Copilot 工作流程整合的 VS Code
-    - **Azure API 管理**：企業 API 整合與 MCP 伺服器創建
-    - **GitHub MCP 註冊表**：生態系統開發與代理整合平台
-    - 涵蓋企業整合、開發者生產力與生態系統開發的實作範例
+    - **七個全面的案例研究**展示 MCP 在不同場景中的靈活性：
+    - **Azure AI 旅行代理**：使用 Azure OpenAI 和 AI 搜索進行多代理協作
+    - **Azure DevOps 集成**：使用 YouTube 數據更新自動化工作流程
+    - **實時文檔檢索**：帶有流式 HTTP 的 Python 控制台客戶端
+    - **互動學習計劃生成器**：使用 Chainlit 網頁應用進行對話式 AI
+    - **編輯器內文檔**：VS Code 集成與 GitHub Copilot 工作流
+    - **Azure API 管理**：企業 API 集成與 MCP 服務器創建
+    - **GitHub MCP 註冊表**：生態系統開發和代理集成平台
+    - 涵蓋企業集成、開發者生產力和生態系統開發的實現示例
 
-11. **實作工作坊 (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
-    - 結合 MCP 與 AI 工具包的全面實作工作坊
-    - 構建將 AI 模型與現實工具連接的智能應用程式
-    - 涵蓋基礎、自定義伺服器開發與生產部署策略的實用模組
+11. **實操工作坊 (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
+    - 結合 MCP 和 AI 工具包的全面實操工作坊
+    - 構建將 AI 模型與現實工具相結合的智能應用
+    - 涵蓋基礎、自定義服務器開發和生產部署策略的實用模塊
     - **實驗室結構**：
-      - 實驗室 1：MCP 伺服器基礎
-      - 實驗室 2：進階 MCP 伺服器開發
-      - 實驗室 3：AI 工具包整合
-      - 實驗室 4：生產部署與擴展
+      - 實驗室 1：MCP 服務器基礎
+      - 實驗室 2：高級 MCP 服務器開發
+      - 實驗室 3：AI 工具包集成
+      - 實驗室 4：生產部署和擴展
     - 基於實驗室的學習方法，提供逐步指導
 
-12. **MCP 伺服器資料庫整合實驗室 (11-MCPServerHandsOnLabs/)**
-    - **全面的 13 個實驗室學習路徑**，用於構建與 PostgreSQL 整合的生產就緒 MCP 伺服器
-    - **基於 Zava 零售案例的實際零售分析實作**
-    - **企業級模式**，包括行級安全 (RLS)、語義搜尋與多租戶數據存取
-    - **完整實驗室結構**：
+12. **MCP 服務器數據庫集成實驗室 (11-MCPServerHandsOnLabs/)**
+    - **全面的 13 個實驗室學習路徑**，用於構建具有 PostgreSQL 集成的生產就緒 MCP 服務器
+    - **基於 Zava 零售案例的實際零售分析實現**
+    - **企業級模式**，包括行級安全 (RLS)、語義搜索和多租戶數據訪問
+    - **完整的實驗室結構**：
       - **實驗室 00-03：基礎** - 簡介、架構、安全性、環境設置
-      - **實驗室 04-06：構建 MCP 伺服器** - 資料庫設計、MCP 伺服器實作、工具開發
-      - **實驗室 07-09：進階功能** - 語義搜尋、測試與偵錯、VS Code 整合
+      - **實驗室 04-06：構建 MCP 服務器** - 數據庫設計、MCP 服務器實現、工具開發
+      - **實驗室 07-09：高級功能** - 語義搜索、測試與調試、VS Code 集成
       - **實驗室 10-12：生產與最佳實踐** - 部署、監控、優化
-    - **涵蓋技術**：FastMCP 框架、PostgreSQL、Azure OpenAI、Azure 容器應用程式、應用程式洞察
-    - **學習成果**：生產就緒的 MCP 伺服器、資料庫整合模式、AI 驅動的分析、企業安全性
+    - **涵蓋的技術**：FastMCP 框架、PostgreSQL、Azure OpenAI、Azure 容器應用、應用洞察
+    - **學習成果**：生產就緒的 MCP 服務器、數據庫集成模式、AI 驅動的分析、企業安全
 
 ## 附加資源
 
-資料庫包含以下支持資源：
+存儲庫包含支持資源：
 
-- **圖片資料夾**：包含課程中使用的圖表與插圖
+- **圖片文件夾**：包含課程中使用的圖表和插圖
 - **翻譯**：多語言支持，提供文檔的自動翻譯
 - **官方 MCP 資源**：
   - [MCP 文檔](https://modelcontextprotocol.io/)
   - [MCP 規範](https://spec.modelcontextprotocol.io/)
-  - [MCP GitHub 資料庫](https://github.com/modelcontextprotocol)
+  - [MCP GitHub 存儲庫](https://github.com/modelcontextprotocol)
 
-## 如何使用此資料庫
+## 如何使用此存儲庫
 
-1. **循序學習**：按順序學習章節 (00 至 11)，以獲得結構化的學習體驗。
-2. **語言特定重點**：如果您對特定程式語言感興趣，請瀏覽樣本目錄以查看您偏好的語言實作。
-3. **實際應用**：從「入門」部分開始，設置您的環境並創建第一個 MCP 伺服器與客戶端。
-4. **進階探索**：熟悉基礎知識後，深入進階主題以擴展您的知識。
+1. **循序學習**：按順序學習章節（00 至 11），以獲得結構化的學習體驗。
+2. **特定語言重點**：如果您對某種編程語言感興趣，請探索樣本目錄以查看您偏好的語言實現。
+3. **實際應用**：從「入門」部分開始，設置您的環境並創建您的第一個 MCP 服務器和客戶端。
+4. **高級探索**：熟悉基礎知識後，深入高級主題以擴展您的知識。
 5. **社群參與**：通過 GitHub 討論和 Discord 頻道加入 MCP 社群，與專家和其他開發者交流。
 
-## MCP 客戶端與工具
+## MCP 客戶端和工具
 
-課程涵蓋了多種 MCP 客戶端與工具：
+課程涵蓋各種 MCP 客戶端和工具：
 
 1. **官方客戶端**：
-   - Visual Studio Code 
+   - Visual Studio Code
    - MCP 在 Visual Studio Code 中
    - Claude 桌面版
    - Claude 在 VSCode 中
    - Claude API
 
 2. **社群客戶端**：
-   - Cline (基於終端)
-   - Cursor (程式碼編輯器)
+   - Cline（基於終端）
+   - Cursor（代碼編輯器）
    - ChatMCP
    - Windsurf
 
@@ -292,27 +295,27 @@ mindmap
    - MCP Linker
    - MCP Router
 
-## 流行的 MCP 伺服器
+## 流行的 MCP 服務器
 
-資料庫介紹了多種 MCP 伺服器，包括：
+存儲庫介紹了各種 MCP 服務器，包括：
 
-1. **官方 Microsoft MCP 伺服器**：
-   - Microsoft Learn Docs MCP 伺服器
-   - Azure MCP 伺服器 (15+ 專用連接器)
-   - GitHub MCP 伺服器
-   - Azure DevOps MCP 伺服器
-   - MarkItDown MCP 伺服器
-   - SQL Server MCP 伺服器
-   - Playwright MCP 伺服器
-   - Dev Box MCP 伺服器
-   - Azure AI Foundry MCP 伺服器
-   - Microsoft 365 Agents Toolkit MCP 伺服器
+1. **官方 Microsoft MCP 服務器**：
+   - Microsoft Learn Docs MCP 服務器
+   - Azure MCP 服務器（15+ 專用連接器）
+   - GitHub MCP 服務器
+   - Azure DevOps MCP 服務器
+   - MarkItDown MCP 服務器
+   - SQL Server MCP 服務器
+   - Playwright MCP 服務器
+   - Dev Box MCP 服務器
+   - Azure AI Foundry MCP 服務器
+   - Microsoft 365 Agents Toolkit MCP 服務器
 
-2. **官方參考伺服器**：
-   - Filesystem
+2. **官方參考服務器**：
+   - 文件系統
    - Fetch
-   - Memory
-   - Sequential Thinking
+   - 記憶
+   - 順序思考
 
 3. **圖像生成**：
    - Azure OpenAI DALL-E 3
@@ -322,30 +325,31 @@ mindmap
 4. **開發工具**：
    - Git MCP
    - 終端控制
-   - 程式碼助手
+   - 代碼助手
 
-5. **專用伺服器**：
+5. **專用服務器**：
    - Salesforce
    - Microsoft Teams
    - Jira & Confluence
 
 ## 貢獻
 
-此資料庫歡迎社群的貢獻。請參閱「社群貢獻」部分，了解如何有效地為 MCP 生態系統做出貢獻。
+此存儲庫歡迎社群的貢獻。請參閱「社群貢獻」部分，了解如何有效地為 MCP 生態系統做出貢獻。
 
-## 更新日誌
+## 更新記錄
 
-| 日期 | 變更 |
+| 日期 | 更改 |
 |------|---------||
-| 2025 年 9 月 29 日 | - 新增 11-MCPServerHandsOnLabs 部分，包含全面的 13 個實驗室資料庫整合學習路徑<br>- 更新視覺化課程地圖以包含資料庫整合實驗室<br>- 增強資料庫結構以反映十一個主要部分<br>- 新增 PostgreSQL 整合、零售分析案例與企業模式的詳細描述<br>- 更新導航指南以包含 00-11 部分 |
-| 2025 年 9 月 26 日 | - 新增 GitHub MCP 註冊表案例研究至 09-CaseStudy 部分<br>- 更新案例研究以反映七個全面的案例研究<br>- 增強案例研究描述，提供具體實作細節<br>- 更新視覺化課程地圖以包含 GitHub MCP 註冊表<br>- 修訂學習指南結構以反映生態系統開發重點 |
-| 2025 年 7 月 18 日 | - 更新資料庫結構以包含 Microsoft MCP 伺服器指南<br>- 新增 10 個生產就緒的 Microsoft MCP 伺服器的全面列表<br>- 增強流行 MCP 伺服器部分，包含官方 Microsoft MCP 伺服器<br>- 更新案例研究部分，提供實際檔案範例<br>- 新增實作工作坊的實驗室結構細節 |
-| 2025 年 7 月 16 日 | - 更新資料庫結構以反映當前內容<br>- 新增 MCP 客戶端與工具部分<br>- 新增流行 MCP 伺服器部分<br>- 更新視覺化課程地圖，涵蓋所有當前主題<br>- 增強進階主題部分，涵蓋所有專業領域<br>- 更新案例研究以反映實際範例<br>- 明確 MCP 起源由 Anthropic 創建 |
-| 2025 年 6 月 11 日 | - 初次創建學習指南<br>- 新增視覺化課程地圖<br>- 概述資料庫結構<br>- 包括範例專案與附加資源 |
+| 2025 年 9 月 29 日 | - 添加了 11-MCPServerHandsOnLabs 部分，包含全面的 13 個實驗室數據庫集成學習路徑<br>- 更新了視覺化課程地圖以包含數據庫集成實驗室<br>- 增強了存儲庫結構以反映十一個主要部分<br>- 添加了 PostgreSQL 集成、零售分析案例和企業模式的詳細描述<br>- 更新了導航指南以包含 00-11 部分 |
+| 2025 年 9 月 26 日 | - 添加了 GitHub MCP 註冊表案例研究到 09-CaseStudy 部分<br>- 更新了案例研究以反映七個全面的案例研究<br>- 增強了案例研究描述，提供具體實現細節<br>- 更新了視覺化課程地圖以包含 GitHub MCP 註冊表<br>- 修訂了學習指南結構以反映生態系統開發重點 |
+| 2025 年 7 月 18 日 | - 更新了存儲庫結構以包含 Microsoft MCP 服務器指南<br>- 添加了 10 個生產就緒的 Microsoft MCP 服務器的全面列表<br>- 增強了流行 MCP 服務器部分，包含官方 Microsoft MCP 服務器<br>- 更新了案例研究部分，提供實際文件示例<br>- 添加了實操工作坊的實驗室結構細節 |
+| 2025 年 7 月 16 日 | - 更新了存儲庫結構以反映當前內容<br>- 添加了 MCP 客戶端和工具部分<br>- 添加了流行 MCP 服務器部分<br>- 更新了視覺化課程地圖，包含所有當前主題<br>- 增強了高級主題部分，包含所有專業領域<br>- 更新了案例研究以反映實際示例<br>- 明確了 MCP 起源由 Anthropic 創建 |
+| 2025 年 6 月 11 日 | - 初次創建學習指南<br>- 添加了視覺化課程地圖<br>- 概述了存儲庫結構<br>- 包括樣本項目和附加資源 |
+| 2025 年 10 月 6 日 | 添加了高級服務器使用的課程 |
 
 ---
 
-*此學習指南更新於 2025 年 9 月 29 日，提供截至該日期的資料庫概覽。資料庫內容可能在此日期之後更新。*
+*此學習指南於 2025 年 9 月 29 日更新，概述了截至該日期的存儲庫內容。該日期之後存儲庫內容可能會更新。*
 
 ---
 

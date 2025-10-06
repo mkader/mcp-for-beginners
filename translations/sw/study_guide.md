@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T21:26:45+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T14:58:13+00:00",
   "source_file": "study_guide.md",
   "language_code": "sw"
 }
@@ -13,9 +13,9 @@ Mwongozo huu wa kujifunza unatoa muhtasari wa muundo wa hifadhi na maudhui ya mt
 
 ## Muhtasari wa Hifadhi
 
-Model Context Protocol (MCP) ni mfumo wa kawaida wa mawasiliano kati ya mifumo ya AI na programu za wateja. Awali uliundwa na Anthropic, MCP sasa unadumishwa na jamii pana ya MCP kupitia shirika rasmi la GitHub. Hifadhi hii inatoa mtaala wa kina wenye mifano ya vitendo ya msimbo katika C#, Java, JavaScript, Python, na TypeScript, iliyoundwa kwa ajili ya watengenezaji wa AI, wasanifu wa mifumo, na wahandisi wa programu.
+Model Context Protocol (MCP) ni mfumo wa kawaida wa mawasiliano kati ya mifumo ya AI na programu za wateja. Awali ulianzishwa na Anthropic, MCP sasa unadumishwa na jamii pana ya MCP kupitia shirika rasmi la GitHub. Hifadhi hii inatoa mtaala wa kina wenye mifano ya vitendo ya msimbo katika C#, Java, JavaScript, Python, na TypeScript, iliyoundwa kwa ajili ya watengenezaji wa AI, wasanifu wa mifumo, na wahandisi wa programu.
 
-## Ramani ya Mtaala wa Picha
+## Ramani ya Mtaala wa Kielelezo
 
 ```mermaid
 mindmap
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -146,9 +147,9 @@ Hifadhi imepangwa katika sehemu kuu kumi na moja, kila moja ikilenga vipengele t
      - Udhibiti na Mbinu za Usalama za MCP
      - Mwongozo wa Haraka wa Mbinu Bora za MCP
    - **Mada Muhimu za Usalama**:
-     - Mashambulizi ya sindano ya maelezo na sumu ya zana
-     - Utekaji wa vikao na matatizo ya naibu aliyepotoshwa
-     - Udhaifu wa kupitisha tokeni
+     - Mashambulizi ya sindano ya maelekezo na sumu ya zana
+     - Utekaji wa vikao na matatizo ya naibu aliyedanganywa
+     - Udhaifu wa upitishaji wa tokeni
      - Ruhusa nyingi na udhibiti wa ufikiaji
      - Usalama wa mnyororo wa ugavi kwa vipengele vya AI
      - Ujumuishaji wa Microsoft Prompt Shields
@@ -159,11 +160,12 @@ Hifadhi imepangwa katika sehemu kuu kumi na moja, kila moja ikilenga vipengele t
    - Ujumuishaji na programu zilizopo
    - Inajumuisha sehemu za:
      - Utekelezaji wa seva ya kwanza
-     - Uundaji wa mteja
+     - Maendeleo ya mteja
      - Ujumuishaji wa mteja wa LLM
      - Ujumuishaji wa VS Code
      - Seva ya Matukio Yanayotumwa na Seva (SSE)
-     - Ustreaming wa HTTP
+     - Matumizi ya seva ya hali ya juu
+     - Ustreamu wa HTTP
      - Ujumuishaji wa AI Toolkit
      - Mikakati ya majaribio
      - Miongozo ya kupeleka
@@ -171,7 +173,7 @@ Hifadhi imepangwa katika sehemu kuu kumi na moja, kila moja ikilenga vipengele t
 5. **Utekelezaji wa Vitendo (04-PracticalImplementation/)**
    - Kutumia SDKs katika lugha tofauti za programu
    - Mbinu za urekebishaji, majaribio, na uthibitishaji
-   - Kuunda templeti za maelezo zinazoweza kutumika tena na mifumo ya kazi
+   - Kuunda templeti za maelekezo zinazoweza kutumika tena na mifumo ya kazi
    - Miradi ya mfano yenye mifano ya utekelezaji
 
 6. **Mada za Juu (05-AdvancedTopics/)**
@@ -180,11 +182,11 @@ Hifadhi imepangwa katika sehemu kuu kumi na moja, kila moja ikilenga vipengele t
    - Mifumo ya kazi ya AI ya njia nyingi
    - Maonyesho ya uthibitishaji wa OAuth2
    - Uwezo wa utafutaji wa wakati halisi
-   - Ustreaming wa wakati halisi
+   - Ustreamu wa wakati halisi
    - Utekelezaji wa muktadha wa mizizi
    - Mikakati ya uelekezaji
    - Mbinu za sampuli
-   - Mbinu za kupanua
+   - Njia za kupanua
    - Masuala ya usalama
    - Ujumuishaji wa usalama wa Entra ID
    - Ujumuishaji wa utafutaji wa wavuti
@@ -194,15 +196,15 @@ Hifadhi imepangwa katika sehemu kuu kumi na moja, kila moja ikilenga vipengele t
    - Kushirikiana kupitia GitHub
    - Uboreshaji unaoendeshwa na jamii na maoni
    - Kutumia wateja mbalimbali wa MCP (Claude Desktop, Cline, VSCode)
-   - Kufanya kazi na seva maarufu za MCP ikiwa ni pamoja na uzalishaji wa picha
+   - Kufanya kazi na seva maarufu za MCP ikijumuisha uzalishaji wa picha
 
 8. **Masomo kutoka kwa Matumizi ya Mapema (07-LessonsfromEarlyAdoption/)**
    - Utekelezaji wa ulimwengu halisi na hadithi za mafanikio
    - Kujenga na kupeleka suluhisho zinazotumia MCP
-   - Mwelekeo na ramani ya siku zijazo
-   - **Mwongozo wa Seva za MCP za Microsoft**: Mwongozo wa kina wa seva 10 za MCP za Microsoft tayari kwa uzalishaji ikiwa ni pamoja na:
+   - Mwelekeo na ramani ya njia ya baadaye
+   - **Mwongozo wa Seva za MCP za Microsoft**: Mwongozo wa kina wa seva 10 za MCP za Microsoft tayari kwa uzalishaji ikijumuisha:
      - Microsoft Learn Docs MCP Server
-     - Azure MCP Server (viunganishi 15+ maalum)
+     - Azure MCP Server (viunganishi maalum 15+)
      - GitHub MCP Server
      - Azure DevOps MCP Server
      - MarkItDown MCP Server
@@ -219,30 +221,30 @@ Hifadhi imepangwa katika sehemu kuu kumi na moja, kila moja ikilenga vipengele t
 
 10. **Masomo ya Kesi (09-CaseStudy/)**
     - **Masomo saba ya kina ya kesi** yanayoonyesha utofauti wa MCP katika hali mbalimbali:
-    - **Wakala wa Safari za AI wa Azure**: Uratibu wa wakala wengi na Azure OpenAI na AI Search
-    - **Ujumuishaji wa Azure DevOps**: Kuendesha michakato ya kazi kwa sasisho za data za YouTube
-    - **Urejeshaji wa Nyaraka wa Wakati Halisi**: Mteja wa Python console na ustreaming wa HTTP
-    - **Kizalishaji cha Mpango wa Kujifunza wa Maingiliano**: Programu ya wavuti ya Chainlit na AI ya mazungumzo
+    - **Azure AI Travel Agents**: Uratibu wa wakala wengi na Azure OpenAI na AI Search
+    - **Ujumuishaji wa Azure DevOps**: Kuendesha michakato ya kazi kwa data ya YouTube
+    - **Urejeshaji wa Nyaraka wa Wakati Halisi**: Mteja wa Python console na ustreamu wa HTTP
+    - **Jenereta ya Mpango wa Kujifunza wa Maingiliano**: Programu ya wavuti ya Chainlit na AI ya mazungumzo
     - **Nyaraka Ndani ya Mhariri**: Ujumuishaji wa VS Code na mifumo ya kazi ya GitHub Copilot
     - **Usimamizi wa API ya Azure**: Ujumuishaji wa API ya biashara na uundaji wa seva ya MCP
     - **Usajili wa MCP wa GitHub**: Maendeleo ya mfumo wa ikolojia na jukwaa la ujumuishaji wa wakala
     - Mifano ya utekelezaji inayojumuisha ujumuishaji wa biashara, tija ya watengenezaji, na maendeleo ya mfumo wa ikolojia
 
 11. **Warsha ya Vitendo (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
-    - Warsha ya vitendo ya kina inayochanganya MCP na AI Toolkit
+    - Warsha ya kina ya vitendo inayochanganya MCP na AI Toolkit
     - Kujenga programu za akili zinazounganisha mifumo ya AI na zana za ulimwengu halisi
     - Moduli za vitendo zinazofunika misingi, maendeleo ya seva maalum, na mikakati ya kupeleka uzalishaji
     - **Muundo wa Maabara**:
       - Maabara 1: Misingi ya Seva ya MCP
-      - Maabara 2: Maendeleo ya Juu ya Seva ya MCP
+      - Maabara 2: Maendeleo ya Seva ya MCP ya Juu
       - Maabara 3: Ujumuishaji wa AI Toolkit
       - Maabara 4: Upelekaji wa Uzalishaji na Upanuzi
-    - Njia ya kujifunza kwa msingi wa maabara yenye maagizo ya hatua kwa hatua
+    - Njia ya kujifunza kwa msingi wa maabara yenye maelekezo ya hatua kwa hatua
 
-12. **Maabara za Ujumuishaji wa Hifadhidata ya Seva ya MCP (11-MCPServerHandsOnLabs/)**
+12. **Maabara ya Ujumuishaji wa Hifadhidata ya Seva ya MCP (11-MCPServerHandsOnLabs/)**
     - **Njia ya kujifunza ya maabara 13 ya kina** ya kujenga seva za MCP tayari kwa uzalishaji na ujumuishaji wa PostgreSQL
     - **Utekelezaji wa uchanganuzi wa rejareja wa ulimwengu halisi** kwa kutumia kesi ya matumizi ya Zava Retail
-    - **Mifumo ya daraja la biashara** ikiwa ni pamoja na Usalama wa Kiwango cha Safu (RLS), utafutaji wa semantiki, na ufikiaji wa data wa wateja wengi
+    - **Mifumo ya daraja la biashara** ikijumuisha Usalama wa Kiwango cha Safu (RLS), utafutaji wa semantiki, na ufikiaji wa data wa wateja wengi
     - **Muundo Kamili wa Maabara**:
       - **Maabara 00-03: Misingi** - Utangulizi, Muundo, Usalama, Usanidi wa Mazingira
       - **Maabara 04-06: Kujenga Seva ya MCP** - Muundo wa Hifadhidata, Utekelezaji wa Seva ya MCP, Maendeleo ya Zana
@@ -255,8 +257,8 @@ Hifadhi imepangwa katika sehemu kuu kumi na moja, kila moja ikilenga vipengele t
 
 Hifadhi inajumuisha rasilimali za kusaidia:
 
-- **Folda ya Picha**: Inayo michoro na vielelezo vinavyotumika katika mtaala
-- **Tafsiri**: Usaidizi wa lugha nyingi na tafsiri za kiotomatiki za nyaraka
+- **Folda ya Picha**: Ina michoro na vielelezo vinavyotumika katika mtaala
+- **Tafsiri**: Usaidizi wa lugha nyingi na tafsiri za nyaraka za kiotomatiki
 - **Rasilimali Rasmi za MCP**:
   - [MCP Documentation](https://modelcontextprotocol.io/)
   - [MCP Specification](https://spec.modelcontextprotocol.io/)
@@ -275,14 +277,14 @@ Hifadhi inajumuisha rasilimali za kusaidia:
 Mtaala unashughulikia wateja na zana mbalimbali za MCP:
 
 1. **Wateja Rasmi**:
-   - Visual Studio Code
+   - Visual Studio Code 
    - MCP katika Visual Studio Code
    - Claude Desktop
-   - Claude katika VSCode
+   - Claude katika VSCode 
    - Claude API
 
 2. **Wateja wa Jamii**:
-   - Cline (kulingana na terminal)
+   - Cline (inayotegemea terminal)
    - Cursor (mhariri wa msimbo)
    - ChatMCP
    - Windsurf
@@ -295,11 +297,11 @@ Mtaala unashughulikia wateja na zana mbalimbali za MCP:
 
 ## Seva Maarufu za MCP
 
-Hifadhi inatambulisha seva mbalimbali za MCP, ikiwa ni pamoja na:
+Hifadhi inatambulisha seva mbalimbali za MCP, ikijumuisha:
 
-1. **Seva Rasmi za MCP za Microsoft**:
+1. **Seva Rasmi za Microsoft MCP**:
    - Microsoft Learn Docs MCP Server
-   - Azure MCP Server (viunganishi 15+ maalum)
+   - Azure MCP Server (viunganishi maalum 15+)
    - GitHub MCP Server
    - Azure DevOps MCP Server
    - MarkItDown MCP Server
@@ -338,11 +340,12 @@ Hifadhi hii inakaribisha michango kutoka kwa jamii. Tazama sehemu ya Michango ya
 
 | Tarehe | Mabadiliko |
 |-------|------------||
-| Septemba 29, 2025 | - Imeongeza sehemu ya 11-MCPServerHandsOnLabs yenye njia ya kujifunza ya maabara 13 ya ujumuishaji wa hifadhidata<br>- Imeboresha Ramani ya Mtaala wa Picha ili kujumuisha Maabara za Ujumuishaji wa Hifadhidata<br>- Imeimarisha muundo wa hifadhi ili kuonyesha sehemu kuu kumi na moja<br>- Imeongeza maelezo ya kina ya ujumuishaji wa PostgreSQL, kesi ya matumizi ya uchanganuzi wa rejareja, na mifumo ya biashara<br>- Imeboresha mwongozo wa urambazaji ili kujumuisha sehemu 00-11 |
-| Septemba 26, 2025 | - Imeongeza somo la kesi la Usajili wa MCP wa GitHub katika sehemu ya 09-CaseStudy<br>- Imeboresha Masomo ya Kesi ili kuonyesha masomo saba ya kina<br>- Imeimarisha maelezo ya masomo ya kesi na maelezo maalum ya utekelezaji<br>- Imeboresha Ramani ya Mtaala wa Picha ili kujumuisha Usajili wa MCP wa GitHub<br>- Imebadilisha muundo wa mwongozo wa kujifunza ili kuonyesha mwelekeo wa maendeleo ya mfumo wa ikolojia |
-| Julai 18, 2025 | - Imeboresha muundo wa hifadhi ili kujumuisha Mwongozo wa Seva za MCP za Microsoft<br>- Imeongeza orodha ya kina ya seva 10 za MCP za Microsoft tayari kwa uzalishaji<br>- Imeimarisha sehemu ya Seva Maarufu za MCP na Seva Rasmi za MCP za Microsoft<br>- Imeboresha sehemu ya Masomo ya Kesi na mifano halisi ya faili<br>- Imeongeza maelezo ya Muundo wa Maabara kwa Warsha ya Vitendo |
-| Julai 16, 2025 | - Imeboresha muundo wa hifadhi ili kuonyesha maudhui ya sasa<br>- Imeongeza sehemu ya Wateja na Zana za MCP<br>- Imeongeza sehemu ya Seva Maarufu za MCP<br>- Imeboresha Ramani ya Mtaala wa Picha na mada zote za sasa<br>- Imeimarisha sehemu ya Mada za Juu na maeneo yote maalum<br>- Imeboresha Masomo ya Kesi ili kuonyesha mifano halisi<br>- Imefafanua asili ya MCP kama ilivyoundwa na Anthropic |
-| Juni 11, 2025 | - Uundaji wa awali wa mwongozo wa kujifunza<br>- Imeongeza Ramani ya Mtaala wa Picha<br>- Imeelezea muundo wa hifadhi<br>- Imejumuisha miradi ya mfano na rasilimali za ziada |
+| Septemba 29, 2025 | - Imeongeza sehemu ya 11-MCPServerHandsOnLabs yenye njia ya kujifunza ya maabara 13 ya ujumuishaji wa hifadhidata<br>- Imeboresha Ramani ya Mtaala wa Kielelezo ili kujumuisha Maabara ya Ujumuishaji wa Hifadhidata<br>- Imeimarisha muundo wa hifadhi ili kuonyesha sehemu kuu kumi na moja<br>- Imeongeza maelezo ya kina ya ujumuishaji wa PostgreSQL, kesi ya matumizi ya uchanganuzi wa rejareja, na mifumo ya biashara<br>- Imeboresha mwongozo wa urambazaji ili kujumuisha sehemu 00-11 |
+| Septemba 26, 2025 | - Imeongeza somo la kesi ya Usajili wa MCP wa GitHub katika sehemu ya 09-CaseStudy<br>- Imeboresha Masomo ya Kesi ili kuonyesha masomo saba ya kina ya kesi<br>- Imeimarisha maelezo ya somo la kesi na maelezo maalum ya utekelezaji<br>- Imeboresha Ramani ya Mtaala wa Kielelezo ili kujumuisha Usajili wa MCP wa GitHub<br>- Imebadilisha muundo wa mwongozo wa kujifunza ili kuonyesha mwelekeo wa maendeleo ya mfumo wa ikolojia |
+| Julai 18, 2025 | - Imeboresha muundo wa hifadhi ili kujumuisha Mwongozo wa Seva za MCP za Microsoft<br>- Imeongeza orodha ya kina ya seva 10 za MCP za Microsoft tayari kwa uzalishaji<br>- Imeimarisha sehemu ya Seva Maarufu za MCP na Seva Rasmi za Microsoft<br>- Imeboresha sehemu ya Masomo ya Kesi na mifano halisi ya faili<br>- Imeongeza maelezo ya Muundo wa Maabara kwa Warsha ya Vitendo |
+| Julai 16, 2025 | - Imeboresha muundo wa hifadhi ili kuonyesha maudhui ya sasa<br>- Imeongeza sehemu ya Wateja na Zana za MCP<br>- Imeongeza sehemu ya Seva Maarufu za MCP<br>- Imeboresha Ramani ya Mtaala wa Kielelezo kwa mada zote za sasa<br>- Imeimarisha sehemu ya Mada za Juu na maeneo yote maalum<br>- Imeboresha Masomo ya Kesi ili kuonyesha mifano halisi<br>- Imefafanua asili ya MCP kama ilivyoundwa na Anthropic |
+| Juni 11, 2025 | - Uundaji wa awali wa mwongozo wa kujifunza<br>- Imeongeza Ramani ya Mtaala wa Kielelezo<br>- Imeelezea muundo wa hifadhi<br>- Imejumuisha miradi ya mfano na rasilimali za ziada |
+| Oktoba 6, 2025 | Imeongeza somo la matumizi ya seva ya hali ya juu |
 
 ---
 
@@ -351,4 +354,4 @@ Hifadhi hii inakaribisha michango kutoka kwa jamii. Tazama sehemu ya Michango ya
 ---
 
 **Kanusho**:  
-Hati hii imetafsiriwa kwa kutumia huduma ya tafsiri ya AI [Co-op Translator](https://github.com/Azure/co-op-translator). Ingawa tunajitahidi kwa usahihi, tafadhali fahamu kuwa tafsiri za kiotomatiki zinaweza kuwa na makosa au kutokuwa sahihi. Hati ya asili katika lugha yake ya awali inapaswa kuzingatiwa kama chanzo cha mamlaka. Kwa taarifa muhimu, tafsiri ya kitaalamu ya binadamu inapendekezwa. Hatutawajibika kwa kutoelewana au tafsiri zisizo sahihi zinazotokana na matumizi ya tafsiri hii.
+Hati hii imetafsiriwa kwa kutumia huduma ya kutafsiri ya AI [Co-op Translator](https://github.com/Azure/co-op-translator). Ingawa tunajitahidi kuhakikisha usahihi, tafadhali fahamu kuwa tafsiri za kiotomatiki zinaweza kuwa na makosa au kutokuwa sahihi. Hati asilia katika lugha yake ya awali inapaswa kuchukuliwa kama chanzo cha mamlaka. Kwa taarifa muhimu, tafsiri ya kitaalamu ya binadamu inapendekezwa. Hatutawajibika kwa kutoelewana au tafsiri zisizo sahihi zinazotokana na matumizi ya tafsiri hii.

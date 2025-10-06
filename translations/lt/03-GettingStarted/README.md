@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "1197b6dbde36773e04a5ae826557fdb9",
-  "translation_date": "2025-08-26T19:09:20+00:00",
+  "original_hash": "94b861de00829c34912ac36140f6183e",
+  "translation_date": "2025-10-06T15:35:41+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "lt"
 }
@@ -17,7 +17,7 @@ _(Spustelėkite paveikslėlį aukščiau, kad peržiūrėtumėte šios pamokos v
 
 - **1 Jūsų pirmasis serveris**, pirmoje pamokoje sužinosite, kaip sukurti savo pirmąjį serverį ir patikrinti jį naudojant inspektoriaus įrankį – vertingą būdą testuoti ir derinti serverį, [į pamoką](01-first-server/README.md)
 
-- **2 Klientas**, šioje pamokoje sužinosite, kaip parašyti klientą, kuris galėtų prisijungti prie jūsų serverio, [į pamoką](02-client/README.md)
+- **2 Klientas**, šioje pamokoje sužinosite, kaip parašyti klientą, kuris gali prisijungti prie jūsų serverio, [į pamoką](02-client/README.md)
 
 - **3 Klientas su LLM**, dar geresnis būdas sukurti klientą – pridėti LLM, kad jis galėtų „derėtis“ su jūsų serveriu dėl veiksmų, [į pamoką](03-llm-client/README.md)
 
@@ -29,11 +29,13 @@ _(Spustelėkite paveikslėlį aukščiau, kad peržiūrėtumėte šios pamokos v
 
 - **7 AI įrankių rinkinys VSCode aplinkoje** MCP klientų ir serverių testavimui ir naudojimui, [į pamoką](07-aitk/README.md)
 
-- **8 Testavimas**. Čia ypatingą dėmesį skirsime, kaip įvairiais būdais testuoti serverį ir klientą, [į pamoką](08-testing/README.md)
+- **8 Testavimas**. Čia ypatingą dėmesį skirsime serverio ir kliento testavimui įvairiais būdais, [į pamoką](08-testing/README.md)
 
 - **9 Diegimas**. Šiame skyriuje aptarsime įvairius MCP sprendimų diegimo būdus, [į pamoką](09-deployment/README.md)
 
-Model Context Protocol (MCP) yra atviras protokolas, standartizuojantis, kaip programos teikia kontekstą LLM. MCP galite įsivaizduoti kaip USB-C jungtį AI programoms – jis suteikia standartizuotą būdą prijungti AI modelius prie įvairių duomenų šaltinių ir įrankių.
+- **10 Pažangus serverio naudojimas**. Šiame skyriuje aptariamas pažangus serverio naudojimas, [į pamoką](./10-advanced/README.md)
+
+Modelio konteksto protokolas (MCP) yra atviras protokolas, standartizuojantis, kaip programos teikia kontekstą LLM. Galvokite apie MCP kaip apie USB-C jungtį AI programoms – jis suteikia standartizuotą būdą prijungti AI modelius prie įvairių duomenų šaltinių ir įrankių.
 
 ## Mokymosi tikslai
 
@@ -41,27 +43,27 @@ Pamokos pabaigoje galėsite:
 
 - Paruošti MCP kūrimo aplinką C#, Java, Python, TypeScript ir JavaScript kalboms
 - Kurti ir diegti pagrindinius MCP serverius su individualiomis funkcijomis (resursais, užklausomis ir įrankiais)
-- Kurti pagrindines programas, kurios jungiasi prie MCP serverių
+- Kurti host programas, kurios jungiasi prie MCP serverių
 - Testuoti ir derinti MCP įgyvendinimus
-- Suprasti dažniausiai pasitaikančias konfigūracijos problemas ir jų sprendimus
+- Suprasti dažniausiai pasitaikančius nustatymo iššūkius ir jų sprendimus
 - Jungti savo MCP įgyvendinimus su populiariomis LLM paslaugomis
 
 ## MCP aplinkos paruošimas
 
-Prieš pradėdami dirbti su MCP, svarbu paruošti kūrimo aplinką ir suprasti pagrindinį darbo procesą. Šiame skyriuje pateikiami pradiniai paruošimo žingsniai, kad MCP naudojimas būtų sklandus.
+Prieš pradėdami dirbti su MCP, svarbu paruošti kūrimo aplinką ir suprasti pagrindinį darbo eigą. Šiame skyriuje pateikiami pradiniai nustatymo žingsniai, kad MCP pradžia būtų sklandi.
 
-### Būtinos sąlygos
+### Reikalavimai
 
-Prieš pradėdami MCP kūrimą, įsitikinkite, kad turite:
+Prieš pradedant MCP kūrimą, įsitikinkite, kad turite:
 
-- **Kūrimo aplinką**: Pasirinktai kalbai (C#, Java, Python, TypeScript arba JavaScript)
+- **Kūrimo aplinką**: Pasirinkta kalba (C#, Java, Python, TypeScript arba JavaScript)
 - **IDE/Redaktorių**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm arba bet kurį modernų kodų redaktorių
 - **Paketų valdymo įrankius**: NuGet, Maven/Gradle, pip arba npm/yarn
-- **API raktus**: Bet kokioms AI paslaugoms, kurias planuojate naudoti savo pagrindinėse programose
+- **API raktus**: Bet kokioms AI paslaugoms, kurias planuojate naudoti savo host programose
 
 ### Oficialūs SDK
 
-Artėjančiuose skyriuose matysite sprendimus, sukurtus naudojant Python, TypeScript, Java ir .NET. Čia pateikiami visi oficialiai palaikomi SDK.
+Artimiausiuose skyriuose matysite sprendimus, sukurtus naudojant Python, TypeScript, Java ir .NET. Čia pateikiami visi oficialiai palaikomi SDK.
 
 MCP teikia oficialius SDK kelioms kalboms:
 - [C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) - Palaikomas bendradarbiaujant su Microsoft
@@ -72,7 +74,7 @@ MCP teikia oficialius SDK kelioms kalboms:
 - [Swift SDK](https://github.com/modelcontextprotocol/swift-sdk) - Palaikomas bendradarbiaujant su Loopwork AI
 - [Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) - Oficialus Rust įgyvendinimas
 
-## Pagrindinės mintys
+## Pagrindinės išvados
 
 - MCP kūrimo aplinkos paruošimas yra paprastas naudojant kalbai specifinius SDK
 - MCP serverių kūrimas apima įrankių kūrimą ir registravimą su aiškiais schemomis
@@ -82,7 +84,7 @@ MCP teikia oficialius SDK kelioms kalboms:
 
 ## Praktika
 
-Turime pavyzdžių rinkinį, kuris papildo pratimus, pateiktus visuose šio skyriaus skyriuose. Be to, kiekvienas skyrius turi savo pratimus ir užduotis.
+Turime pavyzdžių rinkinį, kuris papildo pratimus, kuriuos matysite visuose šio skyriaus skyriuose. Be to, kiekvienas skyrius turi savo pratimus ir užduotis.
 
 - [Java Skaičiuotuvas](./samples/java/calculator/README.md)
 - [.Net Skaičiuotuvas](../../../03-GettingStarted/samples/csharp)
@@ -102,5 +104,5 @@ Toliau: [Pirmojo MCP serverio kūrimas](01-first-server/README.md)
 
 ---
 
-**Atsakomybės apribojimas**:  
-Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama profesionali žmogaus vertimo paslauga. Mes neprisiimame atsakomybės už nesusipratimus ar klaidingus interpretavimus, atsiradusius naudojant šį vertimą.
+**Atsakomybės atsisakymas**:  
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingus aiškinimus, atsiradusius dėl šio vertimo naudojimo.

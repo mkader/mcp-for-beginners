@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "1197b6dbde36773e04a5ae826557fdb9",
-  "translation_date": "2025-08-26T18:23:36+00:00",
+  "original_hash": "94b861de00829c34912ac36140f6183e",
+  "translation_date": "2025-10-06T15:22:09+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "hr"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Izgradite svoj prvi MCP poslužitelj](../../../translated_images/04.0ea920069efd979a0b2dad51e72c1df7ead9c57b3305796068a6cee1f0dd6674.hr.png)](https://youtu.be/sNDZO9N4m9Y)
 
-_(Kliknite na sliku iznad za video lekciju)_
+_(Kliknite na sliku iznad za pregled videa ove lekcije)_
 
 Ovaj odjeljak sastoji se od nekoliko lekcija:
 
@@ -21,18 +21,19 @@ Ovaj odjeljak sastoji se od nekoliko lekcija:
 
 - **3 Klijent s LLM-om**, još bolji način pisanja klijenta je dodavanje LLM-a kako bi mogao "pregovarati" s vašim poslužiteljem o tome što učiniti, [na lekciju](03-llm-client/README.md)
 
-- **4 Korištenje poslužitelja u GitHub Copilot Agent modu u Visual Studio Code-u**. Ovdje ćemo pogledati kako pokrenuti MCP poslužitelj unutar Visual Studio Code-a, [na lekciju](04-vscode/README.md)
+- **4 Korištenje poslužitelja u načinu GitHub Copilot Agent u Visual Studio Code-u**. Ovdje ćemo pogledati pokretanje našeg MCP poslužitelja unutar Visual Studio Code-a, [na lekciju](04-vscode/README.md)
 
 - **5 stdio Transport Server** stdio transport je preporučeni standard za komunikaciju između MCP poslužitelja i klijenta prema trenutnoj specifikaciji, pružajući sigurnu komunikaciju temeljenu na podprocesima [na lekciju](05-stdio-server/README.md)
 
 - **6 HTTP Streaming s MCP-om (Streamable HTTP)**. Naučite o modernom HTTP streamingu, obavijestima o napretku i kako implementirati skalabilne, real-time MCP poslužitelje i klijente koristeći Streamable HTTP. [na lekciju](06-http-streaming/README.md)
 
-- **7 Korištenje AI Toolkit-a za VSCode** za testiranje i korištenje vaših MCP klijenata i poslužitelja [na lekciju](07-aitk/README.md)
+- **7 Korištenje AI Toolkit-a za VSCode** za konzumaciju i testiranje vaših MCP klijenata i poslužitelja [na lekciju](07-aitk/README.md)
 
 - **8 Testiranje**. Ovdje ćemo se posebno fokusirati na različite načine testiranja vašeg poslužitelja i klijenta, [na lekciju](08-testing/README.md)
 
-- **9 Implementacija**. Ovaj dio će se baviti različitim načinima implementacije vaših MCP rješenja, [na lekciju](09-deployment/README.md)
+- **9 Implementacija**. Ovaj poglavlje će istražiti različite načine implementacije vaših MCP rješenja, [na lekciju](09-deployment/README.md)
 
+- **10 Napredno korištenje poslužitelja**. Ovo poglavlje pokriva napredne načine korištenja poslužitelja, [na lekciju](./10-advanced/README.md)
 
 Model Context Protocol (MCP) je otvoreni protokol koji standardizira način na koji aplikacije pružaju kontekst LLM-ovima. Zamislite MCP kao USB-C priključak za AI aplikacije - pruža standardizirani način povezivanja AI modela s različitim izvorima podataka i alatima.
 
@@ -43,13 +44,13 @@ Do kraja ove lekcije, moći ćete:
 - Postaviti razvojna okruženja za MCP u C#, Java, Python, TypeScript i JavaScript
 - Izgraditi i implementirati osnovne MCP poslužitelje s prilagođenim značajkama (resursi, upiti i alati)
 - Stvoriti host aplikacije koje se povezuju s MCP poslužiteljima
-- Testirati i otklanjati pogreške MCP implementacija
+- Testirati i otkloniti pogreške MCP implementacija
 - Razumjeti uobičajene izazove pri postavljanju i njihova rješenja
 - Povezati svoje MCP implementacije s popularnim LLM uslugama
 
 ## Postavljanje MCP okruženja
 
-Prije nego što započnete rad s MCP-om, važno je pripremiti razvojno okruženje i razumjeti osnovni tijek rada. Ovaj odjeljak će vas voditi kroz početne korake postavljanja kako biste osigurali nesmetan početak rada s MCP-om.
+Prije nego što počnete raditi s MCP-om, važno je pripremiti razvojno okruženje i razumjeti osnovni tijek rada. Ovaj odjeljak će vas voditi kroz početne korake postavljanja kako biste osigurali nesmetan početak rada s MCP-om.
 
 ### Preduvjeti
 
@@ -59,7 +60,6 @@ Prije nego što se upustite u MCP razvoj, osigurajte da imate:
 - **IDE/Editor**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm ili bilo koji moderni editor koda
 - **Upravitelji paketa**: NuGet, Maven/Gradle, pip ili npm/yarn
 - **API ključeve**: Za bilo koje AI usluge koje planirate koristiti u svojim host aplikacijama
-
 
 ### Službeni SDK-ovi
 
@@ -84,7 +84,7 @@ MCP pruža službene SDK-ove za više jezika:
 
 ## Vježbanje
 
-Imamo set primjera koji nadopunjuju vježbe koje ćete vidjeti u svim poglavljima ovog odjeljka. Osim toga, svako poglavlje ima svoje vježbe i zadatke.
+Imamo set primjera koji nadopunjuju vježbe koje ćete vidjeti u svim poglavljima ovog odjeljka. Osim toga, svako poglavlje također ima svoje vježbe i zadatke.
 
 - [Java Kalkulator](./samples/java/calculator/README.md)
 - [.Net Kalkulator](../../../03-GettingStarted/samples/csharp)
@@ -104,5 +104,5 @@ Sljedeće: [Stvaranje vašeg prvog MCP poslužitelja](01-first-server/README.md)
 
 ---
 
-**Odricanje od odgovornosti**:  
-Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane ljudskog prevoditelja. Ne preuzimamo odgovornost za nesporazume ili pogrešna tumačenja koja mogu proizaći iz korištenja ovog prijevoda.
+**Izjava o odricanju odgovornosti**:  
+Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane čovjeka. Ne preuzimamo odgovornost za nesporazume ili pogrešna tumačenja koja mogu proizaći iz korištenja ovog prijevoda.

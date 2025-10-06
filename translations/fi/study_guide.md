@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T17:57:22+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T14:38:16+00:00",
   "source_file": "study_guide.md",
   "language_code": "fi"
 }
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -145,11 +146,11 @@ Arkisto on jaettu yhteentoista pääosioon, joista jokainen keskittyy MCP:n eri 
      - MCP Security Controls and Techniques
      - MCP Best Practices Quick Reference
    - **Keskeiset tietoturva-aiheet**:
-     - Prompt injection- ja työkalumyrkytysiskut
+     - Prompt injection- ja tool poisoning -hyökkäykset
      - Istunnon kaappaus ja confused deputy -ongelmat
      - Token passthrough -haavoittuvuudet
      - Liialliset käyttöoikeudet ja pääsynhallinta
-     - Toimitusketjun tietoturva AI-komponenteille
+     - AI-komponenttien toimitusketjun tietoturva
      - Microsoft Prompt Shields -integraatio
 
 4. **Aloittaminen (03-GettingStarted/)**
@@ -162,6 +163,7 @@ Arkisto on jaettu yhteentoista pääosioon, joista jokainen keskittyy MCP:n eri 
      - LLM-asiakasintegraatio
      - VS Code -integraatio
      - Server-Sent Events (SSE) -palvelin
+     - Edistynyt palvelimen käyttö
      - HTTP-suoratoisto
      - AI Toolkit -integraatio
      - Testausstrategiat
@@ -186,7 +188,7 @@ Arkisto on jaettu yhteentoista pääosioon, joista jokainen keskittyy MCP:n eri 
    - Skaalauslähestymistavat
    - Tietoturvanäkökohdat
    - Entra ID -tietoturvaintegraatio
-   - Web-hakuintegraatio
+   - Verkkohakuintegraatio
 
 7. **Yhteisön panokset (06-CommunityContributions/)**
    - Kuinka osallistua koodin ja dokumentaation kehittämiseen
@@ -220,12 +222,12 @@ Arkisto on jaettu yhteentoista pääosioon, joista jokainen keskittyy MCP:n eri 
     - **Seitsemän kattavaa tapaustutkimusta**, jotka osoittavat MCP:n monipuolisuuden eri skenaarioissa:
     - **Azure AI Travel Agents**: Moniagenttiorganisointi Azure OpenAI:n ja AI-haun kanssa
     - **Azure DevOps -integraatio**: Työnkulkujen automatisointi YouTube-datapäivityksillä
-    - **Reaaliaikainen dokumentaatiohaku**: Python-konsoliasiakas suoratoistavalla HTTP:llä
-    - **Interaktiivinen opintosuunnitelman luonti**: Chainlit-verkkosovellus keskustelevaa AI:ta käyttäen
-    - **Dokumentaatio editorissa**: VS Code -integraatio GitHub Copilot -työnkulkujen kanssa
+    - **Reaaliaikainen dokumenttien haku**: Python-konsoliasiakas suoratoistavalla HTTP:llä
+    - **Interaktiivinen opintosuunnitelman generaattori**: Chainlit-verkkosovellus keskustelevaa AI:ta käyttäen
+    - **Editorin sisäinen dokumentaatio**: VS Code -integraatio GitHub Copilot -työnkulkujen kanssa
     - **Azure API Management**: Yrityksen API-integraatio MCP-palvelimen luomisella
     - **GitHub MCP Registry**: Ekosysteemin kehitys ja agenttien integrointialusta
-    - Toteutusesimerkit kattavat yritysintegraation, kehittäjän tuottavuuden ja ekosysteemin kehityksen
+    - Toteutusesimerkit kattavat yritysintegraation, kehittäjien tuottavuuden ja ekosysteemin kehityksen
 
 11. **Käytännön työpaja (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
     - Kattava käytännön työpaja, joka yhdistää MCP:n AI Toolkitin kanssa
@@ -235,7 +237,7 @@ Arkisto on jaettu yhteentoista pääosioon, joista jokainen keskittyy MCP:n eri 
       - Lab 1: MCP-palvelimen perusteet
       - Lab 2: Edistynyt MCP-palvelimen kehitys
       - Lab 3: AI Toolkit -integraatio
-      - Lab 4: Tuotantokäyttö ja skaalaus
+      - Lab 4: Tuotantokäyttöönotto ja skaalaus
     - Lab-pohjainen oppimismenetelmä vaiheittaisilla ohjeilla
 
 12. **MCP-palvelimen tietokantaintegraatiolaboratoriot (11-MCPServerHandsOnLabs/)**
@@ -254,7 +256,7 @@ Arkisto on jaettu yhteentoista pääosioon, joista jokainen keskittyy MCP:n eri 
 
 Arkisto sisältää tukiresursseja:
 
-- **Kuvat-kansio**: Sisältää kaavioita ja kuvituksia, joita käytetään opetussuunnitelmassa
+- **Kuvat-kansio**: Sisältää kaavioita ja kuvituksia, joita käytetään opetussuunnitelman aikana
 - **Käännökset**: Monikielinen tuki dokumentaation automaattisilla käännöksillä
 - **Viralliset MCP-resurssit**:
   - [MCP Documentation](https://modelcontextprotocol.io/)
@@ -266,7 +268,7 @@ Arkisto sisältää tukiresursseja:
 1. **Järjestelmällinen oppiminen**: Seuraa lukuja järjestyksessä (00–11) saadaksesi rakenteellisen oppimiskokemuksen.
 2. **Kielikohtainen painotus**: Jos olet kiinnostunut tietystä ohjelmointikielestä, tutustu näytekansioihin toteutuksiin haluamallasi kielellä.
 3. **Käytännön toteutus**: Aloita "Aloittaminen"-osiosta asentaaksesi ympäristön ja luodaksesi ensimmäisen MCP-palvelimen ja -asiakkaan.
-4. **Edistynyt tutkimus**: Kun perusasiat ovat hallussa, syvenny edistyneisiin aiheisiin laajentaaksesi osaamistasi.
+4. **Edistynyt tutkimus**: Kun perusasiat ovat hallussa, syvenny edistyneisiin aiheisiin laajentaaksesi tietämystäsi.
 5. **Yhteisön osallistuminen**: Liity MCP-yhteisöön GitHub-keskustelujen ja Discord-kanavien kautta saadaksesi yhteyden asiantuntijoihin ja muihin kehittäjiin.
 
 ## MCP-asiakkaat ja työkalut
@@ -337,11 +339,12 @@ Tämä arkisto toivottaa yhteisön panokset tervetulleiksi. Katso Yhteisön pano
 
 | Päivämäärä | Muutokset |
 |------------|-----------||
-| 29. syyskuuta 2025 | - Lisätty 11-MCPServerHandsOnLabs-osio kattavalla 13-laboratorion tietokantaintegraation oppimispolulla<br>- Päivitetty visuaalinen opetussuunnitelmakartta sisältämään tietokantaintegraatiolaboratoriot<br>- Parannettu arkiston rakennetta heijastamaan yksitoista pääosaa<br>- Lisätty yksityiskohtainen kuvaus PostgreSQL-integraatiosta, vähittäiskaupan analytiikan käyttötapauksesta ja yritystason malleista<br>- Päivitetty navigointiohjeet sisältämään osiot 00–11 |
-| 26. syyskuuta 2025 | - Lisätty GitHub MCP Registry -tapaustutkimus 09-CaseStudy-osioon<br>- Päivitetty tapaustutkimukset sisältämään seitsemän kattavaa tapaustutkimusta<br>- Parannettu tapaustutkimusten kuvauksia erityisillä toteutustiedoilla<br>- Päivitetty visuaalinen opetussuunnitelmakartta sisältämään GitHub MCP Registry<br>- Tarkistettu opasrakenne heijastamaan ekosysteemin kehityksen painopistettä |
-| 18. heinäkuuta 2025 | - Päivitetty arkiston rakenne sisältämään Microsoft MCP Servers Guide<br>- Lisätty kattava lista 10 tuotantovalmiista Microsoft MCP-palvelimesta<br>- Parannettu Suositut MCP-palvelimet -osio virallisilla Microsoft MCP-palvelimilla<br>- Päivitetty tapaustutkimukset todellisten tiedostoesimerkkien kanssa<br>- Lisätty Lab-rakenteen yksityiskohdat käytännön työpajalle |
-| 16. heinäkuuta 2025 | - Päivitetty arkiston rakenne heijastamaan nykyistä sisältöä<br>- Lisätty MCP-asiakkaat ja työkalut -osio<br>- Lisätty Suositut MCP-palvelimet -osio<br>- Päivitetty visuaalinen opetussuunnitelmakartta kaikilla nykyisillä aiheilla<br>- Parannettu Edistyneet aiheet -osio kaikilla erikoistuneilla alueilla<br>- Päivitetty tapaustutkimukset todellisten esimerkkien kanssa<br>- Selkeytetty MCP:n alkuperä Anthropicin luomana |
-| 11. kesäkuuta 2025 | - Oppaan alkuperäinen luominen<br>- Lisätty visuaalinen opetussuunnitelmakartta<br>- Kuvaillut arkiston rakenne<br>- Sisällytetty esimerkkiprojektit ja lisäresurssit |
+| 29. syyskuuta 2025 | - Lisätty 11-MCPServerHandsOnLabs-osio kattavalla 13-laboratorion tietokantaintegraation oppimispolulla<br>- Päivitetty visuaalinen opetussuunnitelmakartta sisältämään tietokantaintegraatiolaboratoriot<br>- Parannettu arkiston rakennetta heijastamaan yksitoista pääosiota<br>- Lisätty yksityiskohtainen kuvaus PostgreSQL-integraatiosta, vähittäiskaupan analytiikan käyttötapauksesta ja yritystason malleista<br>- Päivitetty navigointiohjeet sisältämään osiot 00–11 |
+| 26. syyskuuta 2025 | - Lisätty GitHub MCP Registry -tapaustutkimus 09-CaseStudy-osioon<br>- Päivitetty tapaustutkimukset heijastamaan seitsemää kattavaa tapaustutkimusta<br>- Parannettu tapaustutkimusten kuvauksia erityisillä toteutustiedoilla<br>- Päivitetty visuaalinen opetussuunnitelmakartta sisältämään GitHub MCP Registry<br>- Tarkistettu opasrakenne heijastamaan ekosysteemin kehityksen painotusta |
+| 18. heinäkuuta 2025 | - Päivitetty arkiston rakenne sisältämään Microsoft MCP Servers Guide<br>- Lisätty kattava lista 10 tuotantovalmiista Microsoft MCP-palvelimesta<br>- Parannettu Suositut MCP-palvelimet -osio virallisilla Microsoft MCP-palvelimilla<br>- Päivitetty tapaustutkimukset osio todellisilla tiedostoesimerkeillä<br>- Lisätty Lab-rakenteen tiedot käytännön työpajalle |
+| 16. heinäkuuta 2025 | - Päivitetty arkiston rakenne heijastamaan nykyistä sisältöä<br>- Lisätty MCP-asiakkaat ja työkalut -osio<br>- Lisätty Suositut MCP-palvelimet -osio<br>- Päivitetty visuaalinen opetussuunnitelmakartta kaikilla nykyisillä aiheilla<br>- Parannettu Edistyneet aiheet -osio kaikilla erikoistuneilla alueilla<br>- Päivitetty tapaustutkimukset heijastamaan todellisia esimerkkejä<br>- Selkeytetty MCP:n alkuperä Anthropicin luomana |
+| 11. kesäkuuta 2025 | - Opas luotu alun perin<br>- Lisätty visuaalinen opetussuunnitelmakartta<br>- Kuvaillut arkiston rakenne<br>- Sisällytetty esimerkkiprojektit ja lisäresurssit |
+| 6. lokakuuta 2025 | Lisätty oppitunti edistyneestä palvelimen käytöstä |
 
 ---
 
@@ -350,4 +353,4 @@ Tämä arkisto toivottaa yhteisön panokset tervetulleiksi. Katso Yhteisön pano
 ---
 
 **Vastuuvapauslauseke**:  
-Tämä asiakirja on käännetty käyttämällä tekoälypohjaista käännöspalvelua [Co-op Translator](https://github.com/Azure/co-op-translator). Vaikka pyrimme tarkkuuteen, huomioithan, että automaattiset käännökset voivat sisältää virheitä tai epätarkkuuksia. Alkuperäistä asiakirjaa sen alkuperäisellä kielellä tulisi pitää ensisijaisena lähteenä. Kriittisen tiedon osalta suositellaan ammattimaista ihmiskäännöstä. Emme ole vastuussa väärinkäsityksistä tai virhetulkinnoista, jotka johtuvat tämän käännöksen käytöstä.
+Tämä asiakirja on käännetty käyttämällä tekoälypohjaista käännöspalvelua [Co-op Translator](https://github.com/Azure/co-op-translator). Vaikka pyrimme tarkkuuteen, huomioithan, että automaattiset käännökset voivat sisältää virheitä tai epätarkkuuksia. Alkuperäinen asiakirja sen alkuperäisellä kielellä tulisi pitää ensisijaisena lähteenä. Kriittisen tiedon osalta suositellaan ammattimaista ihmiskäännöstä. Emme ole vastuussa väärinkäsityksistä tai virhetulkinnoista, jotka johtuvat tämän käännöksen käytöstä.

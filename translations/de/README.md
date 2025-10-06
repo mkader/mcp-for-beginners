@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "14ff8da45161b7c294d7c0e60115c2b8",
-  "translation_date": "2025-10-03T07:00:56+00:00",
+  "original_hash": "981aa099b26f878952138b76f79c1eae",
+  "translation_date": "2025-10-06T13:18:32+00:00",
   "source_file": "README.md",
   "language_code": "de"
 }
@@ -22,7 +22,7 @@ CO_OP_TRANSLATOR_METADATA:
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 Folgen Sie diesen Schritten, um mit diesen Ressourcen zu beginnen:
-1. **Repository forken**: Klicken Sie hier [![GitHub forks](https://img.shields.io/github/forks/microsoft/mcp-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/mcp-for-beginners/fork)
+1. **Repository forken**: Klicken Sie [![GitHub forks](https://img.shields.io/github/forks/microsoft/mcp-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/mcp-for-beginners/fork)
 2. **Repository klonen**:   `git clone https://github.com/microsoft/mcp-for-beginners.git`
 3. [**Treten Sie dem Azure AI Foundry Discord bei und tauschen Sie sich mit Experten und anderen Entwicklern aus**](https://discord.com/invite/ByRwuEEgH4)
 
@@ -41,7 +41,7 @@ Folgen Sie diesen Schritten, um mit diesen Ressourcen zu beginnen:
 
 Das **Model Context Protocol (MCP)** ist ein hochmodernes Framework, das Interaktionen zwischen KI-Modellen und Client-Anwendungen standardisiert. Dieses Open-Source-Curriculum bietet einen strukturierten Lernpfad mit praktischen Code-Beispielen und realen Anwendungsfällen in beliebten Programmiersprachen wie C#, Java, JavaScript, TypeScript und Python.
 
-Egal, ob Sie KI-Entwickler, Systemarchitekt oder Software-Ingenieur sind – dieser Leitfaden ist Ihre umfassende Ressource, um die Grundlagen und Implementierungsstrategien von MCP zu meistern.
+Egal, ob Sie KI-Entwickler, Systemarchitekt oder Software-Ingenieur sind, dieser Leitfaden ist Ihre umfassende Ressource, um die Grundlagen und Implementierungsstrategien von MCP zu meistern.
 
 ## 🔗 Offizielle MCP-Ressourcen
 
@@ -70,23 +70,24 @@ Egal, ob Sie KI-Entwickler, Systemarchitekt oder Software-Ingenieur sind – die
 | 3.5 | stdio-Server | Erstellen von Servern mit stdio-Transport | [Anleitung](./03-GettingStarted/05-stdio-server/README.md) |
 | 3.6 | HTTP-Streaming | Implementierung von HTTP-Streaming in MCP | [Anleitung](./03-GettingStarted/06-http-streaming/README.md) |
 | 3.7 | AI Toolkit | Nutzung des AI Toolkits mit MCP | [Anleitung](./03-GettingStarted/07-aitk/README.md) |
-| 3.8 | Testen | Testen Ihrer MCP-Server-Implementierung | [Anleitung](./03-GettingStarted/08-testing/README.md) |
-| 3.9 | Bereitstellung | Bereitstellung von MCP-Servern in der Produktion | [Anleitung](./03-GettingStarted/09-deployment/README.md) |
+| 3.8 | Tests | Testen Ihrer MCP-Server-Implementierung | [Anleitung](./03-GettingStarted/08-testing/README.md) |
+| 3.9 | Deployment | Bereitstellung von MCP-Servern in der Produktion | [Anleitung](./03-GettingStarted/09-deployment/README.md) |
+| 3.10 | Erweiterte Servernutzung | Nutzung erweiterter Server für fortgeschrittene Funktionen und verbesserte Architektur | [Anleitung](./03-GettingStarted/10-advanced/README.md) |
 | **Modul 4-5: Praktisch & Fortgeschritten** | | | |
 | 04 | Praktische Implementierung | SDKs, Debugging, Tests, wiederverwendbare Prompt-Vorlagen | [Mehr erfahren](./04-PracticalImplementation/README.md) |
-| 05 | Fortgeschrittene Themen in MCP | Multimodale KI, Skalierung, Unternehmensanwendungen | [Mehr erfahren](./05-AdvancedTopics/README.md) |
+| 05 | Fortgeschrittene Themen in MCP | Multi-modale KI, Skalierung, Unternehmensanwendungen | [Mehr erfahren](./05-AdvancedTopics/README.md) |
 | 5.1 | Azure-Integration | MCP-Integration mit Azure | [Anleitung](./05-AdvancedTopics/mcp-integration/README.md) |
-| 5.2 | Multimodalität | Arbeiten mit mehreren Modalitäten | [Anleitung](./05-AdvancedTopics/mcp-multi-modality/README.md) |
+| 5.2 | Multi-Modality | Arbeiten mit mehreren Modalitäten | [Anleitung](./05-AdvancedTopics/mcp-multi-modality/README.md) |
 | 5.3 | OAuth2-Demo | Implementierung von OAuth2-Authentifizierung | [Anleitung](./05-AdvancedTopics/mcp-oauth2-demo/README.md) |
 | 5.4 | Root-Kontexte | Verständnis und Implementierung von Root-Kontexten | [Anleitung](./05-AdvancedTopics/mcp-root-contexts/README.md) |
 | 5.5 | Routing | MCP-Routing-Strategien | [Anleitung](./05-AdvancedTopics/mcp-routing/README.md) |
 | 5.6 | Sampling | Sampling-Techniken in MCP | [Anleitung](./05-AdvancedTopics/mcp-sampling/README.md) |
 | 5.7 | Skalierung | Skalierung von MCP-Implementierungen | [Anleitung](./05-AdvancedTopics/mcp-scaling/README.md) |
-| 5.8 | Sicherheit | Fortgeschrittene Sicherheitsüberlegungen | [Anleitung](./05-AdvancedTopics/mcp-security/README.md) |
+| 5.8 | Sicherheit | Erweiterte Sicherheitsüberlegungen | [Anleitung](./05-AdvancedTopics/mcp-security/README.md) |
 | 5.9 | Websuche | Implementierung von Websuchfunktionen | [Anleitung](./05-AdvancedTopics/web-search-mcp/README.md) |
-| 5.10 | Echtzeit-Streaming | Aufbau von Echtzeit-Streaming-Funktionalitäten | [Anleitung](./05-AdvancedTopics/mcp-realtimestreaming/README.md) |
+| 5.10 | Echtzeit-Streaming | Aufbau von Echtzeit-Streaming-Funktionalität | [Anleitung](./05-AdvancedTopics/mcp-realtimestreaming/README.md) |
 | 5.11 | Echtzeitsuche | Implementierung von Echtzeitsuche | [Anleitung](./05-AdvancedTopics/mcp-realtimesearch/README.md) |
-| 5.12 | Entra ID-Authentifizierung | Authentifizierung mit Microsoft Entra ID | [Anleitung](./05-AdvancedTopics/mcp-security-entra/README.md) |
+| 5.12 | Entra ID Auth | Authentifizierung mit Microsoft Entra ID | [Anleitung](./05-AdvancedTopics/mcp-security-entra/README.md) |
 | 5.13 | Foundry-Integration | Integration mit Azure AI Foundry | [Anleitung](./05-AdvancedTopics/mcp-foundry-agent-integration/README.md) |
 | 5.14 | Kontext-Engineering | Techniken für effektives Kontext-Engineering | [Anleitung](./05-AdvancedTopics/mcp-contextengineering/README.md) |
 | 5.15 | MCP Custom Transport | Implementierung von benutzerdefinierten Transporten | [Anleitung](./05-AdvancedTopics/mcp-transport/README.md) |
@@ -102,10 +103,10 @@ Egal, ob Sie KI-Entwickler, Systemarchitekt oder Software-Ingenieur sind – die
 | 11.2 | Kernarchitektur | Verständnis der MCP-Server-Architektur, Datenbankebenen und Sicherheitsmuster | [Lab 01](./11-MCPServerHandsOnLabs/01-Architecture/README.md) |
 | 11.3 | Sicherheit & Multi-Tenancy | Zeilenebene-Sicherheit, Authentifizierung und Multi-Tenant-Datenzugriff | [Lab 02](./11-MCPServerHandsOnLabs/02-Security/README.md) |
 | 11.4 | Umgebungseinrichtung | Einrichtung der Entwicklungsumgebung, Docker, Azure-Ressourcen | [Lab 03](./11-MCPServerHandsOnLabs/03-Setup/README.md) |
-| 11.5 | Datenbankdesign | PostgreSQL-Einrichtung, Entwurf des Einzelhandel-Schemas und Beispieldaten | [Lab 04](./11-MCPServerHandsOnLabs/04-Database/README.md) |
+| 11.5 | Datenbankdesign | PostgreSQL-Einrichtung, Entwurf des Einzelhandelsschemas und Beispieldaten | [Lab 04](./11-MCPServerHandsOnLabs/04-Database/README.md) |
 | 11.6 | MCP-Server-Implementierung | Aufbau des FastMCP-Servers mit Datenbankintegration | [Lab 05](./11-MCPServerHandsOnLabs/05-MCP-Server/README.md) |
-| 11.7 | Tool-Entwicklung | Erstellung von Datenbankabfrage-Tools und Schema-Inspektion | [Lab 06](./11-MCPServerHandsOnLabs/06-Tools/README.md) |
-| 11.8 | Semantische Suche | Implementierung von Vektor-Embeddings mit Azure OpenAI und pgvector | [Lab 07](./11-MCPServerHandsOnLabs/07-Semantic-Search/README.md) |
+| 11.7 | Tool-Entwicklung | Erstellung von Datenbankabfragetools und Schema-Introspektion | [Lab 06](./11-MCPServerHandsOnLabs/06-Tools/README.md) |
+| 11.8 | Semantische Suche | Implementierung von Vektor-Einbettungen mit Azure OpenAI und pgvector | [Lab 07](./11-MCPServerHandsOnLabs/07-Semantic-Search/README.md) |
 | 11.9 | Testen & Debugging | Teststrategien, Debugging-Tools und Validierungsansätze | [Lab 08](./11-MCPServerHandsOnLabs/08-Testing/README.md) |
 | 11.10 | VS Code-Integration | Konfiguration der VS Code MCP-Integration und Nutzung von AI-Chat | [Lab 09](./11-MCPServerHandsOnLabs/09-VS-Code/README.md) |
 | 11.11 | Bereitstellungsstrategien | Docker-Bereitstellung, Azure Container Apps und Skalierungsüberlegungen | [Lab 10](./11-MCPServerHandsOnLabs/10-Deployment/README.md) |
@@ -155,7 +156,7 @@ Dieses Repository enthält mehrere Ressourcen, die Ihnen helfen, effektiv zu ler
 Ein umfassender [Lernleitfaden](./study_guide.md) steht zur Verfügung, um Ihnen zu helfen, dieses Repository effektiv zu nutzen. Der Leitfaden enthält:
 
 - Eine visuelle Übersicht des Curriculums mit allen behandelten Themen
-- Detaillierte Aufschlüsselung jedes Abschnitts des Repositorys
+- Detaillierte Aufschlüsselung jedes Abschnitts des Repositories
 - Anleitung zur Nutzung der Beispielprojekte
 - Empfohlene Lernpfade für verschiedene Fähigkeitsstufen
 - Zusätzliche Ressourcen zur Ergänzung Ihrer Lernreise
@@ -182,12 +183,12 @@ Jede Lektion in diesem Leitfaden enthält:
 
 ### [MCP Dev Days Juli 2025](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 #### [➡️Auf Abruf ansehen - MCP Dev Days](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
-Bereiten Sie sich auf zwei Tage voller technischer Einblicke, Community-Verbindungen und praktischer Lernmöglichkeiten bei den MCP Dev Days vor, einer virtuellen Veranstaltung, die dem Model Context Protocol (MCP) gewidmet ist – dem aufstrebenden Standard, der KI-Modelle und die Tools, die sie nutzen, verbindet.
+Bereiten Sie sich auf zwei Tage voller technischer Einblicke, Community-Verbindungen und praktischer Lernmöglichkeiten bei den MCP Dev Days vor, einer virtuellen Veranstaltung, die dem Model Context Protocol (MCP) gewidmet ist – dem aufkommenden Standard, der KI-Modelle und die Tools, auf die sie angewiesen sind, verbindet.
 Sie können die MCP Dev Days ansehen, indem Sie sich auf unserer Veranstaltungsseite registrieren: https://aka.ms/mcpdevdays. 
 
 #### [Tag 1: MCP Produktivität, DevTools & Community:](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 
-Dreht sich darum, Entwicklern zu helfen, MCP in ihren Entwicklungsworkflow zu integrieren und die großartige MCP-Community zu feiern. Wir werden von Community-Mitgliedern und Partnern wie Arcade, Block, Okta und Neon begleitet, um zu sehen, wie sie mit Microsoft zusammenarbeiten, um ein offenes, erweiterbares MCP-Ökosystem zu gestalten. 
+Dreht sich darum, Entwickler zu befähigen, MCP in ihren Entwicklungsworkflow zu integrieren, und die großartige MCP-Community zu feiern. Wir werden von Community-Mitgliedern und Partnern wie Arcade, Block, Okta und Neon begleitet, um zu sehen, wie sie mit Microsoft zusammenarbeiten, um ein offenes, erweiterbares MCP-Ökosystem zu gestalten. 
 Echte Demos mit VS Code, Visual Studio, GitHub Copilot und beliebten Community-Tools  
 Praktische, kontextgesteuerte Entwicklungsworkflows  
 Community-geführte Sitzungen und Einblicke  
@@ -223,7 +224,7 @@ Lernen Sie das Model Context Protocol (MCP) kennen, ein hochmodernes Framework, 
 
 ## 🌟 Community-Dank
 
-Vielen Dank an Microsoft Valued Professional [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) für die Bereitstellung wichtiger Code-Beispiele. 
+Vielen Dank an Microsoft Valued Professional [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) für die Bereitstellung wichtiger Codebeispiele. 
 
 ## 📜 Lizenzinformationen
 
@@ -241,7 +242,7 @@ des Bots. Sie müssen dies nur einmal für alle Repos tun, die unsere CLA verwen
 
 Dieses Projekt hat den [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) übernommen.
 Für weitere Informationen siehe die [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) oder
-kontaktieren Sie [opencode@microsoft.com](mailto:opencode@microsoft.com) mit zusätzlichen Fragen oder Kommentaren.
+kontaktieren Sie [opencode@microsoft.com](mailto:opencode@microsoft.com) bei zusätzlichen Fragen oder Kommentaren.
 
 ## 📂 Repository-Struktur
 
@@ -254,14 +255,14 @@ Das Repository ist wie folgt organisiert:
 - **translated_images/**: Lokalisierte Versionen von Diagrammen und Illustrationen
 - **study_guide.md**: Umfassender Leitfaden zur Navigation im Repository
 - **changelog.md**: Aufzeichnung aller wesentlichen Änderungen an den Curriculum-Materialien
-- **mcp.json**: Konfigurationsdatei für MCP-Spezifikation
-- **CODE_OF_CONDUCT.md, LICENSE, SECURITY.md, SUPPORT.md**: Dokumente zur Projektverwaltung
+- **mcp.json**: Konfigurationsdatei für die MCP-Spezifikation
+- **CODE_OF_CONDUCT.md, LICENSE, SECURITY.md, SUPPORT.md**: Dokumente zur Projektführung
 
 ## 🎒 Weitere Kurse
 Unser Team produziert weitere Kurse! Schauen Sie sich an:
 
-- [**NEU** Edge AI für Anfänger](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI Agents für Anfänger](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [**NEU** Edge AI Für Anfänger](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [AI Agents Für Anfänger](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [Generative AI für Anfänger mit .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
 - [Generative AI für Anfänger mit JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
 - [Generative AI für Anfänger](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)

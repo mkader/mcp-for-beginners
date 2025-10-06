@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "1197b6dbde36773e04a5ae826557fdb9",
-  "translation_date": "2025-08-26T16:59:55+00:00",
+  "original_hash": "94b861de00829c34912ac36140f6183e",
+  "translation_date": "2025-10-06T13:11:40+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "en"
 }
@@ -15,25 +15,27 @@ _(Click the image above to watch the video for this lesson)_
 
 This section includes several lessons:
 
-- **1 Your first server**: In this first lesson, you’ll learn how to create your first server and use the inspector tool to test and debug it. [Go to the lesson](01-first-server/README.md)
+- **1 Your first server**: In this initial lesson, you'll learn how to create your first server and use the inspector tool to test and debug it. [Go to the lesson](01-first-server/README.md)
 
-- **2 Client**: In this lesson, you’ll learn how to write a client that connects to your server. [Go to the lesson](02-client/README.md)
+- **2 Client**: This lesson teaches you how to write a client that can connect to your server. [Go to the lesson](02-client/README.md)
 
-- **3 Client with LLM**: A more advanced way to write a client is by integrating an LLM, enabling it to "negotiate" with your server. [Go to the lesson](03-llm-client/README.md)
+- **3 Client with LLM**: Learn how to enhance your client by integrating an LLM, enabling it to "negotiate" with your server on actions to take. [Go to the lesson](03-llm-client/README.md)
 
-- **4 Consuming a server in GitHub Copilot Agent mode with Visual Studio Code**: Learn how to run your MCP Server directly within Visual Studio Code. [Go to the lesson](04-vscode/README.md)
+- **4 Consuming a server in GitHub Copilot Agent mode using Visual Studio Code**: Explore how to run your MCP Server directly within Visual Studio Code. [Go to the lesson](04-vscode/README.md)
 
-- **5 stdio Transport Server**: The stdio transport is the recommended standard for MCP server-to-client communication, offering secure subprocess-based communication. [Go to the lesson](05-stdio-server/README.md)
+- **5 stdio Transport Server**: Discover stdio transport, the recommended standard for secure MCP server-to-client communication based on subprocesses. [Go to the lesson](05-stdio-server/README.md)
 
-- **6 HTTP Streaming with MCP (Streamable HTTP)**: Discover modern HTTP streaming, progress notifications, and how to build scalable, real-time MCP servers and clients using Streamable HTTP. [Go to the lesson](06-http-streaming/README.md)
+- **6 HTTP Streaming with MCP (Streamable HTTP)**: Learn about modern HTTP streaming, progress notifications, and how to implement scalable, real-time MCP servers and clients using Streamable HTTP. [Go to the lesson](06-http-streaming/README.md)
 
-- **7 Utilizing the AI Toolkit for VSCode**: Learn how to use the AI Toolkit to test and consume your MCP Clients and Servers. [Go to the lesson](07-aitk/README.md)
+- **7 Utilizing AI Toolkit for VSCode**: Use the AI Toolkit to consume and test your MCP Clients and Servers. [Go to the lesson](07-aitk/README.md)
 
-- **8 Testing**: This lesson focuses on various ways to test your server and client. [Go to the lesson](08-testing/README.md)
+- **8 Testing**: Focus on various methods to test your server and client. [Go to the lesson](08-testing/README.md)
 
-- **9 Deployment**: Explore different methods for deploying your MCP solutions. [Go to the lesson](09-deployment/README.md)
+- **9 Deployment**: Explore different ways to deploy your MCP solutions. [Go to the lesson](09-deployment/README.md)
 
-The Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to LLMs. Think of MCP as the "USB-C port" for AI applications—it offers a standardized way to connect AI models to various data sources and tools.
+- **10 Advanced server usage**: Dive into advanced server usage techniques. [Go to the lesson](./10-advanced/README.md)
+
+The Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to LLMs. Think of MCP as a USB-C port for AI applications—it offers a standardized way to connect AI models to various data sources and tools.
 
 ## Learning Objectives
 
@@ -48,11 +50,11 @@ By the end of this lesson, you will be able to:
 
 ## Setting Up Your MCP Environment
 
-Before starting with MCP, it’s important to prepare your development environment and understand the basic workflow. This section will guide you through the initial setup to ensure a smooth start.
+Before starting with MCP, it's essential to prepare your development environment and understand the basic workflow. This section will guide you through the initial setup steps for a smooth start with MCP.
 
 ### Prerequisites
 
-Before diving into MCP development, make sure you have:
+Before diving into MCP development, ensure you have:
 
 - **Development Environment**: For your chosen language (C#, Java, Python, TypeScript, or JavaScript)
 - **IDE/Editor**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm, or any modern code editor
@@ -61,7 +63,7 @@ Before diving into MCP development, make sure you have:
 
 ### Official SDKs
 
-In the upcoming chapters, you’ll see solutions built using Python, TypeScript, Java, and .NET. Below are the officially supported SDKs.
+In the upcoming chapters, you'll encounter solutions built using Python, TypeScript, Java, and .NET. Below are the officially supported SDKs.
 
 MCP provides official SDKs for multiple languages:
 - [C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) - Maintained in collaboration with Microsoft
@@ -74,15 +76,15 @@ MCP provides official SDKs for multiple languages:
 
 ## Key Takeaways
 
-- Setting up an MCP development environment is straightforward with language-specific SDKs
-- Building MCP servers involves creating and registering tools with clear schemas
-- MCP clients connect to servers and models to leverage extended capabilities
-- Testing and debugging are critical for reliable MCP implementations
-- Deployment options range from local development to cloud-based solutions
+- Setting up an MCP development environment is straightforward with language-specific SDKs.
+- Building MCP servers involves creating and registering tools with clear schemas.
+- MCP clients connect to servers and models to leverage extended capabilities.
+- Testing and debugging are crucial for reliable MCP implementations.
+- Deployment options range from local development to cloud-based solutions.
 
 ## Practicing
 
-We provide a set of sample projects to complement the exercises in each chapter. Additionally, each chapter includes its own exercises and assignments.
+We provide a set of samples to complement the exercises in all chapters of this section. Additionally, each chapter includes its own exercises and assignments.
 
 - [Java Calculator](./samples/java/calculator/README.md)
 - [.Net Calculator](../../../03-GettingStarted/samples/csharp)

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T22:29:42+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T13:11:15+00:00",
   "source_file": "study_guide.md",
   "language_code": "en"
 }
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -163,6 +164,7 @@ The repository is divided into eleven main sections, each focusing on different 
      - LLM client integration
      - VS Code integration
      - Server-Sent Events (SSE) server
+     - Advanced server usage
      - HTTP streaming
      - AI Toolkit integration
      - Testing strategies
@@ -343,6 +345,7 @@ This repository welcomes contributions from the community. See the Community Con
 | July 18, 2025 | - Updated repository structure to include Microsoft MCP Servers Guide<br>- Added comprehensive list of 10 production-ready Microsoft MCP servers<br>- Enhanced Popular MCP Servers section with Official Microsoft MCP Servers<br>- Updated Case Studies section with actual file examples<br>- Added Lab Structure details for Hands-on Workshop |
 | July 16, 2025 | - Updated repository structure to reflect current content<br>- Added MCP Clients and Tools section<br>- Added Popular MCP Servers section<br>- Updated Visual Curriculum Map with all current topics<br>- Enhanced Advanced Topics section with all specialized areas<br>- Updated Case Studies to reflect actual examples<br>- Clarified MCP origin as created by Anthropic |
 | June 11, 2025 | - Initial creation of the study guide<br>- Added Visual Curriculum Map<br>- Outlined repository structure<br>- Included sample projects and additional resources |
+| October 6th, 2025 | Added lesson on advanced server usage |
 
 ---
 
@@ -351,4 +354,4 @@ This repository welcomes contributions from the community. See the Community Con
 ---
 
 **Disclaimer**:  
-This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may include errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is advised. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.
+This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we strive for accuracy, please note that automated translations may contain errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is recommended. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.
