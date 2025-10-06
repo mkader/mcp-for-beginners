@@ -1,37 +1,37 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "0df1ee78a6dd8300f3a040ca5b411c2e",
-  "translation_date": "2025-08-26T20:46:36+00:00",
+  "original_hash": "9678e0c6945b8e0c23586869b0e26783",
+  "translation_date": "2025-10-06T11:15:23+00:00",
   "source_file": "00-Introduction/README.md",
   "language_code": "lt"
 }
 -->
-# Įvadas į Modelio Konteksto Protokolą (MCP): Kodėl tai svarbu kuriant mastelio AI programas
+# Įvadas į Modelio Konteksto Protokolą (MCP): Kodėl jis svarbus mastelio AI programoms
 
 [![Įvadas į Modelio Konteksto Protokolą](../../../translated_images/01.a467036d886b5fb5b9cf7b39bac0e743b6ca0a4a18a492de90061daaf0cc55f0.lt.png)](https://youtu.be/agBbdiOPLQA)
 
-_(Spustelėkite aukščiau esančią nuotrauką, kad peržiūrėtumėte šios pamokos vaizdo įrašą)_
+_(Spustelėkite paveikslėlį aukščiau, kad peržiūrėtumėte šios pamokos vaizdo įrašą)_
 
-Generatyviosios AI programos yra didelis žingsnis į priekį, nes jos dažnai leidžia vartotojui bendrauti su programa naudojant natūralios kalbos užklausas. Tačiau, kai į tokias programas investuojama daugiau laiko ir išteklių, norisi užtikrinti, kad funkcionalumai ir ištekliai būtų lengvai integruojami, kad programą būtų lengva plėsti, kad ji galėtų veikti su daugiau nei vienu modeliu ir tvarkytų įvairias modelių subtilybes. Trumpai tariant, generatyviosios AI programos kūrimas yra lengvas pradžioje, tačiau, kai jos auga ir tampa sudėtingesnės, reikia pradėti apibrėžti architektūrą ir greičiausiai remtis standartu, kad programos būtų kuriamos nuosekliai. Čia į pagalbą ateina MCP, kuris padeda organizuoti procesus ir suteikia standartą.
+Generatyviosios AI programos yra didelis žingsnis į priekį, nes jos dažnai leidžia vartotojui sąveikauti su programa naudojant natūralios kalbos užklausas. Tačiau, kai daugiau laiko ir išteklių investuojama į tokias programas, norite užtikrinti, kad galėtumėte lengvai integruoti funkcijas ir išteklius taip, kad būtų lengva plėsti, kad jūsų programa galėtų naudoti daugiau nei vieną modelį ir tvarkyti įvairias modelio subtilybes. Trumpai tariant, generatyviosios AI programos yra lengvai kuriamos pradžioje, tačiau augant ir sudėtingėjant, reikia pradėti apibrėžti architektūrą ir greičiausiai pasikliauti standartu, kad užtikrintumėte, jog jūsų programos būtų kuriamos nuosekliai. Čia MCP padeda organizuoti procesus ir suteikia standartą.
 
 ---
 
 ## **🔍 Kas yra Modelio Konteksto Protokolas (MCP)?**
 
-**Modelio Konteksto Protokolas (MCP)** yra **atviras, standartizuotas sąsajos protokolas**, leidžiantis dideliems kalbos modeliams (LLM) sklandžiai sąveikauti su išoriniais įrankiais, API ir duomenų šaltiniais. Jis suteikia nuoseklią architektūrą, kuri pagerina AI modelių funkcionalumą už jų mokymo duomenų ribų, leidžiant kurti išmanesnes, mastelio ir jautresnes AI sistemas.
+**Modelio Konteksto Protokolas (MCP)** yra **atviras, standartizuotas sąsaja**, leidžianti dideliems kalbos modeliams (LLM) sklandžiai sąveikauti su išoriniais įrankiais, API ir duomenų šaltiniais. Jis suteikia nuoseklią architektūrą, kuri pagerina AI modelio funkcionalumą už jų mokymo duomenų ribų, leidžiant kurti protingesnes, mastelio ir labiau reaguojančias AI sistemas.
 
 ---
 
-## **🎯 Kodėl AI standartizacija yra svarbi**
+## **🎯 Kodėl standartizacija AI srityje yra svarbi**
 
-Kai generatyviosios AI programos tampa sudėtingesnės, būtina priimti standartus, kurie užtikrintų **mastelį, plėtrumą, palaikomumą** ir **išvengtų priklausomybės nuo vieno tiekėjo**. MCP sprendžia šiuos poreikius:
+Generatyviosios AI programoms tampant sudėtingesnėms, būtina priimti standartus, kurie užtikrintų **mastelį, plėtrą, palaikymą** ir **išvengtų priklausomybės nuo vieno tiekėjo**. MCP sprendžia šiuos poreikius:
 
-- Suvienodindamas modelių ir įrankių integracijas
-- Sumažindamas trapias, vienkartines pritaikytas sprendimų sistemas
-- Leidžiant vienoje ekosistemoje veikti keliems modeliams iš skirtingų tiekėjų
+- Vienija modelio ir įrankių integracijas
+- Sumažina trapius, vienkartinius sprendimus
+- Leidžia keliems modeliams iš skirtingų tiekėjų veikti vienoje ekosistemoje
 
-**Pastaba:** Nors MCP save pristato kaip atvirą standartą, nėra planų MCP standartizuoti per esamas standartų organizacijas, tokias kaip IEEE, IETF, W3C, ISO ar kitas.
+**Pastaba:** Nors MCP save pristato kaip atvirą standartą, nėra planų standartizuoti MCP per esamas standartų organizacijas, tokias kaip IEEE, IETF, W3C, ISO ar kitas.
 
 ---
 
@@ -41,30 +41,30 @@ Kai generatyviosios AI programos tampa sudėtingesnės, būtina priimti standart
 
 - Apibrėžti **Modelio Konteksto Protokolą (MCP)** ir jo naudojimo atvejus
 - Suprasti, kaip MCP standartizuoja modelio ir įrankių komunikaciją
-- Atpažinti pagrindinius MCP architektūros komponentus
-- Išnagrinėti realaus pasaulio MCP taikymo pavyzdžius įmonių ir kūrimo kontekstuose
+- Identifikuoti pagrindinius MCP architektūros komponentus
+- Išnagrinėti MCP realaus pasaulio taikymus verslo ir kūrimo kontekstuose
 
 ---
 
-## **💡 Kodėl Modelio Konteksto Protokolas (MCP) yra proveržis**
+## **💡 Kodėl Modelio Konteksto Protokolas (MCP) yra revoliucinis**
 
-### **🔗 MCP sprendžia AI sąveikų fragmentaciją**
+### **🔗 MCP sprendžia fragmentaciją AI sąveikose**
 
 Prieš MCP, modelių integravimas su įrankiais reikalavo:
 
-- Individualaus kodo kiekvienai įrankio ir modelio porai
+- Individualaus kodo kiekvienam įrankio-modelio porai
 - Nestandartinių API kiekvienam tiekėjui
-- Dažnų gedimų dėl atnaujinimų
+- Dažnų sutrikimų dėl atnaujinimų
 - Prasto mastelio didėjant įrankių skaičiui
 
 ### **✅ MCP standartizacijos privalumai**
 
-| **Privalumas**            | **Aprašymas**                                                                  |
-|---------------------------|-------------------------------------------------------------------------------|
-| Sąveikumas               | LLM sklandžiai veikia su įrankiais iš skirtingų tiekėjų                        |
-| Nuoseklumas              | Vienodas elgesys visose platformose ir įrankiuose                              |
-| Pakartotinis naudojimas  | Kartą sukurti įrankiai gali būti naudojami įvairiuose projektuose ir sistemose |
-| Spartesnis kūrimas       | Sutrumpina kūrimo laiką naudojant standartizuotas, lengvai pritaikomas sąsajas |
+| **Privalumas**             | **Aprašymas**                                                                  |
+|----------------------------|-------------------------------------------------------------------------------|
+| Sąveikumas                | LLM sklandžiai veikia su įrankiais iš skirtingų tiekėjų                        |
+| Nuoseklumas               | Vienodas elgesys visose platformose ir įrankiuose                              |
+| Pakartotinis naudojimas   | Kartą sukurti įrankiai gali būti naudojami įvairiuose projektuose ir sistemose |
+| Spartesnis kūrimas        | Sumažina kūrimo laiką naudojant standartizuotas, lengvai prijungiamas sąsajas  |
 
 ---
 
@@ -72,16 +72,16 @@ Prieš MCP, modelių integravimas su įrankiais reikalavo:
 
 MCP naudoja **kliento-serverio modelį**, kuriame:
 
-- **MCP šeimininkai** valdo AI modelius
-- **MCP klientai** inicijuoja užklausas
-- **MCP serveriai** teikia kontekstą, įrankius ir galimybes
+- **MCP Hostai** valdo AI modelius
+- **MCP Klientai** inicijuoja užklausas
+- **MCP Serveriai** teikia kontekstą, įrankius ir galimybes
 
 ### **Pagrindiniai komponentai:**
 
-- **Ištekliai** – Statiniai arba dinaminiai duomenys modeliams  
-- **Užklausos** – Iš anksto apibrėžti darbo srautai generavimui nukreipti  
+- **Ištekliai** – Statiniai arba dinamiški duomenys modeliams  
+- **Užklausos** – Iš anksto apibrėžti darbo procesai, skirti vadovauti generavimui  
 - **Įrankiai** – Vykdomos funkcijos, tokios kaip paieška, skaičiavimai  
-- **Mėginių ėmimas** – Agentinis elgesys per rekursines sąveikas  
+- **Imties ėmimas** – Agentinis elgesys per rekursines sąveikas  
 
 ---
 
@@ -89,23 +89,23 @@ MCP naudoja **kliento-serverio modelį**, kuriame:
 
 MCP serveriai veikia taip:
 
-- **Užklausos eiga**:
+- **Užklausos srautas**:
     1. Užklausą inicijuoja galutinis vartotojas arba programinė įranga, veikianti jo vardu.
-    2. **MCP klientas** siunčia užklausą **MCP šeimininkui**, kuris valdo AI modelio vykdymo aplinką.
-    3. **AI modelis** gauna vartotojo užklausą ir gali prašyti prieigos prie išorinių įrankių ar duomenų per vieną ar kelis įrankių iškvietimus.
-    4. **MCP šeimininkas**, o ne pats modelis, bendrauja su atitinkamais **MCP serveriais** naudodamas standartizuotą protokolą.
-- **MCP šeimininko funkcionalumas**:
-    - **Įrankių registras**: Tvarko galimų įrankių ir jų galimybių katalogą.
+    2. **MCP Klientas** siunčia užklausą **MCP Hostui**, kuris valdo AI modelio vykdymo aplinką.
+    3. **AI Modelis** gauna vartotojo užklausą ir gali prašyti prieigos prie išorinių įrankių ar duomenų per vieną ar kelis įrankių skambučius.
+    4. **MCP Hostas**, o ne pats modelis, bendrauja su atitinkamais **MCP Serveriais** naudodamas standartizuotą protokolą.
+- **MCP Hosto funkcionalumas**:
+    - **Įrankių registras**: Tvarko katalogą su galimais įrankiais ir jų funkcijomis.
     - **Autentifikacija**: Tikrina leidimus naudotis įrankiais.
     - **Užklausų tvarkytojas**: Apdoroja gaunamas įrankių užklausas iš modelio.
-    - **Atsakymų formuotojas**: Struktūrizuoja įrankių išvestį formatu, kurį modelis gali suprasti.
-- **MCP serverio vykdymas**:
-    - **MCP šeimininkas** nukreipia įrankių užklausas į vieną ar kelis **MCP serverius**, kurie teikia specializuotas funkcijas (pvz., paiešką, skaičiavimus, duomenų bazės užklausas).
-    - **MCP serveriai** atlieka savo operacijas ir grąžina rezultatus **MCP šeimininkui** nuosekliu formatu.
-    - **MCP šeimininkas** formatuoja ir perduoda šiuos rezultatus **AI modeliui**.
+    - **Atsakymų formatavimas**: Struktūrizuoja įrankių išvestį formatu, kurį modelis gali suprasti.
+- **MCP Serverio vykdymas**:
+    - **MCP Hostas** nukreipia įrankių skambučius į vieną ar kelis **MCP Serverius**, kurie atskleidžia specializuotas funkcijas (pvz., paieška, skaičiavimai, duomenų bazės užklausos).
+    - **MCP Serveriai** atlieka savo operacijas ir grąžina rezultatus **MCP Hostui** nuosekliu formatu.
+    - **MCP Hostas** formatuoja ir perduoda šiuos rezultatus **AI Modeliui**.
 - **Atsakymo užbaigimas**:
-    - **AI modelis** įtraukia įrankių išvestį į galutinį atsakymą.
-    - **MCP šeimininkas** siunčia šį atsakymą atgal **MCP klientui**, kuris jį pateikia galutiniam vartotojui arba kviečiančiai programinei įrangai.
+    - **AI Modelis** įtraukia įrankių išvestį į galutinį atsakymą.
+    - **MCP Hostas** siunčia šį atsakymą atgal **MCP Klientui**, kuris perduoda jį galutiniam vartotojui arba kviečiančiai programinei įrangai.
 
 ```mermaid
 ---
@@ -150,9 +150,9 @@ graph TD
 
 ## 👨‍💻 Kaip sukurti MCP serverį (su pavyzdžiais)
 
-MCP serveriai leidžia išplėsti LLM galimybes, teikiant duomenis ir funkcionalumą.
+MCP serveriai leidžia išplėsti LLM galimybes teikiant duomenis ir funkcijas.
 
-Pasiruošę išbandyti? Štai kalbų ir/arba platformų specifiniai SDK su pavyzdžiais, kaip kurti paprastus MCP serverius skirtingomis kalbomis/platformomis:
+Pasiruošę išbandyti? Štai kalbų ir/arba technologijų specifiniai SDK su pavyzdžiais, kaip sukurti paprastus MCP serverius skirtingomis kalbomis/technologijomis:
 
 - **Python SDK**: https://github.com/modelcontextprotocol/python-sdk
 
@@ -162,32 +162,30 @@ Pasiruošę išbandyti? Štai kalbų ir/arba platformų specifiniai SDK su pavyz
 
 - **C#/.NET SDK**: https://github.com/modelcontextprotocol/csharp-sdk
 
----
+## 🌍 MCP realaus pasaulio taikymo pavyzdžiai
 
-## 🌍 Realūs MCP naudojimo atvejai
+MCP leidžia įvairias programas, išplečiant AI galimybes:
 
-MCP leidžia platų programų spektrą, išplečiant AI galimybes:
+| **Taikymas**                | **Aprašymas**                                                                  |
+|-----------------------------|-------------------------------------------------------------------------------|
+| Verslo duomenų integracija | Sujungia LLM su duomenų bazėmis, CRM ar vidiniais įrankiais                   |
+| Agentinės AI sistemos       | Leidžia autonominiams agentams naudotis įrankiais ir sprendimų priėmimo procesais |
+| Daugiarūšės programos       | Sujungia tekstą, vaizdą ir garsą vienoje AI programoje                       |
+| Realaus laiko duomenų integracija | Įtraukia gyvus duomenis į AI sąveikas, kad būtų tikslesni ir aktualesni rezultatai |
 
-| **Programa**                  | **Aprašymas**                                                                |
-|-------------------------------|-------------------------------------------------------------------------------|
-| Įmonių duomenų integracija    | Sujungia LLM su duomenų bazėmis, CRM ar vidiniais įrankiais                   |
-| Agentinės AI sistemos         | Leidžia autonominiams agentams naudotis įrankiais ir sprendimų priėmimo srautais |
-| Daugiarūšės programos         | Sujungia tekstą, vaizdus ir garsą vienoje AI programoje                       |
-| Realaus laiko duomenų integracija | Įtraukia tiesioginius duomenis į AI sąveikas, kad būtų pateikti tikslesni, aktualūs rezultatai |
+### 🧠 MCP = Universalus standartas AI sąveikoms
 
-### 🧠 MCP = Universalus AI sąveikų standartas
+Modelio Konteksto Protokolas (MCP) veikia kaip universalus standartas AI sąveikoms, panašiai kaip USB-C standartizavo fizinius įrenginių jungimus. AI pasaulyje MCP suteikia nuoseklią sąsają, leidžiančią modeliams (klientams) sklandžiai integruotis su išoriniais įrankiais ir duomenų tiekėjais (serveriais). Tai pašalina poreikį įvairiems, individualiems protokolams kiekvienam API ar duomenų šaltiniui.
 
-Modelio Konteksto Protokolas (MCP) veikia kaip universalus AI sąveikų standartas, panašiai kaip USB-C standartizavo fizinius įrenginių jungimus. AI pasaulyje MCP suteikia nuoseklią sąsają, leidžiančią modeliams (klientams) sklandžiai integruotis su išoriniais įrankiais ir duomenų teikėjais (serveriais). Tai pašalina poreikį kurti įvairius, pritaikytus protokolus kiekvienai API ar duomenų šaltiniui.
-
-Pagal MCP, MCP suderinamas įrankis (vadinamas MCP serveriu) laikosi vieningo standarto. Šie serveriai gali pateikti sąrašą įrankių ar veiksmų, kuriuos jie siūlo, ir vykdyti tuos veiksmus, kai jų prašo AI agentas. AI agentų platformos, palaikančios MCP, gali aptikti galimus įrankius iš serverių ir juos iškviesti per šį standartizuotą protokolą.
+Pagal MCP, MCP suderinamas įrankis (vadinamas MCP serveriu) laikosi vieningo standarto. Šie serveriai gali pateikti sąrašą įrankių ar veiksmų, kuriuos jie siūlo, ir vykdyti tuos veiksmus, kai jų prašo AI agentas. AI agentų platformos, palaikančios MCP, gali aptikti galimus įrankius iš serverių ir iškviesti juos per šį standartizuotą protokolą.
 
 ### 💡 Palengvina prieigą prie žinių
 
-Be įrankių teikimo, MCP taip pat palengvina prieigą prie žinių. Tai leidžia programoms suteikti kontekstą dideliems kalbos modeliams (LLM), susiejant juos su įvairiais duomenų šaltiniais. Pavyzdžiui, MCP serveris gali atstovauti įmonės dokumentų saugyklą, leidžiant agentams pagal poreikį gauti aktualią informaciją. Kitas serveris galėtų atlikti specifinius veiksmus, pvz., siųsti el. laiškus ar atnaujinti įrašus. Agentui šie veiksmai tiesiog yra įrankiai, kuriuos jis gali naudoti – kai kurie įrankiai grąžina duomenis (žinių kontekstą), o kiti atlieka veiksmus. MCP efektyviai valdo abu.
+Be įrankių siūlymo, MCP taip pat palengvina prieigą prie žinių. Jis leidžia programoms suteikti kontekstą dideliems kalbos modeliams (LLM), susiedamas juos su įvairiais duomenų šaltiniais. Pavyzdžiui, MCP serveris gali atstovauti įmonės dokumentų saugyklą, leidžiant agentams pagal poreikį gauti aktualią informaciją. Kitas serveris galėtų tvarkyti specifinius veiksmus, tokius kaip el. laiškų siuntimas ar įrašų atnaujinimas. Agentui šie yra tiesiog įrankiai, kuriuos jis gali naudoti—kai kurie įrankiai grąžina duomenis (žinių kontekstą), o kiti atlieka veiksmus. MCP efektyviai valdo abu.
 
-Agentas, prisijungęs prie MCP serverio, automatiškai sužino apie serverio galimybes ir prieinamus duomenis per standartinį formatą. Ši standartizacija leidžia dinamiškai naudoti įrankius. Pavyzdžiui, pridėjus naują MCP serverį į agento sistemą, jo funkcijos tampa iškart prieinamos be papildomo agento instrukcijų pritaikymo.
+Agentas, prisijungęs prie MCP serverio, automatiškai sužino serverio galimas funkcijas ir prieinamus duomenis per standartinį formatą. Ši standartizacija leidžia dinamišką įrankių prieinamumą. Pavyzdžiui, pridėjus naują MCP serverį į agento sistemą, jo funkcijos tampa iškart naudojamos be papildomo agento instrukcijų pritaikymo.
 
-Ši supaprastinta integracija atitinka srautą, pavaizduotą toliau pateiktoje diagramoje, kur serveriai teikia tiek įrankius, tiek žinias, užtikrindami sklandų bendradarbiavimą tarp sistemų.
+Ši supaprastinta integracija atitinka srautą, pavaizduotą diagramoje, kur serveriai teikia tiek įrankius, tiek žinias, užtikrindami sklandų bendradarbiavimą tarp sistemų.
 
 ### 👉 Pavyzdys: Mastelio agento sprendimas
 
@@ -217,10 +215,13 @@ graph TD
         ToolsB[Tools]
     end
 ```
+Universalus jungiklis leidžia MCP serveriams bendrauti ir dalintis galimybėmis tarpusavyje, leidžiant ServerA deleguoti užduotis ServerB arba pasiekti jo įrankius ir žinias. Tai sujungia įrankius ir duomenis tarp serverių, palaikant mastelio ir modulinę agentų architektūrą. Kadangi MCP standartizuoja įrankių pateikimą, agentai gali dinamiškai aptikti ir nukreipti užklausas tarp serverių be kietai užkoduotų integracijų.
 
-### 🔄 Pažangūs MCP scenarijai su kliento pusės LLM integracija
+Įrankių ir žinių sujungimas: Įrankiai ir duomenys gali būti pasiekiami tarp serverių, leidžiant kurti mastelio ir modulinę agentinę architektūrą.
 
-Be pagrindinės MCP architektūros, yra pažangių scenarijų, kai tiek klientas, tiek serveris turi LLM, leidžiant sudėtingesnes sąveikas. Toliau pateiktoje diagramoje **kliento programa** galėtų būti IDE su daugybe MCP įrankių, prieinamų LLM naudoti:
+### 🔄 Pažangūs MCP scenarijai su klientų pusės LLM integracija
+
+Be pagrindinės MCP architektūros, yra pažangių scenarijų, kur tiek klientas, tiek serveris turi LLM, leidžiant sudėtingesnes sąveikas. Toliau pateiktoje diagramoje **Kliento programa** galėtų būti IDE su daugybe MCP įrankių, prieinamų LLM naudoti:
 
 ```mermaid
 ---
@@ -284,44 +285,34 @@ sequenceDiagram
     end
 ```
 
----
-
 ## 🔐 Praktiniai MCP privalumai
 
 Štai praktiniai MCP naudojimo privalumai:
 
-- **Aktualumas**: Modeliai gali pasiekti naujausią informaciją už jų mokymo duomenų ribų
-- **Galimybių išplėtimas**: Modeliai gali naudotis specializuotais įrankiais užduotims, kurioms jie nebuvo apmokyti
+- **Šviežumas**: Modeliai gali pasiekti naujausią informaciją už jų mokymo duomenų ribų
+- **Galimybių plėtra**: Modeliai gali naudotis specializuotais įrankiais užduotims, kurioms jie nebuvo apmokyti
 - **Sumažintos haliucinacijos**: Išoriniai duomenų šaltiniai suteikia faktinį pagrindą
 - **Privatumas**: Jautrūs duomenys gali likti saugioje aplinkoje, o ne būti įtraukti į užklausas
 
----
-
 ## 📌 Pagrindinės išvados
 
-Štai pagrindinės MCP naudojimo išvados:
+Štai pagrindinės išvados apie MCP naudojimą:
 
 - **MCP** standartizuoja, kaip AI modeliai sąveikauja su įrankiais ir duomenimis
-- Skatina **plėtrumą, nuoseklumą ir sąveikumą**
-- MCP padeda **sutrumpinti kūrimo laiką, pagerinti patikimumą ir išplėsti modelio galimybes**
-- Kliento-serverio architektūra **leidžia kurti lanksčias, plėtrias AI programas**
-
----
+- Skatina **plėtrą, nuoseklumą ir sąveikumą**
+- MCP padeda **sumažinti kūrimo laiką, pagerinti patikimumą ir išplėsti modelio galimybes**
+- Kliento-serverio architektūra **leidžia kurti lankstias, plėtrias AI programas**
 
 ## 🧠 Užduotis
 
 Pagalvokite apie AI programą, kurią norėtumėte sukurti.
 
 - Kokie **išoriniai įrankiai ar duomenys** galėtų pagerinti jos galimybes?
-- Kaip MCP galėtų padaryti integraciją **paprastesnę ir patikimesnę**?
-
----
+- Kaip MCP galėtų padaryti integraciją **paprastesnę ir patikimesnę?**
 
 ## Papildomi ištekliai
 
 - [MCP GitHub saugykla](https://github.com/modelcontextprotocol)
-
----
 
 ## Kas toliau
 
@@ -329,5 +320,5 @@ Toliau: [1 skyrius: Pagrindinės sąvokos](../01-CoreConcepts/README.md)
 
 ---
 
-**Atsakomybės apribojimas**:  
-Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Dėl svarbios informacijos rekomenduojama profesionali žmogaus vertimo paslauga. Mes neprisiimame atsakomybės už nesusipratimus ar klaidingus interpretavimus, atsiradusius naudojant šį vertimą.
+**Atsakomybės atsisakymas**:  
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingus interpretavimus, atsiradusius dėl šio vertimo naudojimo.
