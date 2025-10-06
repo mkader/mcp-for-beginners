@@ -24,6 +24,7 @@ This section consists of several lessons:
 
 - **9 Deployment**. This chapter will look at different ways of deploying your MCP solutions, [to the lesson](09-deployment/README.md)
 
+- **10 Advanced server usage**. This chapter covers advanced server usage, [to the lesson](./10-advanced/README.md)
 
 The Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to LLMs. Think of MCP like a USB-C port for AI applications - it provides a standardized way to connect AI models to different data sources and tools.
 

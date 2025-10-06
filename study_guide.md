@@ -40,6 +40,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -142,6 +143,7 @@ The repository is organized into ten main sections, each focusing on different a
      - LLM client integration
      - VS Code integration
      - Server-Sent Events (SSE) server
+     - Advanced server usage
      - HTTP streaming
      - AI Toolkit integration
      - Testing strategies
@@ -304,6 +306,7 @@ This repository welcomes contributions from the community. See the Community Con
 | July 18, 2025 | - Updated repository structure to include Microsoft MCP Servers Guide<br>- Added comprehensive list of 10 production-ready Microsoft MCP servers<br>- Enhanced Popular MCP Servers section with Official Microsoft MCP Servers<br>- Updated Case Studies section with actual file examples<br>- Added Lab Structure details for Hands-on Workshop |
 | July 16, 2025 | - Updated repository structure to reflect current content<br>- Added MCP Clients and Tools section<br>- Added Popular MCP Servers section<br>- Updated Visual Curriculum Map with all current topics<br>- Enhanced Advanced Topics section with all specialized areas<br>- Updated Case Studies to reflect actual examples<br>- Clarified MCP origin as created by Anthropic |
 | June 11, 2025 | - Initial creation of the study guide<br>- Added Visual Curriculum Map<br>- Outlined repository structure<br>- Included sample projects and additional resources |
+| October 6th, 2025 | Added lesson on advanced server usage |
 
 ---
 
