@@ -2,6 +2,24 @@
 
 This document serves as a record of all significant changes made to the Model Context Protocol (MCP) for Beginners curriculum. Changes are documented in reverse chronological order (newest changes first).
 
+## October 6, 2025
+
+### Getting Started Section Expansion – Advanced Server Usage & Simple Authentication
+
+#### Advanced Server Usage (03-GettingStarted/10-advanced)
+- **New Chapter Added**: Introduced a comprehensive guide to advanced MCP server usage, covering both regular and low-level server architectures.
+  - **Regular vs. Low-Level Server**: Detailed comparison and code examples in Python and TypeScript for both approaches.
+  - **Handler-Based Design**: Explanation of handler-based tool/resource/prompt management for scalable, flexible server implementations.
+  - **Practical Patterns**: Real-world scenarios where low-level server patterns are beneficial for advanced features and architecture.
+
+#### Simple Authentication (03-GettingStarted/11-simple-auth)
+- **New Chapter Added**: Step-by-step guide to implementing simple authentication in MCP servers.
+  - **Auth Concepts**: Clear explanation of authentication vs. authorization, and credential handling.
+  - **Basic Auth Implementation**: Middleware-based authentication patterns in Python (Starlette) and TypeScript (Express), with code samples.
+  - **Progression to Advanced Security**: Guidance on starting with simple auth and advancing to OAuth 2.1 and RBAC, with references to advanced security modules.
+
+These additions provide practical, hands-on guidance for building more robust, secure, and flexible MCP server implementations, bridging foundational concepts with advanced production patterns.
+
 ## September 29, 2025
 
 ### MCP Server Database Integration Labs - Comprehensive Hands-On Learning Path
