@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T19:25:53+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T14:52:19+00:00",
   "source_file": "study_guide.md",
   "language_code": "ms"
 }
@@ -11,9 +11,9 @@ CO_OP_TRANSLATOR_METADATA:
 
 Panduan pembelajaran ini memberikan gambaran keseluruhan tentang struktur repositori dan kandungan untuk kurikulum "Protokol Konteks Model (MCP) untuk Pemula". Gunakan panduan ini untuk menavigasi repositori dengan cekap dan memanfaatkan sumber yang tersedia sepenuhnya.
 
-## Gambaran Repositori
+## Gambaran Keseluruhan Repositori
 
-Protokol Konteks Model (MCP) adalah kerangka kerja standard untuk interaksi antara model AI dan aplikasi klien. Pada mulanya dicipta oleh Anthropic, MCP kini dikendalikan oleh komuniti MCP yang lebih luas melalui organisasi GitHub rasmi. Repositori ini menyediakan kurikulum komprehensif dengan contoh kod praktikal dalam C#, Java, JavaScript, Python, dan TypeScript, direka untuk pembangun AI, arkitek sistem, dan jurutera perisian.
+Protokol Konteks Model (MCP) adalah rangka kerja standard untuk interaksi antara model AI dan aplikasi klien. Pada mulanya dicipta oleh Anthropic, MCP kini dikendalikan oleh komuniti MCP yang lebih luas melalui organisasi GitHub rasmi. Repositori ini menyediakan kurikulum komprehensif dengan contoh kod praktikal dalam C#, Java, JavaScript, Python, dan TypeScript, direka untuk pembangun AI, arkitek sistem, dan jurutera perisian.
 
 ## Peta Kurikulum Visual
 
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -162,6 +163,7 @@ Repositori ini disusun kepada sebelas bahagian utama, setiap satu memberi fokus 
      - Integrasi klien LLM
      - Integrasi VS Code
      - Pelayan Server-Sent Events (SSE)
+     - Penggunaan pelayan lanjutan
      - Penstriman HTTP
      - Integrasi AI Toolkit
      - Strategi ujian
@@ -175,7 +177,7 @@ Repositori ini disusun kepada sebelas bahagian utama, setiap satu memberi fokus 
 
 6. **Topik Lanjutan (05-AdvancedTopics/)**
    - Teknik kejuruteraan konteks
-   - Integrasi ejen Foundry
+   - Integrasi agen Foundry
    - Aliran kerja AI multi-modal
    - Demo pengesahan OAuth2
    - Keupayaan carian masa nyata
@@ -199,7 +201,7 @@ Repositori ini disusun kepada sebelas bahagian utama, setiap satu memberi fokus 
    - Pelaksanaan dunia sebenar dan kisah kejayaan
    - Membina dan menyebarkan penyelesaian berasaskan MCP
    - Trend dan peta jalan masa depan
-   - **Panduan Pelayan MCP Microsoft**: Panduan komprehensif kepada 10 pelayan MCP Microsoft yang sedia untuk pengeluaran termasuk:
+   - **Panduan Pelayan MCP Microsoft**: Panduan komprehensif kepada 10 pelayan MCP Microsoft sedia pengeluaran termasuk:
      - Pelayan MCP Microsoft Learn Docs
      - Pelayan MCP Azure (15+ penyambung khusus)
      - Pelayan MCP GitHub
@@ -217,14 +219,14 @@ Repositori ini disusun kepada sebelas bahagian utama, setiap satu memberi fokus 
    - Strategi ujian dan ketahanan
 
 10. **Kajian Kes (09-CaseStudy/)**
-    - **Tujuh kajian kes komprehensif** yang menunjukkan kepelbagaian MCP merentasi pelbagai senario:
-    - **Ejen Perjalanan AI Azure**: Orkestrasi multi-ejen dengan Azure OpenAI dan AI Search
+    - **Tujuh kajian kes komprehensif** yang menunjukkan kepelbagaian MCP dalam pelbagai senario:
+    - **Ejen Perjalanan AI Azure**: Orkestrasi multi-agen dengan Azure OpenAI dan AI Search
     - **Integrasi Azure DevOps**: Mengautomasi proses aliran kerja dengan kemas kini data YouTube
     - **Pengambilan Dokumentasi Masa Nyata**: Klien konsol Python dengan penstriman HTTP
     - **Penjana Pelan Pembelajaran Interaktif**: Aplikasi web Chainlit dengan AI perbualan
     - **Dokumentasi Dalam Editor**: Integrasi VS Code dengan aliran kerja GitHub Copilot
     - **Pengurusan API Azure**: Integrasi API perusahaan dengan penciptaan pelayan MCP
-    - **Pendaftaran MCP GitHub**: Pembangunan ekosistem dan platform integrasi ejen
+    - **Pendaftaran MCP GitHub**: Pembangunan ekosistem dan platform integrasi agen
     - Contoh pelaksanaan merangkumi integrasi perusahaan, produktiviti pembangun, dan pembangunan ekosistem
 
 11. **Bengkel Praktikal (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
@@ -247,7 +249,7 @@ Repositori ini disusun kepada sebelas bahagian utama, setiap satu memberi fokus 
       - **Makmal 04-06: Membina Pelayan MCP** - Reka Bentuk Pangkalan Data, Pelaksanaan Pelayan MCP, Pembangunan Alat
       - **Makmal 07-09: Ciri Lanjutan** - Carian Semantik, Ujian & Debugging, Integrasi VS Code
       - **Makmal 10-12: Pengeluaran & Amalan Terbaik** - Penyebaran, Pemantauan, Pengoptimuman
-    - **Teknologi yang Diliputi**: Kerangka FastMCP, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
+    - **Teknologi yang Diliputi**: Rangka kerja FastMCP, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
     - **Hasil Pembelajaran**: Pelayan MCP sedia pengeluaran, pola integrasi pangkalan data, analitik berkuasa AI, keselamatan perusahaan
 
 ## Sumber Tambahan
@@ -255,7 +257,7 @@ Repositori ini disusun kepada sebelas bahagian utama, setiap satu memberi fokus 
 Repositori ini termasuk sumber sokongan:
 
 - **Folder Imej**: Mengandungi diagram dan ilustrasi yang digunakan sepanjang kurikulum
-- **Terjemahan**: Sokongan pelbagai bahasa dengan terjemahan dokumentasi automatik
+- **Terjemahan**: Sokongan pelbagai bahasa dengan terjemahan automatik dokumentasi
 - **Sumber Rasmi MCP**:
   - [Dokumentasi MCP](https://modelcontextprotocol.io/)
   - [Spesifikasi MCP](https://spec.modelcontextprotocol.io/)
@@ -264,7 +266,7 @@ Repositori ini termasuk sumber sokongan:
 ## Cara Menggunakan Repositori Ini
 
 1. **Pembelajaran Berurutan**: Ikuti bab secara berurutan (00 hingga 11) untuk pengalaman pembelajaran yang terstruktur.
-2. **Fokus Khusus Bahasa**: Jika anda berminat dengan bahasa pengaturcaraan tertentu, terokai direktori sampel untuk pelaksanaan dalam bahasa pilihan anda.
+2. **Fokus Bahasa**: Jika anda berminat dengan bahasa pengaturcaraan tertentu, terokai direktori sampel untuk pelaksanaan dalam bahasa pilihan anda.
 3. **Pelaksanaan Praktikal**: Mulakan dengan bahagian "Memulakan" untuk menyediakan persekitaran anda dan mencipta pelayan dan klien MCP pertama anda.
 4. **Penerokaan Lanjutan**: Setelah selesa dengan asas, terokai topik lanjutan untuk memperluaskan pengetahuan anda.
 5. **Penglibatan Komuniti**: Sertai komuniti MCP melalui perbincangan GitHub dan saluran Discord untuk berhubung dengan pakar dan pembangun lain.
@@ -339,13 +341,14 @@ Repositori ini mengalu-alukan sumbangan daripada komuniti. Lihat bahagian Sumban
 |------|---------||
 | 29 September 2025 | - Ditambah bahagian 11-MCPServerHandsOnLabs dengan laluan pembelajaran integrasi pangkalan data 13-makmal komprehensif<br>- Dikemas kini Peta Kurikulum Visual untuk memasukkan Makmal Integrasi Pangkalan Data<br>- Dipertingkatkan struktur repositori untuk mencerminkan sebelas bahagian utama<br>- Ditambah penerangan terperinci tentang integrasi PostgreSQL, kes penggunaan analitik runcit, dan pola perusahaan<br>- Dikemas kini panduan navigasi untuk memasukkan bahagian 00-11 |
 | 26 September 2025 | - Ditambah kajian kes Pendaftaran MCP GitHub ke bahagian 09-CaseStudy<br>- Dikemas kini Kajian Kes untuk mencerminkan tujuh kajian kes komprehensif<br>- Dipertingkatkan penerangan kajian kes dengan butiran pelaksanaan khusus<br>- Dikemas kini Peta Kurikulum Visual untuk memasukkan Pendaftaran MCP GitHub<br>- Disemak semula struktur panduan pembelajaran untuk mencerminkan fokus pembangunan ekosistem |
-| 18 Julai 2025 | - Dikemas kini struktur repositori untuk memasukkan Panduan Pelayan MCP Microsoft<br>- Ditambah senarai komprehensif 10 pelayan MCP Microsoft yang sedia untuk pengeluaran<br>- Dipertingkatkan bahagian Pelayan MCP Popular dengan Pelayan MCP Microsoft Rasmi<br>- Dikemas kini bahagian Kajian Kes dengan contoh fail sebenar<br>- Ditambah butiran Struktur Makmal untuk Bengkel Praktikal |
-| 16 Julai 2025 | - Dikemas kini struktur repositori untuk mencerminkan kandungan semasa<br>- Ditambah bahagian Klien dan Alat MCP<br>- Ditambah bahagian Pelayan MCP Popular<br>- Dikemas kini Peta Kurikulum Visual dengan semua topik semasa<br>- Dipertingkatkan bahagian Topik Lanjutan dengan semua bidang khusus<br>- Dikemas kini Kajian Kes untuk mencerminkan contoh sebenar<br>- Dijelaskan asal MCP sebagai ciptaan oleh Anthropic |
+| 18 Julai 2025 | - Dikemas kini struktur repositori untuk memasukkan Panduan Pelayan MCP Microsoft<br>- Ditambah senarai komprehensif 10 pelayan MCP Microsoft sedia pengeluaran<br>- Dipertingkatkan bahagian Pelayan MCP Popular dengan Pelayan MCP Microsoft Rasmi<br>- Dikemas kini bahagian Kajian Kes dengan contoh fail sebenar<br>- Ditambah butiran Struktur Makmal untuk Bengkel Praktikal |
+| 16 Julai 2025 | - Dikemas kini struktur repositori untuk mencerminkan kandungan semasa<br>- Ditambah bahagian Klien dan Alat MCP<br>- Ditambah bahagian Pelayan MCP Popular<br>- Dikemas kini Peta Kurikulum Visual dengan semua topik semasa<br>- Dipertingkatkan bahagian Topik Lanjutan dengan semua bidang khusus<br>- Dikemas kini Kajian Kes untuk mencerminkan contoh sebenar<br>- Dijelaskan asal MCP sebagai ciptaan Anthropic |
 | 11 Jun 2025 | - Penciptaan awal panduan pembelajaran<br>- Ditambah Peta Kurikulum Visual<br>- Gariskan struktur repositori<br>- Termasuk projek contoh dan sumber tambahan |
+| 6 Oktober 2025 | Ditambah pelajaran tentang penggunaan pelayan lanjutan |
 
 ---
 
-*Panduan pembelajaran ini dikemas kini pada 29 September 2025, dan memberikan gambaran keseluruhan repositori sehingga tarikh tersebut. Kandungan repositori mungkin dikemas kini selepas tarikh ini.*
+*Panduan pembelajaran ini dikemas kini pada 29 September 2025 dan memberikan gambaran keseluruhan repositori pada tarikh tersebut. Kandungan repositori mungkin dikemas kini selepas tarikh ini.*
 
 ---
 

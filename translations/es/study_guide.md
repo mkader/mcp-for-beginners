@@ -1,19 +1,19 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T13:23:46+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T13:17:04+00:00",
   "source_file": "study_guide.md",
   "language_code": "es"
 }
 -->
-# Protocolo de Contexto de Modelo (MCP) para Principiantes - Guía de Estudio
+# Protocolo de Contexto de Modelos (MCP) para Principiantes - Guía de Estudio
 
-Esta guía de estudio ofrece una visión general de la estructura y contenido del repositorio para el currículo "Protocolo de Contexto de Modelo (MCP) para Principiantes". Utiliza esta guía para navegar eficientemente por el repositorio y aprovechar al máximo los recursos disponibles.
+Esta guía de estudio ofrece una visión general de la estructura y el contenido del repositorio para el currículo "Protocolo de Contexto de Modelos (MCP) para Principiantes". Utiliza esta guía para navegar eficientemente por el repositorio y aprovechar al máximo los recursos disponibles.
 
 ## Descripción General del Repositorio
 
-El Protocolo de Contexto de Modelo (MCP) es un marco estandarizado para las interacciones entre modelos de IA y aplicaciones cliente. Inicialmente creado por Anthropic, MCP ahora es mantenido por la comunidad MCP a través de la organización oficial en GitHub. Este repositorio proporciona un currículo completo con ejemplos prácticos de código en C#, Java, JavaScript, Python y TypeScript, diseñado para desarrolladores de IA, arquitectos de sistemas e ingenieros de software.
+El Protocolo de Contexto de Modelos (MCP) es un marco estandarizado para las interacciones entre modelos de IA y aplicaciones cliente. Inicialmente creado por Anthropic, MCP ahora es mantenido por la comunidad MCP a través de la organización oficial en GitHub. Este repositorio proporciona un currículo completo con ejemplos prácticos de código en C#, Java, JavaScript, Python y TypeScript, diseñado para desarrolladores de IA, arquitectos de sistemas e ingenieros de software.
 
 ## Mapa Visual del Currículo
 
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -126,9 +127,9 @@ mindmap
 El repositorio está organizado en once secciones principales, cada una enfocada en diferentes aspectos de MCP:
 
 1. **Introducción (00-Introduction/)**
-   - Descripción general del Protocolo de Contexto de Modelo
-   - Por qué la estandarización es importante en los flujos de trabajo de IA
-   - Casos prácticos y beneficios
+   - Descripción general del Protocolo de Contexto de Modelos
+   - Importancia de la estandarización en los flujos de trabajo de IA
+   - Casos de uso prácticos y beneficios
 
 2. **Conceptos Básicos (01-CoreConcepts/)**
    - Arquitectura cliente-servidor
@@ -137,20 +138,20 @@ El repositorio está organizado en once secciones principales, cada una enfocada
 
 3. **Seguridad (02-Security/)**
    - Amenazas de seguridad en sistemas basados en MCP
-   - Mejores prácticas para asegurar implementaciones
+   - Mejores prácticas para implementar seguridad
    - Estrategias de autenticación y autorización
-   - **Documentación Completa de Seguridad**:
+   - **Documentación de Seguridad Completa**:
      - Mejores Prácticas de Seguridad MCP 2025
-     - Guía de Implementación de Seguridad de Contenido en Azure
+     - Guía de Implementación de Azure Content Safety
      - Controles y Técnicas de Seguridad MCP
      - Referencia Rápida de Mejores Prácticas MCP
    - **Temas Clave de Seguridad**:
      - Ataques de inyección de prompts y envenenamiento de herramientas
-     - Secuestro de sesiones y problemas de delegación confusa
+     - Secuestro de sesiones y problemas de "confused deputy"
      - Vulnerabilidades de paso de tokens
      - Permisos excesivos y control de acceso
-     - Seguridad en la cadena de suministro para componentes de IA
-     - Integración de Microsoft Prompt Shields
+     - Seguridad en la cadena de suministro de componentes de IA
+     - Integración con Microsoft Prompt Shields
 
 4. **Primeros Pasos (03-GettingStarted/)**
    - Configuración del entorno
@@ -162,14 +163,15 @@ El repositorio está organizado en once secciones principales, cada una enfocada
      - Integración de clientes LLM
      - Integración con VS Code
      - Servidor de Eventos Enviados por el Servidor (SSE)
-     - Streaming HTTP
+     - Uso avanzado del servidor
+     - Transmisión HTTP
      - Integración con AI Toolkit
      - Estrategias de prueba
      - Directrices de despliegue
 
 5. **Implementación Práctica (04-PracticalImplementation/)**
    - Uso de SDKs en diferentes lenguajes de programación
-   - Técnicas de depuración, prueba y validación
+   - Técnicas de depuración, pruebas y validación
    - Creación de plantillas de prompts y flujos de trabajo reutilizables
    - Proyectos de ejemplo con implementaciones prácticas
 
@@ -179,7 +181,7 @@ El repositorio está organizado en once secciones principales, cada una enfocada
    - Flujos de trabajo de IA multimodal
    - Demos de autenticación OAuth2
    - Capacidades de búsqueda en tiempo real
-   - Streaming en tiempo real
+   - Transmisión en tiempo real
    - Implementación de contextos raíz
    - Estrategias de enrutamiento
    - Técnicas de muestreo
@@ -193,7 +195,7 @@ El repositorio está organizado en once secciones principales, cada una enfocada
    - Colaboración a través de GitHub
    - Mejoras y comentarios impulsados por la comunidad
    - Uso de varios clientes MCP (Claude Desktop, Cline, VSCode)
-   - Trabajo con servidores MCP populares, incluyendo generación de imágenes
+   - Trabajo con servidores MCP populares, incluida la generación de imágenes
 
 8. **Lecciones de la Adopción Temprana (07-LessonsfromEarlyAdoption/)**
    - Implementaciones reales y casos de éxito
@@ -209,39 +211,39 @@ El repositorio está organizado en once secciones principales, cada una enfocada
      - Servidor MCP de Playwright
      - Servidor MCP de Dev Box
      - Servidor MCP de Azure AI Foundry
-     - Servidor MCP del Toolkit de Agentes de Microsoft 365
+     - Servidor MCP del Kit de Herramientas de Agentes de Microsoft 365
 
 9. **Mejores Prácticas (08-BestPractices/)**
-   - Ajuste y optimización del rendimiento
+   - Optimización y ajuste de rendimiento
    - Diseño de sistemas MCP tolerantes a fallos
    - Estrategias de prueba y resiliencia
 
 10. **Estudios de Caso (09-CaseStudy/)**
     - **Siete estudios de caso completos** que demuestran la versatilidad de MCP en diversos escenarios:
-    - **Agentes de Viaje de Azure AI**: Orquestación multi-agente con Azure OpenAI y AI Search
+    - **Agentes de Viajes de Azure AI**: Orquestación multi-agente con Azure OpenAI y AI Search
     - **Integración con Azure DevOps**: Automatización de procesos de flujo de trabajo con actualizaciones de datos de YouTube
-    - **Recuperación de Documentación en Tiempo Real**: Cliente de consola Python con streaming HTTP
+    - **Recuperación de Documentación en Tiempo Real**: Cliente de consola en Python con transmisión HTTP
     - **Generador Interactivo de Planes de Estudio**: Aplicación web Chainlit con IA conversacional
     - **Documentación en el Editor**: Integración de VS Code con flujos de trabajo de GitHub Copilot
-    - **Gestión de API de Azure**: Integración de API empresarial con creación de servidores MCP
-    - **Registro MCP de GitHub**: Desarrollo de ecosistemas y plataforma de integración agentica
+    - **Gestión de API de Azure**: Integración empresarial de API con creación de servidores MCP
+    - **Registro MCP de GitHub**: Desarrollo de ecosistemas y plataforma de integración agentic
     - Ejemplos de implementación que abarcan integración empresarial, productividad del desarrollador y desarrollo de ecosistemas
 
 11. **Taller Práctico (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
     - Taller práctico completo que combina MCP con AI Toolkit
-    - Construcción de aplicaciones inteligentes que conectan modelos de IA con herramientas del mundo real
+    - Creación de aplicaciones inteligentes que conectan modelos de IA con herramientas del mundo real
     - Módulos prácticos que cubren fundamentos, desarrollo de servidores personalizados y estrategias de despliegue en producción
     - **Estructura del Taller**:
       - Laboratorio 1: Fundamentos del Servidor MCP
       - Laboratorio 2: Desarrollo Avanzado de Servidores MCP
       - Laboratorio 3: Integración con AI Toolkit
-      - Laboratorio 4: Despliegue y Escalabilidad en Producción
+      - Laboratorio 4: Despliegue y Escalado en Producción
     - Enfoque de aprendizaje basado en laboratorios con instrucciones paso a paso
 
 12. **Laboratorios de Integración de Bases de Datos con Servidores MCP (11-MCPServerHandsOnLabs/)**
-    - **Ruta de aprendizaje completa de 13 laboratorios** para construir servidores MCP listos para producción con integración PostgreSQL
-    - **Implementación de análisis minorista en el mundo real** utilizando el caso de uso Zava Retail
-    - **Patrones de nivel empresarial** incluyendo Seguridad a Nivel de Fila (RLS), búsqueda semántica y acceso a datos multi-tenant
+    - **Ruta de aprendizaje de 13 laboratorios** para construir servidores MCP listos para producción con integración de PostgreSQL
+    - **Implementación de análisis minorista en el mundo real** utilizando el caso de uso de Zava Retail
+    - **Patrones de nivel empresarial** que incluyen Seguridad a Nivel de Fila (RLS), búsqueda semántica y acceso a datos multi-tenant
     - **Estructura Completa de los Laboratorios**:
       - **Laboratorios 00-03: Fundamentos** - Introducción, Arquitectura, Seguridad, Configuración del Entorno
       - **Laboratorios 04-06: Construcción del Servidor MCP** - Diseño de Base de Datos, Implementación del Servidor MCP, Desarrollo de Herramientas
@@ -255,16 +257,16 @@ El repositorio está organizado en once secciones principales, cada una enfocada
 El repositorio incluye recursos de apoyo:
 
 - **Carpeta de Imágenes**: Contiene diagramas e ilustraciones utilizados a lo largo del currículo
-- **Traducciones**: Soporte multilingüe con traducciones automáticas de documentación
+- **Traducciones**: Soporte multilingüe con traducciones automáticas de la documentación
 - **Recursos Oficiales de MCP**:
-  - [Documentación MCP](https://modelcontextprotocol.io/)
-  - [Especificación MCP](https://spec.modelcontextprotocol.io/)
-  - [Repositorio GitHub MCP](https://github.com/modelcontextprotocol)
+  - [Documentación de MCP](https://modelcontextprotocol.io/)
+  - [Especificación de MCP](https://spec.modelcontextprotocol.io/)
+  - [Repositorio de MCP en GitHub](https://github.com/modelcontextprotocol)
 
 ## Cómo Usar Este Repositorio
 
 1. **Aprendizaje Secuencial**: Sigue los capítulos en orden (00 al 11) para una experiencia de aprendizaje estructurada.
-2. **Enfoque Específico por Lenguaje**: Si te interesa un lenguaje de programación en particular, explora los directorios de ejemplos para implementaciones en tu lenguaje preferido.
+2. **Enfoque por Lenguaje**: Si te interesa un lenguaje de programación en particular, explora los directorios de ejemplos para implementaciones en tu lenguaje preferido.
 3. **Implementación Práctica**: Comienza con la sección "Primeros Pasos" para configurar tu entorno y crear tu primer servidor y cliente MCP.
 4. **Exploración Avanzada**: Una vez que domines los conceptos básicos, profundiza en los temas avanzados para ampliar tus conocimientos.
 5. **Participación Comunitaria**: Únete a la comunidad MCP a través de discusiones en GitHub y canales de Discord para conectarte con expertos y otros desarrolladores.
@@ -280,7 +282,7 @@ El currículo cubre varios clientes y herramientas MCP:
    - Claude en VSCode 
    - API de Claude
 
-2. **Clientes Comunitarios**:
+2. **Clientes de la Comunidad**:
    - Cline (basado en terminal)
    - Cursor (editor de código)
    - ChatMCP
@@ -306,7 +308,7 @@ El repositorio presenta varios servidores MCP, incluyendo:
    - Servidor MCP de Playwright
    - Servidor MCP de Dev Box
    - Servidor MCP de Azure AI Foundry
-   - Servidor MCP del Toolkit de Agentes de Microsoft 365
+   - Servidor MCP del Kit de Herramientas de Agentes de Microsoft 365
 
 2. **Servidores de Referencia Oficiales**:
    - Sistema de Archivos
@@ -331,21 +333,22 @@ El repositorio presenta varios servidores MCP, incluyendo:
 
 ## Contribuciones
 
-Este repositorio da la bienvenida a contribuciones de la comunidad. Consulta la sección de Contribuciones de la Comunidad para obtener orientación sobre cómo contribuir eficazmente al ecosistema MCP.
+Este repositorio da la bienvenida a contribuciones de la comunidad. Consulta la sección de Contribuciones de la Comunidad para obtener orientación sobre cómo contribuir de manera efectiva al ecosistema MCP.
 
 ## Registro de Cambios
 
 | Fecha | Cambios |
 |------|---------||
-| 29 de septiembre de 2025 | - Se agregó la sección 11-MCPServerHandsOnLabs con una ruta de aprendizaje completa de 13 laboratorios sobre integración de bases de datos<br>- Se actualizó el Mapa Visual del Currículo para incluir los Laboratorios de Integración de Bases de Datos<br>- Se mejoró la estructura del repositorio para reflejar las once secciones principales<br>- Se agregó una descripción detallada de la integración PostgreSQL, caso de uso de análisis minorista y patrones empresariales<br>- Se actualizó la guía de navegación para incluir las secciones 00-11 |
-| 26 de septiembre de 2025 | - Se agregó el estudio de caso Registro MCP de GitHub a la sección 09-CaseStudy<br>- Se actualizaron los Estudios de Caso para reflejar siete estudios de caso completos<br>- Se mejoraron las descripciones de los estudios de caso con detalles específicos de implementación<br>- Se actualizó el Mapa Visual del Currículo para incluir el Registro MCP de GitHub<br>- Se revisó la estructura de la guía de estudio para reflejar el enfoque en desarrollo de ecosistemas |
-| 18 de julio de 2025 | - Se actualizó la estructura del repositorio para incluir la Guía de Servidores MCP de Microsoft<br>- Se agregó una lista completa de 10 servidores MCP de Microsoft listos para producción<br>- Se mejoró la sección de Servidores MCP Populares con Servidores MCP Oficiales de Microsoft<br>- Se actualizó la sección de Estudios de Caso con ejemplos reales<br>- Se agregaron detalles de la Estructura del Taller para el Taller Práctico |
+| 29 de septiembre de 2025 | - Se agregó la sección 11-MCPServerHandsOnLabs con una ruta de aprendizaje de 13 laboratorios sobre integración de bases de datos<br>- Se actualizó el Mapa Visual del Currículo para incluir los Laboratorios de Integración de Bases de Datos<br>- Se mejoró la estructura del repositorio para reflejar once secciones principales<br>- Se agregó una descripción detallada de la integración con PostgreSQL, el caso de uso de análisis minorista y patrones empresariales<br>- Se actualizó la guía de navegación para incluir las secciones 00-11 |
+| 26 de septiembre de 2025 | - Se agregó el estudio de caso Registro MCP de GitHub a la sección 09-CaseStudy<br>- Se actualizaron los Estudios de Caso para reflejar siete estudios de caso completos<br>- Se mejoraron las descripciones de los estudios de caso con detalles específicos de implementación<br>- Se actualizó el Mapa Visual del Currículo para incluir el Registro MCP de GitHub<br>- Se revisó la estructura de la guía de estudio para reflejar el enfoque en el desarrollo del ecosistema |
+| 18 de julio de 2025 | - Se actualizó la estructura del repositorio para incluir la Guía de Servidores MCP de Microsoft<br>- Se agregó una lista completa de 10 servidores MCP de Microsoft listos para producción<br>- Se mejoró la sección de Servidores MCP Populares con los Servidores MCP Oficiales de Microsoft<br>- Se actualizó la sección de Estudios de Caso con ejemplos de archivos reales<br>- Se agregaron detalles de la Estructura del Taller para el Taller Práctico |
 | 16 de julio de 2025 | - Se actualizó la estructura del repositorio para reflejar el contenido actual<br>- Se agregó la sección de Clientes y Herramientas MCP<br>- Se agregó la sección de Servidores MCP Populares<br>- Se actualizó el Mapa Visual del Currículo con todos los temas actuales<br>- Se mejoró la sección de Temas Avanzados con todas las áreas especializadas<br>- Se actualizaron los Estudios de Caso para reflejar ejemplos reales<br>- Se aclaró el origen de MCP como creado por Anthropic |
 | 11 de junio de 2025 | - Creación inicial de la guía de estudio<br>- Se agregó el Mapa Visual del Currículo<br>- Se delineó la estructura del repositorio<br>- Se incluyeron proyectos de ejemplo y recursos adicionales |
+| 6 de octubre de 2025 | Se agregó una lección sobre uso avanzado del servidor |
 
 ---
 
-*Esta guía de estudio fue actualizada el 29 de septiembre de 2025 y ofrece una visión general del repositorio hasta esa fecha. El contenido del repositorio puede ser actualizado después de esta fecha.*
+*Esta guía de estudio fue actualizada el 29 de septiembre de 2025 y proporciona una visión general del repositorio hasta esa fecha. El contenido del repositorio puede actualizarse después de esta fecha.*
 
 ---
 

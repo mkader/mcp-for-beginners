@@ -1,19 +1,19 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T17:46:33+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T14:29:38+00:00",
   "source_file": "study_guide.md",
   "language_code": "sv"
 }
 -->
 # Model Context Protocol (MCP) för Nybörjare - Studievägledning
 
-Denna studievägledning ger en översikt över struktur och innehåll i "Model Context Protocol (MCP) för Nybörjare"-curriculum. Använd denna guide för att navigera i repositoryn effektivt och dra nytta av de tillgängliga resurserna.
+Denna studievägledning ger en översikt över struktur och innehåll i "Model Context Protocol (MCP) för Nybörjare"-curriculum. Använd denna guide för att navigera i repositoryt effektivt och dra nytta av de tillgängliga resurserna.
 
-## Repositoryöversikt
+## Översikt över Repositoryt
 
-Model Context Protocol (MCP) är ett standardiserat ramverk för interaktioner mellan AI-modeller och klientapplikationer. Ursprungligen skapat av Anthropic, MCP underhålls nu av den bredare MCP-communityn via den officiella GitHub-organisationen. Denna repository erbjuder en omfattande curriculum med praktiska kodexempel i C#, Java, JavaScript, Python och TypeScript, utformad för AI-utvecklare, systemarkitekter och mjukvaruingenjörer.
+Model Context Protocol (MCP) är ett standardiserat ramverk för interaktioner mellan AI-modeller och klientapplikationer. Ursprungligen skapat av Anthropic, underhålls MCP nu av den bredare MCP-communityn via den officiella GitHub-organisationen. Detta repository erbjuder en omfattande curriculum med praktiska kodexempel i C#, Java, JavaScript, Python och TypeScript, utformad för AI-utvecklare, systemarkitekter och mjukvaruingenjörer.
 
 ## Visuell Curriculumkarta
 
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -121,9 +122,9 @@ mindmap
       (Hands-on Learning)
 ```
 
-## Repositorystruktur
+## Struktur för Repositoryt
 
-Repositoryn är organiserad i elva huvudsektioner, var och en fokuserad på olika aspekter av MCP:
+Repositoryt är organiserat i elva huvudsektioner, var och en fokuserar på olika aspekter av MCP:
 
 1. **Introduktion (00-Introduction/)**
    - Översikt över Model Context Protocol
@@ -146,8 +147,8 @@ Repositoryn är organiserad i elva huvudsektioner, var och en fokuserad på olik
      - MCP Best Practices Quick Reference
    - **Viktiga säkerhetsämnen**:
      - Prompt injection och verktygsförgiftning
-     - Sessionskapning och förvirrade proxyproblem
-     - Token-passthrough-sårbarheter
+     - Sessionkapning och förvirrade proxyproblem
+     - Token-pass-through-sårbarheter
      - Överdrivna behörigheter och åtkomstkontroll
      - Leverantörskedjesäkerhet för AI-komponenter
      - Microsoft Prompt Shields-integration
@@ -156,12 +157,13 @@ Repositoryn är organiserad i elva huvudsektioner, var och en fokuserad på olik
    - Miljöinställning och konfiguration
    - Skapa grundläggande MCP-servrar och klienter
    - Integration med befintliga applikationer
-   - Innehåller sektioner för:
+   - Innehåller avsnitt för:
      - Första serverimplementationen
      - Klientutveckling
      - LLM-klientintegration
      - VS Code-integration
-     - Server-Sent Events (SSE)-server
+     - Server-Sent Events (SSE) server
+     - Avancerad serveranvändning
      - HTTP-streaming
      - AI Toolkit-integration
      - Teststrategier
@@ -174,7 +176,7 @@ Repositoryn är organiserad i elva huvudsektioner, var och en fokuserad på olik
    - Exempelprojekt med implementationsdetaljer
 
 6. **Avancerade ämnen (05-AdvancedTopics/)**
-   - Tekniker för kontextingenjörskonst
+   - Tekniker för kontextingenjörskap
    - Foundry-agentintegration
    - Multimodala AI-arbetsflöden
    - OAuth2-autentiseringsdemonstrationer
@@ -195,7 +197,7 @@ Repositoryn är organiserad i elva huvudsektioner, var och en fokuserad på olik
    - Använda olika MCP-klienter (Claude Desktop, Cline, VSCode)
    - Arbeta med populära MCP-servrar inklusive bildgenerering
 
-8. **Lärdomar från tidig adoption (07-LessonsfromEarlyAdoption/)**
+8. **Lärdomar från tidig användning (07-LessonsfromEarlyAdoption/)**
    - Implementeringar och framgångshistorier från verkligheten
    - Bygga och distribuera MCP-baserade lösningar
    - Trender och framtida roadmap
@@ -214,7 +216,7 @@ Repositoryn är organiserad i elva huvudsektioner, var och en fokuserad på olik
 9. **Bästa praxis (08-BestPractices/)**
    - Prestandajustering och optimering
    - Designa fel-toleranta MCP-system
-   - Test- och motståndsstrategier
+   - Testning och motståndsstrategier
 
 10. **Fallstudier (09-CaseStudy/)**
     - **Sju omfattande fallstudier** som visar MCP:s mångsidighet i olika scenarier:
@@ -252,7 +254,7 @@ Repositoryn är organiserad i elva huvudsektioner, var och en fokuserad på olik
 
 ## Ytterligare resurser
 
-Repositoryn innehåller stödjande resurser:
+Repositoryt inkluderar stödjande resurser:
 
 - **Bilder-mapp**: Innehåller diagram och illustrationer som används i hela curriculumet
 - **Översättningar**: Flerspråkigt stöd med automatiserade översättningar av dokumentation
@@ -261,13 +263,13 @@ Repositoryn innehåller stödjande resurser:
   - [MCP Specifikation](https://spec.modelcontextprotocol.io/)
   - [MCP GitHub Repository](https://github.com/modelcontextprotocol)
 
-## Hur man använder denna repository
+## Hur man använder detta repository
 
 1. **Sekventiellt lärande**: Följ kapitlen i ordning (00 till 11) för en strukturerad lärandeupplevelse.
-2. **Språkspecifik fokus**: Om du är intresserad av ett specifikt programmeringsspråk, utforska samples-mapparna för implementationer i ditt föredragna språk.
-3. **Praktisk implementation**: Börja med sektionen "Komma igång" för att ställa in din miljö och skapa din första MCP-server och klient.
+2. **Språkspecifik fokus**: Om du är intresserad av ett specifikt programmeringsspråk, utforska katalogerna med exempel för implementationer i ditt föredragna språk.
+3. **Praktisk implementation**: Börja med avsnittet "Komma igång" för att ställa in din miljö och skapa din första MCP-server och klient.
 4. **Avancerad utforskning**: När du är bekväm med grunderna, fördjupa dig i de avancerade ämnena för att utöka din kunskap.
-5. **Communityengagemang**: Gå med i MCP-communityn via GitHub-diskussioner och Discord-kanaler för att ansluta till experter och andra utvecklare.
+5. **Community-engagemang**: Gå med i MCP-communityn via GitHub-diskussioner och Discord-kanaler för att ansluta till experter och andra utvecklare.
 
 ## MCP-klienter och verktyg
 
@@ -280,7 +282,7 @@ Curriculumet täcker olika MCP-klienter och verktyg:
    - Claude i VSCode 
    - Claude API
 
-2. **Communityklienter**:
+2. **Community-klienter**:
    - Cline (terminalbaserad)
    - Cursor (kodredigerare)
    - ChatMCP
@@ -294,7 +296,7 @@ Curriculumet täcker olika MCP-klienter och verktyg:
 
 ## Populära MCP-servrar
 
-Repositoryn introducerar olika MCP-servrar, inklusive:
+Repositoryt introducerar olika MCP-servrar, inklusive:
 
 1. **Officiella Microsoft MCP-servrar**:
    - Microsoft Learn Docs MCP Server
@@ -331,21 +333,22 @@ Repositoryn introducerar olika MCP-servrar, inklusive:
 
 ## Bidra
 
-Denna repository välkomnar bidrag från communityn. Se sektionen Communitybidrag för vägledning om hur du effektivt kan bidra till MCP-ekosystemet.
+Detta repository välkomnar bidrag från communityn. Se avsnittet Communitybidrag för vägledning om hur du kan bidra effektivt till MCP-ekosystemet.
 
 ## Ändringslogg
 
 | Datum | Ändringar |
 |------|---------||
-| 29 september 2025 | - Lade till sektionen 11-MCPServerHandsOnLabs med omfattande 13-labs lärandebana för databasintegration<br>- Uppdaterade Visuell Curriculumkarta för att inkludera Database Integration Labs<br>- Förbättrade repositorystruktur för att reflektera elva huvudsektioner<br>- Lade till detaljerad beskrivning av PostgreSQL-integration, detaljhandelsanalysanvändningsfall och företagsmönster<br>- Uppdaterade navigeringsvägledning för att inkludera sektionerna 00-11 |
-| 26 september 2025 | - Lade till GitHub MCP Registry-fallstudie till sektionen 09-CaseStudy<br>- Uppdaterade Fallstudier för att reflektera sju omfattande fallstudier<br>- Förbättrade fallstudiebeskrivningar med specifika implementationsdetaljer<br>- Uppdaterade Visuell Curriculumkarta för att inkludera GitHub MCP Registry<br>- Reviderade studievägledningsstruktur för att reflektera ekosystemutvecklingsfokus |
-| 18 juli 2025 | - Uppdaterade repositorystruktur för att inkludera Microsoft MCP Servers Guide<br>- Lade till omfattande lista över 10 produktionsklara Microsoft MCP-servrar<br>- Förbättrade sektionen Populära MCP-servrar med Officiella Microsoft MCP-servrar<br>- Uppdaterade sektionen Fallstudier med faktiska fil-exempel<br>- Lade till Labstrukturdetaljer för Praktisk Workshop |
-| 16 juli 2025 | - Uppdaterade repositorystruktur för att reflektera aktuellt innehåll<br>- Lade till sektionen MCP-klienter och verktyg<br>- Lade till sektionen Populära MCP-servrar<br>- Uppdaterade Visuell Curriculumkarta med alla aktuella ämnen<br>- Förbättrade sektionen Avancerade ämnen med alla specialiserade områden<br>- Uppdaterade Fallstudier för att reflektera faktiska exempel<br>- Klargjorde MCP:s ursprung som skapat av Anthropic |
+| 29 september 2025 | - Lade till sektionen 11-MCPServerHandsOnLabs med omfattande 13-labs lärandebana för databasintegration<br>- Uppdaterade Visuell Curriculumkarta för att inkludera Database Integration Labs<br>- Förbättrade repositorystruktur för att återspegla elva huvudsektioner<br>- Lade till detaljerad beskrivning av PostgreSQL-integration, detaljhandelsanalysanvändningsfall och företagsmönster<br>- Uppdaterade navigeringsvägledning för att inkludera sektioner 00-11 |
+| 26 september 2025 | - Lade till GitHub MCP Registry-fallstudie till sektionen 09-CaseStudy<br>- Uppdaterade Fallstudier för att återspegla sju omfattande fallstudier<br>- Förbättrade fallstudiebeskrivningar med specifika implementationsdetaljer<br>- Uppdaterade Visuell Curriculumkarta för att inkludera GitHub MCP Registry<br>- Reviderade studievägledningsstruktur för att återspegla ekosystemutvecklingsfokus |
+| 18 juli 2025 | - Uppdaterade repositorystruktur för att inkludera Microsoft MCP Servers Guide<br>- Lade till omfattande lista över 10 produktionsklara Microsoft MCP-servrar<br>- Förbättrade sektionen Populära MCP-servrar med Officiella Microsoft MCP-servrar<br>- Uppdaterade Fallstudier med faktiska fil-exempel<br>- Lade till Labstrukturdetaljer för Praktisk Workshop |
+| 16 juli 2025 | - Uppdaterade repositorystruktur för att återspegla aktuellt innehåll<br>- Lade till sektionen MCP-klienter och verktyg<br>- Lade till sektionen Populära MCP-servrar<br>- Uppdaterade Visuell Curriculumkarta med alla aktuella ämnen<br>- Förbättrade sektionen Avancerade ämnen med alla specialiserade områden<br>- Uppdaterade Fallstudier för att återspegla faktiska exempel<br>- Klargjorde MCP:s ursprung som skapat av Anthropic |
 | 11 juni 2025 | - Initial skapelse av studievägledningen<br>- Lade till Visuell Curriculumkarta<br>- Skisserade repositorystruktur<br>- Inkluderade exempelprojekt och ytterligare resurser |
+| 6 oktober 2025 | Lade till lektion om avancerad serveranvändning |
 
 ---
 
-*Denna studievägledning uppdaterades den 29 september 2025 och ger en översikt över repositoryn per detta datum. Repositoryns innehåll kan uppdateras efter detta datum.*
+*Denna studievägledning uppdaterades den 29 september 2025 och ger en översikt över repositoryt per detta datum. Repository-innehåll kan ha uppdaterats efter detta datum.*
 
 ---
 

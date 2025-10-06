@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T13:33:45+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T14:15:54+00:00",
   "source_file": "study_guide.md",
   "language_code": "pl"
 }
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -121,7 +122,6 @@ mindmap
       (Hands-on Learning)
 ```
 
-
 ## Struktura Repozytorium
 
 Repozytorium jest podzielone na jedenaście głównych sekcji, z których każda koncentruje się na różnych aspektach MCP:
@@ -147,7 +147,7 @@ Repozytorium jest podzielone na jedenaście głównych sekcji, z których każda
      - Szybki Przewodnik po Najlepszych Praktykach MCP
    - **Kluczowe Tematy Bezpieczeństwa**:
      - Ataki na wstrzykiwanie promptów i zatruwanie narzędzi
-     - Przejęcie sesji i problemy z zdezorientowanym pełnomocnikiem
+     - Przejęcie sesji i problemy z zdezorientowanym zastępcą
      - Luki w przekazywaniu tokenów
      - Nadmierne uprawnienia i kontrola dostępu
      - Bezpieczeństwo łańcucha dostaw dla komponentów AI
@@ -163,7 +163,8 @@ Repozytorium jest podzielone na jedenaście głównych sekcji, z których każda
      - Integracji klienta LLM
      - Integracji z VS Code
      - Serwera SSE (Server-Sent Events)
-     - Strumieniowania HTTP
+     - Zaawansowanego użycia serwera
+     - Streamingu HTTP
      - Integracji z AI Toolkit
      - Strategii testowania
      - Wytycznych dotyczących wdrożenia
@@ -178,9 +179,9 @@ Repozytorium jest podzielone na jedenaście głównych sekcji, z których każda
    - Techniki inżynierii kontekstu
    - Integracja agentów Foundry
    - Wielomodalne przepływy pracy AI
-   - Demos uwierzytelniania OAuth2
+   - Demosy uwierzytelniania OAuth2
    - Możliwości wyszukiwania w czasie rzeczywistym
-   - Strumieniowanie w czasie rzeczywistym
+   - Streaming w czasie rzeczywistym
    - Implementacja kontekstów głównych
    - Strategie routingu
    - Techniki próbkowania
@@ -197,12 +198,12 @@ Repozytorium jest podzielone na jedenaście głównych sekcji, z których każda
    - Praca z popularnymi serwerami MCP, w tym generowaniem obrazów
 
 8. **Lekcje z Wczesnej Adopcji (07-LessonsfromEarlyAdoption/)**
-   - Implementacje w rzeczywistych scenariuszach i historie sukcesu
+   - Implementacje w rzeczywistych warunkach i historie sukcesu
    - Budowanie i wdrażanie rozwiązań opartych na MCP
    - Trendy i przyszła mapa drogowa
    - **Przewodnik po Serwerach MCP Microsoft**: Kompleksowy przewodnik po 10 gotowych do produkcji serwerach MCP Microsoft, w tym:
      - Serwer MCP Microsoft Learn Docs
-     - Serwer MCP Azure (15+ specjalistycznych konektorów)
+     - Serwer MCP Azure (ponad 15 specjalistycznych konektorów)
      - Serwer MCP GitHub
      - Serwer MCP Azure DevOps
      - Serwer MCP MarkItDown
@@ -213,7 +214,7 @@ Repozytorium jest podzielone na jedenaście głównych sekcji, z których każda
      - Serwer MCP Microsoft 365 Agents Toolkit
 
 9. **Najlepsze Praktyki (08-BestPractices/)**
-   - Strojenie wydajności i optymalizacja
+   - Optymalizacja wydajności
    - Projektowanie odpornych na awarie systemów MCP
    - Strategie testowania i odporności
 
@@ -221,7 +222,7 @@ Repozytorium jest podzielone na jedenaście głównych sekcji, z których każda
     - **Siedem kompleksowych studiów przypadków** pokazujących wszechstronność MCP w różnych scenariuszach:
     - **Azure AI Travel Agents**: Orkiestracja wieloagentowa z Azure OpenAI i AI Search
     - **Integracja Azure DevOps**: Automatyzacja procesów przepływu pracy z aktualizacjami danych YouTube
-    - **Pobieranie Dokumentacji w Czasie Rzeczywistym**: Klient konsolowy Python ze strumieniowaniem HTTP
+    - **Pobieranie Dokumentacji w Czasie Rzeczywistym**: Klient konsolowy Python ze streamingiem HTTP
     - **Interaktywny Generator Planów Nauki**: Aplikacja Chainlit z konwersacyjnym AI
     - **Dokumentacja w Edytorze**: Integracja VS Code z przepływami pracy GitHub Copilot
     - **Zarządzanie API Azure**: Integracja API dla przedsiębiorstw z tworzeniem serwera MCP
@@ -239,24 +240,24 @@ Repozytorium jest podzielone na jedenaście głównych sekcji, z których każda
       - Laboratorium 4: Wdrożenie Produkcyjne i Skalowanie
     - Podejście oparte na nauce w laboratorium z instrukcjami krok po kroku
 
-12. **Laboratoria Integracji Serwera MCP z Bazą Danych (11-MCPServerHandsOnLabs/)**
-    - **Kompleksowa ścieżka nauki z 13 laboratoriami** dotycząca budowy gotowych do produkcji serwerów MCP z integracją PostgreSQL
-    - **Implementacja analityki detalicznej w rzeczywistym świecie** na przykładzie Zava Retail
-    - **Wzorce klasy korporacyjnej**, w tym Row Level Security (RLS), wyszukiwanie semantyczne i dostęp do danych dla wielu najemców
+12. **Laboratoria Integracji Baz Danych Serwera MCP (11-MCPServerHandsOnLabs/)**
+    - **Kompleksowa ścieżka nauki z 13 laboratoriami** dla budowy serwerów MCP gotowych do produkcji z integracją PostgreSQL
+    - **Implementacja analityki detalicznej w rzeczywistych warunkach** na podstawie przypadku Zava Retail
+    - **Wzorce klasy korporacyjnej** obejmujące Row Level Security (RLS), wyszukiwanie semantyczne i dostęp do danych dla wielu najemców
     - **Kompletna Struktura Laboratorium**:
       - **Laboratoria 00-03: Podstawy** - Wprowadzenie, Architektura, Bezpieczeństwo, Konfiguracja Środowiska
       - **Laboratoria 04-06: Budowa Serwera MCP** - Projektowanie Bazy Danych, Implementacja Serwera MCP, Rozwój Narzędzi
       - **Laboratoria 07-09: Zaawansowane Funkcje** - Wyszukiwanie Semantyczne, Testowanie i Debugowanie, Integracja z VS Code
       - **Laboratoria 10-12: Produkcja i Najlepsze Praktyki** - Wdrożenie, Monitorowanie, Optymalizacja
     - **Technologie Omówione**: Framework FastMCP, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
-    - **Efekty Nauki**: Gotowe do produkcji serwery MCP, wzorce integracji baz danych, analityka wspierana przez AI, bezpieczeństwo klasy korporacyjnej
+    - **Efekty Nauki**: Serwery MCP gotowe do produkcji, wzorce integracji baz danych, analityka wspierana przez AI, bezpieczeństwo korporacyjne
 
 ## Dodatkowe Zasoby
 
-Repozytorium zawiera wspierające zasoby:
+Repozytorium zawiera materiały wspierające:
 
 - **Folder obrazów**: Zawiera diagramy i ilustracje używane w całym programie nauczania
-- **Tłumaczenia**: Obsługa wielu języków z automatycznymi tłumaczeniami dokumentacji
+- **Tłumaczenia**: Wsparcie wielojęzyczne z automatycznymi tłumaczeniami dokumentacji
 - **Oficjalne Zasoby MCP**:
   - [Dokumentacja MCP](https://modelcontextprotocol.io/)
   - [Specyfikacja MCP](https://spec.modelcontextprotocol.io/)
@@ -299,7 +300,7 @@ Repozytorium przedstawia różne serwery MCP, w tym:
 
 1. **Oficjalne Serwery MCP Microsoft**:
    - Serwer MCP Microsoft Learn Docs
-   - Serwer MCP Azure (15+ specjalistycznych konektorów)
+   - Serwer MCP Azure (ponad 15 specjalistycznych konektorów)
    - Serwer MCP GitHub
    - Serwer MCP Azure DevOps
    - Serwer MCP MarkItDown
@@ -325,30 +326,31 @@ Repozytorium przedstawia różne serwery MCP, w tym:
    - Terminal Control
    - Code Assistant
 
-5. **Specjalistyczne Serwery**:
+5. **Serwery Specjalistyczne**:
    - Salesforce
    - Microsoft Teams
    - Jira & Confluence
 
-## Wkład Społeczności
+## Wkład
 
-Repozytorium zaprasza społeczność do współtworzenia. Zobacz sekcję Wkład Społeczności, aby uzyskać wskazówki, jak skutecznie przyczynić się do rozwoju ekosystemu MCP.
+Repozytorium zaprasza społeczność do wniesienia wkładu. Zobacz sekcję Wkład Społeczności, aby uzyskać wskazówki, jak skutecznie przyczynić się do rozwoju ekosystemu MCP.
 
 ## Dziennik Zmian
 
 | Data | Zmiany |
 |------|---------||
-| 29 września 2025 | - Dodano sekcję 11-MCPServerHandsOnLabs z kompleksową ścieżką nauki z 13 laboratoriami dotyczącą integracji bazy danych<br>- Zaktualizowano Wizualną Mapę Programu Nauczania, aby uwzględnić Laboratoria Integracji Bazy Danych<br>- Ulepszono strukturę repozytorium, aby odzwierciedlić jedenaście głównych sekcji<br>- Dodano szczegółowy opis integracji PostgreSQL, przypadek użycia analityki detalicznej i wzorce korporacyjne<br>- Zaktualizowano wskazówki nawigacyjne, aby uwzględnić sekcje 00-11 |
-| 26 września 2025 | - Dodano studium przypadku Rejestr MCP GitHub do sekcji 09-CaseStudy<br>- Zaktualizowano Studia Przypadków, aby uwzględnić siedem kompleksowych studiów przypadków<br>- Ulepszono opisy studiów przypadków o szczegóły implementacyjne<br>- Zaktualizowano Wizualną Mapę Programu Nauczania, aby uwzględnić Rejestr MCP GitHub<br>- Zrewidowano strukturę przewodnika nauki, aby odzwierciedlić skupienie na rozwoju ekosystemu |
+| 29 września 2025 | - Dodano sekcję 11-MCPServerHandsOnLabs z kompleksową ścieżką nauki z 13 laboratoriami integracji baz danych<br>- Zaktualizowano Wizualną Mapę Programu Nauczania, aby uwzględnić Laboratoria Integracji Baz Danych<br>- Ulepszono strukturę repozytorium, aby odzwierciedlała jedenaście głównych sekcji<br>- Dodano szczegółowy opis integracji PostgreSQL, przypadek użycia analityki detalicznej i wzorce korporacyjne<br>- Zaktualizowano wskazówki nawigacyjne, aby uwzględnić sekcje 00-11 |
+| 26 września 2025 | - Dodano studium przypadku Rejestr MCP GitHub do sekcji 09-CaseStudy<br>- Zaktualizowano Studia Przypadków, aby uwzględnić siedem kompleksowych studiów przypadków<br>- Ulepszono opisy studiów przypadków o szczegółowe informacje o implementacji<br>- Zaktualizowano Wizualną Mapę Programu Nauczania, aby uwzględnić Rejestr MCP GitHub<br>- Zrewidowano strukturę przewodnika nauki, aby odzwierciedlała skupienie na rozwoju ekosystemu |
 | 18 lipca 2025 | - Zaktualizowano strukturę repozytorium, aby uwzględnić Przewodnik po Serwerach MCP Microsoft<br>- Dodano kompleksową listę 10 gotowych do produkcji serwerów MCP Microsoft<br>- Ulepszono sekcję Popularne Serwery MCP o Oficjalne Serwery MCP Microsoft<br>- Zaktualizowano sekcję Studia Przypadków o rzeczywiste przykłady plików<br>- Dodano szczegóły struktury laboratorium dla Warsztatów Praktycznych |
-| 16 lipca 2025 | - Zaktualizowano strukturę repozytorium, aby odzwierciedlić aktualną zawartość<br>- Dodano sekcję Klienci i Narzędzia MCP<br>- Dodano sekcję Popularne Serwery MCP<br>- Zaktualizowano Wizualną Mapę Programu Nauczania o wszystkie aktualne tematy<br>- Ulepszono sekcję Zaawansowane Tematy o wszystkie specjalistyczne obszary<br>- Zaktualizowano Studia Przypadków, aby odzwierciedlić rzeczywiste przykłady<br>- Wyjaśniono, że MCP został stworzony przez Anthropic |
+| 16 lipca 2025 | - Zaktualizowano strukturę repozytorium, aby odzwierciedlała aktualną zawartość<br>- Dodano sekcję Klienci i Narzędzia MCP<br>- Dodano sekcję Popularne Serwery MCP<br>- Zaktualizowano Wizualną Mapę Programu Nauczania o wszystkie aktualne tematy<br>- Ulepszono sekcję Zaawansowane Tematy o wszystkie specjalistyczne obszary<br>- Zaktualizowano Studia Przypadków, aby odzwierciedlały rzeczywiste przykłady<br>- Wyjaśniono pochodzenie MCP jako stworzonego przez Anthropic |
 | 11 czerwca 2025 | - Pierwsze utworzenie przewodnika nauki<br>- Dodano Wizualną Mapę Programu Nauczania<br>- Zarysowano strukturę repozytorium<br>- Uwzględniono przykładowe projekty i dodatkowe zasoby |
+| 6 października 2025 | Dodano lekcję o zaawansowanym użyciu serwera |
 
 ---
 
-*Ten przewodnik został zaktualizowany 29 września 2025 roku i przedstawia przegląd repozytorium na ten dzień. Zawartość repozytorium może być aktualizowana po tej dacie.*
+*Ten przewodnik nauki został zaktualizowany 29 września 2025 roku i przedstawia przegląd repozytorium na ten dzień. Zawartość repozytorium może być aktualizowana po tej dacie.*
 
 ---
 
 **Zastrzeżenie**:  
-Ten dokument został przetłumaczony za pomocą usługi tłumaczeniowej AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy wszelkich starań, aby tłumaczenie było precyzyjne, prosimy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego języku źródłowym powinien być uznawany za autorytatywne źródło. W przypadku informacji krytycznych zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.
+Ten dokument został przetłumaczony za pomocą usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy wszelkich starań, aby tłumaczenie było precyzyjne, prosimy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego języku źródłowym powinien być uznawany za wiarygodne źródło. W przypadku informacji o kluczowym znaczeniu zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.

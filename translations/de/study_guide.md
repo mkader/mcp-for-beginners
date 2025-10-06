@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "aa1ce97bc694b08faf3018bab6d275b9",
-  "translation_date": "2025-09-30T13:26:51+00:00",
+  "original_hash": "ac390de870be5c02165350f6279a8831",
+  "translation_date": "2025-10-06T13:19:38+00:00",
   "source_file": "study_guide.md",
   "language_code": "de"
 }
@@ -49,6 +49,7 @@ mindmap
       (HTTP Streaming)
       (AI Toolkit Integration)
       (Testing Frameworks)
+      (Advanced Server Usage)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -121,6 +122,7 @@ mindmap
       (Hands-on Learning)
 ```
 
+
 ## Struktur des Repositorys
 
 Das Repository ist in elf Hauptabschnitte unterteilt, die jeweils verschiedene Aspekte von MCP behandeln:
@@ -162,6 +164,7 @@ Das Repository ist in elf Hauptabschnitte unterteilt, die jeweils verschiedene A
      - LLM-Client-Integration
      - VS Code-Integration
      - Server-Sent Events (SSE) Server
+     - Erweiterte Server-Nutzung
      - HTTP-Streaming
      - AI Toolkit-Integration
      - Teststrategien
@@ -185,7 +188,7 @@ Das Repository ist in elf Hauptabschnitte unterteilt, die jeweils verschiedene A
    - Sampling-Techniken
    - Skalierungsansätze
    - Sicherheitsüberlegungen
-   - Integration von Entra ID-Sicherheit
+   - Entra ID Sicherheitsintegration
    - Web-Suchintegration
 
 7. **Community-Beiträge (06-CommunityContributions/)**
@@ -193,13 +196,13 @@ Das Repository ist in elf Hauptabschnitte unterteilt, die jeweils verschiedene A
    - Zusammenarbeit über GitHub
    - Community-getriebene Verbesserungen und Feedback
    - Verwendung verschiedener MCP-Clients (Claude Desktop, Cline, VSCode)
-   - Arbeiten mit beliebten MCP-Servern, einschließlich Bildgenerierung
+   - Arbeit mit beliebten MCP-Servern einschließlich Bildgenerierung
 
 8. **Lektionen aus der frühen Einführung (07-LessonsfromEarlyAdoption/)**
    - Implementierungen und Erfolgsgeschichten aus der Praxis
    - Aufbau und Bereitstellung von MCP-basierten Lösungen
    - Trends und zukünftige Roadmap
-   - **Microsoft MCP Servers Guide**: Umfassender Leitfaden zu 10 produktionsbereiten Microsoft MCP-Servern, einschließlich:
+   - **Microsoft MCP Servers Guide**: Umfassender Leitfaden zu 10 produktionsreifen Microsoft MCP-Servern, darunter:
      - Microsoft Learn Docs MCP Server
      - Azure MCP Server (15+ spezialisierte Konnektoren)
      - GitHub MCP Server
@@ -218,7 +221,7 @@ Das Repository ist in elf Hauptabschnitte unterteilt, die jeweils verschiedene A
 
 10. **Fallstudien (09-CaseStudy/)**
     - **Sieben umfassende Fallstudien**, die die Vielseitigkeit von MCP in verschiedenen Szenarien demonstrieren:
-    - **Azure AI Travel Agents**: Multi-Agenten-Orchestrierung mit Azure OpenAI und AI Search
+    - **Azure AI Reiseagenten**: Multi-Agenten-Orchestrierung mit Azure OpenAI und AI Search
     - **Azure DevOps Integration**: Automatisierung von Workflow-Prozessen mit YouTube-Datenaktualisierungen
     - **Echtzeit-Dokumentationsabruf**: Python-Konsolenclient mit HTTP-Streaming
     - **Interaktiver Studienplan-Generator**: Chainlit-Web-App mit konversationeller KI
@@ -227,28 +230,28 @@ Das Repository ist in elf Hauptabschnitte unterteilt, die jeweils verschiedene A
     - **GitHub MCP Registry**: Ökosystementwicklung und agentische Integrationsplattform
     - Implementierungsbeispiele, die Unternehmensintegration, Entwicklerproduktivität und Ökosystementwicklung umfassen
 
-11. **Praktischer Workshop (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
+11. **Hands-on Workshop (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
     - Umfassender praktischer Workshop, der MCP mit AI Toolkit kombiniert
     - Aufbau intelligenter Anwendungen, die KI-Modelle mit realen Tools verbinden
     - Praktische Module, die Grundlagen, benutzerdefinierte Serverentwicklung und Produktionsbereitstellungsstrategien abdecken
     - **Lab-Struktur**:
       - Lab 1: Grundlagen des MCP-Servers
-      - Lab 2: Fortgeschrittene MCP-Server-Entwicklung
+      - Lab 2: Erweiterte MCP-Server-Entwicklung
       - Lab 3: AI Toolkit-Integration
       - Lab 4: Produktionsbereitstellung und Skalierung
     - Lab-basiertes Lernansatz mit Schritt-für-Schritt-Anleitungen
 
-12. **MCP Server-Datenbank-Integrations-Labs (11-MCPServerHandsOnLabs/)**
-    - **Umfassender 13-Lab-Lernpfad** für den Aufbau produktionsbereiter MCP-Server mit PostgreSQL-Integration
-    - **Implementierung von Einzelhandelsanalysen aus der Praxis** anhand des Zava Retail-Anwendungsfalls
-    - **Muster auf Unternehmensniveau**, einschließlich Row Level Security (RLS), semantischer Suche und Multi-Tenant-Datenzugriff
+12. **MCP Server Datenbank-Integrations-Labs (11-MCPServerHandsOnLabs/)**
+    - **Umfassender 13-Lab-Lernpfad** für den Aufbau produktionsreifer MCP-Server mit PostgreSQL-Integration
+    - **Implementierung von Einzelhandelsanalysen aus der Praxis** anhand des Zava Retail Anwendungsfalls
+    - **Unternehmensgerechte Muster** einschließlich Row Level Security (RLS), semantischer Suche und Multi-Tenant-Datenzugriff
     - **Komplette Lab-Struktur**:
       - **Labs 00-03: Grundlagen** - Einführung, Architektur, Sicherheit, Einrichtung der Umgebung
       - **Labs 04-06: Aufbau des MCP-Servers** - Datenbankdesign, MCP-Server-Implementierung, Tool-Entwicklung
       - **Labs 07-09: Erweiterte Funktionen** - Semantische Suche, Testen & Debugging, VS Code-Integration
       - **Labs 10-12: Produktion & Best Practices** - Bereitstellung, Überwachung, Optimierung
     - **Abgedeckte Technologien**: FastMCP-Framework, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
-    - **Lernziele**: Produktionsbereite MCP-Server, Datenbank-Integrationsmuster, KI-gestützte Analysen, Unternehmenssicherheit
+    - **Lernziele**: Produktionsreife MCP-Server, Datenbank-Integrationsmuster, KI-gestützte Analysen, Unternehmenssicherheit
 
 ## Zusätzliche Ressourcen
 
@@ -261,12 +264,12 @@ Das Repository enthält unterstützende Ressourcen:
   - [MCP Spezifikation](https://spec.modelcontextprotocol.io/)
   - [MCP GitHub Repository](https://github.com/modelcontextprotocol)
 
-## Verwendung des Repositorys
+## So nutzen Sie dieses Repository
 
 1. **Sequenzielles Lernen**: Folgen Sie den Kapiteln in der Reihenfolge (00 bis 11) für ein strukturiertes Lernerlebnis.
-2. **Sprachspezifischer Fokus**: Wenn Sie an einer bestimmten Programmiersprache interessiert sind, erkunden Sie die Sample-Verzeichnisse für Implementierungen in Ihrer bevorzugten Sprache.
+2. **Sprachspezifischer Fokus**: Wenn Sie sich für eine bestimmte Programmiersprache interessieren, erkunden Sie die Sample-Verzeichnisse für Implementierungen in Ihrer bevorzugten Sprache.
 3. **Praktische Implementierung**: Beginnen Sie mit dem Abschnitt "Erste Schritte", um Ihre Umgebung einzurichten und Ihren ersten MCP-Server und -Client zu erstellen.
-4. **Fortgeschrittene Erkundung**: Sobald Sie mit den Grundlagen vertraut sind, tauchen Sie in die fortgeschrittenen Themen ein, um Ihr Wissen zu erweitern.
+4. **Erweiterte Erkundung**: Sobald Sie mit den Grundlagen vertraut sind, tauchen Sie in die fortgeschrittenen Themen ein, um Ihr Wissen zu erweitern.
 5. **Community-Engagement**: Treten Sie der MCP-Community über GitHub-Diskussionen und Discord-Kanäle bei, um sich mit Experten und anderen Entwicklern zu vernetzen.
 
 ## MCP-Clients und Tools
@@ -286,7 +289,7 @@ Das Curriculum behandelt verschiedene MCP-Clients und Tools:
    - ChatMCP
    - Windsurf
 
-3. **MCP-Management-Tools**:
+3. **MCP-Verwaltungstools**:
    - MCP CLI
    - MCP Manager
    - MCP Linker
@@ -319,7 +322,7 @@ Das Repository stellt verschiedene MCP-Server vor, darunter:
    - Stable Diffusion WebUI
    - Replicate
 
-4. **Entwicklertools**:
+4. **Entwicklungstools**:
    - Git MCP
    - Terminal Control
    - Code Assistant
@@ -337,11 +340,12 @@ Dieses Repository begrüßt Beiträge aus der Community. Siehe den Abschnitt Com
 
 | Datum | Änderungen |
 |------|---------||
-| 29. September 2025 | - Abschnitt 11-MCPServerHandsOnLabs hinzugefügt mit umfassendem 13-Lab-Datenbank-Integrations-Lernpfad<br>- Visuelle Curriculum-Karte aktualisiert, um Datenbank-Integrations-Labs einzuschließen<br>- Repository-Struktur erweitert, um elf Hauptabschnitte widerzuspiegeln<br>- Detaillierte Beschreibung der PostgreSQL-Integration, des Einzelhandelsanalyse-Anwendungsfalls und der Unternehmensmuster hinzugefügt<br>- Navigationshinweise aktualisiert, um die Abschnitte 00-11 einzuschließen |
+| 29. September 2025 | - Abschnitt 11-MCPServerHandsOnLabs hinzugefügt mit umfassendem 13-Lab-Datenbank-Integrations-Lernpfad<br>- Visuelle Curriculum-Karte aktualisiert, um Datenbank-Integrations-Labs einzuschließen<br>- Repository-Struktur erweitert, um elf Hauptabschnitte widerzuspiegeln<br>- Detaillierte Beschreibung der PostgreSQL-Integration, des Einzelhandelsanalyse-Anwendungsfalls und der Unternehmensmuster hinzugefügt<br>- Navigationsanleitung aktualisiert, um die Abschnitte 00-11 einzuschließen |
 | 26. September 2025 | - GitHub MCP Registry Fallstudie zum Abschnitt 09-CaseStudy hinzugefügt<br>- Fallstudien aktualisiert, um sieben umfassende Fallstudien widerzuspiegeln<br>- Fallstudienbeschreibungen mit spezifischen Implementierungsdetails erweitert<br>- Visuelle Curriculum-Karte aktualisiert, um GitHub MCP Registry einzuschließen<br>- Struktur des Lernleitfadens überarbeitet, um den Fokus auf Ökosystementwicklung widerzuspiegeln |
-| 18. Juli 2025 | - Repository-Struktur aktualisiert, um Microsoft MCP Servers Guide einzuschließen<br>- Umfassende Liste von 10 produktionsbereiten Microsoft MCP-Servern hinzugefügt<br>- Abschnitt Beliebte MCP-Server mit offiziellen Microsoft MCP-Servern erweitert<br>- Abschnitt Fallstudien mit tatsächlichen Datei-Beispielen aktualisiert<br>- Lab-Strukturdetails für praktischen Workshop hinzugefügt |
-| 16. Juli 2025 | - Repository-Struktur aktualisiert, um aktuellen Inhalt widerzuspiegeln<br>- Abschnitt MCP-Clients und Tools hinzugefügt<br>- Abschnitt Beliebte MCP-Server hinzugefügt<br>- Visuelle Curriculum-Karte mit allen aktuellen Themen aktualisiert<br>- Abschnitt Fortgeschrittene Themen mit allen spezialisierten Bereichen erweitert<br>- Abschnitt Fallstudien aktualisiert, um tatsächliche Beispiele widerzuspiegeln<br>- Ursprung von MCP als von Anthropic erstellt klargestellt |
+| 18. Juli 2025 | - Repository-Struktur aktualisiert, um Microsoft MCP Servers Guide einzuschließen<br>- Umfassende Liste von 10 produktionsreifen Microsoft MCP-Servern hinzugefügt<br>- Abschnitt Beliebte MCP-Server mit offiziellen Microsoft MCP-Servern erweitert<br>- Abschnitt Fallstudien mit tatsächlichen Datei-Beispielen aktualisiert<br>- Lab-Struktur-Details für Hands-on Workshop hinzugefügt |
+| 16. Juli 2025 | - Repository-Struktur aktualisiert, um aktuellen Inhalt widerzuspiegeln<br>- Abschnitt MCP-Clients und Tools hinzugefügt<br>- Abschnitt Beliebte MCP-Server hinzugefügt<br>- Visuelle Curriculum-Karte mit allen aktuellen Themen aktualisiert<br>- Abschnitt Fortgeschrittene Themen mit allen spezialisierten Bereichen erweitert<br>- Fallstudien aktualisiert, um tatsächliche Beispiele widerzuspiegeln<br>- Ursprung von MCP als von Anthropic erstellt klargestellt |
 | 11. Juni 2025 | - Ersterstellung des Lernleitfadens<br>- Visuelle Curriculum-Karte hinzugefügt<br>- Repository-Struktur skizziert<br>- Beispielprojekte und zusätzliche Ressourcen eingeschlossen |
+| 6. Oktober 2025 | Lektion zur erweiterten Server-Nutzung hinzugefügt |
 
 ---
 

@@ -1,41 +1,41 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "57f7b15640bb96ef2f6f09003eec935e",
-  "translation_date": "2025-08-19T16:08:40+00:00",
+  "original_hash": "4d846ebb88fbb0f00549e2ff8cc3f746",
+  "translation_date": "2025-10-06T15:10:28+00:00",
   "source_file": "03-GettingStarted/03-llm-client/README.md",
   "language_code": "sk"
 }
 -->
 # Vytvorenie klienta s LLM
 
-Doteraz ste videli, ako vytvoriť server a klienta. Klient mohol explicitne volať server, aby získal zoznam jeho nástrojov, zdrojov a výziev. Tento prístup však nie je veľmi praktický. Váš používateľ žije v agentickej ére a očakáva, že bude používať výzvy a komunikovať s LLM, aby to dosiahol. Pre vášho používateľa nie je dôležité, či používate MCP na ukladanie svojich schopností, ale očakáva, že bude môcť komunikovať prirodzeným jazykom. Ako to teda vyriešime? Riešením je pridať LLM do klienta.
+Doteraz ste videli, ako vytvoriť server a klienta. Klient dokázal explicitne volať server, aby získal zoznam jeho nástrojov, zdrojov a promptov. Avšak, tento prístup nie je veľmi praktický. V agentickej ére váš používateľ očakáva, že bude používať prompty a komunikovať s LLM na dosiahnutie svojich cieľov. Používateľovi nezáleží na tom, či používate MCP na ukladanie svojich schopností, ale očakáva, že bude komunikovať v prirodzenom jazyku. Ako to vyriešiť? Riešením je pridať LLM do klienta.
 
 ## Prehľad
 
-V tejto lekcii sa zameriame na pridanie LLM do vášho klienta a ukážeme, ako to poskytuje oveľa lepší zážitok pre vášho používateľa.
+V tejto lekcii sa zameriame na pridanie LLM do klienta a ukážeme, ako to poskytuje oveľa lepší zážitok pre používateľa.
 
 ## Ciele učenia
 
 Na konci tejto lekcie budete schopní:
 
 - Vytvoriť klienta s LLM.
-- Bezproblémovo komunikovať so serverom MCP pomocou LLM.
+- Bezproblémovo komunikovať s MCP serverom pomocou LLM.
 - Poskytnúť lepší používateľský zážitok na strane klienta.
 
 ## Prístup
 
-Skúsme pochopiť prístup, ktorý musíme zvoliť. Pridanie LLM znie jednoducho, ale ako to vlastne urobíme?
+Poďme pochopiť prístup, ktorý musíme zvoliť. Pridanie LLM znie jednoducho, ale ako to vlastne urobíme?
 
 Takto bude klient komunikovať so serverom:
 
 1. Nadviazanie spojenia so serverom.
 
-1. Získanie zoznamu schopností, výziev, zdrojov a nástrojov a uloženie ich schémy.
+1. Získanie zoznamu schopností, promptov, zdrojov a nástrojov a uloženie ich schém.
 
-1. Pridanie LLM a odovzdanie uložených schopností a ich schémy vo formáte, ktorému LLM rozumie.
+1. Pridanie LLM a odovzdanie uložených schopností a ich schém vo formáte, ktorému LLM rozumie.
 
-1. Spracovanie používateľskej výzvy jej odovzdaním LLM spolu s nástrojmi uvedenými klientom.
+1. Spracovanie používateľského promptu jeho odoslaním do LLM spolu s nástrojmi uvedenými klientom.
 
 Skvelé, teraz rozumieme, ako to môžeme urobiť na vysokej úrovni, poďme si to vyskúšať v nasledujúcom cvičení.
 
@@ -43,15 +43,15 @@ Skvelé, teraz rozumieme, ako to môžeme urobiť na vysokej úrovni, poďme si 
 
 V tomto cvičení sa naučíme, ako pridať LLM do nášho klienta.
 
-### Overenie pomocou GitHub Personal Access Token
+### Autentifikácia pomocou GitHub Personal Access Token
 
-Vytvorenie tokenu GitHub je jednoduchý proces. Tu je postup:
+Vytvorenie GitHub tokenu je jednoduchý proces. Tu je postup:
 
 - Prejdite do nastavení GitHub – Kliknite na svoj profilový obrázok v pravom hornom rohu a vyberte Nastavenia.
-- Prejdite do nastavení vývojára – Posuňte sa nadol a kliknite na Nastavenia vývojára.
-- Vyberte Osobné prístupové tokeny – Kliknite na Osobné prístupové tokeny a potom na Generovať nový token.
-- Nakonfigurujte svoj token – Pridajte poznámku pre referenciu, nastavte dátum vypršania platnosti a vyberte potrebné rozsahy (oprávnenia).
-- Generujte a skopírujte token – Kliknite na Generovať token a uistite sa, že ho okamžite skopírujete, pretože ho už nebudete môcť znova zobraziť.
+- Prejdite do Nastavení pre vývojárov – Posuňte sa nadol a kliknite na Nastavenia pre vývojárov.
+- Vyberte Personal Access Tokens – Kliknite na Fine-grained tokens a potom na Generate new token.
+- Konfigurujte svoj token – Pridajte poznámku pre referenciu, nastavte dátum vypršania platnosti a vyberte potrebné oprávnenia (scopes). V tomto prípade nezabudnite pridať povolenie Models.
+- Vygenerujte a skopírujte token – Kliknite na Generate token a nezabudnite ho okamžite skopírovať, pretože ho už nebudete môcť znova zobraziť.
 
 ### -1- Pripojenie k serveru
 
@@ -96,7 +96,7 @@ V predchádzajúcom kóde sme:
 
 - Importovali potrebné knižnice.
 - Vytvorili triedu s dvoma členmi, `client` a `openai`, ktoré nám pomôžu spravovať klienta a komunikovať s LLM.
-- Nakonfigurovali inštanciu LLM na používanie GitHub Models nastavením `baseUrl`, aby ukazoval na inferenčné API.
+- Konfigurovali inštanciu LLM na používanie GitHub Models nastavením `baseUrl`, aby ukazoval na inferenčné API.
 
 #### Python
 
@@ -238,17 +238,17 @@ public class LangChain4jClient {
 V predchádzajúcom kóde sme:
 
 - **Pridali závislosti LangChain4j**: Potrebné pre integráciu MCP, oficiálneho klienta OpenAI a podporu GitHub Models.
-- **Importovali knižnice LangChain4j**: Pre integráciu MCP a funkčnosť modelu OpenAI chat.
-- **Vytvorili `ChatLanguageModel`**: Nakonfigurovaný na používanie GitHub Models s vaším GitHub tokenom.
-- **Nastavili HTTP transport**: Použitím Server-Sent Events (SSE) na pripojenie k serveru MCP.
-- **Vytvorili klienta MCP**: Ktorý bude spracovávať komunikáciu so serverom.
-- **Použili vstavanú podporu MCP v LangChain4j**: Ktorá zjednodušuje integráciu medzi LLM a servermi MCP.
+- **Importovali knižnice LangChain4j**: Pre integráciu MCP a funkčnosť chat modelu OpenAI.
+- **Vytvorili `ChatLanguageModel`**: Konfigurovaný na používanie GitHub Models s vaším GitHub tokenom.
+- **Nastavili HTTP transport**: Použitím Server-Sent Events (SSE) na pripojenie k MCP serveru.
+- **Vytvorili MCP klienta**: Ktorý bude spravovať komunikáciu so serverom.
+- **Použili zabudovanú podporu MCP v LangChain4j**: Ktorá zjednodušuje integráciu medzi LLM a MCP servermi.
 
 #### Rust
 
-Tento príklad predpokladá, že máte spustený server MCP založený na Ruste. Ak ho nemáte, vráťte sa k lekcii [01-first-server](../01-first-server/README.md), aby ste vytvorili server.
+Tento príklad predpokladá, že máte Rust MCP server spustený. Ak ho nemáte, pozrite si lekciu [01-first-server](../01-first-server/README.md) na vytvorenie servera.
 
-Keď máte server MCP v Ruste, otvorte terminál a prejdite do rovnakého adresára ako server. Potom spustite nasledujúci príkaz na vytvorenie nového projektu klienta LLM:
+Keď máte Rust MCP server, otvorte terminál a prejdite do rovnakého adresára ako server. Potom spustite nasledujúci príkaz na vytvorenie nového projektu klienta LLM:
 
 ```bash
 mkdir calculator-llmclient
@@ -267,7 +267,7 @@ tokio = { version = "1.46.1", features = ["rt-multi-thread"] }
 ```
 
 > [!NOTE]
-> Neexistuje oficiálna knižnica Rust pre OpenAI, avšak crate `async-openai` je [komunitou udržiavaná knižnica](https://platform.openai.com/docs/libraries/rust#rust), ktorá sa bežne používa.
+> Neexistuje oficiálna knižnica Rust pre OpenAI, avšak `async-openai` crate je [komunitou udržiavaná knižnica](https://platform.openai.com/docs/libraries/rust#rust), ktorá sa bežne používa.
 
 Otvorte súbor `src/main.rs` a nahraďte jeho obsah nasledujúcim kódom:
 
@@ -319,20 +319,20 @@ async fn main() -> Result<(), Box<dyn Error>> {
 }
 ```
 
-Tento kód nastavuje základnú aplikáciu Rust, ktorá sa pripojí k serveru MCP a GitHub Models na interakcie s LLM.
+Tento kód nastavuje základnú aplikáciu Rust, ktorá sa pripojí k MCP serveru a GitHub Models na interakcie s LLM.
 
 > [!IMPORTANT]
-> Pred spustením aplikácie sa uistite, že ste nastavili premennú prostredia `OPENAI_API_KEY` s vaším GitHub tokenom.
+> Pred spustením aplikácie nezabudnite nastaviť premennú prostredia `OPENAI_API_KEY` s vaším GitHub tokenom.
 
 Skvelé, v ďalšom kroku získame zoznam schopností na serveri.
 
-### -2- Zoznam schopností servera
+### -2- Získanie zoznamu schopností servera
 
 Teraz sa pripojíme k serveru a požiadame o jeho schopnosti:
 
 #### TypeScript
 
-V tej istej triede pridajte nasledujúce metódy:
+Do tej istej triedy pridajte nasledujúce metódy:
 
 ```typescript
 async connectToServer(transport: Transport) {
@@ -352,7 +352,7 @@ async run() {
 V predchádzajúcom kóde sme:
 
 - Pridali kód na pripojenie k serveru, `connectToServer`.
-- Vytvorili metódu `run`, ktorá je zodpovedná za spracovanie toku našej aplikácie. Zatiaľ iba vypisuje nástroje, ale čoskoro pridáme viac.
+- Vytvorili metódu `run`, ktorá je zodpovedná za spravovanie toku našej aplikácie. Zatiaľ iba získava zoznam nástrojov, ale čoskoro pridáme viac.
 
 #### Python
 
@@ -371,9 +371,9 @@ for tool in tools.tools:
     print("Tool", tool.inputSchema["properties"])
 ```
 
-Tu je to, čo sme pridali:
+Tu je, čo sme pridali:
 
-- Zoznam zdrojov a nástrojov a ich vypísanie. Pre nástroje tiež vypisujeme `inputSchema`, ktorý použijeme neskôr.
+- Získanie zoznamu zdrojov a nástrojov a ich vypísanie. Pre nástroje tiež vypisujeme `inputSchema`, ktorý použijeme neskôr.
 
 #### .NET
 
@@ -400,8 +400,8 @@ async Task<List<ChatCompletionsToolDefinition>> GetMcpTools()
 
 V predchádzajúcom kóde sme:
 
-- Získali zoznam nástrojov dostupných na serveri MCP.
-- Pre každý nástroj uviedli názov, popis a jeho schému. Táto schéma sa použije na volanie nástrojov neskôr.
+- Získali zoznam nástrojov dostupných na MCP serveri.
+- Pre každý nástroj vypísali názov, popis a jeho schému. Túto schému použijeme na volanie nástrojov neskôr.
 
 #### Java
 
@@ -419,13 +419,13 @@ ToolProvider toolProvider = McpToolProvider.builder()
 
 V predchádzajúcom kóde sme:
 
-- Vytvorili `McpToolProvider`, ktorý automaticky zisťuje a registruje všetky nástroje zo servera MCP.
-- Poskytovateľ nástrojov spracováva konverziu medzi schémami nástrojov MCP a formátom nástrojov LangChain4j interne.
-- Tento prístup abstrahuje manuálny proces zoznamovania a konverzie nástrojov.
+- Vytvorili `McpToolProvider`, ktorý automaticky objavuje a registruje všetky nástroje zo MCP servera.
+- Poskytovateľ nástrojov spravuje konverziu medzi schémami nástrojov MCP a formátom nástrojov LangChain4j interne.
+- Tento prístup abstrahuje manuálny proces získavania zoznamu nástrojov a ich konverzie.
 
 #### Rust
 
-Získanie nástrojov zo servera MCP sa vykonáva pomocou metódy `list_tools`. Vo vašej funkcii `main`, po nastavení klienta MCP, pridajte nasledujúci kód:
+Získanie zoznamu nástrojov z MCP servera sa vykonáva pomocou metódy `list_tools`. Vo vašej funkcii `main`, po nastavení MCP klienta, pridajte nasledujúci kód:
 
 ```rust
 // Get MCP tool listing 
@@ -434,11 +434,11 @@ let tools = mcp_client.list_tools(Default::default()).await?;
 
 ### -3- Konverzia schopností servera na nástroje LLM
 
-Ďalším krokom po získaní schopností servera je ich konverzia do formátu, ktorému LLM rozumie. Keď to urobíme, môžeme tieto schopnosti poskytnúť ako nástroje pre LLM.
+Ďalším krokom po získaní zoznamu schopností servera je ich konverzia do formátu, ktorému LLM rozumie. Keď to urobíme, môžeme tieto schopnosti poskytnúť ako nástroje LLM.
 
 #### TypeScript
 
-1. Pridajte nasledujúci kód na konverziu odpovede zo servera MCP na formát nástroja, ktorý môže LLM použiť:
+1. Pridajte nasledujúci kód na konverziu odpovede z MCP servera na formát nástroja, ktorému LLM rozumie:
 
     ```typescript
     openAiToolAdapter(tool: {
@@ -465,9 +465,9 @@ let tools = mcp_client.list_tools(Default::default()).await?;
 
     ```
 
-    Vyššie uvedený kód berie odpoveď zo servera MCP a konvertuje ju na definíciu nástroja, ktorú LLM dokáže pochopiť.
+    Vyššie uvedený kód berie odpoveď z MCP servera a konvertuje ju na definíciu nástroja, ktorému LLM rozumie.
 
-1. Aktualizujme metódu `run`, aby sme získali schopnosti servera:
+1. Aktualizujme metódu `run`, aby získala zoznam schopností servera:
 
     ```typescript
     async run() {
@@ -483,7 +483,7 @@ let tools = mcp_client.list_tools(Default::default()).await?;
     }
     ```
 
-    V predchádzajúcom kóde sme aktualizovali metódu `run`, aby prešla výsledkami a pre každý záznam zavolala `openAiToolAdapter`.
+    V predchádzajúcom kóde sme aktualizovali metódu `run`, aby prešla výsledkom a pre každú položku zavolala `openAiToolAdapter`.
 
 #### Python
 
@@ -507,9 +507,9 @@ let tools = mcp_client.list_tools(Default::default()).await?;
         return tool_schema
     ```
 
-    Vo vyššie uvedenej funkcii `convert_to_llm_tools` berieme odpoveď nástroja MCP a konvertujeme ju na formát, ktorému LLM rozumie.
+    Vo funkcii `convert_to_llm_tools` berieme odpoveď nástroja MCP a konvertujeme ju na formát, ktorému LLM rozumie.
 
-1. Ďalej aktualizujme náš kód klienta, aby využíval túto funkciu takto:
+1. Ďalej aktualizujme náš klientský kód, aby využíval túto funkciu takto:
 
     ```python
     for tool in tools.tools:
@@ -518,11 +518,11 @@ let tools = mcp_client.list_tools(Default::default()).await?;
         functions.append(convert_to_llm_tool(tool))
     ```
 
-    Tu pridávame volanie `convert_to_llm_tool`, aby sme konvertovali odpoveď nástroja MCP na niečo, čo môžeme neskôr odovzdať LLM.
+    Tu pridávame volanie `convert_to_llm_tool`, aby sme konvertovali odpoveď nástroja MCP na niečo, čo môžeme neskôr poskytnúť LLM.
 
 #### .NET
 
-1. Pridajme kód na konverziu odpovede nástroja MCP na niečo, čo LLM dokáže pochopiť:
+1. Pridajme kód na konverziu odpovede nástroja MCP na niečo, čomu LLM rozumie:
 
 ```csharp
 ChatCompletionsToolDefinition ConvertFrom(string name, string description, JsonElement jsonElement)
@@ -548,9 +548,9 @@ ChatCompletionsToolDefinition ConvertFrom(string name, string description, JsonE
 V predchádzajúcom kóde sme:
 
 - Vytvorili funkciu `ConvertFrom`, ktorá berie názov, popis a vstupnú schému.
-- Definovali funkčnosť, ktorá vytvára `FunctionDefinition`, ktorý sa odovzdáva `ChatCompletionsDefinition`. Ten je niečo, čo LLM dokáže pochopiť.
+- Definovali funkcionalitu, ktorá vytvára FunctionDefinition, ktorý sa odovzdáva do ChatCompletionsDefinition. Ten je niečo, čomu LLM rozumie.
 
-1. Pozrime sa, ako môžeme aktualizovať existujúci kód, aby sme využili túto funkciu vyššie:
+1. Pozrime sa, ako môžeme aktualizovať existujúci kód, aby využíval túto funkciu vyššie:
 
     ```csharp
     async Task<List<ChatCompletionsToolDefinition>> GetMcpTools()
@@ -578,11 +578,9 @@ V predchádzajúcom kóde sme:
 
         return toolDefinitions;
     }
-    ```
+    ```    In the preceding code, we've:
 
-    V predchádzajúcom kóde sme:
-
-    - Aktualizovali funkciu na konverziu odpovede nástroja MCP na nástroj LLM. Poďme zvýrazniť pridaný kód:
+    - Update the function to convert the MCP tool response to an LLm tool. Let's highlight the code we added:
 
         ```csharp
         JsonElement propertiesElement;
@@ -593,7 +591,7 @@ V predchádzajúcom kóde sme:
         toolDefinitions.Add(def);
         ```
 
-        Vstupná schéma je súčasťou odpovede nástroja, ale na atribúte "properties", takže ju musíme extrahovať. Okrem toho teraz voláme `ConvertFrom` s podrobnosťami o nástroji. Teraz, keď sme urobili ťažkú prácu, pozrime sa, ako to všetko spolu funguje, keď spracujeme používateľskú výzvu.
+        The input schema is part of the tool response but on the "properties" attribute, so we need to extract. Furthermore, we now call `ConvertFrom` with the tool details. Now we've done the heavy lifting, let's see how it call comes together as we handle a user prompt next.
 
 #### Java
 
@@ -614,12 +612,12 @@ V predchádzajúcom kóde sme:
 
 - Definovali jednoduché rozhranie `Bot` pre interakcie v prirodzenom jazyku.
 - Použili `AiServices` z LangChain4j na automatické prepojenie LLM s poskytovateľom nástrojov MCP.
-- Rámec automaticky spracováva konverziu schém nástrojov MCP a volanie funkcií na pozadí.
-- Tento prístup eliminuje manuálnu konverziu nástrojov - LangChain4j spracováva všetku zložitosť konverzie nástrojov MCP na formát kompatibilný s LLM.
+- Framework automaticky spravuje konverziu schém nástrojov a volanie funkcií na pozadí.
+- Tento prístup eliminuje manuálnu konverziu nástrojov - LangChain4j spravuje všetku komplexnosť konverzie nástrojov MCP na formát kompatibilný s LLM.
 
 #### Rust
 
-Na konverziu odpovede nástroja MCP na formát, ktorému LLM rozumie, pridáme pomocnú funkciu, ktorá formátuje zoznam nástrojov. Pridajte nasledujúci kód do vášho súboru `main.rs` pod funkciu `main`. Tento kód sa bude volať pri odosielaní požiadaviek na LLM:
+Na konverziu odpovede nástroja MCP na formát, ktorému LLM rozumie, pridáme pomocnú funkciu, ktorá formátuje zoznam nástrojov. Pridajte nasledujúci kód do vášho súboru `main.rs` pod funkciu `main`. Táto funkcia bude volaná pri odosielaní požiadaviek na LLM:
 
 ```rust
 async fn format_tools(tools: &ListToolsResult) -> Result<Vec<Value>, Box<dyn Error>> {
@@ -654,15 +652,15 @@ async fn format_tools(tools: &ListToolsResult) -> Result<Vec<Value>, Box<dyn Err
 }
 ```
 
-Skvelé, teraz sme pripravení spracovať akékoľvek používateľské požiadavky, takže sa na to pozrime ďalej.
+Skvelé, teraz sme pripravení spracovať akékoľvek požiadavky používateľa, takže sa pustíme do toho.
 
-### -4- Spracovanie používateľskej výzvy
+### -4- Spracovanie požiadavky používateľa
 
-V tejto časti kódu spracujeme používateľské požiadavky.
+V tejto časti kódu budeme spracovávať požiadavky používateľa.
 
 #### TypeScript
 
-1. Pridajte metódu, ktorá sa bude používať na volanie nášho LLM:
+1. Pridajte metódu, ktorá bude použitá na volanie nášho LLM:
 
     ```typescript
     async callTools(
@@ -758,7 +756,7 @@ V tejto časti kódu spracujeme používateľské požiadavky.
     });
     ```
 
-Skvelé, tu je celý kód:
+Skvelé, poďme si pozrieť kód v plnom rozsahu:
 
 ```typescript
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
@@ -960,7 +958,7 @@ client.connectToServer(transport);
 
     V predchádzajúcom kóde sme:
 
-    - Odovzdali naše funkcie, ktoré sme našli na serveri MCP a konvertovali, do LLM.
+    - Odovzdali naše funkcie, ktoré sme našli na MCP serveri a konvertovali, do LLM.
     - Potom sme zavolali LLM s týmito funkciami.
     - Potom kontrolujeme výsledok, aby sme zistili, ktoré funkcie by sme mali volať, ak nejaké.
     - Nakoniec odovzdávame pole funkcií na volanie.
@@ -981,12 +979,12 @@ client.connectToServer(transport);
 
     Tam, to bol posledný krok, v kóde vyššie:
 
-    - Voláme nástroj MCP cez `call_tool` pomocou funkcie, ktorú LLM považovalo za vhodnú na základe našej výzvy.
-    - Tlačíme výsledok volania nástroja na server MCP.
+    - Voláme nástroj MCP cez `call_tool` pomocou funkcie, ktorú LLM považovalo za vhodnú na základe nášho promptu.
+    - Tlačíme výsledok volania nástroja na MCP server.
 
 #### .NET
 
-1. Ukážme nejaký kód na vykonanie požiadavky na výzvu LLM:
+1. Ukážme kód na vykonanie požiadavky promptu LLM:
 
     ```csharp
     var tools = await GetMcpTools();
@@ -1022,12 +1020,12 @@ client.connectToServer(transport);
 
     V predchádzajúcom kóde sme:
 
-    - Získali nástroje zo servera MCP, `var tools = await GetMcpTools()`.
-    - Definovali používateľskú výzvu `userMessage`.
+    - Získali nástroje z MCP servera, `var tools = await GetMcpTools()`.
+    - Definovali používateľský prompt `userMessage`.
     - Vytvorili objekt možností špecifikujúci model a nástroje.
     - Urobili požiadavku na LLM.
 
-1. Jeden posledný krok, pozrime sa, či LLM považuje za potrebné volať funkciu:
+1. Posledný krok, pozrime sa, či LLM považuje za vhodné volať funkciu:
 
     ```csharp
     // 4. Check if the response contains a function call
@@ -1053,9 +1051,9 @@ client.connectToServer(transport);
     V predchádzajúcom kóde sme:
 
     - Prešli zoznamom volaní funkcií.
-    - Pre každý nástrojový hovor sme analyzovali názov a argumenty a zavolali nástroj na serveri MCP pomocou klienta MCP. Nakoniec sme vytlačili výsledky.
+    - Pre každé volanie nástroja sme analyzovali názov a argumenty a zavolali nástroj na MCP serveri pomocou MCP klienta. Nakoniec sme vytlačili výsledky.
 
-Tu je celý kód:
+Tu je kód v plnom rozsahu:
 
 ```csharp
 using Azure;
@@ -1202,12 +1200,12 @@ try {
 
 V predchádzajúcom kóde sme:
 
-- Použili jednoduché výzvy v prirodzenom jazyku na interakciu s nástrojmi servera MCP.
-- Rámec LangChain4j automaticky spracováva:
-  - Konverziu používateľských výziev na volania nástrojov, keď je to potrebné.
+- Použili jednoduché prompty v prirodzenom jazyku na interakciu s nástrojmi MCP servera.
+- Framework LangChain4j automaticky spravuje:
+  - Konverziu promptov používateľa na volania nástrojov, keď je to potrebné.
   - Volanie príslušných nástrojov MCP na základe rozhodnutia LLM.
-  - Správu toku konverzácie medzi LLM a serverom MCP.
-- Metóda `bot.chat()` vracia odpovede v prirodzenom jazyku, ktoré môžu obsahovať výsledky vykonania nástrojov MCP.
+  - Spravovanie toku konverzácie medzi LLM a MCP serverom.
+- Metóda `bot.chat()` vracia odpovede v prirodzenom jazyku, ktoré môžu obsahovať výsledky z vykonania nástrojov MCP.
 - Tento prístup poskytuje bezproblémový používateľský zážitok, kde používatelia nemusia vedieť o podkladovej implementácii MCP.
 
 Kompletný príklad kódu:
@@ -1261,8 +1259,9 @@ public class LangChain4jClient {
 
 #### Rust
 
-Tu sa odohráva väčšina práce. Zavoláme LLM s počiatočnou používateľskou výzvou, potom spracujeme odpoveď, aby sme zistili, či je potrebné volať nejaké nástroje. Ak áno, zavoláme tieto nástroje a budeme pokračovať v konverzácii s LLM, až kým nebude potrebné volať ďalšie nástroje a nebudeme mať konečnú odpoveď.
-Pridajte nasledujúcu funkciu do vášho súboru `main.rs`:
+Tu sa odohráva väčšina práce. Budeme volať LLM s počiatočným promptom používateľa, potom spracujeme odpoveď, aby sme zistili, či je potrebné volať nejaké nástroje. Ak áno, zavoláme tieto nástroje a budeme pokračovať v konverzácii s LLM, až kým nebude potrebné volať ďalšie nástroje a nebudeme mať konečnú odpoveď.
+
+Budeme robiť viacero volaní LLM, takže definujme funkciu, ktorá bude spravovať volanie LLM. Pridajte nasledujúcu funkciu do vášho súboru `main.rs`:
 
 ```rust
 async fn call_llm(
@@ -1282,8 +1281,7 @@ async fn call_llm(
 }
 ```
 
-Táto funkcia prijíma klienta LLM, zoznam správ (vrátane používateľského výzvy), nástroje zo servera MCP a odošle požiadavku na LLM, pričom vráti odpoveď.
-
+Táto funkcia berie klienta LLM, zoznam správ (vrátane promptu používateľa), nástroje z MCP servera a odosiela požiadavku na LLM, pričom vracia odpoveď.
 Odpoveď od LLM bude obsahovať pole `choices`. Budeme musieť spracovať výsledok, aby sme zistili, či sú prítomné nejaké `tool_calls`. To nám dáva vedieť, že LLM požaduje, aby bol zavolaný konkrétny nástroj s argumentmi. Pridajte nasledujúci kód na koniec vášho súboru `main.rs`, aby ste definovali funkciu na spracovanie odpovede od LLM:
 
 ```rust
@@ -1347,9 +1345,9 @@ async fn process_llm_response(
 }
 ```
 
-Ak sú prítomné `tool_calls`, funkcia extrahuje informácie o nástroji, zavolá server MCP s požiadavkou na nástroj a pridá výsledky do konverzačných správ. Potom pokračuje v konverzácii s LLM a správy sa aktualizujú odpoveďou asistenta a výsledkami volania nástroja.
+Ak sú prítomné `tool_calls`, funkcia extrahuje informácie o nástroji, zavolá MCP server s požiadavkou na nástroj a pridá výsledky do konverzačných správ. Potom pokračuje v konverzácii s LLM a správy sa aktualizujú odpoveďou asistenta a výsledkami volania nástroja.
 
-Na extrahovanie informácií o volaní nástroja, ktoré LLM vráti pre volania MCP, pridáme ďalšiu pomocnú funkciu na extrahovanie všetkého potrebného na vykonanie volania. Pridajte nasledujúci kód na koniec vášho súboru `main.rs`:
+Na extrahovanie informácií o volaní nástroja, ktoré LLM vracia pre MCP volania, pridáme ďalšiu pomocnú funkciu na extrahovanie všetkého potrebného na vykonanie volania. Pridajte nasledujúci kód na koniec vášho súboru `main.rs`:
 
 ```rust
 fn extract_tool_call_info(tool_call: &Value) -> Result<(String, String, String), Box<dyn Error>> {
@@ -1373,7 +1371,7 @@ fn extract_tool_call_info(tool_call: &Value) -> Result<(String, String, String),
 }
 ```
 
-Keď máme všetky časti pripravené, môžeme teraz spracovať počiatočnú používateľskú výzvu a zavolať LLM. Aktualizujte svoju funkciu `main`, aby obsahovala nasledujúci kód:
+S týmito prvkami na mieste môžeme teraz spracovať počiatočný používateľský vstup a zavolať LLM. Aktualizujte svoju funkciu `main`, aby obsahovala nasledujúci kód:
 
 ```rust
 // LLM conversation with tool calls
@@ -1388,22 +1386,22 @@ process_llm_response(
 .await?;
 ```
 
-Týmto sa odošle dotaz na LLM s počiatočnou používateľskou výzvou, ktorá sa pýta na súčet dvoch čísel, a spracuje odpoveď na dynamické spracovanie volaní nástrojov.
+Tento kód pošle dotaz LLM s počiatočným používateľským vstupom, ktorý žiada o súčet dvoch čísel, a spracuje odpoveď na dynamické spracovanie volaní nástrojov.
 
-Skvelé, podarilo sa vám to!
+Skvelé, zvládli ste to!
 
 ## Zadanie
 
-Vezmite kód z cvičenia a rozšírte server o ďalšie nástroje. Potom vytvorte klienta s LLM, podobne ako v cvičení, a otestujte ho s rôznymi výzvami, aby ste sa uistili, že všetky nástroje vášho servera sú dynamicky volané. Tento spôsob vytvárania klienta znamená, že koncový používateľ bude mať skvelý používateľský zážitok, pretože bude môcť používať výzvy namiesto presných príkazov klienta a nebude si uvedomovať, že sa volá server MCP.
+Vezmite kód z cvičenia a rozšírte server o ďalšie nástroje. Potom vytvorte klienta s LLM, podobne ako v cvičení, a otestujte ho s rôznymi vstupmi, aby ste sa uistili, že všetky nástroje servera sú dynamicky volané. Tento spôsob budovania klienta znamená, že koncový používateľ bude mať skvelý používateľský zážitok, pretože bude môcť používať vstupy namiesto presných príkazov klienta a nebude si musieť uvedomovať, že sa volá MCP server.
 
 ## Riešenie
 
 [Riešenie](/03-GettingStarted/03-llm-client/solution/README.md)
 
-## Kľúčové poznatky
+## Hlavné poznatky
 
-- Pridanie LLM do vášho klienta poskytuje lepší spôsob interakcie používateľov so servermi MCP.
-- Je potrebné konvertovať odpoveď servera MCP na niečo, čo LLM dokáže pochopiť.
+- Pridanie LLM do vášho klienta poskytuje lepší spôsob interakcie používateľov s MCP servermi.
+- Je potrebné konvertovať odpoveď MCP servera na niečo, čo LLM dokáže pochopiť.
 
 ## Príklady
 
@@ -1414,11 +1412,13 @@ Vezmite kód z cvičenia a rozšírte server o ďalšie nástroje. Potom vytvort
 - [Python Kalkulačka](../../../../03-GettingStarted/samples/python)
 - [Rust Kalkulačka](../../../../03-GettingStarted/samples/rust)
 
-## Ďalšie zdroje
+## Dodatočné zdroje
 
 ## Čo ďalej
 
-- Ďalej: [Spotreba servera pomocou Visual Studio Code](../04-vscode/README.md)
+- Ďalej: [Používanie servera pomocou Visual Studio Code](../04-vscode/README.md)
+
+---
 
 **Upozornenie**:  
-Tento dokument bol preložený pomocou služby na automatický preklad [Co-op Translator](https://github.com/Azure/co-op-translator). Hoci sa snažíme o presnosť, upozorňujeme, že automatické preklady môžu obsahovať chyby alebo nepresnosti. Pôvodný dokument v jeho pôvodnom jazyku by mal byť považovaný za autoritatívny zdroj. Pre dôležité informácie odporúčame profesionálny ľudský preklad. Nezodpovedáme za žiadne nedorozumenia alebo nesprávne interpretácie vyplývajúce z použitia tohto prekladu.
+Tento dokument bol preložený pomocou služby AI prekladu [Co-op Translator](https://github.com/Azure/co-op-translator). Hoci sa snažíme o presnosť, upozorňujeme, že automatizované preklady môžu obsahovať chyby alebo nepresnosti. Pôvodný dokument v jeho pôvodnom jazyku by mal byť považovaný za autoritatívny zdroj. Pre kritické informácie sa odporúča profesionálny ľudský preklad. Nenesieme zodpovednosť za akékoľvek nedorozumenia alebo nesprávne interpretácie vyplývajúce z použitia tohto prekladu.
