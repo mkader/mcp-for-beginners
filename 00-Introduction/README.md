@@ -211,7 +211,6 @@ graph TD
 ```
 The Universal Connector enables MCP servers to communicate and share capabilities with each other, allowing ServerA to delegate tasks to ServerB or access its tools and knowledge. This federates tools and data across servers, supporting scalable and modular agent architectures. Because MCP standardizes tool exposure, agents can dynamically discover and route requests between servers without hardcoded integrations.
 
-Cross-server interoperability: The use of the term universal connector is simply highlighting that MCP servers can communicate or share capabilities with each other, not just with the LLM. This could mean ServerA can delegate tasks to ServerB or access its tools and knowledge.
 
 Tool and knowledge federation: Tools and data can be accessed across servers, enabling more scalable and modular agentic architectures.
 
