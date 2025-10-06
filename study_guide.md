@@ -329,4 +329,4 @@ This repository welcomes contributions from the community. See the Community Con
 
 ----
 
-*This study guide was updated on Octover 6th, 2025, and provides an overview of the repository as of that date. Repository content may be updated after this date.*
+*This study guide was updated on October 6th, 2025, and provides an overview of the repository as of that date. Repository content may be updated after this date.*
