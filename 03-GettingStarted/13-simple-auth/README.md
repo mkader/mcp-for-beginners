@@ -1,17 +1,17 @@
 # Simple auth
 
-MCP SDKs support the use of OAuth 2.1 which to be fair is a pretty involved process involving concepts like auth server, resource server, posting credentials, getting a code, exhanging the code for a bearer token until you can finally get your resource data. If you're unused to OAuth which is a great thing to implement, it's a good idea to start with some basic level of auth and build up to better and better security. 
+MCP SDKs support the use of OAuth 2.1 which to be fair is a pretty involved process involving concepts like auth server, resource server, posting credentials, getting a code, exhanging the code for a bearer token until you can finally get your resource data. If you're unused to OAuth which is a great thing to implement, it's a good idea to start with some basic level of auth and build up to better and better security. That's why this chapter exist, to build you up to more advanced auth.
 
 ## Auth, what do we mean?
 
 Auth is short for authentication and authorization. The idea is that we need to do two things:
 
 - **Authentication**, which is the process of figuring out whether we let a person enter our house, that they have the right to be "here" that is have access to our resource server where our MCP Server features live.
-- **Authorization**, is the process of finding out if a user should have access to these specific resources they're asking for for example these orders or these products or whether they're allowed to read the content but not delete as another example.
+- **Authorization**, is the process of finding out if a user should have access to these specific resources they're asking for, for example these orders or these products or whether they're allowed to read the content but not delete as another example.
 
-## Token: how we tell the system who we are
+## Credentials: how we tell the system who we are
 
-Well, most web developers out there start thinking in terms of providing a credential to the server, usually a secret that says if they're allowed to be here "Authentication". 
+Well, most web developers out there start thinking in terms of providing a credential to the server, usually a secret that says if they're allowed to be here "Authentication". This credential is usually a base64 encoded version of username and password or an API key that uniquely identifies a specific user. 
 
 This involves sending it via a header called "Authorization" like so:
 
@@ -28,7 +28,7 @@ sequenceDiagram
    participant Server
 
    User->>Client: show me data
-   Client->>Server: show me data, here's my secret
+   Client->>Server: show me data, here's my credential
    Server-->>Client: 1a, I know you, here's your data
    Server-->>Client: 1b, I don't know you, 401 
 ```
@@ -38,7 +38,7 @@ Now that we understand how it works from a flow standpoint, how do we implement 
 **Python**
 
 ```python
-class CustomHeaderMiddleware(BaseHTTPMiddleware):
+class AuthMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request, call_next):
 
         has_header = request.headers.get("Authorization")
@@ -62,11 +62,11 @@ starlette_app.add_middleware(CustomHeaderMiddleware)
 
 Here we have: 
 
-- Created a middleware called `CustomHeaderMiddleware` where its `dispatch` method is being invoked by the web server. 
+- Created a middleware called `AuthMiddleware` where its `dispatch` method is being invoked by the web server. 
 - Added the middleware to the web server:
 
     ```python
-    starlette_app.add_middleware(CustomHeaderMiddleware)
+    starlette_app.add_middleware(AuthMiddleware)
     ```
 
 - Written validation logic that checks if Authorization header is present and if the secret being sent is valid:
@@ -94,7 +94,7 @@ How it works is that if a web request are made towards the server the middleware
 
 **TypeScript**
 
-It's a similar idea in TypeScript, here we use a middleware with the popular framework Express and intercept the request before it reaches the MCP Server. Here's the code for that:
+Here we create a middleware with the popular framework Express and intercept the request before it reaches the MCP Server. Here's the code for that:
 
 ```typescript
 function isValid(secret) {
@@ -102,28 +102,47 @@ function isValid(secret) {
 }
 
 app.use((req, res, next) => {
+    // 1. Authorization header present?  
     if(!req.headers["Authorization"]) {
         res.status(401).send('Unauthorized');
     }
     
     let token = req.headers["Authorization"];
 
+    // 2. Check validity.
     if(!isValid(token)) {
         res.status(403).send('Forbidden');
     }
 
+   
     console.log('Middleware executed');
+    // 3. Passes request to the next step in the request pipeline.
     next();
 });
 ```
 
+In this code we:
+
+1. Check if the Authorization header is present in the first place, if not, we send a 401 error.
+2. Ensure the credential/token is valid, if not, we send a 403 error.
+3. Finally passes on the request in the request pipeline and returns the asked for resource.
+
 ## Exercise: Implement authentication
 
-- Server: Create a web server and MCP instance.
-- Server: Implement a middleware for the server.
-- Client: Send web request with credential via header.
+Lets take our knowledge and try implementing it. Here's the plan:
+
+Server
+
+- Create a web server and MCP instance.
+- Implement a middleware for the server.
+
+Client 
+
+- Send web request, with credential, via header.
 
 ### -1- Create a web server and MCP instance
+
+In our first step, we need to create the web server instance and the MCP Server.
 
 **Python**
 
@@ -158,6 +177,12 @@ async def run(starlette_app):
 run(starlette_app)
 ```
 
+In this code we:
+
+- Create the MCP Server.
+- Construct the the starlette web app from the MCP Server, `app.streamable_http_app()`.
+- Host and server the web app using uvicorn `server.serve()`.
+
 **TypeScript**
 
 Here we create an MCP Server instance.
@@ -171,7 +196,7 @@ const server = new McpServer({
     // ... set up server resources, tools, and prompts ...
 ```
 
-In the below code, we create a web server using Express, an MCP Server instance that we showed above. This is the standard way of defining a streamable MCP app.
+This MCP Server creation will need to happen within our POST /mcp route definition, so let's take th above code and move it like so:
 
 ```typescript
 import express from "express";
@@ -262,6 +287,10 @@ app.delete('/mcp', handleSessionRequest);
 app.listen(3000);
 ```
 
+Now you see how the MCP Server creation was moved within `app.post("/mcp")`.
+
+Let's move on to the next step of creating the middleware so we can validate the incoming credential.
+
 ### -2- Implement a middleware for the server
 
 Let's get to the middleware portion next. Here we will create a middleware that looks for a credential in the `Authorization` header and validate it. If it's acceptable then the request will move on to do what it needs (e.g list tools, read a resource or whatever MCP functionality the client was asking for).
@@ -276,7 +305,9 @@ To create the middleware, we need to create a class that inherits from `BaseHTTP
 First, we need to handle the case if the `Authorization` header is missing:
 
 ```python
- has_header = request.headers.get("Authorization")
+has_header = request.headers.get("Authorization")
+
+# no header present, fail with 401, otherwise move on.
 if not has_header:
     print("-> Missing Authorization header!")
     return Response(status_code=401, content="Unauthorized")
@@ -292,7 +323,7 @@ Next, if a credential was submitted, we need to check its validity like so:
     return Response(status_code=403, content="Forbidden")
 ```
 
-Note how we send a 403 forbidden message.
+Note how we send a 403 forbidden message above. Let's see the full middleware below implementing everything we mentioned above:
 
 ```python
 class AuthMiddleware(BaseHTTPMiddleware):
@@ -315,7 +346,8 @@ class AuthMiddleware(BaseHTTPMiddleware):
 
 ```
 
-Here's our validation method, that has a very simple validation that you should obviously improve:
+Great, but what about `valid_token` function? Here it is below:
+:
 
 ```python
 # DON'T use for production - improve it !!
@@ -327,13 +359,17 @@ def valid_token(token: str) -> bool:
     return False
 ```
 
+This should obviously improve. 
+
+IMPORTANT: You should NEVER have secrets like this in code. You should ideally retrieve the value to compare with from a data source or from an IDP (identity service provider) or better yet, let the IDP do the validation.
+
 **TypeScript**
 
 To implement this with Express, we need to call the `use` method that takes middleware functions.
 
 We need to:
 
-- Interact with the request `req` to check the passed credential in the `Authorization` property.
+- Interact with the request variable to check the passed credential in the `Authorization` property.
 - Validate the credential, and if so let the request continue and have the client's MCP request do what it should (e.g list tools, read resource or anything other MCP related).
 
 Here, we're checking if the `Authorization` header is present and if not, we stop the request from going through:
@@ -345,6 +381,8 @@ if(!req.headers["authorization"]) {
 }
 ```
 
+If the header isn't sent in the first place, you receive a 401.
+
 Next, we check if the credential is valid, if not we again stop the request but with a slightly different message:
 
 ```typescript
@@ -353,6 +391,8 @@ if(!isValid(token)) {
     return;
 } 
 ```
+
+Note how you now get a 403 error.
 
 Here's the full code:
 
@@ -377,15 +417,18 @@ app.use((req, res, next) => {
 });
 ```
 
-Now, we have set up the web server to accept a middleware to check the credential the client is hopefully sending us. What about the client itself?
+We have set up the web server to accept a middleware to check the credential the client is hopefully sending us. What about the client itself?
 
 ### -3- Send web request with credential via header
+
+We need to ensure the client is passing the credential through the header. As we're going to use an MCP client to do so, we need to figure out how that's done.
 
 **Python**
 
 For the client, we need to pass a header with our credential like so:
 
 ```python
+# DON'T hardcode the value, have it at minimum in an environment variable or a more secure storage
 token = "secret-token"
 
 async with streamablehttp_client(
@@ -415,6 +458,10 @@ We can solve this in two steps:
 2. Pass the configuration object to the transport.
 
 ```typescript
+
+// DON'T hardcode the value like shown here. At minimum have it as a env variable and use something like dotenv (in dev mode).
+let token = "secret123"
+
 // define a client transport option object
 let options: StreamableHTTPClientTransportOptions = {
   sessionId: sessionId,
@@ -433,7 +480,11 @@ async function main() {
    );
 ```
 
-How do we improve it from here though? Well, the current implementation has some issues. First off, passing a credential like this is pretty risky unless you at minimum have HTTPS. Even then, the credential can be stolen so you need a system where you can easily revoke the token and add additional checks like where in the world is it coming from, does the request happen way too often (bot-like behavior), in short, there's a whole host of concerns. It should be said though, for very simple APIs where you don't want anyone calling your API without being authenticated this is a good start. 
+Here you see above how we had to create an `options` object and place our headers under the `requestInit` property.
+
+IMPORTANT: How do we improve it from here though? Well, the current implementation has some issues. First off, passing a credential like this is pretty risky unless you at minimum have HTTPS. Even then, the credential can be stolen so you need a system where you can easily revoke the token and add additional checks like where in the world is it coming from, does the request happen way too often (bot-like behavior), in short, there's a whole host of concerns. 
+
+It should be said though, for very simple APIs where you don't want anyone calling your API without being authenticated and what we have here is a good start. 
 
 With that said, let's try to harden the security a little bit by using a standardized format like JSON Web Token, also known as JWT or "JOT" tokens.
 
