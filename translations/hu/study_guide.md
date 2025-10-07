@@ -1,21 +1,21 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ac390de870be5c02165350f6279a8831",
-  "translation_date": "2025-10-06T15:01:25+00:00",
+  "original_hash": "af27b0acfae6caa134d9701453884df8",
+  "translation_date": "2025-10-06T23:49:51+00:00",
   "source_file": "study_guide.md",
   "language_code": "hu"
 }
 -->
-# Model Context Protocol (MCP) kezdőknek - Tanulási útmutató
+# Model Context Protocol (MCP) kezdőknek - Tanulmányi útmutató
 
-Ez a tanulási útmutató áttekintést nyújt a "Model Context Protocol (MCP) kezdőknek" tananyaghoz tartozó adattár szerkezetéről és tartalmáról. Használja ezt az útmutatót az adattár hatékony navigálásához és az elérhető erőforrások maximális kihasználásához.
+Ez a tanulmányi útmutató áttekintést nyújt a "Model Context Protocol (MCP) kezdőknek" tananyaghoz tartozó adattár felépítéséről és tartalmáról. Használja ezt az útmutatót az adattár hatékony navigálásához és az elérhető források maximális kihasználásához.
 
 ## Adattár áttekintése
 
-A Model Context Protocol (MCP) egy szabványosított keretrendszer az AI modellek és kliensalkalmazások közötti interakciókhoz. Az MCP-t eredetileg az Anthropic hozta létre, és jelenleg a szélesebb MCP közösség tartja karban az hivatalos GitHub szervezet révén. Ez az adattár átfogó tananyagot kínál gyakorlati kódpéldákkal C#, Java, JavaScript, Python és TypeScript nyelveken, AI fejlesztők, rendszerarchitekták és szoftvermérnökök számára.
+A Model Context Protocol (MCP) egy szabványosított keretrendszer az AI modellek és az ügyfélalkalmazások közötti interakciókhoz. Eredetileg az Anthropic hozta létre, de ma már a szélesebb MCP közösség tartja karban a hivatalos GitHub szervezeten keresztül. Ez az adattár egy átfogó tananyagot kínál, gyakorlati kódpéldákkal C#, Java, JavaScript, Python és TypeScript nyelveken, AI fejlesztők, rendszerarchitektek és szoftvermérnökök számára.
 
-## Vizualizált tananyag térkép
+## Vizuális tananyag térkép
 
 ```mermaid
 mindmap
@@ -50,6 +50,7 @@ mindmap
       (AI Toolkit Integration)
       (Testing Frameworks)
       (Advanced Server Usage)
+      (Simple Auth)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -122,9 +123,9 @@ mindmap
       (Hands-on Learning)
 ```
 
-## Adattár szerkezete
+## Adattár felépítése
 
-Az adattár tizenegy fő szakaszra van osztva, amelyek az MCP különböző aspektusaira fókuszálnak:
+Az adattár tizenegy fő szekcióra van osztva, amelyek mindegyike az MCP különböző aspektusaira összpontosít:
 
 1. **Bevezetés (00-Introduction/)**
    - A Model Context Protocol áttekintése
@@ -137,33 +138,33 @@ Az adattár tizenegy fő szakaszra van osztva, amelyek az MCP különböző aspe
    - Üzenetküldési minták az MCP-ben
 
 3. **Biztonság (02-Security/)**
-   - Biztonsági fenyegetések MCP-alapú rendszerekben
-   - Legjobb gyakorlatok a megvalósítások biztonságossá tételéhez
+   - Biztonsági fenyegetések az MCP-alapú rendszerekben
+   - Legjobb gyakorlatok a megvalósítások biztosítására
    - Hitelesítési és jogosultságkezelési stratégiák
    - **Átfogó biztonsági dokumentáció**:
-     - MCP Biztonsági Legjobb Gyakorlatok 2025
+     - MCP Biztonsági legjobb gyakorlatok 2025
      - Azure Tartalom Biztonsági Megvalósítási Útmutató
      - MCP Biztonsági Ellenőrzések és Technikák
-     - MCP Gyors Referencia Legjobb Gyakorlatok
+     - MCP Legjobb Gyakorlatok Gyors Referencia
    - **Kulcsfontosságú biztonsági témák**:
      - Prompt injekció és eszközmérgezési támadások
-     - Munkamenet eltérítés és zavart helyettesítő problémák
-     - Token átadási sérülékenységek
+     - Munkamenet-eltérítés és zavart helyettesítő problémák
+     - Token átadási sebezhetőségek
      - Túlzott jogosultságok és hozzáférés-ellenőrzés
-     - Ellátási lánc biztonsága AI komponensek esetében
+     - Ellátási lánc biztonsága AI komponensekhez
      - Microsoft Prompt Shields integráció
 
 4. **Első lépések (03-GettingStarted/)**
    - Környezet beállítása és konfigurálása
    - Alapvető MCP szerverek és kliensek létrehozása
    - Integráció meglévő alkalmazásokkal
-   - Tartalmazza:
-     - Első szerver megvalósítása
+   - Tartalmazza a következő szekciókat:
+     - Első szerver implementáció
      - Kliens fejlesztés
      - LLM kliens integráció
      - VS Code integráció
-     - Server-Sent Events (SSE) szerver
-     - Fejlett szerverhasználat
+     - Szerver által küldött események (SSE) szerver
+     - Haladó szerverhasználat
      - HTTP streaming
      - AI Toolkit integráció
      - Tesztelési stratégiák
@@ -171,39 +172,39 @@ Az adattár tizenegy fő szakaszra van osztva, amelyek az MCP különböző aspe
 
 5. **Gyakorlati megvalósítás (04-PracticalImplementation/)**
    - SDK-k használata különböző programozási nyelveken
-   - Hibakeresési, tesztelési és validálási technikák
-   - Újrafelhasználható prompt sablonok és munkafolyamatok készítése
-   - Mintaprojektek megvalósítási példákkal
+   - Hibakeresési, tesztelési és érvényesítési technikák
+   - Újrahasználható prompt sablonok és munkafolyamatok készítése
+   - Mintaprojektek implementációs példákkal
 
 6. **Haladó témák (05-AdvancedTopics/)**
-   - Kontextus mérnöki technikák
+   - Kontextusmérnöki technikák
    - Foundry ügynök integráció
    - Multi-modális AI munkafolyamatok
    - OAuth2 hitelesítési demók
    - Valós idejű keresési képességek
    - Valós idejű streaming
-   - Root kontextusok megvalósítása
+   - Gyökér kontextusok implementációja
    - Útvonaltervezési stratégiák
    - Mintavételi technikák
-   - Méretezési megközelítések
+   - Skálázási megközelítések
    - Biztonsági megfontolások
    - Entra ID biztonsági integráció
    - Webes keresési integráció
 
 7. **Közösségi hozzájárulások (06-CommunityContributions/)**
-   - Hogyan járulhat hozzá kódhoz és dokumentációhoz
-   - Együttműködés GitHubon keresztül
+   - Hogyan járulhat hozzá kódokkal és dokumentációval
+   - Együttműködés a GitHubon keresztül
    - Közösség által vezérelt fejlesztések és visszajelzések
    - Különböző MCP kliensek használata (Claude Desktop, Cline, VSCode)
    - Népszerű MCP szerverekkel való munka, beleértve a képgenerálást
 
 8. **Korai alkalmazás tanulságai (07-LessonsfromEarlyAdoption/)**
-   - Valós megvalósítások és sikertörténetek
+   - Valós implementációk és sikertörténetek
    - MCP-alapú megoldások építése és telepítése
-   - Trendek és jövőbeli útiterv
+   - Trendek és jövőbeli ütemterv
    - **Microsoft MCP Szerverek Útmutató**: Átfogó útmutató 10 gyártásra kész Microsoft MCP szerverhez, beleértve:
      - Microsoft Learn Docs MCP Szerver
-     - Azure MCP Szerver (15+ specializált csatlakozó)
+     - Azure MCP Szerver (15+ speciális csatlakozó)
      - GitHub MCP Szerver
      - Azure DevOps MCP Szerver
      - MarkItDown MCP Szerver
@@ -219,61 +220,61 @@ Az adattár tizenegy fő szakaszra van osztva, amelyek az MCP különböző aspe
    - Tesztelési és ellenállóképességi stratégiák
 
 10. **Esettanulmányok (09-CaseStudy/)**
-    - **Hét átfogó esettanulmány** az MCP sokoldalúságának bemutatására különböző helyzetekben:
-    - **Azure AI Utazási Ügynökök**: Több ügynök összehangolása Azure OpenAI-val és AI kereséssel
+    - **Hét átfogó esettanulmány**, amelyek bemutatják az MCP sokoldalúságát különböző forgatókönyvekben:
+    - **Azure AI Utazási Ügynökök**: Több ügynökös koordináció az Azure OpenAI és AI Search segítségével
     - **Azure DevOps Integráció**: Munkafolyamatok automatizálása YouTube adatfrissítésekkel
     - **Valós idejű dokumentáció visszakeresés**: Python konzol kliens streaming HTTP-vel
-    - **Interaktív tanulási terv generátor**: Chainlit webalkalmazás beszélgetési AI-val
-    - **Szerkesztőben belüli dokumentáció**: VS Code integráció GitHub Copilot munkafolyamatokkal
+    - **Interaktív tanulási terv generátor**: Chainlit webalkalmazás beszélgető AI-val
+    - **Szerkesztőn belüli dokumentáció**: VS Code integráció a GitHub Copilot munkafolyamatokkal
     - **Azure API Management**: Vállalati API integráció MCP szerver létrehozásával
     - **GitHub MCP Registry**: Ökoszisztéma fejlesztés és ügynöki integrációs platform
-    - Megvalósítási példák a vállalati integráció, fejlesztői termelékenység és ökoszisztéma fejlesztés területén
+    - Implementációs példák a vállalati integráció, fejlesztői termelékenység és ökoszisztéma fejlesztés területén
 
-11. **Gyakorlati workshop (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
-    - Átfogó gyakorlati workshop MCP és AI Toolkit kombinálásával
-    - Intelligens alkalmazások építése, amelyek összekapcsolják az AI modelleket a valós eszközökkel
-    - Gyakorlati modulok az alapok, egyedi szerverfejlesztés és gyártási telepítési stratégiák lefedésére
+11. **Gyakorlati műhelymunka (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
+    - Átfogó gyakorlati műhelymunka az MCP és az AI Toolkit kombinálásával
+    - Intelligens alkalmazások építése, amelyek összekötik az AI modelleket a valós eszközökkel
+    - Gyakorlati modulok az alapoktól a testreszabott szerverfejlesztésen át a gyártási telepítési stratégiákig
     - **Laborstruktúra**:
-      - Labor 1: MCP Szerver Alapok
-      - Labor 2: Haladó MCP Szerver Fejlesztés
-      - Labor 3: AI Toolkit Integráció
-      - Labor 4: Gyártási Telepítés és Méretezés
+      - 1. labor: MCP szerver alapjai
+      - 2. labor: Haladó MCP szerver fejlesztés
+      - 3. labor: AI Toolkit integráció
+      - 4. labor: Gyártási telepítés és skálázás
     - Laboralapú tanulási megközelítés lépésről lépésre
 
 12. **MCP Szerver Adatbázis Integrációs Laborok (11-MCPServerHandsOnLabs/)**
     - **Átfogó 13-laboros tanulási útvonal** gyártásra kész MCP szerverek építéséhez PostgreSQL integrációval
-    - **Valós kiskereskedelmi analitika megvalósítása** a Zava Retail esettanulmány használatával
+    - **Valós kiskereskedelmi elemzési megvalósítás** a Zava Retail esettanulmány alapján
     - **Vállalati szintű minták**, beleértve a sor szintű biztonságot (RLS), szemantikus keresést és több bérlős adat-hozzáférést
     - **Teljes laborstruktúra**:
-      - **Laborok 00-03: Alapok** - Bevezetés, Architektúra, Biztonság, Környezet beállítása
-      - **Laborok 04-06: MCP Szerver építése** - Adatbázis tervezés, MCP Szerver megvalósítás, Eszközfejlesztés
-      - **Laborok 07-09: Haladó funkciók** - Szemantikus keresés, Tesztelés és hibakeresés, VS Code integráció
-      - **Laborok 10-12: Gyártás és legjobb gyakorlatok** - Telepítés, Monitorozás, Optimalizálás
+      - **00-03. laborok: Alapok** - Bevezetés, Architektúra, Biztonság, Környezet beállítása
+      - **04-06. laborok: MCP szerver építése** - Adatbázis tervezés, MCP szerver implementáció, Eszközfejlesztés
+      - **07-09. laborok: Haladó funkciók** - Szemantikus keresés, Tesztelés és hibakeresés, VS Code integráció
+      - **10-12. laborok: Gyártás és legjobb gyakorlatok** - Telepítés, Monitorozás, Optimalizálás
     - **Tárgyalt technológiák**: FastMCP keretrendszer, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
-    - **Tanulási eredmények**: Gyártásra kész MCP szerverek, adatbázis integrációs minták, AI-alapú analitika, vállalati biztonság
+    - **Tanulási eredmények**: Gyártásra kész MCP szerverek, adatbázis integrációs minták, AI-alapú elemzések, vállalati biztonság
 
-## További erőforrások
+## További források
 
-Az adattár tartalmaz támogató erőforrásokat:
+Az adattár a következő támogató forrásokat tartalmazza:
 
-- **Képek mappa**: Diagramokat és illusztrációkat tartalmaz, amelyek a tananyagban szerepelnek
-- **Fordítások**: Többnyelvű támogatás automatikus dokumentációfordításokkal
-- **Hivatalos MCP erőforrások**:
+- **Képek mappa**: Az egész tananyagban használt diagramok és illusztrációk
+- **Fordítások**: Többnyelvű támogatás a dokumentáció automatikus fordításaival
+- **Hivatalos MCP források**:
   - [MCP Dokumentáció](https://modelcontextprotocol.io/)
   - [MCP Specifikáció](https://spec.modelcontextprotocol.io/)
   - [MCP GitHub Adattár](https://github.com/modelcontextprotocol)
 
-## Hogyan használja az adattárat
+## Hogyan használja ezt az adattárat
 
 1. **Szekvenciális tanulás**: Kövesse a fejezeteket sorrendben (00-tól 11-ig) a strukturált tanulási élmény érdekében.
-2. **Nyelvspecifikus fókusz**: Ha egy adott programozási nyelv érdekli, böngéssze a minták könyvtárát a preferált nyelven készült megvalósításokért.
-3. **Gyakorlati megvalósítás**: Kezdje az "Első lépések" szekcióval, hogy beállítsa környezetét és létrehozza első MCP szerverét és kliensét.
-4. **Haladó felfedezés**: Miután megismerkedett az alapokkal, merüljön el a haladó témákban, hogy bővítse tudását.
-5. **Közösségi részvétel**: Csatlakozzon az MCP közösséghez GitHub vitákon és Discord csatornákon keresztül, hogy kapcsolatba lépjen szakértőkkel és más fejlesztőkkel.
+2. **Nyelvspecifikus fókusz**: Ha egy adott programozási nyelv érdekli, fedezze fel a minták mappáit a kívánt nyelvű implementációkért.
+3. **Gyakorlati megvalósítás**: Kezdje a "Első lépések" szekcióval, hogy beállítsa a környezetét, és létrehozza az első MCP szerverét és kliensét.
+4. **Haladó felfedezés**: Miután megismerkedett az alapokkal, mélyedjen el a haladó témákban, hogy bővítse tudását.
+5. **Közösségi részvétel**: Csatlakozzon az MCP közösséghez a GitHub beszélgetéseken és a Discord csatornákon keresztül, hogy kapcsolatba lépjen szakértőkkel és más fejlesztőkkel.
 
 ## MCP kliensek és eszközök
 
-A tananyag különböző MCP klienseket és eszközöket tárgyal:
+A tananyag különböző MCP klienseket és eszközöket mutat be:
 
 1. **Hivatalos kliensek**:
    - Visual Studio Code 
@@ -283,7 +284,7 @@ A tananyag különböző MCP klienseket és eszközöket tárgyal:
    - Claude API
 
 2. **Közösségi kliensek**:
-   - Cline (terminál-alapú)
+   - Cline (terminál alapú)
    - Cursor (kódszerkesztő)
    - ChatMCP
    - Windsurf
@@ -296,11 +297,11 @@ A tananyag különböző MCP klienseket és eszközöket tárgyal:
 
 ## Népszerű MCP szerverek
 
-Az adattár bemutatja a különböző MCP szervereket, beleértve:
+Az adattár különböző MCP szervereket mutat be, beleértve:
 
 1. **Hivatalos Microsoft MCP szerverek**:
    - Microsoft Learn Docs MCP Szerver
-   - Azure MCP Szerver (15+ specializált csatlakozó)
+   - Azure MCP Szerver (15+ speciális csatlakozó)
    - GitHub MCP Szerver
    - Azure DevOps MCP Szerver
    - MarkItDown MCP Szerver
@@ -326,31 +327,20 @@ Az adattár bemutatja a különböző MCP szervereket, beleértve:
    - Terminálvezérlés
    - Kódasszisztens
 
-5. **Specializált szerverek**:
+5. **Speciális szerverek**:
    - Salesforce
    - Microsoft Teams
    - Jira & Confluence
 
 ## Hozzájárulás
 
-Ez az adattár szívesen fogadja a közösség hozzájárulásait. Lásd a Közösségi hozzájárulások szekciót az MCP ökoszisztémához való hatékony hozzájárulás útmutatójáért.
+Ez az adattár szívesen fogadja a közösség hozzájárulásait. További információért lásd a Közösségi Hozzájárulások szekciót, amely útmutatást nyújt az MCP ökoszisztémához való hatékony hozzájáruláshoz.
 
-## Változásnapló
+----
 
-| Dátum | Változások |
-|------|---------||
-| 2025. szeptember 29. | - Hozzáadva a 11-MCPServerHandsOnLabs szekció átfogó 13-laboros adatbázis integrációs tanulási útvonallal<br>- Frissítve a Vizualizált Tananyag Térkép az Adatbázis Integrációs Laborokkal<br>- Kibővítve az adattár szerkezete, hogy tükrözze a tizenegy fő szekciót<br>- Részletes leírás hozzáadva a PostgreSQL integrációról, kiskereskedelmi analitika esettanulmányról és vállalati mintákról<br>- Frissítve a navigációs útmutató, hogy tartalmazza a 00-11 szekciókat |
-| 2025. szeptember 26. | - Hozzáadva a GitHub MCP Registry esettanulmány a 09-CaseStudy szekcióhoz<br>- Frissítve az Esettanulmányok szekció hét átfogó esettanulmányt tükrözve<br>- Kibővítve az esettanulmány leírások konkrét megvalósítási részletekkel<br>- Frissítve a Vizualizált Tananyag Térkép a GitHub MCP Registry-vel<br>- Átdolgozva a tanulási útmutató szerkezete az ökoszisztéma fejlesztési fókusz tükrözésére |
-| 2025. július 18. | - Frissítve az adattár szerkezete, hogy tartalmazza a Microsoft MCP Szerverek Útmutatót<br>- Hozzáadva átfogó lista 10 gyártásra kész Microsoft MCP szerverről<br>- Kibővítve a Népszerű MCP Szerverek szekció hivatalos Microsoft MCP szerverekkel<br>- Frissítve az Esettanulmányok szekció tényleges fájlpéldákkal<br>- Hozzáadva a Laborstruktúra részletei a Gyakorlati Workshophoz |
-| 2025. július 16. | - Frissítve az adattár szerkezete, hogy tükrözze az aktuális tartalmat<br>- Hozzáadva MCP Kliensek és Eszközök szekció<br>- Hozzáadva Népszerű MCP Szerverek szekció<br>- Frissítve a Vizualizált Tananyag Térkép az összes aktuális témával<br>- Kibővítve a Haladó Témák szekció az összes specializált területtel<br>- Frissítve az Esettanulmányok tényleges példákkal<br>- Tisztázva az MCP eredete, amelyet az Anthropic hozott létre |
-| 2025. június 11. | - A tanulási útmutató kezdeti létrehozása<br>- Hozzáadva Vizualizált Tananyag Térkép<br>- Felvázolva az adattár szerkezete<br>- Mintaprojektek és további erőforrások hozzáadása |
-| 2025. október 6. | Hozzáadva lecke a haladó szerverhasználatról |
+*Ez a tanulmányi útmutató 2025. október 6-án frissült, és az adattár ezen a napon érvényes áttekintését nyújtja. Az adattár tartalma ezen dátum után frissülhet.*
 
 ---
 
-*Ez a tanulási útmutató 2025. szeptember
-
----
-
-**Felelősségi nyilatkozat**:  
-Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével került lefordításra. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.
+**Felelősség kizárása**:  
+Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével lett lefordítva. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Fontos információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.

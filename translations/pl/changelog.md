@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "f9d56a1327805a9f6df085a41fb81083",
-  "translation_date": "2025-09-30T13:32:28+00:00",
+  "original_hash": "beaeca2ae0ec007783e6310a3b63291f",
+  "translation_date": "2025-10-06T23:00:08+00:00",
   "source_file": "changelog.md",
   "language_code": "pl"
 }
@@ -11,236 +11,249 @@ CO_OP_TRANSLATOR_METADATA:
 
 Ten dokument stanowi zapis wszystkich istotnych zmian wprowadzonych w programie nauczania Model Context Protocol (MCP) dla początkujących. Zmiany są dokumentowane w odwrotnej kolejności chronologicznej (najpierw najnowsze).
 
+## 6 października 2025
+
+### Rozszerzenie sekcji „Pierwsze kroki” – Zaawansowane użycie serwera i prosta autentykacja
+
+#### Zaawansowane użycie serwera (03-GettingStarted/10-advanced)
+- **Dodano nowy rozdział**: Wprowadzono kompleksowy przewodnik po zaawansowanym użyciu serwera MCP, obejmujący zarówno regularne, jak i niskopoziomowe architektury serwerowe.
+  - **Regularny vs. niskopoziomowy serwer**: Szczegółowe porównanie i przykłady kodu w Pythonie i TypeScript dla obu podejść.
+  - **Projekt oparty na handlerach**: Wyjaśnienie zarządzania narzędziami/zasobami/promptami opartego na handlerach dla skalowalnych i elastycznych implementacji serwerowych.
+  - **Praktyczne wzorce**: Scenariusze z życia wzięte, w których wzorce niskopoziomowych serwerów są korzystne dla zaawansowanych funkcji i architektury.
+
+#### Prosta autentykacja (03-GettingStarted/11-simple-auth)
+- **Dodano nowy rozdział**: Przewodnik krok po kroku dotyczący implementacji prostej autentykacji w serwerach MCP.
+  - **Koncepcje autentykacji**: Jasne wyjaśnienie różnicy między autentykacją a autoryzacją oraz obsługą poświadczeń.
+  - **Implementacja podstawowej autentykacji**: Wzorce autentykacji oparte na middleware w Pythonie (Starlette) i TypeScript (Express), z przykładami kodu.
+  - **Przejście do zaawansowanego bezpieczeństwa**: Wskazówki dotyczące rozpoczęcia od prostej autentykacji i przejścia do OAuth 2.1 oraz RBAC, z odniesieniami do zaawansowanych modułów bezpieczeństwa.
+
+Te dodatki zapewniają praktyczne, praktyczne wskazówki dotyczące budowania bardziej solidnych, bezpiecznych i elastycznych implementacji serwerów MCP, łącząc podstawowe koncepcje z zaawansowanymi wzorcami produkcyjnymi.
+
 ## 29 września 2025
 
-### Laboratoria integracji bazy danych MCP Server - Kompleksowa ścieżka praktyczna
+### Laboratoria integracji baz danych serwera MCP – kompleksowa ścieżka nauki praktycznej
 
-#### 11-MCPServerHandsOnLabs - Nowy kompletny program nauczania integracji bazy danych
-- **Kompletna ścieżka nauczania z 13 laboratoriami**: Dodano kompleksowy program praktyczny dotyczący budowy serwerów MCP gotowych do produkcji z integracją bazy danych PostgreSQL
-  - **Praktyczne wdrożenie**: Przykład analityki detalicznej Zava, demonstrujący wzorce klasy korporacyjnej
+#### 11-MCPServerHandsOnLabs – Nowy kompletny program nauczania integracji baz danych
+- **Kompletna ścieżka nauki obejmująca 13 laboratoriów**: Dodano kompleksowy program nauczania praktycznego dotyczący budowy serwerów MCP gotowych do produkcji z integracją bazy danych PostgreSQL.
+  - **Implementacja w rzeczywistości**: Przypadek użycia analityki Zava Retail demonstrujący wzorce na poziomie przedsiębiorstwa.
   - **Struktura nauki**:
-    - **Laboratoria 00-03: Podstawy** - Wprowadzenie, Architektura podstawowa, Bezpieczeństwo i wielodostępność, Konfiguracja środowiska
-    - **Laboratoria 04-06: Budowa serwera MCP** - Projektowanie bazy danych i schemat, Implementacja serwera MCP, Tworzenie narzędzi  
-    - **Laboratoria 07-09: Zaawansowane funkcje** - Integracja wyszukiwania semantycznego, Testowanie i debugowanie, Integracja z VS Code
-    - **Laboratoria 10-12: Produkcja i najlepsze praktyki** - Strategie wdrażania, Monitorowanie i obserwowalność, Optymalizacja i najlepsze praktyki
-  - **Technologie korporacyjne**: Framework FastMCP, PostgreSQL z pgvector, Azure OpenAI embeddings, Azure Container Apps, Application Insights
-  - **Zaawansowane funkcje**: Row Level Security (RLS), wyszukiwanie semantyczne, dostęp do danych wielodostępnych, osadzenia wektorowe, monitorowanie w czasie rzeczywistym
+    - **Laboratoria 00-03: Podstawy** – Wprowadzenie, podstawowa architektura, bezpieczeństwo i wielodostępność, konfiguracja środowiska.
+    - **Laboratoria 04-06: Budowa serwera MCP** – Projektowanie bazy danych i schemat, implementacja serwera MCP, rozwój narzędzi.
+    - **Laboratoria 07-09: Zaawansowane funkcje** – Integracja wyszukiwania semantycznego, testowanie i debugowanie, integracja z VS Code.
+    - **Laboratoria 10-12: Produkcja i najlepsze praktyki** – Strategie wdrażania, monitorowanie i obserwowalność, najlepsze praktyki i optymalizacja.
+  - **Technologie na poziomie przedsiębiorstwa**: Framework FastMCP, PostgreSQL z pgvector, osadzenia Azure OpenAI, Azure Container Apps, Application Insights.
+  - **Zaawansowane funkcje**: Bezpieczeństwo na poziomie wiersza (RLS), wyszukiwanie semantyczne, dostęp do danych wielodostępnych, osadzenia wektorowe, monitorowanie w czasie rzeczywistym.
 
-#### Standaryzacja terminologii - Konwersja modułów na laboratoria
-- **Kompleksowa aktualizacja dokumentacji**: Systematycznie zaktualizowano wszystkie pliki README w 11-MCPServerHandsOnLabs, aby używać terminologii "Laboratorium" zamiast "Moduł"
-  - **Nagłówki sekcji**: Zmieniono "Co obejmuje ten moduł" na "Co obejmuje to laboratorium" we wszystkich 13 laboratoriach
-  - **Opis treści**: Zmieniono "Ten moduł dostarcza..." na "To laboratorium dostarcza..." w całej dokumentacji
-  - **Cele nauki**: Zmieniono "Po ukończeniu tego modułu..." na "Po ukończeniu tego laboratorium..."
-  - **Linki nawigacyjne**: Wszystkie odniesienia "Moduł XX:" zmieniono na "Laboratorium XX:" w odnośnikach i nawigacji
-  - **Śledzenie postępów**: Zmieniono "Po ukończeniu tego modułu..." na "Po ukończeniu tego laboratorium..."
-  - **Zachowanie odniesień technicznych**: Zachowano odniesienia do modułów Python w plikach konfiguracyjnych (np. `"module": "mcp_server.main"`)
+#### Standaryzacja terminologii – Konwersja „Moduł” na „Laboratorium”
+- **Kompleksowa aktualizacja dokumentacji**: Systematycznie zaktualizowano wszystkie pliki README w 11-MCPServerHandsOnLabs, aby używać terminologii „Laboratorium” zamiast „Moduł”.
+  - **Nagłówki sekcji**: Zmieniono „Co obejmuje ten moduł” na „Co obejmuje to laboratorium” we wszystkich 13 laboratoriach.
+  - **Opis treści**: Zmieniono „Ten moduł zapewnia...” na „To laboratorium zapewnia...” w całej dokumentacji.
+  - **Cele nauki**: Zmieniono „Na końcu tego modułu...” na „Na końcu tego laboratorium...”.
+  - **Linki nawigacyjne**: Przekonwertowano wszystkie odniesienia „Moduł XX:” na „Laboratorium XX:” w odniesieniach krzyżowych i nawigacji.
+  - **Śledzenie ukończenia**: Zmieniono „Po ukończeniu tego modułu...” na „Po ukończeniu tego laboratorium...”.
+  - **Zachowane odniesienia techniczne**: Zachowano odniesienia do modułów Pythona w plikach konfiguracyjnych (np. `"module": "mcp_server.main"`).
 
 #### Ulepszenie przewodnika nauki (study_guide.md)
-- **Wizualna mapa programu nauczania**: Dodano nową sekcję "11. Laboratoria integracji bazy danych" z wizualizacją struktury laboratoriów
-- **Struktura repozytorium**: Zaktualizowano z dziesięciu do jedenastu głównych sekcji z opisem 11-MCPServerHandsOnLabs
-- **Wskazówki dotyczące ścieżki nauki**: Rozszerzono instrukcje nawigacyjne, aby obejmowały sekcje 00-11
-- **Zakres technologiczny**: Dodano szczegóły dotyczące integracji FastMCP, PostgreSQL i usług Azure
-- **Efekty nauki**: Podkreślono rozwój serwerów gotowych do produkcji, wzorce integracji bazy danych i bezpieczeństwo korporacyjne
+- **Wizualna mapa programu nauczania**: Dodano nową sekcję „11. Laboratoria integracji baz danych” z kompleksową wizualizacją struktury laboratoriów.
+- **Struktura repozytorium**: Zaktualizowano z dziesięciu do jedenastu głównych sekcji z szczegółowym opisem 11-MCPServerHandsOnLabs.
+- **Wskazówki dotyczące ścieżki nauki**: Ulepszono instrukcje nawigacyjne, aby obejmowały sekcje 00-11.
+- **Pokrycie technologiczne**: Dodano szczegóły integracji FastMCP, PostgreSQL, usług Azure.
+- **Rezultaty nauki**: Podkreślono rozwój serwerów gotowych do produkcji, wzorce integracji baz danych i bezpieczeństwo na poziomie przedsiębiorstwa.
 
 #### Ulepszenie struktury głównego README
-- **Terminologia oparta na laboratoriach**: Zaktualizowano główny README.md w 11-MCPServerHandsOnLabs, aby konsekwentnie używać struktury "Laboratorium"
-- **Organizacja ścieżki nauki**: Jasna progresja od podstawowych pojęć przez zaawansowaną implementację do wdrożenia produkcyjnego
-- **Skupienie na praktyce**: Nacisk na praktyczne, praktyczne uczenie się z wzorcami i technologiami klasy korporacyjnej
+- **Terminologia oparta na laboratoriach**: Zaktualizowano główny README.md w 11-MCPServerHandsOnLabs, aby konsekwentnie używać struktury „Laboratorium”.
+- **Organizacja ścieżki nauki**: Jasna progresja od podstawowych koncepcji przez zaawansowaną implementację do wdrożenia produkcyjnego.
+- **Skupienie na rzeczywistości**: Nacisk na praktyczne, praktyczne uczenie się z wzorcami i technologiami na poziomie przedsiębiorstwa.
 
-### Poprawa jakości i spójności dokumentacji
-- **Nacisk na naukę praktyczną**: Wzmocniono praktyczne, oparte na laboratoriach podejście w całej dokumentacji
-- **Skupienie na wzorcach korporacyjnych**: Podkreślono implementacje gotowe do produkcji i kwestie bezpieczeństwa korporacyjnego
-- **Integracja technologii**: Kompleksowe omówienie nowoczesnych usług Azure i wzorców integracji AI
-- **Progresja nauki**: Jasna, uporządkowana ścieżka od podstawowych pojęć do wdrożenia produkcyjnego
+### Ulepszenia jakości i spójności dokumentacji
+- **Nacisk na naukę praktyczną**: Wzmocniono praktyczne, podejście oparte na laboratoriach w całej dokumentacji.
+- **Skupienie na wzorcach przedsiębiorstwa**: Podkreślono implementacje gotowe do produkcji i rozważania dotyczące bezpieczeństwa na poziomie przedsiębiorstwa.
+- **Integracja technologii**: Kompleksowe pokrycie nowoczesnych usług Azure i wzorców integracji AI.
+- **Progresja nauki**: Jasna, uporządkowana ścieżka od podstawowych koncepcji do wdrożenia produkcyjnego.
 
 ## 26 września 2025
 
-### Rozszerzenie studiów przypadków - Integracja GitHub MCP Registry
+### Ulepszenie studiów przypadków – Integracja rejestru MCP GitHub
 
-#### Studia przypadków (09-CaseStudy/) - Skupienie na rozwoju ekosystemu
-- **README.md**: Znaczące rozszerzenie o kompleksowe studium przypadku GitHub MCP Registry
-  - **Studium przypadku GitHub MCP Registry**: Nowe, kompleksowe studium przypadku analizujące uruchomienie GitHub MCP Registry we wrześniu 2025
-    - **Analiza problemu**: Szczegółowe omówienie wyzwań związanych z fragmentacją odkrywania i wdrażania serwerów MCP
-    - **Architektura rozwiązania**: Podejście GitHub do scentralizowanego rejestru z instalacją jednym kliknięciem w VS Code
-    - **Wpływ biznesowy**: Mierzalne ulepszenia w onboardingu i produktywności deweloperów
-    - **Wartość strategiczna**: Skupienie na modułowym wdrażaniu agentów i interoperacyjności narzędzi
-    - **Rozwój ekosystemu**: Pozycjonowanie jako platforma podstawowa dla integracji agentów
-  - **Ulepszona struktura studiów przypadków**: Zaktualizowano wszystkie siedem studiów przypadków, aby miały spójny format i szczegółowe opisy
-    - Azure AI Travel Agents: Nacisk na orkiestrację wieloagentową
-    - Integracja z Azure DevOps: Skupienie na automatyzacji przepływów pracy
-    - Pobieranie dokumentacji w czasie rzeczywistym: Implementacja klienta konsolowego w Pythonie
-    - Interaktywny generator planów nauki: Aplikacja internetowa Chainlit
-    - Dokumentacja w edytorze: Integracja z VS Code i GitHub Copilot
-    - Zarządzanie API Azure: Wzorce integracji API klasy korporacyjnej
-    - GitHub MCP Registry: Rozwój ekosystemu i platforma społecznościowa
-  - **Kompleksowe zakończenie**: Przepisana sekcja podsumowująca, podkreślająca siedem studiów przypadków obejmujących różne wymiary implementacji MCP
-    - Integracja korporacyjna, orkiestracja wieloagentowa, produktywność deweloperów
-    - Rozwój ekosystemu, kategoryzacja zastosowań edukacyjnych
-    - Rozszerzone wglądy w wzorce architektoniczne, strategie implementacji i najlepsze praktyki
-    - Nacisk na MCP jako dojrzały, gotowy do produkcji protokół
+#### Studia przypadków (09-CaseStudy/) – Skupienie na rozwoju ekosystemu
+- **README.md**: Główne rozszerzenie z kompleksowym studium przypadku rejestru MCP GitHub.
+  - **Studium przypadku rejestru MCP GitHub**: Nowe kompleksowe studium przypadku analizujące uruchomienie rejestru MCP GitHub we wrześniu 2025 r.
+    - **Analiza problemu**: Szczegółowe badanie wyzwań związanych z fragmentacją odkrywania i wdrażania serwerów MCP.
+    - **Architektura rozwiązania**: Podejście GitHub do scentralizowanego rejestru z instalacją jednym kliknięciem w VS Code.
+    - **Wpływ biznesowy**: Mierzalne poprawy w onboardingu i produktywności deweloperów.
+    - **Wartość strategiczna**: Skupienie na modułowym wdrażaniu agentów i interoperacyjności narzędzi.
+    - **Rozwój ekosystemu**: Pozycjonowanie jako platforma podstawowa dla integracji agentów.
+  - **Ulepszona struktura studiów przypadków**: Zaktualizowano wszystkie siedem studiów przypadków z jednolitym formatowaniem i kompleksowymi opisami.
+    - Azure AI Travel Agents: Nacisk na orkiestrację wieloagentową.
+    - Integracja Azure DevOps: Skupienie na automatyzacji przepływu pracy.
+    - Pobieranie dokumentacji w czasie rzeczywistym: Implementacja klienta konsoli Python.
+    - Interaktywny generator planu nauki: Konwersacyjna aplikacja webowa Chainlit.
+    - Dokumentacja w edytorze: Integracja VS Code i GitHub Copilot.
+    - Zarządzanie API Azure: Wzorce integracji API na poziomie przedsiębiorstwa.
+    - Rejestr MCP GitHub: Rozwój ekosystemu i platforma społecznościowa.
+  - **Kompleksowe zakończenie**: Przepisana sekcja zakończenia podkreślająca siedem studiów przypadków obejmujących różne wymiary implementacji MCP.
+    - Integracja na poziomie przedsiębiorstwa, orkiestracja wieloagentowa, produktywność deweloperów.
+    - Rozwój ekosystemu, kategorie zastosowań edukacyjnych.
+    - Ulepszone wglądy w wzorce architektoniczne, strategie implementacji i najlepsze praktyki.
+    - Nacisk na MCP jako dojrzały, gotowy do produkcji protokół.
 
 #### Aktualizacje przewodnika nauki (study_guide.md)
-- **Wizualna mapa programu nauczania**: Zaktualizowano mapę myśli, aby uwzględnić GitHub MCP Registry w sekcji studiów przypadków
-- **Opis studiów przypadków**: Rozszerzono z ogólnych opisów na szczegółowe omówienie siedmiu kompleksowych studiów przypadków
-- **Struktura repozytorium**: Zaktualizowano sekcję 10, aby odzwierciedlała kompleksowe pokrycie studiów przypadków ze szczegółami implementacji
-- **Integracja dziennika zmian**: Dodano wpis z 26 września 2025 dokumentujący dodanie GitHub MCP Registry i ulepszenia studiów przypadków
-- **Aktualizacje daty**: Zaktualizowano stopkę z datą ostatniej rewizji (26 września 2025)
+- **Wizualna mapa programu nauczania**: Zaktualizowano mapę myśli, aby uwzględnić rejestr MCP GitHub w sekcji studiów przypadków.
+- **Opis studiów przypadków**: Ulepszono z ogólnych opisów do szczegółowego podziału siedmiu kompleksowych studiów przypadków.
+- **Struktura repozytorium**: Zaktualizowano sekcję 10, aby odzwierciedlała kompleksowe pokrycie studiów przypadków ze szczegółami implementacji.
+- **Integracja dziennika zmian**: Dodano wpis z 26 września 2025 r. dokumentujący dodanie rejestru MCP GitHub i ulepszenia studiów przypadków.
+- **Aktualizacje daty**: Zaktualizowano stopkę z datą ostatniej rewizji (26 września 2025 r.).
 
-### Poprawa jakości dokumentacji
-- **Ulepszenie spójności**: Ustandaryzowano formatowanie i strukturę studiów przypadków we wszystkich siedmiu przykładach
-- **Kompleksowe pokrycie**: Studia przypadków obejmują teraz scenariusze korporacyjne, produktywność deweloperów i rozwój ekosystemu
-- **Pozycjonowanie strategiczne**: Wzmocniono nacisk na MCP jako podstawową platformę dla wdrażania systemów agentowych
-- **Integracja zasobów**: Zaktualizowano dodatkowe zasoby, aby uwzględnić link do GitHub MCP Registry
+### Ulepszenia jakości dokumentacji
+- **Poprawa spójności**: Ujednolicono formatowanie i strukturę studiów przypadków we wszystkich siedmiu przykładach.
+- **Kompleksowe pokrycie**: Studia przypadków obejmują teraz scenariusze na poziomie przedsiębiorstwa, produktywności deweloperów i rozwoju ekosystemu.
+- **Pozycjonowanie strategiczne**: Wzmocniono nacisk na MCP jako platformę podstawową dla wdrażania systemów agentowych.
+- **Integracja zasobów**: Zaktualizowano dodatkowe zasoby, aby uwzględnić link do rejestru MCP GitHub.
 
 ## 15 września 2025
 
-### Rozszerzenie zaawansowanych tematów - Niestandardowe transporty i inżynieria kontekstu
+### Rozszerzenie zaawansowanych tematów – Niestandardowe transporty i inżynieria kontekstu
 
-#### Niestandardowe transporty MCP (05-AdvancedTopics/mcp-transport/) - Nowy przewodnik implementacji zaawansowanej
-- **README.md**: Kompletny przewodnik implementacji niestandardowych mechanizmów transportu MCP
-  - **Transport Azure Event Grid**: Kompleksowa implementacja transportu bezserwerowego opartego na zdarzeniach
-    - Przykłady w C#, TypeScript i Pythonie z integracją Azure Functions
-    - Wzorce architektury opartej na zdarzeniach dla skalowalnych rozwiązań MCP
-    - Odbiorniki webhooków i obsługa wiadomości w trybie push
-  - **Transport Azure Event Hubs**: Implementacja transportu strumieniowego o wysokiej przepustowości
-    - Możliwości strumieniowania w czasie rzeczywistym dla scenariuszy o niskim opóźnieniu
-    - Strategie partycjonowania i zarządzanie punktami kontrolnymi
-    - Grupowanie wiadomości i optymalizacja wydajności
-  - **Wzorce integracji korporacyjnej**: Przykłady architektoniczne gotowe do produkcji
-    - Rozproszone przetwarzanie MCP w wielu funkcjach Azure
-    - Hybrydowe architektury transportowe łączące różne typy transportu
-    - Trwałość wiadomości, niezawodność i strategie obsługi błędów
-  - **Bezpieczeństwo i monitorowanie**: Integracja z Azure Key Vault i wzorce obserwowalności
-    - Uwierzytelnianie zarządzane tożsamością i dostęp z minimalnymi uprawnieniami
-    - Telemetria Application Insights i monitorowanie wydajności
-    - Bezpieczniki i wzorce odporności na błędy
-  - **Ramki testowe**: Kompleksowe strategie testowania niestandardowych transportów
-    - Testy jednostkowe z użyciem atrap i frameworków do mockowania
-    - Testy integracyjne z Azure Test Containers
-    - Uwagi dotyczące testów wydajności i obciążenia
+#### Niestandardowe transporty MCP (05-AdvancedTopics/mcp-transport/) – Nowy przewodnik zaawansowanej implementacji
+- **README.md**: Kompletny przewodnik implementacji niestandardowych mechanizmów transportu MCP.
+  - **Transport Azure Event Grid**: Kompleksowa implementacja transportu bezserwerowego opartego na zdarzeniach.
+    - Przykłady w C#, TypeScript i Pythonie z integracją Azure Functions.
+    - Wzorce architektury opartej na zdarzeniach dla skalowalnych rozwiązań MCP.
+    - Odbiorniki webhooków i obsługa wiadomości oparta na push.
+  - **Transport Azure Event Hubs**: Implementacja transportu strumieniowego o wysokiej przepustowości.
+    - Możliwości strumieniowania w czasie rzeczywistym dla scenariuszy o niskim opóźnieniu.
+    - Strategie partycjonowania i zarządzanie punktami kontrolnymi.
+    - Grupowanie wiadomości i optymalizacja wydajności.
+  - **Wzorce integracji na poziomie przedsiębiorstwa**: Przykłady architektoniczne gotowe do produkcji.
+    - Rozproszone przetwarzanie MCP w wielu funkcjach Azure.
+    - Hybrydowe architektury transportowe łączące różne typy transportu.
+    - Trwałość wiadomości, niezawodność i strategie obsługi błędów.
+  - **Bezpieczeństwo i monitorowanie**: Integracja Azure Key Vault i wzorce obserwowalności.
+    - Autentykacja zarządzana tożsamością i dostęp o najmniejszych uprawnieniach.
+    - Telemetria Application Insights i monitorowanie wydajności.
+    - Wyłączniki obwodów i wzorce tolerancji błędów.
+  - **Frameworki testowe**: Kompleksowe strategie testowania niestandardowych transportów.
+    - Testowanie jednostkowe z dublerami testowymi i frameworkami do mockowania.
+    - Testowanie integracyjne z Azure Test Containers.
+    - Rozważania dotyczące testowania wydajności i obciążenia.
 
-#### Inżynieria kontekstu (05-AdvancedTopics/mcp-contextengineering/) - Nowa dziedzina AI
-- **README.md**: Kompleksowe omówienie inżynierii kontekstu jako nowo powstającej dziedziny
-  - **Podstawowe zasady**: Pełne udostępnianie kontekstu, świadomość decyzji o działaniach i zarządzanie oknem kontekstu
-  - **Zgodność z protokołem MCP**: Jak projekt MCP rozwiązuje wyzwania inżynierii kontekstu
-    - Ograniczenia okna kontekstu i strategie ładowania progresywnego
-    - Określanie istotności i dynamiczne pobieranie kontekstu
-    - Obsługa kontekstu wielomodalnego i kwestie bezpieczeństwa
-  - **Podejścia do implementacji**: Architektury jednowątkowe vs. wieloagentowe
-    - Techniki dzielenia i priorytetyzacji kontekstu
-    - Progresywne ładowanie i strategie kompresji kontekstu
-    - Warstwowe podejścia do kontekstu i optymalizacja pobierania
-  - **Ramka pomiarowa**: Nowe metryki oceny efektywności kontekstu
-    - Wydajność wejściowa, wydajność, jakość i doświadczenie użytkownika
-    - Eksperymentalne podejścia do optymalizacji kontekstu
-    - Analiza błędów i metody poprawy
+#### Inżynieria kontekstu (05-AdvancedTopics/mcp-contextengineering/) – Nowa dziedzina AI
+- **README.md**: Kompleksowe badanie inżynierii kontekstu jako rozwijającej się dziedziny.
+  - **Podstawowe zasady**: Pełne udostępnianie kontekstu, świadomość decyzji o działaniach i zarządzanie oknem kontekstu.
+  - **Dostosowanie do protokołu MCP**: Jak projekt MCP rozwiązuje wyzwania inżynierii kontekstu.
+    - Ograniczenia okna kontekstu i strategie progresywnego ładowania.
+    - Określanie istotności i dynamiczne pobieranie kontekstu.
+    - Obsługa kontekstu wielomodalnego i rozważania dotyczące bezpieczeństwa.
+  - **Podejścia do implementacji**: Architektury jednowątkowe vs. wieloagentowe.
+    - Techniki dzielenia kontekstu i priorytetyzacji.
+    - Progresywne ładowanie kontekstu i strategie kompresji.
+    - Warstwowe podejścia do kontekstu i optymalizacja pobierania.
+  - **Framework pomiarowy**: Powstające metryki oceny efektywności kontekstu.
+    - Rozważania dotyczące efektywności wejścia, wydajności, jakości i doświadczenia użytkownika.
+    - Eksperymentalne podejścia do optymalizacji kontekstu.
+    - Analiza błędów i metody poprawy.
 
 #### Aktualizacje nawigacji programu nauczania (README.md)
-- **Ulepszona struktura modułów**: Zaktualizowano tabelę programu nauczania, aby uwzględnić nowe zaawansowane tematy
-  - Dodano wpisy Inżynieria kontekstu (5.14) i Niestandardowe transporty (5.15)
-  - Spójne formatowanie i linki nawigacyjne we wszystkich modułach
-  - Zaktualizowano opisy, aby odzwierciedlały aktualny zakres treści
+- **Ulepszona struktura modułów**: Zaktualizowano tabelę programu nauczania, aby uwzględnić nowe zaawansowane tematy.
+  - Dodano Inżynierię kontekstu (5.14) i Niestandardowy transport (5.15).
+  - Spójne formatowanie i linki nawigacyjne we wszystkich modułach.
+  - Zaktualizowano opisy, aby odzwierciedlały aktualny zakres treści.
 
 ### Ulepszenia struktury katalogów
-- **Standaryzacja nazw**: Zmieniono nazwę "mcp transport" na "mcp-transport" dla spójności z innymi folderami zaawansowanych tematów
-- **Organizacja treści**: Wszystkie foldery 05-AdvancedTopics teraz stosują spójny wzorzec nazewnictwa (mcp-[temat])
+- **Standaryzacja nazw**: Zmieniono nazwę „mcp transport” na „mcp-transport” dla spójności z innymi folderami zaawansowanych tematów.
+- **Organizacja treści**: Wszystkie foldery 05-AdvancedTopics teraz mają spójny wzorzec nazewnictwa (mcp-[temat]).
 
 ### Ulepszenia jakości dokumentacji
-- **Zgodność ze specyfikacją MCP**: Wszystkie nowe treści odnoszą się do aktualnej specyfikacji MCP z 18 czerwca 2025
-- **Przykłady w wielu językach**: Kompleksowe przykłady kodu w C#, TypeScript i Pythonie
-- **Skupienie na korporacjach**: Wzorce gotowe do produkcji i integracja z chmurą Azure w całej dokumentacji
-- **Dokumentacja wizualna**: Diagramy Mermaid do wizualizacji architektury i przepływów
+- **Dostosowanie do specyfikacji MCP**: Wszystkie nowe treści odnoszą się do aktualnej specyfikacji MCP z 18 czerwca 2025 r.
+- **Przykłady w wielu językach**: Kompleksowe przykłady kodu w C#, TypeScript i Pythonie.
+- **Skupienie na przedsiębiorstwie**: Wzorce gotowe do produkcji i integracja z chmurą Azure w całej dokumentacji.
+- **Dokumentacja wizualna**: Diagramy Mermaid dla wizualizacji architektury i przepływu.
 
 ## 18 sierpnia 2025
 
-### Kompleksowa aktualizacja dokumentacji - Standardy MCP 2025-06-18
+### Kompleksowa aktualizacja dokumentacji – Standardy MCP 2025-06-18
 
-#### Najlepsze praktyki bezpieczeństwa MCP (02-Security/) - Kompleksowa modernizacja
-- **MCP-SECURITY-BEST-PRACTICES-2025.md**: Kompletny przepis zgodny ze specyfikacją MCP z 2025-06-18
-  - **Wymagania obowiązkowe**: Dodano wyraźne wymagania MUST/MUST NOT z oficjalnej specyfikacji z jasnymi wskaźnikami wizualnymi
-  - **12 podstawowych praktyk bezpieczeństwa**: Przekształcono z listy 15 pozycji w kompleksowe domeny bezpieczeństwa
-    - Bezpieczeństwo tokenów i uwierzytelnianie z integracją zewnętrznego dostawcy tożsamości
-    - Zarządzanie sesją i bezpieczeństwo transportu z wymaganiami kryptograficznymi
-    - Ochrona przed zagrożeniami specyficznymi dla AI z integracją Microsoft Prompt Shields
-    - Kontrola dostępu i uprawnień zgodnie z zasadą najmniejszych uprawnień
-    - Bezpieczeństwo treści i monitorowanie z integracją Azure Content Safety
-    - Bezpieczeństwo łańcucha dostaw z kompleksową weryfikacją komponentów
-    - Bezpieczeństwo OAuth i zapobieganie atakom Confused Deputy z implementacją PKCE
-    - Reakcja na incydenty i odzyskiwanie z automatycznymi możliwościami
-    - Zgodność i zarządzanie z regulacyjnym dostosowaniem
-    - Zaawansowane kontrole bezpieczeństwa z architekturą zero trust
-    - Integracja z ekosystemem bezpieczeństwa Microsoft z kompleksowymi rozwiązaniami
-    - Ciągła ewolucja bezpieczeństwa z adaptacyjnymi praktykami
-  - **Rozwiązania bezpieczeństwa Microsoft**: Ulepszone wskazówki dotyczące integracji dla Prompt Shields, Azure Content Safety, Entra ID i GitHub Advanced Security
-  - **Zasoby implementacyjne**: Skategoryzowane kompleksowe linki do zasobów według Oficjalnej dokumentacji MCP, Rozwiązań bezpieczeństwa Microsoft, Standardów bezpieczeństwa i Przewodników implementacyjnych
+#### Najlepsze praktyki bezpieczeństwa MCP (02-Security/) – Kompleksowa modernizacja
+- **MCP-SECURITY-BEST-PRACTICES-2025.md**: Kompletny przepis zgodny ze specyfikacją MCP z 18 czerwca 2025 r.
+  - **Wymagania obowiązkowe**: Dodano wyraźne wymagania MUST/MUST NOT
+#### Zaawansowane tematy bezpieczeństwa (05-AdvancedTopics/mcp-security/) - Implementacja gotowa do produkcji
+- **README.md**: Kompletny przepis na wdrożenie bezpieczeństwa w przedsiębiorstwie
+  - **Zgodność ze specyfikacją**: Zaktualizowano do specyfikacji MCP z 2025-06-18 z obowiązkowymi wymaganiami bezpieczeństwa
+  - **Ulepszona autentykacja**: Integracja z Microsoft Entra ID z kompleksowymi przykładami w .NET i Java Spring Security
+  - **Integracja bezpieczeństwa AI**: Implementacja Microsoft Prompt Shields i Azure Content Safety z szczegółowymi przykładami w Pythonie
+  - **Zaawansowane łagodzenie zagrożeń**: Kompleksowe przykłady implementacji dla:
+    - Zapobiegania atakom typu Confused Deputy z PKCE i walidacją zgody użytkownika
+    - Zapobiegania przekazywaniu tokenów z walidacją odbiorców i bezpiecznym zarządzaniem tokenami
+    - Zapobiegania przejęciu sesji z wykorzystaniem wiązania kryptograficznego i analizy behawioralnej
+  - **Integracja bezpieczeństwa w przedsiębiorstwie**: Monitorowanie Azure Application Insights, wykrywanie zagrożeń i bezpieczeństwo łańcucha dostaw
+  - **Lista kontrolna wdrożenia**: Jasne rozróżnienie między obowiązkowymi a zalecanymi kontrolami bezpieczeństwa z korzyściami ekosystemu Microsoft
 
-#### Zaawansowane kontrole bezpieczeństwa (02-Security/) - Implementacja korporacyjna
-- **MCP-SECURITY-CONTROLS-2025.md**: Kompleksowa przebudowa z ramami bezpieczeństwa klasy korporacyjnej
-  - **9 kompleksowych domen bezpieczeństwa**: Rozszerzono z podstawowych kontroli do szczegółowych ram korporacyjnych
-    - Zaawansowane uwierzytelnianie i autoryzacja z integracją Microsoft Entra ID
-    - Bezpieczeństwo tokenów i kontrola anty-passthrough z kompleksową walidacją
-    - Kontrole bezpieczeństwa sesji z zapobieganiem przejęci
-- **Wskaźniki wizualne**: Wyraźne oznaczenie obowiązkowych wymagań i zalecanych praktyk
+### Jakość dokumentacji i zgodność ze standardami
+- **Odwołania do specyfikacji**: Zaktualizowano wszystkie odwołania do aktualnej specyfikacji MCP z 2025-06-18
+- **Ekosystem bezpieczeństwa Microsoft**: Ulepszono wskazówki dotyczące integracji w całej dokumentacji bezpieczeństwa
+- **Praktyczna implementacja**: Dodano szczegółowe przykłady kodu w .NET, Java i Python z wzorcami dla przedsiębiorstw
+- **Organizacja zasobów**: Kompleksowa kategoryzacja oficjalnej dokumentacji, standardów bezpieczeństwa i przewodników implementacji
+- **Wizualne wskaźniki**: Wyraźne oznaczenie wymagań obowiązkowych i zalecanych praktyk
 
-#### Podstawowe Koncepcje (01-CoreConcepts/) - Kompleksowa Modernizacja
-- **Aktualizacja wersji protokołu**: Zaktualizowano odniesienia do bieżącej specyfikacji MCP z datą wersji (format YYYY-MM-DD), obowiązującą od 2025-06-18
-- **Udoskonalenie architektury**: Rozszerzono opisy Hostów, Klientów i Serwerów, aby odzwierciedlały aktualne wzorce architektury MCP
-  - Hosty są teraz jasno zdefiniowane jako aplikacje AI koordynujące wiele połączeń klientów MCP
+#### Podstawowe koncepcje (01-CoreConcepts/) - Kompleksowa modernizacja
+- **Aktualizacja wersji protokołu**: Zaktualizowano odniesienia do aktualnej specyfikacji MCP z 2025-06-18 z wersjonowaniem opartym na dacie (format YYYY-MM-DD)
+- **Udoskonalenie architektury**: Ulepszone opisy Hostów, Klientów i Serwerów, odzwierciedlające aktualne wzorce architektury MCP
+  - Hosty jasno zdefiniowane jako aplikacje AI koordynujące wiele połączeń klientów MCP
   - Klienci opisani jako konektory protokołu utrzymujące relacje jeden-do-jednego z serwerami
-  - Serwery wzbogacone o scenariusze lokalnego i zdalnego wdrożenia
-- **Przebudowa prymitywów**: Kompleksowa reorganizacja prymitywów serwera i klienta
-  - Prymitywy serwera: Zasoby (źródła danych), Podpowiedzi (szablony), Narzędzia (funkcje wykonywalne) z szczegółowymi wyjaśnieniami i przykładami
-  - Prymitywy klienta: Próbkowanie (wyniki LLM), Wywoływanie (wejście użytkownika), Logowanie (debugowanie/monitorowanie)
-  - Zaktualizowano zgodnie z bieżącymi wzorcami metod odkrywania (`*/list`), pobierania (`*/get`) i wykonywania (`*/call`)
+  - Serwery ulepszone o scenariusze lokalnego i zdalnego wdrożenia
+- **Restrukturyzacja prymitywów**: Kompletny przegląd prymitywów serwera i klienta
+  - Prymitywy serwera: Zasoby (źródła danych), Szablony (prompty), Narzędzia (funkcje wykonywalne) z szczegółowymi wyjaśnieniami i przykładami
+  - Prymitywy klienta: Próbkowanie (kompletacje LLM), Elicytacja (wejście użytkownika), Logowanie (debugowanie/monitorowanie)
+  - Zaktualizowano o aktualne wzorce odkrywania (`*/list`), pobierania (`*/get`) i wykonywania (`*/call`) metod
 - **Architektura protokołu**: Wprowadzono model architektury dwuwarstwowej
   - Warstwa danych: Podstawa JSON-RPC 2.0 z zarządzaniem cyklem życia i prymitywami
-  - Warstwa transportowa: STDIO (lokalnie) i Streamable HTTP z SSE (zdalnie)
+  - Warstwa transportowa: STDIO (lokalna) i Streamable HTTP z SSE (zdalna) mechanizmy transportowe
 - **Ramka bezpieczeństwa**: Kompleksowe zasady bezpieczeństwa, w tym wyraźna zgoda użytkownika, ochrona prywatności danych, bezpieczeństwo wykonywania narzędzi i bezpieczeństwo warstwy transportowej
 - **Wzorce komunikacji**: Zaktualizowano wiadomości protokołu, aby pokazać przepływy inicjalizacji, odkrywania, wykonywania i powiadomień
-- **Przykłady kodu**: Odświeżono przykłady w wielu językach (.NET, Java, Python, JavaScript), aby odzwierciedlały bieżące wzorce MCP SDK
+- **Przykłady kodu**: Odświeżono wielojęzyczne przykłady (.NET, Java, Python, JavaScript), aby odzwierciedlały aktualne wzorce MCP SDK
 
 #### Bezpieczeństwo (02-Security/) - Kompleksowa przebudowa bezpieczeństwa  
-- **Zgodność ze standardami**: Pełna zgodność z wymaganiami bezpieczeństwa specyfikacji MCP 2025-06-18
-- **Ewolucja uwierzytelniania**: Udokumentowano przejście od niestandardowych serwerów OAuth do delegacji zewnętrznych dostawców tożsamości (Microsoft Entra ID)
-- **Analiza zagrożeń specyficznych dla AI**: Rozszerzone omówienie nowoczesnych wektorów ataków na AI
-  - Szczegółowe scenariusze ataków wstrzykiwania podpowiedzi z przykładami z życia
+- **Zgodność ze standardami**: Pełna zgodność z wymaganiami bezpieczeństwa specyfikacji MCP z 2025-06-18
+- **Ewolucja autentykacji**: Udokumentowano przejście od niestandardowych serwerów OAuth do delegacji zewnętrznych dostawców tożsamości (Microsoft Entra ID)
+- **Analiza zagrożeń specyficznych dla AI**: Rozszerzone omówienie nowoczesnych wektorów ataków AI
+  - Szczegółowe scenariusze ataków typu prompt injection z przykładami z rzeczywistego świata
   - Mechanizmy zatruwania narzędzi i wzorce ataków typu "rug pull"
   - Zatruwanie okna kontekstowego i ataki na dezorientację modelu
 - **Rozwiązania bezpieczeństwa AI Microsoft**: Kompleksowe omówienie ekosystemu bezpieczeństwa Microsoft
-  - AI Prompt Shields z zaawansowanym wykrywaniem, wyróżnianiem i technikami delimitacji
+  - AI Prompt Shields z zaawansowanym wykrywaniem, spotlightingiem i technikami delimitacji
   - Wzorce integracji Azure Content Safety
   - GitHub Advanced Security dla ochrony łańcucha dostaw
-- **Zaawansowane ograniczanie zagrożeń**: Szczegółowe kontrole bezpieczeństwa dla
-  - Przejęcia sesji z scenariuszami ataków specyficznymi dla MCP i wymaganiami kryptograficznych identyfikatorów sesji
-  - Problemów "zagubionego zastępcy" w scenariuszach proxy MCP z wymaganiami wyraźnej zgody
-  - Luk w przekazywaniu tokenów z obowiązkowymi kontrolami walidacji
+- **Zaawansowane łagodzenie zagrożeń**: Szczegółowe kontrole bezpieczeństwa dla:
+  - Przejęcia sesji z scenariuszami ataków specyficznych dla MCP i wymaganiami kryptograficznego identyfikatora sesji
+  - Problemów typu Confused Deputy w scenariuszach proxy MCP z wyraźnymi wymaganiami zgody
+  - Wrażliwości przekazywania tokenów z obowiązkowymi kontrolami walidacji
 - **Bezpieczeństwo łańcucha dostaw**: Rozszerzone omówienie łańcucha dostaw AI, w tym modele podstawowe, usługi osadzania, dostawców kontekstu i zewnętrzne API
-- **Podstawy bezpieczeństwa**: Zwiększona integracja z wzorcami bezpieczeństwa przedsiębiorstwa, w tym architekturą zero trust i ekosystemem bezpieczeństwa Microsoft
-- **Organizacja zasobów**: Skategoryzowane kompleksowe linki do zasobów według typu (Oficjalne dokumenty, Standardy, Badania, Rozwiązania Microsoft, Przewodniki wdrożeniowe)
+- **Podstawowe bezpieczeństwo**: Ulepszona integracja z wzorcami bezpieczeństwa przedsiębiorstwa, w tym architekturą zero trust i ekosystemem bezpieczeństwa Microsoft
+- **Organizacja zasobów**: Skategoryzowane kompleksowe linki do zasobów według typu (Oficjalne dokumenty, Standardy, Badania, Rozwiązania Microsoft, Przewodniki implementacji)
 
 ### Ulepszenia jakości dokumentacji
-- **Strukturalne cele nauki**: Udoskonalone cele nauki z konkretnymi, możliwymi do realizacji wynikami
+- **Struktura celów edukacyjnych**: Ulepszone cele edukacyjne z konkretnymi, możliwymi do realizacji wynikami
 - **Odnośniki krzyżowe**: Dodano linki między powiązanymi tematami bezpieczeństwa i podstawowych koncepcji
-- **Aktualne informacje**: Zaktualizowano wszystkie odniesienia do dat i linki do specyfikacji zgodnie z bieżącymi standardami
-- **Wskazówki wdrożeniowe**: Dodano konkretne, możliwe do realizacji wskazówki wdrożeniowe w obu sekcjach
+- **Aktualne informacje**: Zaktualizowano wszystkie odniesienia do dat i linki do specyfikacji zgodnie z aktualnymi standardami
+- **Wskazówki implementacyjne**: Dodano konkretne, możliwe do realizacji wskazówki implementacyjne w całej dokumentacji
 
 ## 16 lipca 2025
 
 ### README i ulepszenia nawigacji
 - Całkowicie przeprojektowano nawigację w README.md
-- Zastąpiono tagi `<details>` bardziej dostępnym formatem tabeli
+- Zastąpiono tagi `<details>` bardziej dostępnym formatem tabelowym
 - Utworzono alternatywne opcje układu w nowym folderze "alternative_layouts"
 - Dodano przykłady nawigacji w stylu kart, zakładek i akordeonu
 - Zaktualizowano sekcję struktury repozytorium, aby uwzględnić wszystkie najnowsze pliki
-- Udoskonalono sekcję "Jak korzystać z tego programu nauczania" z jasnymi rekomendacjami
+- Ulepszono sekcję "Jak korzystać z tego programu nauczania" z jasnymi rekomendacjami
 - Zaktualizowano linki do specyfikacji MCP, aby wskazywały poprawne adresy URL
-- Dodano sekcję Inżynieria kontekstu (5.14) do struktury programu nauczania
+- Dodano sekcję Inżynieria kontekstowa (5.14) do struktury programu nauczania
 
 ### Aktualizacje przewodnika nauki
-- Całkowicie zrewidowano przewodnik nauki, aby dostosować go do bieżącej struktury repozytorium
+- Całkowicie zrewidowano przewodnik nauki, aby dostosować go do aktualnej struktury repozytorium
 - Dodano nowe sekcje dotyczące klientów MCP i narzędzi oraz popularnych serwerów MCP
 - Zaktualizowano wizualną mapę programu nauczania, aby dokładnie odzwierciedlała wszystkie tematy
-- Udoskonalono opisy zaawansowanych tematów, aby objąć wszystkie specjalistyczne obszary
+- Ulepszono opisy zaawansowanych tematów, aby objąć wszystkie specjalistyczne obszary
 - Zaktualizowano sekcję studiów przypadków, aby odzwierciedlała rzeczywiste przykłady
 - Dodano ten kompleksowy dziennik zmian
 
@@ -249,13 +262,13 @@ Ten dokument stanowi zapis wszystkich istotnych zmian wprowadzonych w programie 
 - Dodano kompleksową sekcję dotyczącą korzystania z Claude w VSCode
 - Dodano instrukcje konfiguracji i użytkowania klienta terminalowego Cline
 - Zaktualizowano sekcję klientów MCP, aby uwzględnić wszystkie popularne opcje klientów
-- Udoskonalono przykłady wkładów z bardziej precyzyjnymi próbkami kodu
+- Ulepszono przykłady wkładów z bardziej precyzyjnymi próbkami kodu
 
 ### Zaawansowane tematy (05-AdvancedTopics/)
 - Zorganizowano wszystkie foldery specjalistycznych tematów z jednolitą nazwą
-- Dodano materiały i przykłady dotyczące inżynierii kontekstu
+- Dodano materiały i przykłady dotyczące inżynierii kontekstowej
 - Dodano dokumentację integracji agenta Foundry
-- Udoskonalono dokumentację integracji bezpieczeństwa Entra ID
+- Ulepszono dokumentację integracji bezpieczeństwa Entra ID
 
 ## 11 czerwca 2025
 
@@ -288,14 +301,14 @@ Ten dokument stanowi zapis wszystkich istotnych zmian wprowadzonych w programie 
 ### Dokumentacja
 - Utworzono początkowy README.md z przeglądem programu nauczania
 - Dodano CODE_OF_CONDUCT.md i SECURITY.md
-- Skonfigurowano SUPPORT.md z wytycznymi dotyczącymi uzyskiwania pomocy
+- Skonfigurowano SUPPORT.md z wskazówkami dotyczącymi uzyskiwania pomocy
 - Utworzono wstępną strukturę przewodnika nauki
 
 ## 15 kwietnia 2025
 
 ### Planowanie i ramy
 - Wstępne planowanie programu nauczania MCP dla początkujących
-- Zdefiniowano cele nauki i grupę docelową
+- Zdefiniowano cele edukacyjne i grupę docelową
 - Nakreślono 10-sekcyjną strukturę programu nauczania
 - Opracowano koncepcyjne ramy dla przykładów i studiów przypadków
 - Utworzono początkowe prototypy przykładów dla kluczowych koncepcji
@@ -303,4 +316,4 @@ Ten dokument stanowi zapis wszystkich istotnych zmian wprowadzonych w programie 
 ---
 
 **Zastrzeżenie**:  
-Ten dokument został przetłumaczony za pomocą usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż staramy się zapewnić dokładność, prosimy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego języku źródłowym powinien być uznawany za autorytatywne źródło. W przypadku informacji krytycznych zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.
+Ten dokument został przetłumaczony za pomocą usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy wszelkich starań, aby tłumaczenie było precyzyjne, prosimy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego rodzimym języku powinien być uznawany za źródło autorytatywne. W przypadku informacji krytycznych zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.

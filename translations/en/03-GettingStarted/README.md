@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T13:11:40+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T21:50:34+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "en"
 }
@@ -23,17 +23,19 @@ This section includes several lessons:
 
 - **4 Consuming a server in GitHub Copilot Agent mode using Visual Studio Code**: Explore how to run your MCP Server directly within Visual Studio Code. [Go to the lesson](04-vscode/README.md)
 
-- **5 stdio Transport Server**: Discover stdio transport, the recommended standard for secure MCP server-to-client communication based on subprocesses. [Go to the lesson](05-stdio-server/README.md)
+- **5 stdio Transport Server**: stdio transport is the recommended standard for MCP server-to-client communication, offering secure subprocess-based communication. [Go to the lesson](05-stdio-server/README.md)
 
-- **6 HTTP Streaming with MCP (Streamable HTTP)**: Learn about modern HTTP streaming, progress notifications, and how to implement scalable, real-time MCP servers and clients using Streamable HTTP. [Go to the lesson](06-http-streaming/README.md)
+- **6 HTTP Streaming with MCP (Streamable HTTP)**: Discover modern HTTP streaming, progress notifications, and how to implement scalable, real-time MCP servers and clients using Streamable HTTP. [Go to the lesson](06-http-streaming/README.md)
 
-- **7 Utilizing AI Toolkit for VSCode**: Use the AI Toolkit to consume and test your MCP Clients and Servers. [Go to the lesson](07-aitk/README.md)
+- **7 Utilizing AI Toolkit for VSCode**: Learn how to consume and test your MCP Clients and Servers using the AI Toolkit for VSCode. [Go to the lesson](07-aitk/README.md)
 
-- **8 Testing**: Focus on various methods to test your server and client. [Go to the lesson](08-testing/README.md)
+- **8 Testing**: This lesson focuses on various methods to test your server and client. [Go to the lesson](08-testing/README.md)
 
-- **9 Deployment**: Explore different ways to deploy your MCP solutions. [Go to the lesson](09-deployment/README.md)
+- **9 Deployment**: Explore different approaches to deploying your MCP solutions. [Go to the lesson](09-deployment/README.md)
 
 - **10 Advanced server usage**: Dive into advanced server usage techniques. [Go to the lesson](./10-advanced/README.md)
+
+- **11 Auth**: Learn how to implement simple authentication, from Basic Auth to using JWT and RBAC. Start here, then explore advanced topics in Chapter 5 and apply additional security hardening recommendations from Chapter 2. [Go to the lesson](./11-simple-auth/README.md)
 
 The Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to LLMs. Think of MCP as a USB-C port for AI applications—it offers a standardized way to connect AI models to various data sources and tools.
 
@@ -76,11 +78,11 @@ MCP provides official SDKs for multiple languages:
 
 ## Key Takeaways
 
-- Setting up an MCP development environment is straightforward with language-specific SDKs.
-- Building MCP servers involves creating and registering tools with clear schemas.
-- MCP clients connect to servers and models to leverage extended capabilities.
-- Testing and debugging are crucial for reliable MCP implementations.
-- Deployment options range from local development to cloud-based solutions.
+- Setting up an MCP development environment is straightforward with language-specific SDKs
+- Building MCP servers involves creating and registering tools with clear schemas
+- MCP clients connect to servers and models to leverage extended capabilities
+- Testing and debugging are crucial for reliable MCP implementations
+- Deployment options range from local development to cloud-based solutions
 
 ## Practicing
 

@@ -1,13 +1,13 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T13:17:39+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T21:55:54+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "es"
 }
 -->
-## Introducción  
+## Comenzando  
 
 [![Construye tu primer servidor MCP](../../../translated_images/04.0ea920069efd979a0b2dad51e72c1df7ead9c57b3305796068a6cee1f0dd6674.es.png)](https://youtu.be/sNDZO9N4m9Y)
 
@@ -15,25 +15,27 @@ _(Haz clic en la imagen de arriba para ver el video de esta lección)_
 
 Esta sección consta de varias lecciones:
 
-- **1 Tu primer servidor**, en esta primera lección, aprenderás cómo crear tu primer servidor y cómo inspeccionarlo con la herramienta de inspección, una forma valiosa de probar y depurar tu servidor, [ir a la lección](01-first-server/README.md)
+- **1 Tu primer servidor**, en esta primera lección, aprenderás cómo crear tu primer servidor y examinarlo con la herramienta de inspección, una forma valiosa de probar y depurar tu servidor, [a la lección](01-first-server/README.md)
 
-- **2 Cliente**, en esta lección, aprenderás cómo escribir un cliente que pueda conectarse a tu servidor, [ir a la lección](02-client/README.md)
+- **2 Cliente**, en esta lección, aprenderás cómo escribir un cliente que pueda conectarse a tu servidor, [a la lección](02-client/README.md)
 
-- **3 Cliente con LLM**, una forma aún mejor de escribir un cliente es añadiendo un LLM para que pueda "negociar" con tu servidor sobre qué hacer, [ir a la lección](03-llm-client/README.md)
+- **3 Cliente con LLM**, una forma aún mejor de escribir un cliente es añadiendo un LLM para que pueda "negociar" con tu servidor sobre qué hacer, [a la lección](03-llm-client/README.md)
 
-- **4 Consumir un servidor en modo Agente de GitHub Copilot en Visual Studio Code**. Aquí veremos cómo ejecutar nuestro servidor MCP desde Visual Studio Code, [ir a la lección](04-vscode/README.md)
+- **4 Consumir un servidor en modo Agente GitHub Copilot en Visual Studio Code**. Aquí veremos cómo ejecutar nuestro servidor MCP desde Visual Studio Code, [a la lección](04-vscode/README.md)
 
-- **5 Servidor con transporte stdio**. El transporte stdio es el estándar recomendado para la comunicación entre servidor y cliente MCP en la especificación actual, proporcionando comunicación segura basada en subprocesos, [ir a la lección](05-stdio-server/README.md)
+- **5 Servidor de transporte stdio**. El transporte stdio es el estándar recomendado para la comunicación entre servidor y cliente MCP en la especificación actual, proporcionando comunicación segura basada en subprocesos, [a la lección](05-stdio-server/README.md)
 
-- **6 Transmisión HTTP con MCP (HTTP Streamable)**. Aprende sobre la transmisión moderna de HTTP, notificaciones de progreso y cómo implementar servidores y clientes MCP escalables y en tiempo real utilizando HTTP Streamable, [ir a la lección](06-http-streaming/README.md)
+- **6 Transmisión HTTP con MCP (HTTP Streamable)**. Aprende sobre la transmisión HTTP moderna, notificaciones de progreso y cómo implementar servidores y clientes MCP escalables y en tiempo real utilizando HTTP Streamable, [a la lección](06-http-streaming/README.md)
 
-- **7 Utilizar AI Toolkit para VSCode** para consumir y probar tus clientes y servidores MCP, [ir a la lección](07-aitk/README.md)
+- **7 Utilizando AI Toolkit para VSCode** para consumir y probar tus clientes y servidores MCP, [a la lección](07-aitk/README.md)
 
-- **8 Pruebas**. Aquí nos enfocaremos especialmente en cómo podemos probar nuestro servidor y cliente de diferentes maneras, [ir a la lección](08-testing/README.md)
+- **8 Pruebas**. Aquí nos enfocaremos especialmente en cómo podemos probar nuestro servidor y cliente de diferentes maneras, [a la lección](08-testing/README.md)
 
-- **9 Despliegue**. Este capítulo explorará diferentes formas de desplegar tus soluciones MCP, [ir a la lección](09-deployment/README.md)
+- **9 Despliegue**. Este capítulo explorará diferentes formas de desplegar tus soluciones MCP, [a la lección](09-deployment/README.md)
 
-- **10 Uso avanzado del servidor**. Este capítulo cubre el uso avanzado del servidor, [ir a la lección](./10-advanced/README.md)
+- **10 Uso avanzado del servidor**. Este capítulo cubre el uso avanzado del servidor, [a la lección](./10-advanced/README.md)
+
+- **11 Autenticación**. Este capítulo cubre cómo añadir autenticación simple, desde Basic Auth hasta el uso de JWT y RBAC. Se recomienda comenzar aquí y luego explorar los temas avanzados en el Capítulo 5 y realizar un endurecimiento adicional de la seguridad siguiendo las recomendaciones del Capítulo 2, [a la lección](./11-simple-auth/README.md)
 
 El Protocolo de Contexto de Modelo (MCP) es un protocolo abierto que estandariza cómo las aplicaciones proporcionan contexto a los LLMs. Piensa en MCP como un puerto USB-C para aplicaciones de IA: proporciona una forma estandarizada de conectar modelos de IA a diferentes fuentes de datos y herramientas.
 
@@ -44,7 +46,7 @@ Al final de esta lección, serás capaz de:
 - Configurar entornos de desarrollo para MCP en C#, Java, Python, TypeScript y JavaScript
 - Construir y desplegar servidores MCP básicos con características personalizadas (recursos, prompts y herramientas)
 - Crear aplicaciones anfitrionas que se conecten a servidores MCP
-- Probar y depurar implementaciones de MCP
+- Probar y depurar implementaciones MCP
 - Comprender los desafíos comunes de configuración y sus soluciones
 - Conectar tus implementaciones MCP a servicios populares de LLM
 
@@ -100,7 +102,7 @@ Tenemos un conjunto de ejemplos que complementan los ejercicios que verás en to
 
 ## ¿Qué sigue?
 
-Siguiente: [Crear tu primer servidor MCP](01-first-server/README.md)
+Siguiente: [Creando tu primer servidor MCP](01-first-server/README.md)
 
 ---
 

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T14:50:03+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T23:36:04+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "id"
 }
@@ -15,17 +15,17 @@ _(Klik gambar di atas untuk menonton video pelajaran ini)_
 
 Bagian ini terdiri dari beberapa pelajaran:
 
-- **1 Server pertama Anda**, dalam pelajaran pertama ini, Anda akan belajar cara membuat server pertama Anda dan memeriksanya dengan alat inspeksi, cara yang berharga untuk menguji dan memperbaiki server Anda, [ke pelajaran](01-first-server/README.md)
+- **1 Server pertama Anda**, dalam pelajaran pertama ini, Anda akan belajar cara membuat server pertama Anda dan memeriksanya dengan alat inspeksi, cara yang berguna untuk menguji dan memperbaiki server Anda, [ke pelajaran](01-first-server/README.md)
 
 - **2 Klien**, dalam pelajaran ini, Anda akan belajar cara menulis klien yang dapat terhubung ke server Anda, [ke pelajaran](02-client/README.md)
 
 - **3 Klien dengan LLM**, cara yang lebih baik untuk menulis klien adalah dengan menambahkan LLM sehingga dapat "bernegosiasi" dengan server Anda tentang apa yang harus dilakukan, [ke pelajaran](03-llm-client/README.md)
 
-- **4 Menggunakan mode Agen GitHub Copilot di Visual Studio Code**. Di sini, kita akan melihat cara menjalankan Server MCP dari dalam Visual Studio Code, [ke pelajaran](04-vscode/README.md)
+- **4 Menggunakan mode GitHub Copilot Agent di Visual Studio Code**. Di sini, kita akan melihat cara menjalankan Server MCP dari dalam Visual Studio Code, [ke pelajaran](04-vscode/README.md)
 
 - **5 Server Transport stdio** stdio transport adalah standar yang direkomendasikan untuk komunikasi server-ke-klien MCP dalam spesifikasi saat ini, menyediakan komunikasi berbasis subprocess yang aman [ke pelajaran](05-stdio-server/README.md)
 
-- **6 HTTP Streaming dengan MCP (Streamable HTTP)**. Pelajari tentang streaming HTTP modern, notifikasi progres, dan cara mengimplementasikan server dan klien MCP yang skalabel dan real-time menggunakan Streamable HTTP. [ke pelajaran](06-http-streaming/README.md)
+- **6 HTTP Streaming dengan MCP (Streamable HTTP)**. Pelajari tentang HTTP streaming modern, notifikasi progres, dan cara mengimplementasikan server dan klien MCP yang skalabel dan real-time menggunakan Streamable HTTP. [ke pelajaran](06-http-streaming/README.md)
 
 - **7 Memanfaatkan AI Toolkit untuk VSCode** untuk menggunakan dan menguji Klien dan Server MCP Anda [ke pelajaran](07-aitk/README.md)
 
@@ -35,14 +35,16 @@ Bagian ini terdiri dari beberapa pelajaran:
 
 - **10 Penggunaan server tingkat lanjut**. Bab ini mencakup penggunaan server tingkat lanjut, [ke pelajaran](./10-advanced/README.md)
 
-Model Context Protocol (MCP) adalah protokol terbuka yang menstandarkan cara aplikasi memberikan konteks kepada LLM. Pikirkan MCP seperti port USB-C untuk aplikasi AI - ini menyediakan cara standar untuk menghubungkan model AI ke berbagai sumber data dan alat.
+- **11 Auth**. Bab ini membahas cara menambahkan autentikasi sederhana, mulai dari Basic Auth hingga menggunakan JWT dan RBAC. Anda disarankan untuk memulai di sini dan kemudian melihat Topik Lanjutan di Bab 5 serta melakukan penguatan keamanan tambahan melalui rekomendasi di Bab 2, [ke pelajaran](./11-simple-auth/README.md)
+
+Model Context Protocol (MCP) adalah protokol terbuka yang menstandarkan cara aplikasi menyediakan konteks untuk LLM. Pikirkan MCP seperti port USB-C untuk aplikasi AI - ini menyediakan cara standar untuk menghubungkan model AI ke berbagai sumber data dan alat.
 
 ## Tujuan Pembelajaran
 
 Pada akhir pelajaran ini, Anda akan dapat:
 
 - Menyiapkan lingkungan pengembangan untuk MCP dalam C#, Java, Python, TypeScript, dan JavaScript
-- Membangun dan menerapkan server MCP dasar dengan fitur khusus (sumber daya, prompt, dan alat)
+- Membangun dan menerapkan server MCP dasar dengan fitur khusus (resources, prompts, dan tools)
 - Membuat aplikasi host yang terhubung ke server MCP
 - Menguji dan memperbaiki implementasi MCP
 - Memahami tantangan umum dalam pengaturan dan solusinya
@@ -84,7 +86,7 @@ MCP menyediakan SDK resmi untuk berbagai bahasa:
 
 ## Latihan
 
-Kami memiliki serangkaian contoh yang melengkapi latihan yang akan Anda lihat di semua bab dalam bagian ini. Selain itu, setiap bab juga memiliki latihan dan tugas masing-masing.
+Kami memiliki serangkaian contoh yang melengkapi latihan yang akan Anda lihat di semua bab dalam bagian ini. Selain itu, setiap bab juga memiliki latihan dan tugasnya sendiri.
 
 - [Java Calculator](./samples/java/calculator/README.md)
 - [.Net Calculator](../../../03-GettingStarted/samples/csharp)
@@ -100,9 +102,9 @@ Kami memiliki serangkaian contoh yang melengkapi latihan yang akan Anda lihat di
 
 ## Selanjutnya
 
-Selanjutnya: [Membuat Server MCP pertama Anda](01-first-server/README.md)
+Berikutnya: [Membuat Server MCP Pertama Anda](01-first-server/README.md)
 
 ---
 
 **Penafian**:  
-Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berupaya untuk memberikan hasil yang akurat, harap diketahui bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan manusia profesional. Kami tidak bertanggung jawab atas kesalahpahaman atau penafsiran yang keliru yang timbul dari penggunaan terjemahan ini.
+Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berupaya untuk memberikan hasil yang akurat, harap diperhatikan bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan manusia profesional. Kami tidak bertanggung jawab atas kesalahpahaman atau penafsiran yang keliru yang timbul dari penggunaan terjemahan ini.

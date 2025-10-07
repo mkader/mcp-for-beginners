@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T15:02:09+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T23:50:18+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "hu"
 }
@@ -13,29 +13,31 @@ CO_OP_TRANSLATOR_METADATA:
 
 _(Kattints a fenti képre a leckéhez tartozó videó megtekintéséhez)_
 
-Ez a rész több leckét tartalmaz:
+Ez a szakasz több leckét tartalmaz:
 
-- **1 Az első szervered**: Ebben az első leckében megtanulod, hogyan hozd létre az első szerveredet, és hogyan vizsgáld meg az Inspector eszközzel, amely értékes módja a szerver tesztelésének és hibakeresésének. [a leckéhez](01-first-server/README.md)
+- **1 Az első szervered**: Ebben az első leckében megtanulod, hogyan hozd létre az első szerveredet, és hogyan vizsgáld meg az Inspector eszközzel, amely értékes módja a szerver tesztelésének és hibakeresésének, [a leckéhez](01-first-server/README.md)
 
-- **2 Kliens**: Ebben a leckében megtanulod, hogyan írj egy klienst, amely csatlakozni tud a szerveredhez. [a leckéhez](02-client/README.md)
+- **2 Kliens**: Ebben a leckében megtanulod, hogyan írj egy klienst, amely csatlakozni tud a szerveredhez, [a leckéhez](02-client/README.md)
 
-- **3 Kliens LLM-mel**: Még jobb módja a kliens írásának, ha hozzáadsz egy LLM-et, amely "tárgyalni" tud a szervereddel arról, hogy mit tegyen. [a leckéhez](03-llm-client/README.md)
+- **3 Kliens LLM-mel**: Még jobb módja a kliens írásának, ha hozzáadsz egy LLM-et, amely "tárgyalni" tud a szervereddel arról, hogy mit tegyen, [a leckéhez](03-llm-client/README.md)
 
-- **4 Szerver futtatása GitHub Copilot Agent módban a Visual Studio Code-ban**: Itt azt vizsgáljuk, hogyan futtassuk az MCP szerverünket a Visual Studio Code-ban. [a leckéhez](04-vscode/README.md)
+- **4 Szerver futtatása GitHub Copilot Agent módban a Visual Studio Code-ban**: Itt azt vizsgáljuk, hogyan futtassuk az MCP szerverünket a Visual Studio Code-on belül, [a leckéhez](04-vscode/README.md)
 
-- **5 stdio Transport Server**: A stdio transport az MCP szerver és kliens közötti kommunikáció ajánlott szabványa a jelenlegi specifikációban, amely biztonságos, alfolyamat-alapú kommunikációt biztosít. [a leckéhez](05-stdio-server/README.md)
+- **5 stdio Transport Server**: A stdio transport az MCP szerver és kliens közötti kommunikáció ajánlott szabványa a jelenlegi specifikációban, amely biztonságos, alfolyamat-alapú kommunikációt biztosít, [a leckéhez](05-stdio-server/README.md)
 
-- **6 HTTP Streaming MCP-vel (Streamable HTTP)**: Ismerd meg a modern HTTP streaminget, a folyamatjelzéseket, és azt, hogyan valósíts meg skálázható, valós idejű MCP szervereket és klienseket Streamable HTTP használatával. [a leckéhez](06-http-streaming/README.md)
+- **6 HTTP Streaming MCP-vel (Streamable HTTP)**: Ismerd meg a modern HTTP streaminget, a folyamatjelzéseket, és hogyan valósíts meg skálázható, valós idejű MCP szervereket és klienseket Streamable HTTP használatával, [a leckéhez](06-http-streaming/README.md)
 
-- **7 AI Toolkit használata a VSCode-ban**: MCP kliensek és szerverek fogyasztására és tesztelésére. [a leckéhez](07-aitk/README.md)
+- **7 AI Toolkit használata a VSCode-ban**: MCP kliensek és szerverek fogyasztására és tesztelésére, [a leckéhez](07-aitk/README.md)
 
-- **8 Tesztelés**: Itt különösen arra koncentrálunk, hogyan tesztelhetjük a szerverünket és kliensünket különböző módokon. [a leckéhez](08-testing/README.md)
+- **8 Tesztelés**: Itt különösen arra koncentrálunk, hogyan tesztelhetjük a szerverünket és kliensünket különböző módokon, [a leckéhez](08-testing/README.md)
 
-- **9 Telepítés**: Ez a fejezet az MCP megoldások különböző telepítési módjait vizsgálja. [a leckéhez](09-deployment/README.md)
+- **9 Telepítés**: Ez a fejezet az MCP megoldások különböző telepítési módjait vizsgálja, [a leckéhez](09-deployment/README.md)
 
-- **10 Haladó szerverhasználat**: Ez a fejezet a szerverek haladó használatát tárgyalja. [a leckéhez](./10-advanced/README.md)
+- **10 Haladó szerverhasználat**: Ez a fejezet a haladó szerverhasználatot tárgyalja, [a leckéhez](./10-advanced/README.md)
 
-A Model Context Protocol (MCP) egy nyílt protokoll, amely szabványosítja, hogyan biztosítanak az alkalmazások kontextust az LLM-ek számára. Gondolj az MCP-re úgy, mint egy USB-C portra az AI alkalmazások számára - szabványos módot kínál az AI modellek különböző adatforrásokhoz és eszközökhöz való csatlakoztatására.
+- **11 Auth**: Ez a fejezet bemutatja, hogyan adjunk hozzá egyszerű hitelesítést, a Basic Auth-tól kezdve a JWT és RBAC használatáig. Javasolt itt kezdeni, majd áttérni az 5. fejezet haladó témáira, és további biztonsági megerősítéseket végezni a 2. fejezet ajánlásai alapján, [a leckéhez](./11-simple-auth/README.md)
+
+A Model Context Protocol (MCP) egy nyílt protokoll, amely szabványosítja, hogyan biztosítsanak az alkalmazások kontextust az LLM-ek számára. Gondolj az MCP-re úgy, mint egy USB-C portra az AI alkalmazások számára - szabványos módot kínál az AI modellek különböző adatforrásokhoz és eszközökhöz való csatlakoztatására.
 
 ## Tanulási célok
 
@@ -50,16 +52,16 @@ A lecke végére képes leszel:
 
 ## MCP környezet beállítása
 
-Mielőtt elkezdenéd az MCP-vel való munkát, fontos, hogy előkészítsd a fejlesztési környezetedet, és megértsd az alapvető munkafolyamatot. Ez a rész végigvezet az első lépések beállításán, hogy zökkenőmentesen kezdhesd el az MCP használatát.
+Mielőtt elkezdenéd az MCP-vel való munkát, fontos, hogy előkészítsd a fejlesztési környezetedet, és megértsd az alapvető munkafolyamatot. Ez a szakasz végigvezet az első lépések beállításán, hogy zökkenőmentesen kezdhesd az MCP használatát.
 
 ### Előfeltételek
 
-Mielőtt belevágnál az MCP fejlesztésbe, győződj meg róla, hogy rendelkezel:
+Mielőtt belevágnál az MCP fejlesztésbe, győződj meg róla, hogy rendelkezel az alábbiakkal:
 
 - **Fejlesztési környezet**: A választott nyelvhez (C#, Java, Python, TypeScript vagy JavaScript)
 - **IDE/Szerkesztő**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm vagy bármely modern kódszerkesztő
 - **Csomagkezelők**: NuGet, Maven/Gradle, pip vagy npm/yarn
-- **API kulcsok**: Az AI szolgáltatásokhoz, amelyeket a host alkalmazásaidban használni tervezel
+- **API kulcsok**: Az AI szolgáltatásokhoz, amelyeket a host alkalmazásokban használni tervezel
 
 ### Hivatalos SDK-k
 
@@ -76,9 +78,9 @@ Az MCP több nyelvhez biztosít hivatalos SDK-kat:
 
 ## Főbb tanulságok
 
-- MCP fejlesztési környezet beállítása egyszerű a nyelvspecifikus SDK-k segítségével
-- MCP szerverek építése eszközök létrehozásával és egyértelmű sémák szerinti regisztrálásával történik
-- MCP kliensek szerverekhez és modellekhez csatlakoznak, hogy kibővített képességeket használjanak
+- Az MCP fejlesztési környezet beállítása egyszerű a nyelvspecifikus SDK-k segítségével
+- MCP szerverek építése eszközök létrehozását és regisztrálását igényli egyértelmű sémákkal
+- MCP kliensek csatlakoznak szerverekhez és modellekhez, hogy kibővített képességeket használjanak
 - A tesztelés és hibakeresés elengedhetetlen a megbízható MCP implementációkhoz
 - A telepítési lehetőségek a helyi fejlesztéstől a felhőalapú megoldásokig terjednek
 
@@ -105,4 +107,4 @@ Következő: [Az első MCP szerver létrehozása](01-first-server/README.md)
 ---
 
 **Felelősség kizárása**:  
-Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével került lefordításra. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Fontos információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.
+Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével került lefordításra. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T15:22:09+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-07T00:12:26+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "hr"
 }
@@ -23,11 +23,11 @@ Ovaj odjeljak sastoji se od nekoliko lekcija:
 
 - **4 Korištenje poslužitelja u načinu GitHub Copilot Agent u Visual Studio Code-u**. Ovdje ćemo pogledati pokretanje našeg MCP poslužitelja unutar Visual Studio Code-a, [na lekciju](04-vscode/README.md)
 
-- **5 stdio Transport Server** stdio transport je preporučeni standard za komunikaciju između MCP poslužitelja i klijenta prema trenutnoj specifikaciji, pružajući sigurnu komunikaciju temeljenu na podprocesima [na lekciju](05-stdio-server/README.md)
+- **5 stdio Transport Server** stdio transport je preporučeni standard za komunikaciju između MCP poslužitelja i klijenta u trenutnoj specifikaciji, pružajući sigurnu komunikaciju temeljenu na podprocesima [na lekciju](05-stdio-server/README.md)
 
 - **6 HTTP Streaming s MCP-om (Streamable HTTP)**. Naučite o modernom HTTP streamingu, obavijestima o napretku i kako implementirati skalabilne, real-time MCP poslužitelje i klijente koristeći Streamable HTTP. [na lekciju](06-http-streaming/README.md)
 
-- **7 Korištenje AI Toolkit-a za VSCode** za konzumaciju i testiranje vaših MCP klijenata i poslužitelja [na lekciju](07-aitk/README.md)
+- **7 Korištenje AI alata za VSCode** za konzumaciju i testiranje vaših MCP klijenata i poslužitelja [na lekciju](07-aitk/README.md)
 
 - **8 Testiranje**. Ovdje ćemo se posebno fokusirati na različite načine testiranja vašeg poslužitelja i klijenta, [na lekciju](08-testing/README.md)
 
@@ -35,22 +35,24 @@ Ovaj odjeljak sastoji se od nekoliko lekcija:
 
 - **10 Napredno korištenje poslužitelja**. Ovo poglavlje pokriva napredne načine korištenja poslužitelja, [na lekciju](./10-advanced/README.md)
 
+- **11 Autentifikacija**. Ovo poglavlje pokriva kako dodati jednostavnu autentifikaciju, od osnovne autentifikacije do korištenja JWT-a i RBAC-a. Preporučuje se započeti ovdje, a zatim pogledati napredne teme u poglavlju 5 i provesti dodatno osiguranje prema preporukama u poglavlju 2, [na lekciju](./11-simple-auth/README.md)
+
 Model Context Protocol (MCP) je otvoreni protokol koji standardizira način na koji aplikacije pružaju kontekst LLM-ovima. Zamislite MCP kao USB-C priključak za AI aplikacije - pruža standardizirani način povezivanja AI modela s različitim izvorima podataka i alatima.
 
 ## Ciljevi učenja
 
-Do kraja ove lekcije, moći ćete:
+Na kraju ove lekcije, moći ćete:
 
 - Postaviti razvojna okruženja za MCP u C#, Java, Python, TypeScript i JavaScript
 - Izgraditi i implementirati osnovne MCP poslužitelje s prilagođenim značajkama (resursi, upiti i alati)
 - Stvoriti host aplikacije koje se povezuju s MCP poslužiteljima
 - Testirati i otkloniti pogreške MCP implementacija
-- Razumjeti uobičajene izazove pri postavljanju i njihova rješenja
+- Razumjeti uobičajene izazove postavljanja i njihova rješenja
 - Povezati svoje MCP implementacije s popularnim LLM uslugama
 
 ## Postavljanje MCP okruženja
 
-Prije nego što počnete raditi s MCP-om, važno je pripremiti razvojno okruženje i razumjeti osnovni tijek rada. Ovaj odjeljak će vas voditi kroz početne korake postavljanja kako biste osigurali nesmetan početak rada s MCP-om.
+Prije nego što započnete rad s MCP-om, važno je pripremiti razvojno okruženje i razumjeti osnovni tijek rada. Ovaj odjeljak će vas voditi kroz početne korake postavljanja kako biste osigurali nesmetan početak rada s MCP-om.
 
 ### Preduvjeti
 
@@ -59,7 +61,7 @@ Prije nego što se upustite u MCP razvoj, osigurajte da imate:
 - **Razvojno okruženje**: Za odabrani jezik (C#, Java, Python, TypeScript ili JavaScript)
 - **IDE/Editor**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm ili bilo koji moderni editor koda
 - **Upravitelji paketa**: NuGet, Maven/Gradle, pip ili npm/yarn
-- **API ključeve**: Za bilo koje AI usluge koje planirate koristiti u svojim host aplikacijama
+- **API ključeve**: Za sve AI usluge koje planirate koristiti u svojim host aplikacijama
 
 ### Službeni SDK-ovi
 
@@ -78,7 +80,7 @@ MCP pruža službene SDK-ove za više jezika:
 
 - Postavljanje MCP razvojnog okruženja je jednostavno uz SDK-ove specifične za jezik
 - Izgradnja MCP poslužitelja uključuje stvaranje i registraciju alata s jasnim shemama
-- MCP klijenti povezuju se s poslužiteljima i modelima kako bi iskoristili proširene mogućnosti
+- MCP klijenti se povezuju s poslužiteljima i modelima kako bi iskoristili proširene mogućnosti
 - Testiranje i otklanjanje pogrešaka ključni su za pouzdane MCP implementacije
 - Opcije implementacije kreću se od lokalnog razvoja do rješenja temeljenih na oblaku
 
@@ -104,5 +106,5 @@ Sljedeće: [Stvaranje vašeg prvog MCP poslužitelja](01-first-server/README.md)
 
 ---
 
-**Izjava o odricanju odgovornosti**:  
-Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane čovjeka. Ne preuzimamo odgovornost za nesporazume ili pogrešna tumačenja koja mogu proizaći iz korištenja ovog prijevoda.
+**Odricanje od odgovornosti**:  
+Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane čovjeka. Ne preuzimamo odgovornost za nesporazume ili pogrešne interpretacije koje proizlaze iz korištenja ovog prijevoda.

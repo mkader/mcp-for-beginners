@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T14:52:56+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T23:38:56+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "ms"
 }
@@ -17,11 +17,11 @@ Bahagian ini terdiri daripada beberapa pelajaran:
 
 - **1 Pelayan pertama anda**, dalam pelajaran pertama ini, anda akan belajar cara mencipta pelayan pertama anda dan memeriksanya dengan alat pemeriksa, cara yang berguna untuk menguji dan menyahpepijat pelayan anda, [ke pelajaran](01-first-server/README.md)
 
-- **2 Klien**, dalam pelajaran ini, anda akan belajar cara menulis klien yang boleh berhubung dengan pelayan anda, [ke pelajaran](02-client/README.md)
+- **2 Klien**, dalam pelajaran ini, anda akan belajar cara menulis klien yang boleh menyambung ke pelayan anda, [ke pelajaran](02-client/README.md)
 
-- **3 Klien dengan LLM**, cara yang lebih baik untuk menulis klien adalah dengan menambah LLM supaya ia boleh "berunding" dengan pelayan anda tentang apa yang perlu dilakukan, [ke pelajaran](03-llm-client/README.md)
+- **3 Klien dengan LLM**, cara yang lebih baik untuk menulis klien adalah dengan menambahkan LLM supaya ia boleh "berunding" dengan pelayan anda tentang apa yang perlu dilakukan, [ke pelajaran](03-llm-client/README.md)
 
-- **4 Menggunakan pelayan dalam mod GitHub Copilot Agent di Visual Studio Code**. Di sini, kita akan melihat cara menjalankan Pelayan MCP dari dalam Visual Studio Code, [ke pelajaran](04-vscode/README.md)
+- **4 Menggunakan mod GitHub Copilot Agent pelayan dalam Visual Studio Code**. Di sini, kita akan melihat cara menjalankan Pelayan MCP kita dari dalam Visual Studio Code, [ke pelajaran](04-vscode/README.md)
 
 - **5 Pelayan Pengangkutan stdio** stdio transport adalah standard yang disyorkan untuk komunikasi pelayan-ke-klien MCP dalam spesifikasi semasa, menyediakan komunikasi berasaskan subprocess yang selamat [ke pelajaran](05-stdio-server/README.md)
 
@@ -35,7 +35,9 @@ Bahagian ini terdiri daripada beberapa pelajaran:
 
 - **10 Penggunaan pelayan lanjutan**. Bab ini merangkumi penggunaan pelayan lanjutan, [ke pelajaran](./10-advanced/README.md)
 
-Protokol Model Context (MCP) adalah protokol terbuka yang menyeragamkan cara aplikasi menyediakan konteks kepada LLM. Fikirkan MCP seperti port USB-C untuk aplikasi AI - ia menyediakan cara standard untuk menyambungkan model AI kepada pelbagai sumber data dan alat.
+- **11 Pengesahan**. Bab ini merangkumi cara menambahkan pengesahan mudah, daripada Basic Auth kepada menggunakan JWT dan RBAC. Anda digalakkan untuk bermula di sini dan kemudian melihat Topik Lanjutan dalam Bab 5 serta melakukan pengukuhan keselamatan tambahan melalui cadangan dalam Bab 2, [ke pelajaran](./11-simple-auth/README.md)
+
+Model Context Protocol (MCP) adalah protokol terbuka yang menyeragamkan cara aplikasi menyediakan konteks kepada LLM. Fikirkan MCP seperti port USB-C untuk aplikasi AI - ia menyediakan cara standard untuk menyambungkan model AI kepada pelbagai sumber data dan alat.
 
 ## Objektif Pembelajaran
 
@@ -43,7 +45,7 @@ Menjelang akhir pelajaran ini, anda akan dapat:
 
 - Menyediakan persekitaran pembangunan untuk MCP dalam C#, Java, Python, TypeScript, dan JavaScript
 - Membina dan menggunakan pelayan MCP asas dengan ciri tersuai (sumber, arahan, dan alat)
-- Mencipta aplikasi hos yang berhubung dengan pelayan MCP
+- Mencipta aplikasi hos yang menyambung ke pelayan MCP
 - Menguji dan menyahpepijat pelaksanaan MCP
 - Memahami cabaran persediaan biasa dan penyelesaiannya
 - Menyambungkan pelaksanaan MCP anda kepada perkhidmatan LLM popular
@@ -54,10 +56,10 @@ Sebelum anda mula bekerja dengan MCP, adalah penting untuk menyediakan persekita
 
 ### Prasyarat
 
-Sebelum memulakan pembangunan MCP, pastikan anda mempunyai:
+Sebelum mendalami pembangunan MCP, pastikan anda mempunyai:
 
 - **Persekitaran Pembangunan**: Untuk bahasa pilihan anda (C#, Java, Python, TypeScript, atau JavaScript)
-- **IDE/Penyunting**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm, atau mana-mana penyunting kod moden
+- **IDE/Editor**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm, atau mana-mana editor kod moden
 - **Pengurus Pakej**: NuGet, Maven/Gradle, pip, atau npm/yarn
 - **Kunci API**: Untuk mana-mana perkhidmatan AI yang anda rancang untuk digunakan dalam aplikasi hos anda
 
@@ -68,17 +70,17 @@ Dalam bab-bab yang akan datang, anda akan melihat penyelesaian yang dibina mengg
 MCP menyediakan SDK rasmi untuk pelbagai bahasa:
 - [C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) - Diselenggara dengan kerjasama Microsoft
 - [Java SDK](https://github.com/modelcontextprotocol/java-sdk) - Diselenggara dengan kerjasama Spring AI
-- [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - Pelaksanaan TypeScript rasmi
-- [Python SDK](https://github.com/modelcontextprotocol/python-sdk) - Pelaksanaan Python rasmi
-- [Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk) - Pelaksanaan Kotlin rasmi
+- [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - Pelaksanaan rasmi TypeScript
+- [Python SDK](https://github.com/modelcontextprotocol/python-sdk) - Pelaksanaan rasmi Python
+- [Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk) - Pelaksanaan rasmi Kotlin
 - [Swift SDK](https://github.com/modelcontextprotocol/swift-sdk) - Diselenggara dengan kerjasama Loopwork AI
-- [Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) - Pelaksanaan Rust rasmi
+- [Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) - Pelaksanaan rasmi Rust
 
 ## Poin Penting
 
 - Menyediakan persekitaran pembangunan MCP adalah mudah dengan SDK khusus bahasa
 - Membina pelayan MCP melibatkan penciptaan dan pendaftaran alat dengan skema yang jelas
-- Klien MCP berhubung dengan pelayan dan model untuk memanfaatkan keupayaan lanjutan
+- Klien MCP menyambung ke pelayan dan model untuk memanfaatkan keupayaan lanjutan
 - Pengujian dan penyahpepijatan adalah penting untuk pelaksanaan MCP yang boleh dipercayai
 - Pilihan penggunaan merangkumi pembangunan tempatan hingga penyelesaian berasaskan awan
 

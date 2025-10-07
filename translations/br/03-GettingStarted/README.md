@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T14:10:51+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T22:54:52+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "br"
 }
@@ -21,13 +21,13 @@ Esta seção consiste em várias lições:
 
 - **3 Cliente com LLM**, uma maneira ainda melhor de escrever um cliente é adicionando um LLM para que ele possa "negociar" com seu servidor sobre o que fazer, [para a lição](03-llm-client/README.md)
 
-- **4 Consumindo um servidor no modo GitHub Copilot Agent no Visual Studio Code**. Aqui, veremos como executar nosso servidor MCP dentro do Visual Studio Code, [para a lição](04-vscode/README.md)
+- **4 Consumindo um servidor no modo GitHub Copilot Agent no Visual Studio Code**. Aqui, veremos como executar nosso Servidor MCP dentro do Visual Studio Code, [para a lição](04-vscode/README.md)
 
 - **5 Servidor de Transporte stdio**. O transporte stdio é o padrão recomendado para comunicação entre servidor e cliente MCP na especificação atual, fornecendo comunicação segura baseada em subprocessos, [para a lição](05-stdio-server/README.md)
 
 - **6 Streaming HTTP com MCP (HTTP Streamable)**. Aprenda sobre streaming HTTP moderno, notificações de progresso e como implementar servidores e clientes MCP escaláveis e em tempo real usando HTTP Streamable. [para a lição](06-http-streaming/README.md)
 
-- **7 Utilizando o AI Toolkit para VSCode** para consumir e testar seus clientes e servidores MCP, [para a lição](07-aitk/README.md)
+- **7 Utilizando o AI Toolkit para VSCode** para consumir e testar seus Clientes e Servidores MCP [para a lição](07-aitk/README.md)
 
 - **8 Testes**. Aqui, focaremos especialmente em como podemos testar nosso servidor e cliente de diferentes maneiras, [para a lição](08-testing/README.md)
 
@@ -35,9 +35,11 @@ Esta seção consiste em várias lições:
 
 - **10 Uso avançado do servidor**. Este capítulo cobre o uso avançado do servidor, [para a lição](./10-advanced/README.md)
 
-O Model Context Protocol (MCP) é um protocolo aberto que padroniza como aplicativos fornecem contexto para LLMs. Pense no MCP como uma porta USB-C para aplicativos de IA - ele fornece uma maneira padronizada de conectar modelos de IA a diferentes fontes de dados e ferramentas.
+- **11 Autenticação**. Este capítulo aborda como adicionar autenticação simples, desde Basic Auth até o uso de JWT e RBAC. É recomendável começar aqui e depois explorar Tópicos Avançados no Capítulo 5 e realizar reforço adicional de segurança por meio das recomendações do Capítulo 2, [para a lição](./11-simple-auth/README.md)
 
-## Objetivos de Aprendizado
+O Protocolo de Contexto de Modelo (MCP) é um protocolo aberto que padroniza como aplicativos fornecem contexto para LLMs. Pense no MCP como uma porta USB-C para aplicativos de IA - ele fornece uma maneira padronizada de conectar modelos de IA a diferentes fontes de dados e ferramentas.
+
+## Objetivos de Aprendizagem
 
 Ao final desta lição, você será capaz de:
 
@@ -79,7 +81,7 @@ O MCP fornece SDKs oficiais para várias linguagens:
 - Configurar um ambiente de desenvolvimento MCP é simples com SDKs específicos para cada linguagem
 - Construir servidores MCP envolve criar e registrar ferramentas com esquemas claros
 - Clientes MCP conectam-se a servidores e modelos para aproveitar capacidades estendidas
-- Testar e depurar são essenciais para implementações MCP confiáveis
+- Testes e depuração são essenciais para implementações MCP confiáveis
 - As opções de implantação variam de desenvolvimento local a soluções baseadas em nuvem
 
 ## Praticando
@@ -94,15 +96,15 @@ Temos um conjunto de exemplos que complementa os exercícios que você verá em 
 
 ## Recursos Adicionais
 
-- [Construa Agentes usando Model Context Protocol no Azure](https://learn.microsoft.com/azure/developer/ai/intro-agents-mcp)
+- [Construa Agentes usando o Protocolo de Contexto de Modelo no Azure](https://learn.microsoft.com/azure/developer/ai/intro-agents-mcp)
 - [MCP Remoto com Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
 - [Agente MCP OpenAI em .NET](https://learn.microsoft.com/samples/azure-samples/openai-mcp-agent-dotnet/openai-mcp-agent-dotnet/)
 
 ## O que vem a seguir
 
-Próximo: [Criando seu primeiro servidor MCP](01-first-server/README.md)
+Próximo: [Criando seu primeiro Servidor MCP](01-first-server/README.md)
 
 ---
 
 **Aviso Legal**:  
-Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, esteja ciente de que traduções automáticas podem conter erros ou imprecisões. O documento original em seu idioma nativo deve ser considerado a fonte autoritativa. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações equivocadas decorrentes do uso desta tradução.
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, esteja ciente de que traduções automatizadas podem conter erros ou imprecisões. O documento original em seu idioma nativo deve ser considerado a fonte autoritativa. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações equivocadas decorrentes do uso desta tradução.

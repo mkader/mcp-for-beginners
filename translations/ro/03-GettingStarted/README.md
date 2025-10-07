@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T15:12:56+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-07T00:00:22+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "ro"
 }
@@ -15,25 +15,27 @@ _(Faceți clic pe imaginea de mai sus pentru a viziona videoclipul acestei lecț
 
 Această secțiune constă din mai multe lecții:
 
-- **1 Primul server**, în această primă lecție, veți învăța cum să creați primul server și să îl inspectați cu instrumentul de inspecție, o metodă valoroasă pentru testarea și depanarea serverului, [la lecție](01-first-server/README.md)
+- **1 Primul server**, în această primă lecție, veți învăța cum să creați primul server și să îl inspectați cu instrumentul de inspecție, o metodă valoroasă pentru testarea și depanarea serverului, [către lecție](01-first-server/README.md)
 
-- **2 Client**, în această lecție, veți învăța cum să scrieți un client care se poate conecta la serverul dvs., [la lecție](02-client/README.md)
+- **2 Client**, în această lecție, veți învăța cum să scrieți un client care se poate conecta la serverul dvs., [către lecție](02-client/README.md)
 
-- **3 Client cu LLM**, o metodă și mai bună de a scrie un client este prin adăugarea unui LLM, astfel încât acesta să poată "negocia" cu serverul dvs. despre ce să facă, [la lecție](03-llm-client/README.md)
+- **3 Client cu LLM**, o metodă și mai bună de a scrie un client este prin adăugarea unui LLM, astfel încât acesta să poată "negocia" cu serverul dvs. despre ce să facă, [către lecție](03-llm-client/README.md)
 
-- **4 Utilizarea serverului în modul GitHub Copilot Agent în Visual Studio Code**. Aici, vom analiza rularea serverului MCP din cadrul Visual Studio Code, [la lecție](04-vscode/README.md)
+- **4 Consumarea unui server în modul GitHub Copilot Agent în Visual Studio Code**. Aici, vom analiza rularea serverului MCP din Visual Studio Code, [către lecție](04-vscode/README.md)
 
-- **5 Server cu transport stdio**. Transportul stdio este standardul recomandat pentru comunicarea server-client MCP în specificația actuală, oferind o comunicare sigură bazată pe subprocese, [la lecție](05-stdio-server/README.md)
+- **5 Server Transport stdio**. Transportul stdio este standardul recomandat pentru comunicarea server-client MCP în specificația actuală, oferind o comunicare sigură bazată pe subprocess, [către lecție](05-stdio-server/README.md)
 
-- **6 Streaming HTTP cu MCP (HTTP Streamable)**. Aflați despre streamingul modern HTTP, notificările de progres și cum să implementați servere și clienți MCP scalabili, în timp real, utilizând HTTP Streamable, [la lecție](06-http-streaming/README.md)
+- **6 Streaming HTTP cu MCP (HTTP Streamable)**. Aflați despre streamingul HTTP modern, notificările de progres și cum să implementați servere și clienți MCP scalabili, în timp real, utilizând HTTP Streamable, [către lecție](06-http-streaming/README.md)
 
-- **7 Utilizarea AI Toolkit pentru VSCode** pentru a consuma și testa clienții și serverele MCP, [la lecție](07-aitk/README.md)
+- **7 Utilizarea AI Toolkit pentru VSCode** pentru a consuma și testa clienții și serverele MCP, [către lecție](07-aitk/README.md)
 
-- **8 Testare**. Aici ne vom concentra în special pe modul în care putem testa serverul și clientul în diferite moduri, [la lecție](08-testing/README.md)
+- **8 Testare**. Aici ne vom concentra în special pe modul în care putem testa serverul și clientul în diferite moduri, [către lecție](08-testing/README.md)
 
-- **9 Implementare**. Acest capitol va analiza diferite moduri de a implementa soluțiile MCP, [la lecție](09-deployment/README.md)
+- **9 Implementare**. Acest capitol va analiza diferite moduri de a implementa soluțiile MCP, [către lecție](09-deployment/README.md)
 
-- **10 Utilizare avansată a serverului**. Acest capitol acoperă utilizarea avansată a serverului, [la lecție](./10-advanced/README.md)
+- **10 Utilizare avansată a serverului**. Acest capitol acoperă utilizarea avansată a serverului, [către lecție](./10-advanced/README.md)
+
+- **11 Autentificare**. Acest capitol acoperă cum să adăugați autentificare simplă, de la Basic Auth la utilizarea JWT și RBAC. Sunteți încurajat să începeți aici și apoi să analizați subiectele avansate din capitolul 5 și să efectuați măsuri suplimentare de securizare conform recomandărilor din capitolul 2, [către lecție](./11-simple-auth/README.md)
 
 Protocolul Model Context (MCP) este un protocol deschis care standardizează modul în care aplicațiile oferă context LLM-urilor. Gândiți-vă la MCP ca la un port USB-C pentru aplicațiile AI - oferă o modalitate standardizată de a conecta modelele AI la diferite surse de date și instrumente.
 
@@ -74,7 +76,7 @@ MCP oferă SDK-uri oficiale pentru mai multe limbaje:
 - [Swift SDK](https://github.com/modelcontextprotocol/swift-sdk) - Menținut în colaborare cu Loopwork AI
 - [Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) - Implementarea oficială Rust
 
-## Puncte cheie
+## Concluzii cheie
 
 - Configurarea unui mediu de dezvoltare MCP este simplă cu SDK-uri specifice limbajului
 - Construirea serverelor MCP implică crearea și înregistrarea instrumentelor cu scheme clare
@@ -95,7 +97,7 @@ Avem un set de exemple care completează exercițiile pe care le veți vedea în
 ## Resurse suplimentare
 
 - [Construiți agenți folosind Model Context Protocol pe Azure](https://learn.microsoft.com/azure/developer/ai/intro-agents-mcp)
-- [MCP la distanță cu Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
+- [MCP Remote cu Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
 - [Agent MCP OpenAI .NET](https://learn.microsoft.com/samples/azure-samples/openai-mcp-agent-dotnet/openai-mcp-agent-dotnet/)
 
 ## Ce urmează
@@ -105,4 +107,4 @@ Următorul: [Crearea primului server MCP](01-first-server/README.md)
 ---
 
 **Declinare de responsabilitate**:  
-Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa natală ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
+Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa maternă ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
