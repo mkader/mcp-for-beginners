@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T14:13:34+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T22:57:37+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "it"
 }
@@ -15,11 +15,11 @@ _(Clicca sull'immagine sopra per vedere il video di questa lezione)_
 
 Questa sezione è composta da diverse lezioni:
 
-- **1 Il tuo primo server**, in questa prima lezione imparerai a creare il tuo primo server e a ispezionarlo con lo strumento di ispezione, un modo prezioso per testare e debuggare il tuo server, [alla lezione](01-first-server/README.md)
+- **1 Il tuo primo server**, in questa prima lezione imparerai a creare il tuo primo server e a ispezionarlo con lo strumento di ispezione, un modo prezioso per testare e fare debug del tuo server, [alla lezione](01-first-server/README.md)
 
 - **2 Client**, in questa lezione imparerai a scrivere un client che può connettersi al tuo server, [alla lezione](02-client/README.md)
 
-- **3 Client con LLM**, un modo ancora migliore per scrivere un client è aggiungere un LLM, così da poter "negoziare" con il tuo server su cosa fare, [alla lezione](03-llm-client/README.md)
+- **3 Client con LLM**, un modo ancora migliore per scrivere un client è aggiungere un LLM in modo che possa "negoziare" con il tuo server su cosa fare, [alla lezione](03-llm-client/README.md)
 
 - **4 Utilizzo del server in modalità GitHub Copilot Agent in Visual Studio Code**. Qui vedremo come eseguire il nostro server MCP direttamente da Visual Studio Code, [alla lezione](04-vscode/README.md)
 
@@ -33,9 +33,11 @@ Questa sezione è composta da diverse lezioni:
 
 - **9 Deployment**. Questo capitolo esaminerà diversi modi per distribuire le tue soluzioni MCP, [alla lezione](09-deployment/README.md)
 
-- **10 Utilizzo avanzato del server**. Questo capitolo tratta l'uso avanzato del server, [alla lezione](./10-advanced/README.md)
+- **10 Utilizzo avanzato del server**. Questo capitolo copre l'uso avanzato del server, [alla lezione](./10-advanced/README.md)
 
-Il Model Context Protocol (MCP) è un protocollo aperto che standardizza il modo in cui le applicazioni forniscono contesto agli LLM. Pensa a MCP come una porta USB-C per le applicazioni AI: offre un modo standardizzato per connettere modelli AI a diverse fonti di dati e strumenti.
+- **11 Autenticazione**. Questo capitolo tratta come aggiungere un'autenticazione semplice, da Basic Auth all'utilizzo di JWT e RBAC. Ti consigliamo di iniziare qui e poi approfondire gli argomenti avanzati nel Capitolo 5 e implementare ulteriori misure di sicurezza seguendo le raccomandazioni del Capitolo 2, [alla lezione](./11-simple-auth/README.md)
+
+Il Model Context Protocol (MCP) è un protocollo aperto che standardizza il modo in cui le applicazioni forniscono contesto agli LLM. Pensa a MCP come a una porta USB-C per le applicazioni AI: offre un modo standardizzato per connettere i modelli AI a diverse fonti di dati e strumenti.
 
 ## Obiettivi di apprendimento
 
@@ -44,7 +46,7 @@ Alla fine di questa lezione, sarai in grado di:
 - Configurare ambienti di sviluppo per MCP in C#, Java, Python, TypeScript e JavaScript
 - Creare e distribuire server MCP di base con funzionalità personalizzate (risorse, prompt e strumenti)
 - Creare applicazioni host che si connettono ai server MCP
-- Testare e debuggare implementazioni MCP
+- Testare e fare debug delle implementazioni MCP
 - Comprendere le sfide comuni di configurazione e le loro soluzioni
 - Collegare le tue implementazioni MCP ai servizi LLM più popolari
 
@@ -79,12 +81,12 @@ MCP fornisce SDK ufficiali per diversi linguaggi:
 - Configurare un ambiente di sviluppo MCP è semplice con gli SDK specifici per linguaggio
 - Creare server MCP implica la creazione e la registrazione di strumenti con schemi chiari
 - I client MCP si connettono ai server e ai modelli per sfruttare capacità estese
-- Testare e debuggare sono essenziali per implementazioni MCP affidabili
+- Testare e fare debug sono essenziali per implementazioni MCP affidabili
 - Le opzioni di distribuzione variano dallo sviluppo locale a soluzioni basate su cloud
 
 ## Esercitazioni pratiche
 
-Abbiamo un set di esempi che completano gli esercizi che vedrai in tutti i capitoli di questa sezione. Inoltre, ogni capitolo ha i propri esercizi e compiti.
+Abbiamo un set di esempi che integra gli esercizi che vedrai in tutti i capitoli di questa sezione. Inoltre, ogni capitolo ha i propri esercizi e compiti.
 
 - [Calcolatrice Java](./samples/java/calculator/README.md)
 - [Calcolatrice .Net](../../../03-GettingStarted/samples/csharp)
@@ -104,5 +106,5 @@ Prossimo: [Creare il tuo primo server MCP](01-first-server/README.md)
 
 ---
 
-**Disclaimer**:  
+**Clausola di esclusione della responsabilità**:  
 Questo documento è stato tradotto utilizzando il servizio di traduzione automatica [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di notare che le traduzioni automatiche possono contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un traduttore umano. Non siamo responsabili per eventuali incomprensioni o interpretazioni errate derivanti dall'uso di questa traduzione.

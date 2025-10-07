@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ac390de870be5c02165350f6279a8831",
-  "translation_date": "2025-10-06T13:14:22+00:00",
+  "original_hash": "af27b0acfae6caa134d9701453884df8",
+  "translation_date": "2025-10-06T21:52:58+00:00",
   "source_file": "study_guide.md",
   "language_code": "fr"
 }
@@ -50,6 +50,7 @@ mindmap
       (AI Toolkit Integration)
       (Testing Frameworks)
       (Advanced Server Usage)
+      (Simple Auth)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -138,20 +139,20 @@ Le dépôt est organisé en onze sections principales, chacune abordant différe
 
 3. **Sécurité (02-Security/)**
    - Menaces de sécurité dans les systèmes basés sur MCP
-   - Meilleures pratiques pour sécuriser les implémentations
+   - Bonnes pratiques pour sécuriser les implémentations
    - Stratégies d'authentification et d'autorisation
    - **Documentation Complète sur la Sécurité** :
-     - Meilleures Pratiques de Sécurité MCP 2025
-     - Guide de Mise en Œuvre de la Sécurité Azure
+     - Bonnes Pratiques de Sécurité MCP 2025
+     - Guide d'Implémentation de la Sécurité Azure
      - Contrôles et Techniques de Sécurité MCP
-     - Référence Rapide des Meilleures Pratiques MCP
-   - **Sujets Clés en Sécurité** :
+     - Référence Rapide des Bonnes Pratiques MCP
+   - **Sujets Clés de Sécurité** :
      - Attaques par injection de prompt et empoisonnement d'outils
      - Détournement de session et problèmes de proxy confus
      - Vulnérabilités de transmission de jetons
      - Permissions excessives et contrôle d'accès
      - Sécurité de la chaîne d'approvisionnement pour les composants d'IA
-     - Intégration des Boucliers de Prompt Microsoft
+     - Intégration des Microsoft Prompt Shields
 
 4. **Premiers Pas (03-GettingStarted/)**
    - Configuration de l'environnement
@@ -213,7 +214,7 @@ Le dépôt est organisé en onze sections principales, chacune abordant différe
      - Serveur MCP Azure AI Foundry
      - Serveur MCP Microsoft 365 Agents Toolkit
 
-9. **Meilleures Pratiques (08-BestPractices/)**
+9. **Bonnes Pratiques (08-BestPractices/)**
    - Optimisation des performances
    - Conception de systèmes MCP tolérants aux pannes
    - Stratégies de test et de résilience
@@ -243,12 +244,12 @@ Le dépôt est organisé en onze sections principales, chacune abordant différe
 12. **Laboratoires d'Intégration de Base de Données Serveur MCP (11-MCPServerHandsOnLabs/)**
     - **Parcours d'apprentissage complet en 13 laboratoires** pour construire des serveurs MCP prêts pour la production avec intégration PostgreSQL
     - **Implémentation analytique de vente au détail réelle** utilisant le cas d'utilisation Zava Retail
-    - **Modèles de niveau entreprise** incluant la Sécurité au Niveau des Lignes (RLS), recherche sémantique et accès multi-locataires aux données
+    - **Modèles de niveau entreprise** incluant la Sécurité au Niveau des Lignes (RLS), recherche sémantique et accès aux données multi-locataires
     - **Structure Complète des Laboratoires** :
       - **Laboratoires 00-03 : Fondations** - Introduction, Architecture, Sécurité, Configuration de l'Environnement
       - **Laboratoires 04-06 : Construction du Serveur MCP** - Conception de Base de Données, Implémentation du Serveur MCP, Développement d'Outils
       - **Laboratoires 07-09 : Fonctionnalités Avancées** - Recherche Sémantique, Test & Débogage, Intégration VS Code
-      - **Laboratoires 10-12 : Production & Meilleures Pratiques** - Déploiement, Surveillance, Optimisation
+      - **Laboratoires 10-12 : Production & Bonnes Pratiques** - Déploiement, Surveillance, Optimisation
     - **Technologies Couvertes** : Cadre FastMCP, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
     - **Résultats d'Apprentissage** : Serveurs MCP prêts pour la production, modèles d'intégration de base de données, analyses alimentées par l'IA, sécurité d'entreprise
 
@@ -256,8 +257,8 @@ Le dépôt est organisé en onze sections principales, chacune abordant différe
 
 Le dépôt inclut des ressources de soutien :
 
-- **Dossier Images** : Contient des diagrammes et illustrations utilisés dans tout le programme
-- **Traductions** : Support multilingue avec traductions automatiques de la documentation
+- **Dossier Images** : Contient des diagrammes et illustrations utilisés tout au long du programme
+- **Traductions** : Support multilingue avec traductions automatisées de la documentation
 - **Ressources Officielles MCP** :
   - [Documentation MCP](https://modelcontextprotocol.io/)
   - [Spécification MCP](https://spec.modelcontextprotocol.io/)
@@ -331,24 +332,13 @@ Le dépôt présente divers serveurs MCP, notamment :
    - Microsoft Teams
    - Jira & Confluence
 
-## Contribution
+## Contribuer
 
 Ce dépôt accueille les contributions de la communauté. Consultez la section Contributions Communautaires pour des conseils sur la manière de contribuer efficacement à l'écosystème MCP.
 
-## Journal des Modifications
+----
 
-| Date | Modifications |
-|------|--------------||
-| 29 septembre 2025 | - Ajout de la section 11-MCPServerHandsOnLabs avec un parcours d'apprentissage complet en 13 laboratoires d'intégration de base de données<br>- Mise à jour de la Carte Visuelle du Programme pour inclure les Laboratoires d'Intégration de Base de Données<br>- Amélioration de la structure du dépôt pour refléter les onze sections principales<br>- Ajout d'une description détaillée de l'intégration PostgreSQL, du cas d'utilisation analytique de vente au détail et des modèles d'entreprise<br>- Mise à jour des directives de navigation pour inclure les sections 00-11 |
-| 26 septembre 2025 | - Ajout de l'étude de cas Registre MCP GitHub à la section 09-CaseStudy<br>- Mise à jour des Études de Cas pour refléter sept études de cas complètes<br>- Amélioration des descriptions des études de cas avec des détails spécifiques d'implémentation<br>- Mise à jour de la Carte Visuelle du Programme pour inclure le Registre MCP GitHub<br>- Révision de la structure du guide d'étude pour refléter l'accent sur le développement d'écosystème |
-| 18 juillet 2025 | - Mise à jour de la structure du dépôt pour inclure le Guide des Serveurs MCP Microsoft<br>- Ajout d'une liste complète de 10 serveurs MCP Microsoft prêts pour la production<br>- Amélioration de la section Serveurs MCP Populaires avec les Serveurs MCP Microsoft Officiels<br>- Mise à jour de la section Études de Cas avec des exemples de fichiers réels<br>- Ajout de détails sur la Structure des Laboratoires pour l'Atelier Pratique |
-| 16 juillet 2025 | - Mise à jour de la structure du dépôt pour refléter le contenu actuel<br>- Ajout de la section Clients et Outils MCP<br>- Ajout de la section Serveurs MCP Populaires<br>- Mise à jour de la Carte Visuelle du Programme avec tous les sujets actuels<br>- Amélioration de la section Sujets Avancés avec toutes les zones spécialisées<br>- Mise à jour des Études de Cas pour refléter des exemples réels<br>- Clarification de l'origine du MCP comme créé par Anthropic |
-| 11 juin 2025 | - Création initiale du guide d'étude<br>- Ajout de la Carte Visuelle du Programme<br>- Structure du dépôt décrite<br>- Inclusion de projets d'exemple et de ressources supplémentaires |
-| 6 octobre 2025 | Ajout de la leçon sur l'utilisation avancée des serveurs |
-
----
-
-*Ce guide d'étude a été mis à jour le 29 septembre 2025 et offre un aperçu du dépôt à cette date. Le contenu du dépôt peut être mis à jour après cette date.*
+*Ce guide d'étude a été mis à jour le 6 octobre 2025 et offre un aperçu du dépôt à cette date. Le contenu du dépôt peut être mis à jour après cette date.*
 
 ---
 

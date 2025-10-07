@@ -1,19 +1,19 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ac390de870be5c02165350f6279a8831",
-  "translation_date": "2025-10-06T14:32:28+00:00",
+  "original_hash": "af27b0acfae6caa134d9701453884df8",
+  "translation_date": "2025-10-06T23:17:53+00:00",
   "source_file": "study_guide.md",
   "language_code": "da"
 }
 -->
-# Model Context Protocol (MCP) for Begyndere - Studievejledning
+# Model Context Protocol (MCP) for Begyndere - Studieguide
 
-Denne studievejledning giver et overblik over strukturen og indholdet i "Model Context Protocol (MCP) for Begyndere"-curriculum. Brug vejledningen til at navigere effektivt i repository og få mest muligt ud af de tilgængelige ressourcer.
+Denne studieguide giver et overblik over strukturen og indholdet i "Model Context Protocol (MCP) for Begyndere"-curriculum. Brug denne guide til at navigere i repositoryet effektivt og få mest muligt ud af de tilgængelige ressourcer.
 
 ## Repository Oversigt
 
-Model Context Protocol (MCP) er en standardiseret ramme for interaktioner mellem AI-modeller og klientapplikationer. MCP blev oprindeligt skabt af Anthropic og vedligeholdes nu af MCP-fællesskabet gennem den officielle GitHub-organisation. Dette repository tilbyder et omfattende curriculum med praktiske kodeeksempler i C#, Java, JavaScript, Python og TypeScript, designet til AI-udviklere, systemarkitekter og softwareingeniører.
+Model Context Protocol (MCP) er en standardiseret ramme for interaktioner mellem AI-modeller og klientapplikationer. Oprindeligt skabt af Anthropic, vedligeholdes MCP nu af det bredere MCP-fællesskab gennem den officielle GitHub-organisation. Dette repository tilbyder et omfattende curriculum med praktiske kodeeksempler i C#, Java, JavaScript, Python og TypeScript, designet til AI-udviklere, systemarkitekter og softwareingeniører.
 
 ## Visuel Curriculum Kort
 
@@ -50,6 +50,7 @@ mindmap
       (AI Toolkit Integration)
       (Testing Frameworks)
       (Advanced Server Usage)
+      (Simple Auth)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -124,7 +125,7 @@ mindmap
 
 ## Repository Struktur
 
-Repository er organiseret i elleve hovedsektioner, der hver fokuserer på forskellige aspekter af MCP:
+Repositoryet er organiseret i elleve hovedsektioner, der hver fokuserer på forskellige aspekter af MCP:
 
 1. **Introduktion (00-Introduction/)**
    - Oversigt over Model Context Protocol
@@ -151,10 +152,10 @@ Repository er organiseret i elleve hovedsektioner, der hver fokuserer på forske
      - Token passthrough sårbarheder
      - Overdrevne tilladelser og adgangskontrol
      - Forsyningskædesikkerhed for AI-komponenter
-     - Integration af Microsoft Prompt Shields
+     - Microsoft Prompt Shields integration
 
 4. **Kom godt i gang (03-GettingStarted/)**
-   - Opsætning og konfiguration af miljø
+   - Opsætning af miljø og konfiguration
    - Oprettelse af grundlæggende MCP-servere og klienter
    - Integration med eksisterende applikationer
    - Indeholder sektioner om:
@@ -173,22 +174,22 @@ Repository er organiseret i elleve hovedsektioner, der hver fokuserer på forske
    - Brug af SDK'er på tværs af forskellige programmeringssprog
    - Debugging, test og valideringsteknikker
    - Udformning af genanvendelige promptskabeloner og workflows
-   - Eksempelprojekter med implementeringsdetaljer
+   - Eksempelprojekter med implementeringscases
 
 6. **Avancerede Emner (05-AdvancedTopics/)**
    - Teknikker til kontekstengineering
    - Foundry agent integration
-   - Multi-modal AI workflows
+   - Multi-modal AI workflows 
    - OAuth2 autentifikationsdemoer
    - Realtidssøgefunktioner
    - Realtidsstreaming
-   - Implementering af root contexts
+   - Root contexts implementering
    - Routingstrategier
    - Samplingteknikker
    - Skaleringstilgange
    - Sikkerhedsovervejelser
    - Entra ID sikkerhedsintegration
-   - Websøgningsintegration
+   - Websøgeintegration
 
 7. **Fællesskabsbidrag (06-CommunityContributions/)**
    - Hvordan man bidrager med kode og dokumentation
@@ -197,8 +198,8 @@ Repository er organiseret i elleve hovedsektioner, der hver fokuserer på forske
    - Brug af forskellige MCP-klienter (Claude Desktop, Cline, VSCode)
    - Arbejde med populære MCP-servere, herunder billedgenerering
 
-8. **Lærdomme fra Tidlig Adoptering (07-LessonsfromEarlyAdoption/)**
-   - Implementeringer og succeshistorier fra den virkelige verden
+8. **Lærdom fra Tidlig Adoptering (07-LessonsfromEarlyAdoption/)**
+   - Implementeringer fra den virkelige verden og succeshistorier
    - Opbygning og udrulning af MCP-baserede løsninger
    - Tendenser og fremtidig roadmap
    - **Microsoft MCP Servers Guide**: Omfattende guide til 10 produktionsklare Microsoft MCP-servere, herunder:
@@ -215,7 +216,7 @@ Repository er organiseret i elleve hovedsektioner, der hver fokuserer på forske
 
 9. **Bedste Praksis (08-BestPractices/)**
    - Performance tuning og optimering
-   - Design af fejl-tolerante MCP-systemer
+   - Design af fejltolerante MCP-systemer
    - Test- og robusthedsstrategier
 
 10. **Case Studier (09-CaseStudy/)**
@@ -232,7 +233,7 @@ Repository er organiseret i elleve hovedsektioner, der hver fokuserer på forske
 11. **Hands-on Workshop (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
     - Omfattende hands-on workshop, der kombinerer MCP med AI Toolkit
     - Opbygning af intelligente applikationer, der forbinder AI-modeller med virkelige værktøjer
-    - Praktiske moduler, der dækker grundlæggende, udvikling af brugerdefinerede servere og produktionsudrulningsstrategier
+    - Praktiske moduler, der dækker grundlæggende, udvikling af tilpassede servere og produktionsudrulningsstrategier
     - **Lab Struktur**:
       - Lab 1: MCP Server Grundlæggende
       - Lab 2: Avanceret MCP Server Udvikling
@@ -242,7 +243,7 @@ Repository er organiseret i elleve hovedsektioner, der hver fokuserer på forske
 
 12. **MCP Server Database Integration Labs (11-MCPServerHandsOnLabs/)**
     - **Omfattende 13-labs læringssti** til opbygning af produktionsklare MCP-servere med PostgreSQL integration
-    - **Virkelighedsnær detailanalyse implementering** baseret på Zava Retail use case
+    - **Implementering af real-world retail analytics** ved brug af Zava Retail use case
     - **Enterprise-grade mønstre** inklusive Row Level Security (RLS), semantisk søgning og multi-tenant dataadgang
     - **Komplet Lab Struktur**:
       - **Labs 00-03: Grundlag** - Introduktion, Arkitektur, Sikkerhed, Miljøopsætning
@@ -250,13 +251,13 @@ Repository er organiseret i elleve hovedsektioner, der hver fokuserer på forske
       - **Labs 07-09: Avancerede Funktioner** - Semantisk Søgning, Test & Debugging, VS Code Integration
       - **Labs 10-12: Produktion & Bedste Praksis** - Udrulning, Overvågning, Optimering
     - **Teknologier Dækket**: FastMCP framework, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
-    - **Læringsresultater**: Produktionsklare MCP-servere, databaseintegrationsmønstre, AI-drevet analyse, enterprise-sikkerhed
+    - **Læringsresultater**: Produktionsklare MCP-servere, databaseintegrationsmønstre, AI-drevet analytics, enterprise-sikkerhed
 
 ## Yderligere Ressourcer
 
-Repository inkluderer understøttende ressourcer:
+Repositoryet inkluderer understøttende ressourcer:
 
-- **Billedmappe**: Indeholder diagrammer og illustrationer brugt i curriculum
+- **Billedmappe**: Indeholder diagrammer og illustrationer brugt gennem curriculumet
 - **Oversættelser**: Flersproget support med automatiserede oversættelser af dokumentation
 - **Officielle MCP Ressourcer**:
   - [MCP Dokumentation](https://modelcontextprotocol.io/)
@@ -269,11 +270,11 @@ Repository inkluderer understøttende ressourcer:
 2. **Sprog-Specifik Fokus**: Hvis du er interesseret i et bestemt programmeringssprog, udforsk samples-mapperne for implementeringer i dit foretrukne sprog.
 3. **Praktisk Implementering**: Start med sektionen "Kom godt i gang" for at opsætte dit miljø og oprette din første MCP-server og klient.
 4. **Avanceret Udforskning**: Når du er komfortabel med det grundlæggende, dyk ned i de avancerede emner for at udvide din viden.
-5. **Fællesskabsengagement**: Deltag i MCP-fællesskabet via GitHub-diskussioner og Discord-kanaler for at forbinde med eksperter og andre udviklere.
+5. **Fællesskabsengagement**: Deltag i MCP-fællesskabet via GitHub-diskussioner og Discord-kanaler for at komme i kontakt med eksperter og andre udviklere.
 
 ## MCP Klienter og Værktøjer
 
-Curriculum dækker forskellige MCP-klienter og værktøjer:
+Curriculumet dækker forskellige MCP-klienter og værktøjer:
 
 1. **Officielle Klienter**:
    - Visual Studio Code 
@@ -296,7 +297,7 @@ Curriculum dækker forskellige MCP-klienter og værktøjer:
 
 ## Populære MCP Servere
 
-Repository introducerer forskellige MCP-servere, herunder:
+Repositoryet introducerer forskellige MCP-servere, herunder:
 
 1. **Officielle Microsoft MCP Servere**:
    - Microsoft Learn Docs MCP Server
@@ -335,22 +336,11 @@ Repository introducerer forskellige MCP-servere, herunder:
 
 Dette repository byder velkommen til bidrag fra fællesskabet. Se sektionen Fællesskabsbidrag for vejledning i, hvordan du effektivt kan bidrage til MCP-økosystemet.
 
-## Ændringslog
+----
 
-| Dato | Ændringer |
-|------|---------||
-| 29. september 2025 | - Tilføjet 11-MCPServerHandsOnLabs sektion med omfattende 13-labs databaseintegrationslæringssti<br>- Opdateret Visuel Curriculum Kort til at inkludere Database Integration Labs<br>- Forbedret repository struktur til at afspejle elleve hovedsektioner<br>- Tilføjet detaljeret beskrivelse af PostgreSQL integration, detailanalyse use case og enterprise mønstre<br>- Opdateret navigationsvejledning til at inkludere sektioner 00-11 |
-| 26. september 2025 | - Tilføjet GitHub MCP Registry case study til 09-CaseStudy sektion<br>- Opdateret Case Studier til at afspejle syv omfattende case studier<br>- Forbedret case study beskrivelser med specifikke implementeringsdetaljer<br>- Opdateret Visuel Curriculum Kort til at inkludere GitHub MCP Registry<br>- Revideret studievejledningsstruktur til at afspejle økosystemudviklingsfokus |
-| 18. juli 2025 | - Opdateret repository struktur til at inkludere Microsoft MCP Servers Guide<br>- Tilføjet omfattende liste over 10 produktionsklare Microsoft MCP servere<br>- Forbedret Populære MCP Servere sektion med Officielle Microsoft MCP Servere<br>- Opdateret Case Studier sektion med faktiske fil-eksempler<br>- Tilføjet Lab Struktur detaljer for Hands-on Workshop |
-| 16. juli 2025 | - Opdateret repository struktur til at afspejle aktuelt indhold<br>- Tilføjet MCP Klienter og Værktøjer sektion<br>- Tilføjet Populære MCP Servere sektion<br>- Opdateret Visuel Curriculum Kort med alle aktuelle emner<br>- Forbedret Avancerede Emner sektion med alle specialiserede områder<br>- Opdateret Case Studier til at afspejle faktiske eksempler<br>- Præciseret MCP oprindelse som skabt af Anthropic |
-| 11. juni 2025 | - Oprettet studievejledning<br>- Tilføjet Visuel Curriculum Kort<br>- Skitseret repository struktur<br>- Inkluderet eksempelprojekter og yderligere ressourcer |
-| 6. oktober 2025 | Tilføjet lektion om avanceret serverbrug |
-
----
-
-*Denne studievejledning blev opdateret den 29. september 2025 og giver et overblik over repository pr. denne dato. Repository-indhold kan være opdateret efter denne dato.*
+*Denne studieguide blev opdateret den 6. oktober 2025 og giver et overblik over repositoryet pr. denne dato. Repositoryindhold kan blive opdateret efter denne dato.*
 
 ---
 
 **Ansvarsfraskrivelse**:  
-Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på at sikre nøjagtighed, skal det bemærkes, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi påtager os ikke ansvar for eventuelle misforståelser eller fejltolkninger, der måtte opstå som følge af brugen af denne oversættelse.
+Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på nøjagtighed, skal det bemærkes, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi påtager os ikke ansvar for misforståelser eller fejltolkninger, der måtte opstå som følge af brugen af denne oversættelse.

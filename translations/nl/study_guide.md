@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ac390de870be5c02165350f6279a8831",
-  "translation_date": "2025-10-06T14:41:14+00:00",
+  "original_hash": "af27b0acfae6caa134d9701453884df8",
+  "translation_date": "2025-10-06T23:26:45+00:00",
   "source_file": "study_guide.md",
   "language_code": "nl"
 }
@@ -50,6 +50,7 @@ mindmap
       (AI Toolkit Integration)
       (Testing Frameworks)
       (Advanced Server Usage)
+      (Simple Auth)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -187,13 +188,13 @@ De repository is georganiseerd in elf hoofdsecties, elk gericht op verschillende
    - Samplingtechnieken
    - Schaalmethoden
    - Beveiligingsoverwegingen
-   - Entra ID beveiligingsintegratie
+   - Entra ID-beveiligingsintegratie
    - Webzoekintegratie
 
 7. **Communitybijdragen (06-CommunityContributions/)**
    - Hoe code en documentatie bij te dragen
    - Samenwerken via GitHub
-   - Community-gedreven verbeteringen en feedback
+   - Communitygedreven verbeteringen en feedback
    - Gebruik van verschillende MCP-clients (Claude Desktop, Cline, VSCode)
    - Werken met populaire MCP-servers, inclusief beeldgeneratie
 
@@ -222,8 +223,8 @@ De repository is georganiseerd in elf hoofdsecties, elk gericht op verschillende
     - **Zeven uitgebreide case studies** die de veelzijdigheid van MCP demonstreren in diverse scenario's:
     - **Azure AI Travel Agents**: Multi-agent orkestratie met Azure OpenAI en AI Search
     - **Azure DevOps Integratie**: Workflowprocessen automatiseren met YouTube-data-updates
-    - **Real-Time Documentatie Retrieval**: Python console-client met streaming HTTP
-    - **Interactieve Studieplan Generator**: Chainlit webapp met conversatie-AI
+    - **Real-Time Documentatieophaling**: Python-consoleclient met HTTP-streaming
+    - **Interactieve Studieplan Generator**: Chainlit-webapp met conversatie-AI
     - **In-Editor Documentatie**: VS Code-integratie met GitHub Copilot-workflows
     - **Azure API Management**: Enterprise API-integratie met MCP-servercreatie
     - **GitHub MCP Registry**: Ecosysteemontwikkeling en agentische integratieplatform
@@ -245,7 +246,7 @@ De repository is georganiseerd in elf hoofdsecties, elk gericht op verschillende
     - **Praktische retailanalyse-implementatie** met de Zava Retail use case
     - **Enterprise-grade patronen** inclusief Row Level Security (RLS), semantisch zoeken en multi-tenant data toegang
     - **Volledige Labstructuur**:
-      - **Labs 00-03: Basisprincipes** - Introductie, Architectuur, Beveiliging, Omgevingsinstellingen
+      - **Labs 00-03: Basis** - Introductie, Architectuur, Beveiliging, Omgevingsinstelling
       - **Labs 04-06: MCP Server Bouwen** - Databaseontwerp, MCP Server Implementatie, Toolontwikkeling
       - **Labs 07-09: Geavanceerde Functies** - Semantisch Zoeken, Testen & Debuggen, VS Code Integratie
       - **Labs 10-12: Productie & Best Practices** - Implementatie, Monitoring, Optimalisatie
@@ -256,7 +257,7 @@ De repository is georganiseerd in elf hoofdsecties, elk gericht op verschillende
 
 De repository bevat ondersteunende bronnen:
 
-- **Afbeeldingenmap**: Bevat diagrammen en illustraties die door het hele curriculum worden gebruikt
+- **Afbeeldingenmap**: Bevat diagrammen en illustraties die door het curriculum worden gebruikt
 - **Vertalingen**: Meertalige ondersteuning met geautomatiseerde vertalingen van documentatie
 - **Officiële MCP Bronnen**:
   - [MCP Documentatie](https://modelcontextprotocol.io/)
@@ -265,8 +266,8 @@ De repository bevat ondersteunende bronnen:
 
 ## Hoe deze Repository te Gebruiken
 
-1. **Sequentieel Leren**: Volg de hoofdstukken op volgorde (00 tot 11) voor een gestructureerde leerervaring.
-2. **Taal-specifieke Focus**: Als je geïnteresseerd bent in een specifieke programmeertaal, bekijk dan de voorbeeldmappen voor implementaties in jouw voorkeurstaal.
+1. **Sequentieel Leren**: Volg de hoofdstukken in volgorde (00 tot 11) voor een gestructureerde leerervaring.
+2. **Taal-specifieke Focus**: Als je geïnteresseerd bent in een specifieke programmeertaal, verken de voorbeeldmappen voor implementaties in jouw voorkeurstaal.
 3. **Praktische Implementatie**: Begin met de sectie "Aan de slag" om je omgeving in te stellen en je eerste MCP-server en -client te maken.
 4. **Geavanceerde Verkenning**: Zodra je vertrouwd bent met de basis, duik in de geavanceerde onderwerpen om je kennis uit te breiden.
 5. **Community Betrokkenheid**: Word lid van de MCP-community via GitHub-discussies en Discord-kanalen om in contact te komen met experts en mede-ontwikkelaars.
@@ -335,22 +336,11 @@ De repository introduceert verschillende MCP-servers, waaronder:
 
 Deze repository verwelkomt bijdragen van de community. Zie de sectie Communitybijdragen voor richtlijnen over hoe je effectief kunt bijdragen aan het MCP-ecosysteem.
 
-## Wijzigingslogboek
+----
 
-| Datum | Wijzigingen |
-|------|-------------||
-| 29 september 2025 | - Sectie 11-MCPServerHandsOnLabs toegevoegd met uitgebreid 13-lab leerpad voor database-integratie<br>- Visuele Curriculumkaart bijgewerkt om Database Integratie Labs op te nemen<br>- Repositorystructuur verbeterd om elf hoofdsecties te weerspiegelen<br>- Gedetailleerde beschrijving toegevoegd van PostgreSQL-integratie, retailanalyse use case en enterprise-patronen<br>- Navigatierichtlijnen bijgewerkt om secties 00-11 op te nemen |
-| 26 september 2025 | - GitHub MCP Registry case study toegevoegd aan sectie 09-CaseStudy<br>- Case Studies bijgewerkt om zeven uitgebreide case studies te weerspiegelen<br>- Case study beschrijvingen verbeterd met specifieke implementatiedetails<br>- Visuele Curriculumkaart bijgewerkt om GitHub MCP Registry op te nemen<br>- Studiegidsstructuur herzien om ecosysteemontwikkelingsfocus te weerspiegelen |
-| 18 juli 2025 | - Repositorystructuur bijgewerkt om Microsoft MCP Servers Guide op te nemen<br>- Uitgebreide lijst toegevoegd van 10 productieklare Microsoft MCP-servers<br>- Sectie Populaire MCP Servers verbeterd met Officiële Microsoft MCP Servers<br>- Sectie Case Studies bijgewerkt met daadwerkelijke bestandsvoorbeelden<br>- Labstructuurdetails toegevoegd voor Hands-on Workshop |
-| 16 juli 2025 | - Repositorystructuur bijgewerkt om huidige inhoud te weerspiegelen<br>- Sectie MCP Clients en Tools toegevoegd<br>- Sectie Populaire MCP Servers toegevoegd<br>- Visuele Curriculumkaart bijgewerkt met alle huidige onderwerpen<br>- Sectie Geavanceerde Onderwerpen verbeterd met alle gespecialiseerde gebieden<br>- Sectie Case Studies bijgewerkt om daadwerkelijke voorbeelden te weerspiegelen<br>- Oorsprong van MCP verduidelijkt als ontwikkeld door Anthropic |
-| 11 juni 2025 | - Initiële creatie van de studiegids<br>- Visuele Curriculumkaart toegevoegd<br>- Repositorystructuur geschetst<br>- Voorbeeldprojecten en aanvullende bronnen opgenomen |
-| 6 oktober 2025 | Les toegevoegd over geavanceerd servergebruik |
-
----
-
-*Deze studiegids is bijgewerkt op 29 september 2025 en biedt een overzicht van de repository zoals die op die datum was. De inhoud van de repository kan na deze datum worden bijgewerkt.*
+*Deze studiegids is bijgewerkt op 6 oktober 2025 en biedt een overzicht van de repository zoals die op die datum was. De inhoud van de repository kan na deze datum worden bijgewerkt.*
 
 ---
 
 **Disclaimer**:  
-Dit document is vertaald met behulp van de AI-vertalingsservice [Co-op Translator](https://github.com/Azure/co-op-translator). Hoewel we streven naar nauwkeurigheid, dient u zich ervan bewust te zijn dat geautomatiseerde vertalingen fouten of onnauwkeurigheden kunnen bevatten. Het originele document in de oorspronkelijke taal moet worden beschouwd als de gezaghebbende bron. Voor kritieke informatie wordt professionele menselijke vertaling aanbevolen. Wij zijn niet aansprakelijk voor misverstanden of verkeerde interpretaties die voortvloeien uit het gebruik van deze vertaling.
+Dit document is vertaald met behulp van de AI-vertalingsservice [Co-op Translator](https://github.com/Azure/co-op-translator). Hoewel we streven naar nauwkeurigheid, dient u zich ervan bewust te zijn dat geautomatiseerde vertalingen fouten of onnauwkeurigheden kunnen bevatten. Het originele document in de oorspronkelijke taal moet worden beschouwd als de gezaghebbende bron. Voor cruciale informatie wordt professionele menselijke vertaling aanbevolen. Wij zijn niet aansprakelijk voor misverstanden of verkeerde interpretaties die voortvloeien uit het gebruik van deze vertaling.

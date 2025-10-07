@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T14:08:08+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T22:51:54+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "pt"
 }
@@ -23,7 +23,7 @@ Esta secção consiste em várias lições:
 
 - **4 Consumir um servidor no modo GitHub Copilot Agent no Visual Studio Code**. Aqui, exploramos como executar o nosso Servidor MCP dentro do Visual Studio Code, [para a lição](04-vscode/README.md)
 
-- **5 Servidor com transporte stdio**. O transporte stdio é o padrão recomendado para comunicação entre servidor e cliente MCP na especificação atual, proporcionando comunicação segura baseada em subprocessos, [para a lição](05-stdio-server/README.md)
+- **5 Servidor com transporte stdio**. O transporte stdio é o padrão recomendado para comunicação entre servidor e cliente MCP na especificação atual, proporcionando uma comunicação segura baseada em subprocessos, [para a lição](05-stdio-server/README.md)
 
 - **6 Streaming HTTP com MCP (HTTP Streamable)**. Aprenda sobre streaming HTTP moderno, notificações de progresso e como implementar servidores e clientes MCP escaláveis e em tempo real usando HTTP Streamable. [para a lição](06-http-streaming/README.md)
 
@@ -35,6 +35,8 @@ Esta secção consiste em várias lições:
 
 - **10 Uso avançado do servidor**. Este capítulo aborda o uso avançado do servidor, [para a lição](./10-advanced/README.md)
 
+- **11 Autenticação**. Este capítulo aborda como adicionar autenticação simples, desde Basic Auth até ao uso de JWT e RBAC. É recomendado começar aqui e depois explorar os Tópicos Avançados no Capítulo 5 e realizar reforços adicionais de segurança através das recomendações do Capítulo 2, [para a lição](./11-simple-auth/README.md)
+
 O Model Context Protocol (MCP) é um protocolo aberto que padroniza como as aplicações fornecem contexto aos LLMs. Pense no MCP como uma porta USB-C para aplicações de IA - ele fornece uma forma padronizada de conectar modelos de IA a diferentes fontes de dados e ferramentas.
 
 ## Objetivos de Aprendizagem
@@ -43,7 +45,7 @@ Ao final desta lição, será capaz de:
 
 - Configurar ambientes de desenvolvimento para MCP em C#, Java, Python, TypeScript e JavaScript
 - Construir e implementar servidores MCP básicos com funcionalidades personalizadas (recursos, prompts e ferramentas)
-- Criar aplicações anfitriãs que se conectam a servidores MCP
+- Criar aplicações host que se conectam a servidores MCP
 - Testar e depurar implementações MCP
 - Compreender desafios comuns de configuração e suas soluções
 - Conectar as suas implementações MCP a serviços populares de LLM
@@ -59,7 +61,7 @@ Antes de mergulhar no desenvolvimento MCP, certifique-se de que tem:
 - **Ambiente de Desenvolvimento**: Para a linguagem escolhida (C#, Java, Python, TypeScript ou JavaScript)
 - **IDE/Editor**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm ou qualquer editor de código moderno
 - **Gestores de Pacotes**: NuGet, Maven/Gradle, pip ou npm/yarn
-- **Chaves de API**: Para quaisquer serviços de IA que planeia usar nas suas aplicações anfitriãs
+- **Chaves de API**: Para quaisquer serviços de IA que planeia usar nas suas aplicações host
 
 ### SDKs Oficiais
 
@@ -82,7 +84,7 @@ O MCP fornece SDKs oficiais para várias linguagens:
 - Testar e depurar são essenciais para implementações MCP confiáveis
 - As opções de implementação variam desde desenvolvimento local até soluções baseadas na nuvem
 
-## Prática
+## Praticar
 
 Temos um conjunto de exemplos que complementam os exercícios que verá em todos os capítulos desta secção. Além disso, cada capítulo também tem os seus próprios exercícios e tarefas.
 

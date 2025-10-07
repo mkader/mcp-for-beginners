@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ac390de870be5c02165350f6279a8831",
-  "translation_date": "2025-10-06T14:07:37+00:00",
+  "original_hash": "af27b0acfae6caa134d9701453884df8",
+  "translation_date": "2025-10-06T22:51:27+00:00",
   "source_file": "study_guide.md",
   "language_code": "pt"
 }
@@ -50,6 +50,7 @@ mindmap
       (AI Toolkit Integration)
       (Testing Frameworks)
       (Advanced Server Usage)
+      (Simple Auth)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -142,7 +143,7 @@ O repositório está organizado em onze seções principais, cada uma focada em 
    - Estratégias de autenticação e autorização
    - **Documentação Abrangente de Segurança**:
      - Melhores Práticas de Segurança MCP 2025
-     - Guia de Implementação de Segurança do Azure Content Safety
+     - Guia de Implementação de Segurança de Conteúdo Azure
      - Controles e Técnicas de Segurança MCP
      - Referência Rápida de Melhores Práticas MCP
    - **Tópicos Principais de Segurança**:
@@ -201,17 +202,17 @@ O repositório está organizado em onze seções principais, cada uma focada em 
    - Implementações reais e histórias de sucesso
    - Construção e implantação de soluções baseadas em MCP
    - Tendências e roadmap futuro
-   - **Guia de Servidores MCP da Microsoft**: Guia abrangente de 10 servidores MCP prontos para produção da Microsoft, incluindo:
-     - Servidor MCP do Microsoft Learn Docs
-     - Servidor MCP do Azure (15+ conectores especializados)
-     - Servidor MCP do GitHub
-     - Servidor MCP do Azure DevOps
-     - Servidor MCP do MarkItDown
-     - Servidor MCP do SQL Server
-     - Servidor MCP do Playwright
-     - Servidor MCP do Dev Box
-     - Servidor MCP do Azure AI Foundry
-     - Servidor MCP do Microsoft 365 Agents Toolkit
+   - **Guia de Servidores MCP da Microsoft**: Guia abrangente para 10 servidores MCP prontos para produção da Microsoft, incluindo:
+     - Servidor MCP Microsoft Learn Docs
+     - Servidor MCP Azure (15+ conectores especializados)
+     - Servidor MCP GitHub
+     - Servidor MCP Azure DevOps
+     - Servidor MCP MarkItDown
+     - Servidor MCP SQL Server
+     - Servidor MCP Playwright
+     - Servidor MCP Dev Box
+     - Servidor MCP Azure AI Foundry
+     - Servidor MCP Microsoft 365 Agents Toolkit
 
 9. **Melhores Práticas (08-BestPractices/)**
    - Ajuste de desempenho e otimização
@@ -220,13 +221,13 @@ O repositório está organizado em onze seções principais, cada uma focada em 
 
 10. **Estudos de Caso (09-CaseStudy/)**
     - **Sete estudos de caso abrangentes** demonstrando a versatilidade do MCP em diversos cenários:
-    - **Agentes de Viagem com Azure AI**: Orquestração multi-agente com Azure OpenAI e AI Search
-    - **Integração com Azure DevOps**: Automação de processos de fluxo de trabalho com atualizações de dados do YouTube
+    - **Agentes de Viagem Azure AI**: Orquestração multi-agente com Azure OpenAI e AI Search
+    - **Integração Azure DevOps**: Automação de processos de fluxo de trabalho com atualizações de dados do YouTube
     - **Recuperação de Documentação em Tempo Real**: Cliente de console Python com streaming HTTP
     - **Gerador Interativo de Planos de Estudo**: Aplicação web Chainlit com IA conversacional
-    - **Documentação no Editor**: Integração com VS Code e fluxos de trabalho do GitHub Copilot
-    - **Gestão de APIs do Azure**: Integração empresarial de API com criação de servidor MCP
-    - **Registro MCP do GitHub**: Desenvolvimento de ecossistema e plataforma de integração agentic
+    - **Documentação no Editor**: Integração VS Code com fluxos de trabalho do GitHub Copilot
+    - **Gestão de API Azure**: Integração de API empresarial com criação de servidor MCP
+    - **Registro MCP GitHub**: Desenvolvimento de ecossistema e plataforma de integração agentic
     - Exemplos de implementação abrangendo integração empresarial, produtividade de desenvolvedores e desenvolvimento de ecossistemas
 
 11. **Workshop Prático (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
@@ -241,12 +242,12 @@ O repositório está organizado em onze seções principais, cada uma focada em 
     - Abordagem de aprendizado baseada em laboratório com instruções passo a passo
 
 12. **Laboratórios de Integração de Servidor MCP com Base de Dados (11-MCPServerHandsOnLabs/)**
-    - **Caminho de aprendizado abrangente com 13 laboratórios** para construção de servidores MCP prontos para produção com integração PostgreSQL
+    - **Caminho de aprendizado abrangente com 13 laboratórios** para construir servidores MCP prontos para produção com integração PostgreSQL
     - **Implementação de análise de varejo no mundo real** usando o caso de uso Zava Retail
     - **Padrões de nível empresarial** incluindo Segurança de Nível de Linha (RLS), busca semântica e acesso a dados multi-inquilino
     - **Estrutura Completa do Laboratório**:
       - **Laboratórios 00-03: Fundamentos** - Introdução, Arquitetura, Segurança, Configuração do Ambiente
-      - **Laboratórios 04-06: Construção do Servidor MCP** - Design de Base de Dados, Implementação do Servidor MCP, Desenvolvimento de Ferramentas
+      - **Laboratórios 04-06: Construção do Servidor MCP** - Design de Base de Dados, Implementação de Servidor MCP, Desenvolvimento de Ferramentas
       - **Laboratórios 07-09: Recursos Avançados** - Busca Semântica, Teste e Depuração, Integração com VS Code
       - **Laboratórios 10-12: Produção e Melhores Práticas** - Implantação, Monitoramento, Otimização
     - **Tecnologias Abrangidas**: Framework FastMCP, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
@@ -254,19 +255,19 @@ O repositório está organizado em onze seções principais, cada uma focada em 
 
 ## Recursos Adicionais
 
-O repositório inclui recursos de suporte:
+O repositório inclui recursos de apoio:
 
 - **Pasta de Imagens**: Contém diagramas e ilustrações usados ao longo do currículo
 - **Traduções**: Suporte multilíngue com traduções automáticas da documentação
-- **Recursos Oficiais do MCP**:
+- **Recursos Oficiais MCP**:
   - [Documentação MCP](https://modelcontextprotocol.io/)
   - [Especificação MCP](https://spec.modelcontextprotocol.io/)
   - [Repositório GitHub MCP](https://github.com/modelcontextprotocol)
 
 ## Como Utilizar Este Repositório
 
-1. **Aprendizado Sequencial**: Siga os capítulos na ordem (00 a 11) para uma experiência de aprendizado estruturada.
-2. **Foco em Linguagem Específica**: Se estiver interessado em uma linguagem de programação específica, explore os diretórios de exemplos para implementações na sua linguagem preferida.
+1. **Aprendizado Sequencial**: Siga os capítulos em ordem (00 a 11) para uma experiência de aprendizado estruturada.
+2. **Foco Específico em Linguagem**: Se estiver interessado em uma linguagem de programação específica, explore os diretórios de exemplos para implementações na sua linguagem preferida.
 3. **Implementação Prática**: Comece pela seção "Primeiros Passos" para configurar seu ambiente e criar seu primeiro servidor e cliente MCP.
 4. **Exploração Avançada**: Após dominar os fundamentos, mergulhe nos tópicos avançados para expandir seu conhecimento.
 5. **Engajamento Comunitário**: Junte-se à comunidade MCP através de discussões no GitHub e canais no Discord para conectar-se com especialistas e outros desenvolvedores.
@@ -299,16 +300,16 @@ O currículo aborda vários clientes e ferramentas MCP:
 O repositório apresenta vários servidores MCP, incluindo:
 
 1. **Servidores MCP Oficiais da Microsoft**:
-   - Servidor MCP do Microsoft Learn Docs
-   - Servidor MCP do Azure (15+ conectores especializados)
-   - Servidor MCP do GitHub
-   - Servidor MCP do Azure DevOps
-   - Servidor MCP do MarkItDown
-   - Servidor MCP do SQL Server
-   - Servidor MCP do Playwright
-   - Servidor MCP do Dev Box
-   - Servidor MCP do Azure AI Foundry
-   - Servidor MCP do Microsoft 365 Agents Toolkit
+   - Servidor MCP Microsoft Learn Docs
+   - Servidor MCP Azure (15+ conectores especializados)
+   - Servidor MCP GitHub
+   - Servidor MCP Azure DevOps
+   - Servidor MCP MarkItDown
+   - Servidor MCP SQL Server
+   - Servidor MCP Playwright
+   - Servidor MCP Dev Box
+   - Servidor MCP Azure AI Foundry
+   - Servidor MCP Microsoft 365 Agents Toolkit
 
 2. **Servidores de Referência Oficiais**:
    - Sistema de Arquivos
@@ -333,24 +334,13 @@ O repositório apresenta vários servidores MCP, incluindo:
 
 ## Contribuindo
 
-Este repositório acolhe contribuições da comunidade. Consulte a seção Contribuições da Comunidade para orientações sobre como contribuir efetivamente para o ecossistema MCP.
+Este repositório acolhe contribuições da comunidade. Consulte a seção Contribuições da Comunidade para orientações sobre como contribuir de forma eficaz para o ecossistema MCP.
 
-## Registro de Alterações
+----
 
-| Data | Alterações |
-|------|---------||
-| 29 de setembro de 2025 | - Adicionada seção 11-MCPServerHandsOnLabs com caminho de aprendizado abrangente de 13 laboratórios de integração de base de dados<br>- Atualizado Mapa Visual do Currículo para incluir Laboratórios de Integração de Base de Dados<br>- Estrutura do repositório aprimorada para refletir onze seções principais<br>- Adicionada descrição detalhada da integração PostgreSQL, caso de uso de análise de varejo e padrões empresariais<br>- Orientação de navegação atualizada para incluir seções 00-11 |
-| 26 de setembro de 2025 | - Adicionado estudo de caso Registro MCP do GitHub à seção 09-CaseStudy<br>- Atualizados Estudos de Caso para refletir sete estudos de caso abrangentes<br>- Descrições de estudos de caso aprimoradas com detalhes específicos de implementação<br>- Atualizado Mapa Visual do Currículo para incluir Registro MCP do GitHub<br>- Estrutura do guia de estudo revisada para refletir foco no desenvolvimento de ecossistemas |
-| 18 de julho de 2025 | - Estrutura do repositório atualizada para incluir Guia de Servidores MCP da Microsoft<br>- Adicionada lista abrangente de 10 servidores MCP prontos para produção da Microsoft<br>- Seção Servidores MCP Populares aprimorada com Servidores MCP Oficiais da Microsoft<br>- Seção Estudos de Caso atualizada com exemplos reais de arquivos<br>- Detalhes da Estrutura do Laboratório adicionados para Workshop Prático |
-| 16 de julho de 2025 | - Estrutura do repositório atualizada para refletir conteúdo atual<br>- Adicionada seção Clientes e Ferramentas MCP<br>- Adicionada seção Servidores MCP Populares<br>- Atualizado Mapa Visual do Currículo com todos os tópicos atuais<br>- Seção Tópicos Avançados aprimorada com todas as áreas especializadas<br>- Estudos de Caso atualizados para refletir exemplos reais<br>- Origem do MCP esclarecida como criado pela Anthropic |
-| 11 de junho de 2025 | - Criação inicial do guia de estudo<br>- Adicionado Mapa Visual do Currículo<br>- Estrutura do repositório delineada<br>- Projetos de exemplo e recursos adicionais incluídos |
-| 6 de outubro de 2025 | Adicionada lição sobre uso avançado de servidor |
-
----
-
-*Este guia de estudo foi atualizado em 29 de setembro de 2025 e fornece uma visão geral do repositório até essa data. O conteúdo do repositório pode ser atualizado após essa data.*
+*Este guia de estudo foi atualizado em 6 de outubro de 2025 e fornece uma visão geral do repositório até essa data. O conteúdo do repositório pode ser atualizado após essa data.*
 
 ---
 
 **Aviso**:  
-Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos pela precisão, é importante notar que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes do uso desta tradução.
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos pela precisão, tenha em atenção que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes da utilização desta tradução.

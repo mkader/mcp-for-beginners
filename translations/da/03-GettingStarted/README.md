@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T14:33:01+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T23:18:21+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "da"
 }
@@ -21,13 +21,13 @@ Denne sektion består af flere lektioner:
 
 - **3 Klient med LLM**, en endnu bedre måde at skrive en klient på er ved at tilføje en LLM, så den kan "forhandle" med din server om, hvad der skal gøres, [til lektionen](03-llm-client/README.md)
 
-- **4 Forbrug af en server GitHub Copilot Agent-tilstand i Visual Studio Code**. Her ser vi på at køre vores MCP-server fra Visual Studio Code, [til lektionen](04-vscode/README.md)
+- **4 Forbrug af en server GitHub Copilot Agent-tilstand i Visual Studio Code**. Her ser vi på, hvordan vi kører vores MCP-server fra Visual Studio Code, [til lektionen](04-vscode/README.md)
 
 - **5 stdio Transport Server** stdio transport er den anbefalede standard for MCP-server-til-klient-kommunikation i den nuværende specifikation, der giver sikker kommunikation baseret på underprocesser [til lektionen](05-stdio-server/README.md)
 
 - **6 HTTP Streaming med MCP (Streamable HTTP)**. Lær om moderne HTTP-streaming, statusnotifikationer og hvordan man implementerer skalerbare, realtids MCP-servere og -klienter ved hjælp af Streamable HTTP. [til lektionen](06-http-streaming/README.md)
 
-- **7 Udnyttelse af AI Toolkit til VSCode** for at forbruge og teste dine MCP-klienter og -servere [til lektionen](07-aitk/README.md)
+- **7 Udnyttelse af AI Toolkit til VSCode** til at forbruge og teste dine MCP-klienter og -servere [til lektionen](07-aitk/README.md)
 
 - **8 Testning**. Her fokuserer vi især på, hvordan vi kan teste vores server og klient på forskellige måder, [til lektionen](08-testing/README.md)
 
@@ -35,11 +35,13 @@ Denne sektion består af flere lektioner:
 
 - **10 Avanceret serverbrug**. Dette kapitel dækker avanceret serverbrug, [til lektionen](./10-advanced/README.md)
 
-Model Context Protocol (MCP) er en åben protokol, der standardiserer, hvordan applikationer giver kontekst til LLM'er. Tænk på MCP som en USB-C-port for AI-applikationer - det giver en standardiseret måde at forbinde AI-modeller til forskellige datakilder og værktøjer.
+- **11 Auth**. Dette kapitel dækker, hvordan man tilføjer simpel autentifikation, fra Basic Auth til brug af JWT og RBAC. Du opfordres til at starte her og derefter se på avancerede emner i kapitel 5 og udføre yderligere sikkerhedshærdning via anbefalinger i kapitel 2, [til lektionen](./11-simple-auth/README.md)
+
+Model Context Protocol (MCP) er en åben protokol, der standardiserer, hvordan applikationer leverer kontekst til LLM'er. Tænk på MCP som en USB-C-port for AI-applikationer - det giver en standardiseret måde at forbinde AI-modeller til forskellige datakilder og værktøjer.
 
 ## Læringsmål
 
-Ved afslutningen af denne lektion vil du kunne:
+Ved afslutningen af denne lektion vil du være i stand til at:
 
 - Opsætte udviklingsmiljøer for MCP i C#, Java, Python, TypeScript og JavaScript
 - Bygge og udrulle grundlæggende MCP-servere med tilpassede funktioner (ressourcer, prompts og værktøjer)
@@ -79,12 +81,12 @@ MCP tilbyder officielle SDK'er til flere sprog:
 - Opsætning af et MCP-udviklingsmiljø er ligetil med sprog-specifikke SDK'er
 - Bygning af MCP-servere indebærer oprettelse og registrering af værktøjer med klare skemaer
 - MCP-klienter forbinder til servere og modeller for at udnytte udvidede funktioner
-- Testning og fejlretning er afgørende for pålidelige MCP-implementeringer
+- Testning og fejlfinding er afgørende for pålidelige MCP-implementeringer
 - Udrulningsmuligheder spænder fra lokal udvikling til cloud-baserede løsninger
 
-## Øvelser
+## Øvelse
 
-Vi har et sæt eksempler, der supplerer de øvelser, du vil se i alle kapitler i denne sektion. Derudover har hvert kapitel også sine egne øvelser og opgaver.
+Vi har et sæt eksempler, der supplerer øvelserne, du vil se i alle kapitler i denne sektion. Derudover har hvert kapitel også sine egne øvelser og opgaver.
 
 - [Java Calculator](./samples/java/calculator/README.md)
 - [.Net Calculator](../../../03-GettingStarted/samples/csharp)
@@ -95,14 +97,14 @@ Vi har et sæt eksempler, der supplerer de øvelser, du vil se i alle kapitler i
 ## Yderligere ressourcer
 
 - [Byg agenter ved hjælp af Model Context Protocol på Azure](https://learn.microsoft.com/azure/developer/ai/intro-agents-mcp)
-- [Fjern-MCP med Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
+- [Remote MCP med Azure Container Apps (Node.js/TypeScript/JavaScript)](https://learn.microsoft.com/samples/azure-samples/mcp-container-ts/mcp-container-ts/)
 - [.NET OpenAI MCP Agent](https://learn.microsoft.com/samples/azure-samples/openai-mcp-agent-dotnet/openai-mcp-agent-dotnet/)
 
-## Hvad er det næste?
+## Hvad er det næste
 
 Næste: [Oprettelse af din første MCP-server](01-first-server/README.md)
 
 ---
 
 **Ansvarsfraskrivelse**:  
-Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på nøjagtighed, skal det bemærkes, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi påtager os ikke ansvar for misforståelser eller fejltolkninger, der måtte opstå som følge af brugen af denne oversættelse.
+Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på nøjagtighed, skal det bemærkes, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi påtager os ikke ansvar for eventuelle misforståelser eller fejltolkninger, der måtte opstå som følge af brugen af denne oversættelse.

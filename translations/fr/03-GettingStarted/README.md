@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T13:14:56+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T21:53:25+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "fr"
 }
@@ -19,9 +19,9 @@ Cette section comprend plusieurs leçons :
 
 - **2 Client**, dans cette leçon, vous apprendrez à écrire un client capable de se connecter à votre serveur, [vers la leçon](02-client/README.md)
 
-- **3 Client avec LLM**, une méthode encore meilleure pour écrire un client consiste à y ajouter un LLM afin qu'il puisse "négocier" avec votre serveur sur les actions à entreprendre, [vers la leçon](03-llm-client/README.md)
+- **3 Client avec LLM**, une méthode encore meilleure pour écrire un client consiste à y ajouter un LLM afin qu'il puisse "négocier" avec votre serveur sur les actions à effectuer, [vers la leçon](03-llm-client/README.md)
 
-- **4 Consommer un serveur en mode Agent GitHub Copilot dans Visual Studio Code**. Ici, nous examinons l'exécution de notre serveur MCP directement depuis Visual Studio Code, [vers la leçon](04-vscode/README.md)
+- **4 Consommer un serveur en mode Agent GitHub Copilot dans Visual Studio Code**. Ici, nous examinons l'exécution de notre serveur MCP depuis Visual Studio Code, [vers la leçon](04-vscode/README.md)
 
 - **5 Serveur de transport stdio**. Le transport stdio est la norme recommandée pour la communication serveur-client MCP dans la spécification actuelle, offrant une communication sécurisée basée sur des sous-processus, [vers la leçon](05-stdio-server/README.md)
 
@@ -33,7 +33,9 @@ Cette section comprend plusieurs leçons :
 
 - **9 Déploiement**. Ce chapitre examinera les différentes façons de déployer vos solutions MCP, [vers la leçon](09-deployment/README.md)
 
-- **10 Utilisation avancée du serveur**. Ce chapitre couvre les usages avancés du serveur, [vers la leçon](./10-advanced/README.md)
+- **10 Utilisation avancée du serveur**. Ce chapitre couvre l'utilisation avancée du serveur, [vers la leçon](./10-advanced/README.md)
+
+- **11 Authentification**. Ce chapitre explique comment ajouter une authentification simple, allant de l'authentification de base à l'utilisation de JWT et RBAC. Il est conseillé de commencer ici, puis de consulter les sujets avancés du chapitre 5 et de renforcer la sécurité via les recommandations du chapitre 2, [vers la leçon](./11-simple-auth/README.md)
 
 Le protocole Model Context Protocol (MCP) est un protocole ouvert qui standardise la manière dont les applications fournissent un contexte aux LLMs. Pensez au MCP comme à un port USB-C pour les applications d'IA - il offre une méthode standardisée pour connecter des modèles d'IA à différentes sources de données et outils.
 
@@ -54,16 +56,16 @@ Avant de commencer à travailler avec MCP, il est important de préparer votre e
 
 ### Prérequis
 
-Avant de plonger dans le développement MCP, assurez-vous d'avoir :
+Avant de vous lancer dans le développement MCP, assurez-vous d'avoir :
 
 - **Environnement de développement** : Pour le langage de votre choix (C#, Java, Python, TypeScript ou JavaScript)
 - **IDE/Éditeur** : Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm ou tout éditeur de code moderne
 - **Gestionnaires de paquets** : NuGet, Maven/Gradle, pip ou npm/yarn
-- **Clés API** : Pour tout service d'IA que vous prévoyez d'utiliser dans vos applications hôtes
+- **Clés API** : Pour les services d'IA que vous prévoyez d'utiliser dans vos applications hôtes
 
 ### SDKs officiels
 
-Dans les chapitres à venir, vous verrez des solutions construites en Python, TypeScript, Java et .NET. Voici tous les SDKs officiellement pris en charge.
+Dans les chapitres à venir, vous découvrirez des solutions construites en Python, TypeScript, Java et .NET. Voici tous les SDKs officiellement pris en charge.
 
 MCP propose des SDKs officiels pour plusieurs langages :
 - [SDK C#](https://github.com/modelcontextprotocol/csharp-sdk) - Maintenu en collaboration avec Microsoft
@@ -74,7 +76,7 @@ MCP propose des SDKs officiels pour plusieurs langages :
 - [SDK Swift](https://github.com/modelcontextprotocol/swift-sdk) - Maintenu en collaboration avec Loopwork AI
 - [SDK Rust](https://github.com/modelcontextprotocol/rust-sdk) - L'implémentation officielle en Rust
 
-## Points clés à retenir
+## Points clés
 
 - Configurer un environnement de développement MCP est simple grâce aux SDKs spécifiques à chaque langage
 - Construire des serveurs MCP implique de créer et d'enregistrer des outils avec des schémas clairs

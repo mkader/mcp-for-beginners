@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "981aa099b26f878952138b76f79c1eae",
-  "translation_date": "2025-10-06T13:10:08+00:00",
+  "original_hash": "9f49811d2ddcc887d6b5ed87ddffc446",
+  "translation_date": "2025-10-06T21:48:29+00:00",
   "source_file": "README.md",
   "language_code": "en"
 }
@@ -21,10 +21,10 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Follow these steps to get started using these resources:
+Follow these steps to start using these resources:
 1. **Fork the Repository**: Click [![GitHub forks](https://img.shields.io/github/forks/microsoft/mcp-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/mcp-for-beginners/fork)
 2. **Clone the Repository**:   `git clone https://github.com/microsoft/mcp-for-beginners.git`
-3. [**Join The Azure AI Foundry Discord and meet experts and fellow developers**](https://discord.com/invite/ByRwuEEgH4)
+3. [**Join The Azure AI Foundry Discord and connect with experts and fellow developers**](https://discord.com/invite/ByRwuEEgH4)
 
 
 ### 🌐 Multi-Language Support
@@ -39,9 +39,9 @@ Follow these steps to get started using these resources:
 
 ## 🧠 Overview of the Model Context Protocol Curriculum
 
-The **Model Context Protocol (MCP)** is a cutting-edge framework designed to standardize interactions between AI models and client applications. This open-source curriculum offers a structured learning path, complete with practical coding examples and real-world use cases, across popular programming languages including C#, Java, JavaScript, TypeScript, and Python.
+The **Model Context Protocol (MCP)** is an advanced framework designed to standardize the interaction between AI models and client applications. This open-source curriculum provides a structured learning path, complete with practical coding examples and real-world applications, across popular programming languages such as C#, Java, JavaScript, TypeScript, and Python.
 
-Whether you're an AI developer, system architect, or software engineer, this guide is your comprehensive resource for mastering MCP fundamentals and implementation strategies.
+Whether you're an AI developer, system architect, or software engineer, this guide serves as a comprehensive resource to help you master the fundamentals and implementation strategies of MCP.
 
 ## 🔗 Official MCP Resources
 
@@ -73,6 +73,7 @@ Whether you're an AI developer, system architect, or software engineer, this gui
 | 3.8 | Testing | Test your MCP server implementation | [Guide](./03-GettingStarted/08-testing/README.md) |
 | 3.9 | Deployment | Deploy MCP servers to production | [Guide](./03-GettingStarted/09-deployment/README.md) |
 | 3.10 | Advanced server usage | Use advanced servers for advanced feature usage and improved architecture | [Guide](./03-GettingStarted/10-advanced/README.md) |
+| 3.11 | Simple auth | A chapter showing you auth from the beginning and RBAC | [Guide](./03-GettingStarted/11-simple-auth/README.md) |
 | **Module 4-5: Practical & Advanced** | | | |
 | 04 | Practical Implementation | SDKs, debugging, testing, reusable prompt templates | [Read more](./04-PracticalImplementation/README.md) |
 | 05 | Advanced Topics in MCP | Multi-modal AI, scaling, enterprise use | [Read more](./05-AdvancedTopics/README.md) |
@@ -183,16 +184,15 @@ Each lesson in this guide includes:
 
 ### [MCP Dev Days July 2025](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 #### [➡️Watch on Demand - MCP Dev Days](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
-Prepare for two days of in-depth technical insights, community engagement, and hands-on learning at MCP Dev Days, a virtual event dedicated to the Model Context Protocol (MCP)—the emerging standard that connects AI models with the tools they depend on.
+Prepare for two days of in-depth technical insights, community engagement, and hands-on learning at MCP Dev Days, a virtual event dedicated to the Model Context Protocol (MCP)—the emerging standard connecting AI models and the tools they depend on.
 You can watch MCP Dev Days by registering on our event page: https://aka.ms/mcpdevdays. 
 
 #### [Day 1: MCP Productivity, DevTools, & Community:](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 
 Focuses on empowering developers to integrate MCP into their workflows and celebrating the vibrant MCP community. Join community members and partners like Arcade, Block, Okta, and Neon to see how they collaborate with Microsoft to shape an open, extensible MCP ecosystem.  
-Highlights include:  
-- Real-world demos across VS Code, Visual Studio, GitHub Copilot, and popular community tools  
-- Practical, context-driven development workflows  
-- Community-led sessions and insights  
+Real-world demos across VS Code, Visual Studio, GitHub Copilot, and popular community tools  
+Practical, context-driven development workflows  
+Community-led sessions and insights  
 Whether you're new to MCP or already building with it, Day 1 will inspire and provide actionable takeaways.
 
 #### [Day 2: Build MCP Servers with Confidence](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
@@ -210,22 +210,22 @@ Designed for MCP builders, Day 2 dives deep into implementation strategies and b
 If you're a developer, tool builder, or AI product strategist, this day is packed with insights to help you build scalable, secure, and future-ready MCP solutions.
 
 ### MCP Boot Camp August 2025
-Learn through intensive video sessions how to create MCP servers, integrate with VS Code, and deploy professionally on Azure using content from the MCP for Beginners curriculum. Gain practical skills in a technology already adopted by major companies.
+Learn through intensive video sessions how to create MCP servers, integrate with VS Code, and deploy professionally on Azure based on content from the MCP for Beginners curriculum. Gain practical skills in a technology already adopted by major companies.
 
 #### [➡️Watch on Demand MCP Bootcamp | English](https://developer.microsoft.com/en-us/reactor/series/s-1568/)
 #### [➡️Watch on Demand MCP Bootcamp | Brasil](https://developer.microsoft.com/en-us/reactor/series/S-1566/)
 #### [➡️Watch on Demand MCP Bootcamp | Spanish](https://developer.microsoft.com/en-us/reactor/series/S-1567/)
 
 ### Let's Learn MCP with C# - Tutorial Series
-Learn about the Model Context Protocol (MCP), a cutting-edge framework designed to standardize interactions between AI models and client applications. This beginner-friendly session introduces MCP and guides you through creating your first MCP server.  
-#### C#: [https://aka.ms/letslearnmcp-csharp](https://aka.ms/letslearnmcp-csharp)  
-#### Java: [https://aka.ms/letslearnmcp-java](https://aka.ms/letslearnmcp-java)  
-#### JavaScript: [https://aka.ms/letslearnmcp-javascript](https://aka.ms/letslearnmcp-javascript)  
-#### Python: [https://aka.ms/letslearnmcp-python](https://aka.ms/letslearnmcp-python)  
+Learn about the Model Context Protocol (MCP), a cutting-edge framework designed to standardize interactions between AI models and client applications. This beginner-friendly session introduces MCP and guides you through creating your first MCP server.
+#### C#: [https://aka.ms/letslearnmcp-csharp](https://aka.ms/letslearnmcp-csharp)
+#### Java: [https://aka.ms/letslearnmcp-java](https://aka.ms/letslearnmcp-java)
+#### JavaScript: [https://aka.ms/letslearnmcp-javascript](https://aka.ms/letslearnmcp-javascript)
+#### Python: [https://aka.ms/letslearnmcp-python](https://aka.ms/letslearnmcp-python)
 
 ## 🌟 Community Thanks
 
-Special thanks to Microsoft Valued Professional [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) for contributing valuable code samples.
+Special thanks to Microsoft Valued Professional [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) for contributing key code samples.
 
 ## 📜 License Information
 
@@ -244,8 +244,8 @@ For more information, see the [Code of Conduct FAQ](https://opensource.microsoft
 
 The repository is organized as follows:
 
-- **Core Curriculum (00-11)**: The main content organized into eleven sequential modules, including comprehensive database integration labs
-- **11-MCPServerHandsOnLabs/**: A complete 13-lab learning path for building production-ready MCP servers with PostgreSQL integration
+- **Core Curriculum (00-11)**: The main content organized in eleven sequential modules, including comprehensive database integration labs
+- **11-MCPServerHandsOnLabs/**: Complete 13-lab learning path for building production-ready MCP servers with PostgreSQL integration
 - **images/**: Diagrams and illustrations used throughout the curriculum
 - **translations/**: Multi-language support with automated translations
 - **translated_images/**: Localized versions of diagrams and illustrations
@@ -255,7 +255,7 @@ The repository is organized as follows:
 - **CODE_OF_CONDUCT.md, LICENSE, SECURITY.md, SUPPORT.md**: Project governance documents
 
 ## 🎒 Other Courses
-Our team offers other courses! Check out:
+Our team produces other courses! Check out:
 
 - [**NEW** Edge AI For Beginners](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
@@ -273,9 +273,11 @@ Our team offers other courses! Check out:
 - [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
 - [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
 - [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+
+
 ## ™️ Trademark Notice
 
-This project may include trademarks or logos related to projects, products, or services. The authorized use of Microsoft trademarks or logos must comply with and adhere to [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general). Using Microsoft trademarks or logos in modified versions of this project must not create confusion or suggest sponsorship by Microsoft. Any use of third-party trademarks or logos must follow the policies of the respective third parties.
+This project may include trademarks or logos related to projects, products, or services. The use of Microsoft trademarks or logos must comply with and adhere to [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general). Using Microsoft trademarks or logos in modified versions of this project must not create confusion or suggest Microsoft sponsorship. Any use of third-party trademarks or logos must follow the policies of the respective third parties.
 
 ## Getting Help
 
@@ -283,7 +285,7 @@ If you're stuck or have questions about building AI applications, join:
 
 [![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)
 
-If you have product feedback or encounter errors while building, visit:
+If you have product feedback or encounter issues while building, visit:
 
 [![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "981aa099b26f878952138b76f79c1eae",
-  "translation_date": "2025-10-06T15:11:14+00:00",
+  "original_hash": "9f49811d2ddcc887d6b5ed87ddffc446",
+  "translation_date": "2025-10-06T23:57:37+00:00",
   "source_file": "README.md",
   "language_code": "ro"
 }
@@ -18,14 +18,12 @@ CO_OP_TRANSLATOR_METADATA:
 [![Fork-uri GitHub](https://img.shields.io/github/forks/microsoft/mcp-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/mcp-for-beginners/fork)
 [![Stele GitHub](https://img.shields.io/github/stars/microsoft/mcp-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/mcp-for-beginners/stargazers)
 
-
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 Urmați acești pași pentru a începe să utilizați aceste resurse:
 1. **Forkați Repozitoriul**: Click [![Fork-uri GitHub](https://img.shields.io/github/forks/microsoft/mcp-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/mcp-for-beginners/fork)
 2. **Clonați Repozitoriul**:   `git clone https://github.com/microsoft/mcp-for-beginners.git`
 3. [**Alăturați-vă Discordului Azure AI Foundry și întâlniți experți și alți dezvoltatori**](https://discord.com/invite/ByRwuEEgH4)
-
 
 ### 🌐 Suport Multi-Limbă
 
@@ -35,20 +33,20 @@ Urmați acești pași pentru a începe să utilizați aceste resurse:
 
 # 🚀 Curriculum Model Context Protocol (MCP) pentru Începători
 
-## **Învață MCP cu Exemple Practice de Cod în C#, Java, JavaScript, Rust, Python și TypeScript**
+## **Învățați MCP cu Exemple Practice de Cod în C#, Java, JavaScript, Rust, Python și TypeScript**
 
 ## 🧠 Prezentare Generală a Curriculumului Model Context Protocol
 
-**Model Context Protocol (MCP)** este un cadru inovator conceput pentru a standardiza interacțiunile dintre modelele AI și aplicațiile client. Acest curriculum open-source oferă o cale de învățare structurată, completată cu exemple practice de cod și cazuri de utilizare reale, în limbaje de programare populare precum C#, Java, JavaScript, TypeScript și Python.
+**Model Context Protocol (MCP)** este un cadru de ultimă generație conceput pentru a standardiza interacțiunile dintre modelele AI și aplicațiile client. Acest curriculum open-source oferă o cale de învățare structurată, completată cu exemple practice de cod și cazuri de utilizare reale, în limbaje de programare populare precum C#, Java, JavaScript, TypeScript și Python.
 
-Indiferent dacă ești dezvoltator AI, arhitect de sisteme sau inginer software, acest ghid este resursa ta completă pentru a stăpâni fundamentele MCP și strategiile de implementare.
+Indiferent dacă sunteți dezvoltator AI, arhitect de sisteme sau inginer software, acest ghid este resursa dvs. completă pentru a stăpâni fundamentele MCP și strategiile de implementare.
 
 ## 🔗 Resurse Oficiale MCP
 
-- 📘 [Documentație MCP](https://modelcontextprotocol.io/) – Tutoriale detaliate și ghiduri pentru utilizatori  
-- 📜 [Specificație MCP](https://modelcontextprotocol.io/docs/) – Arhitectura protocolului și referințe tehnice  
+- 📘 [Documentația MCP](https://modelcontextprotocol.io/) – Tutoriale detaliate și ghiduri pentru utilizatori  
+- 📜 [Specificația MCP](https://modelcontextprotocol.io/docs/) – Arhitectura protocolului și referințe tehnice  
 - 📜 [Specificația Originală MCP](https://spec.modelcontextprotocol.io/) – Referințe tehnice vechi (pot conține detalii suplimentare)  
-- 🧑‍💻 [Repozitoriu GitHub MCP](https://github.com/modelcontextprotocol) – SDK-uri open-source, unelte și exemple de cod
+- 🧑‍💻 [Repozitoriul GitHub MCP](https://github.com/modelcontextprotocol) – SDK-uri open-source, instrumente și exemple de cod
 - 🌐 [Comunitatea MCP](https://github.com/orgs/modelcontextprotocol/discussions) – Alăturați-vă discuțiilor și contribuiți la comunitate
 
 ## 🧭 Prezentare Generală a Curriculumului MCP
@@ -56,14 +54,14 @@ Indiferent dacă ești dezvoltator AI, arhitect de sisteme sau inginer software,
 ### 📚 Structura Completă a Curriculumului
 
 | Modul | Subiect | Descriere | Link |
-|--------|-------|-------------|------|
+|-------|---------|-----------|------|
 | **Modulele 1-3: Fundamente** | | | |
-| 00 | Introducere în MCP | Prezentare generală a Model Context Protocol și importanța sa în fluxurile AI | [Citește mai mult](./00-Introduction/README.md) |
-| 01 | Explicarea Conceptelor de Bază | Explorare detaliată a conceptelor de bază MCP | [Citește mai mult](./01-CoreConcepts/README.md) |
-| 02 | Securitate în MCP | Amenințări de securitate și cele mai bune practici | [Citește mai mult](./02-Security/README.md) |
-| 03 | Începeți cu MCP | Configurarea mediului, servere/clienți de bază, integrare | [Citește mai mult](./03-GettingStarted/README.md) |
+| 00 | Introducere în MCP | Prezentare generală a Model Context Protocol și semnificația sa în fluxurile AI | [Citiți mai mult](./00-Introduction/README.md) |
+| 01 | Explicarea Conceptelor de Bază | Explorare detaliată a conceptelor de bază MCP | [Citiți mai mult](./01-CoreConcepts/README.md) |
+| 02 | Securitate în MCP | Amenințări de securitate și cele mai bune practici | [Citiți mai mult](./02-Security/README.md) |
+| 03 | Începerea cu MCP | Configurarea mediului, servere/clienți de bază, integrare | [Citiți mai mult](./03-GettingStarted/README.md) |
 | **Modulul 3: Construirea Primului Server și Client** | | | |
-| 3.1 | Primul Server | Creați primul server MCP | [Ghid](./03-GettingStarted/01-first-server/README.md) |
+| 3.1 | Primul Server | Creați primul dvs. server MCP | [Ghid](./03-GettingStarted/01-first-server/README.md) |
 | 3.2 | Primul Client | Dezvoltați un client MCP de bază | [Ghid](./03-GettingStarted/02-client/README.md) |
 | 3.3 | Client cu LLM | Integrați modele de limbaj mare | [Ghid](./03-GettingStarted/03-llm-client/README.md) |
 | 3.4 | Integrare VS Code | Consumați servere MCP în VS Code | [Ghid](./03-GettingStarted/04-vscode/README.md) |
@@ -73,18 +71,19 @@ Indiferent dacă ești dezvoltator AI, arhitect de sisteme sau inginer software,
 | 3.8 | Testare | Testați implementarea serverului MCP | [Ghid](./03-GettingStarted/08-testing/README.md) |
 | 3.9 | Implementare | Implementați servere MCP în producție | [Ghid](./03-GettingStarted/09-deployment/README.md) |
 | 3.10 | Utilizare avansată a serverului | Utilizați servere avansate pentru funcționalități avansate și arhitectură îmbunătățită | [Ghid](./03-GettingStarted/10-advanced/README.md) |
+| 3.11 | Autentificare simplă | Un capitol care vă arată autentificarea de la început și RBAC | [Ghid](./03-GettingStarted/11-simple-auth/README.md) |
 | **Modulele 4-5: Practic & Avansat** | | | |
-| 04 | Implementare Practică | SDK-uri, depanare, testare, șabloane de prompt reutilizabile | [Citește mai mult](./04-PracticalImplementation/README.md) |
-| 05 | Subiecte Avansate în MCP | AI multi-modal, scalare, utilizare în întreprinderi | [Citește mai mult](./05-AdvancedTopics/README.md) |
+| 04 | Implementare Practică | SDK-uri, depanare, testare, șabloane de prompt reutilizabile | [Citiți mai mult](./04-PracticalImplementation/README.md) |
+| 05 | Subiecte Avansate în MCP | AI multi-modal, scalare, utilizare în întreprinderi | [Citiți mai mult](./05-AdvancedTopics/README.md) |
 | 5.1 | Integrare Azure | Integrarea MCP cu Azure | [Ghid](./05-AdvancedTopics/mcp-integration/README.md) |
-| 5.2 | Multi-modalitate | Lucrul cu mai multe modalități | [Ghid](./05-AdvancedTopics/mcp-multi-modality/README.md) |
+| 5.2 | Multi-modalitate | Lucrul cu multiple modalități | [Ghid](./05-AdvancedTopics/mcp-multi-modality/README.md) |
 | 5.3 | Demo OAuth2 | Implementați autentificarea OAuth2 | [Ghid](./05-AdvancedTopics/mcp-oauth2-demo/README.md) |
 | 5.4 | Contexturi Rădăcină | Înțelegeți și implementați contexturi rădăcină | [Ghid](./05-AdvancedTopics/mcp-root-contexts/README.md) |
 | 5.5 | Rutare | Strategii de rutare MCP | [Ghid](./05-AdvancedTopics/mcp-routing/README.md) |
 | 5.6 | Eșantionare | Tehnici de eșantionare în MCP | [Ghid](./05-AdvancedTopics/mcp-sampling/README.md) |
 | 5.7 | Scalare | Scalați implementările MCP | [Ghid](./05-AdvancedTopics/mcp-scaling/README.md) |
 | 5.8 | Securitate | Considerații avansate de securitate | [Ghid](./05-AdvancedTopics/mcp-security/README.md) |
-| 5.9 | Căutare Web | Implementați capabilități de căutare web | [Ghid](./05-AdvancedTopics/web-search-mcp/README.md) |
+| 5.9 | Căutare Web | Implementați capacități de căutare web | [Ghid](./05-AdvancedTopics/web-search-mcp/README.md) |
 | 5.10 | Streaming în Timp Real | Construiți funcționalități de streaming în timp real | [Ghid](./05-AdvancedTopics/mcp-realtimestreaming/README.md) |
 | 5.11 | Căutare în Timp Real | Implementați căutare în timp real | [Ghid](./05-AdvancedTopics/mcp-realtimesearch/README.md) |
 | 5.12 | Autentificare Entra ID | Autentificare cu Microsoft Entra ID | [Ghid](./05-AdvancedTopics/mcp-security-entra/README.md) |
@@ -98,16 +97,16 @@ Indiferent dacă ești dezvoltator AI, arhitect de sisteme sau inginer software,
 | 09 | Studii de Caz MCP | Exemple practice de implementare | [Ghid](./09-CaseStudy/README.md) |
 | 10 | Atelier Practic | Construirea unui Server MCP cu Toolkit AI | [Laborator](./10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/README.md) |
 | **Modulul 11: Laborator Practic Server MCP** | | | |
-| 11 | Integrare Server MCP cu Bază de Date | Cale completă de învățare cu 13 laboratoare pentru integrarea PostgreSQL | [Laboratoare](./11-MCPServerHandsOnLabs/README.md) |
+| 11 | Integrare Server MCP cu Bază de Date | Cale de învățare practică cu 13 laboratoare pentru integrarea PostgreSQL | [Laboratoare](./11-MCPServerHandsOnLabs/README.md) |
 | 11.1 | Introducere | Prezentare generală a MCP cu integrare bază de date și caz de utilizare analitică retail | [Laborator 00](./11-MCPServerHandsOnLabs/00-Introduction/README.md) |
-| 11.2 | Arhitectură de Bază | Înțelegerea arhitecturii serverului MCP, straturilor bazei de date și modelelor de securitate | [Laborator 01](./11-MCPServerHandsOnLabs/01-Architecture/README.md) |
+| 11.2 | Arhitectura de Bază | Înțelegerea arhitecturii serverului MCP, straturilor de baze de date și modelelor de securitate | [Lab 01](./11-MCPServerHandsOnLabs/01-Architecture/README.md) |
 | 11.3 | Securitate & Multi-Tenancy | Securitate la nivel de rând, autentificare și acces la date multi-tenant | [Lab 02](./11-MCPServerHandsOnLabs/02-Security/README.md) |
 | 11.4 | Configurarea Mediului | Configurarea mediului de dezvoltare, Docker, resurse Azure | [Lab 03](./11-MCPServerHandsOnLabs/03-Setup/README.md) |
 | 11.5 | Designul Bazei de Date | Configurarea PostgreSQL, designul schemei de retail și date de exemplu | [Lab 04](./11-MCPServerHandsOnLabs/04-Database/README.md) |
-| 11.6 | Implementarea Serverului MCP | Construirea serverului FastMCP cu integrare în baza de date | [Lab 05](./11-MCPServerHandsOnLabs/05-MCP-Server/README.md) |
-| 11.7 | Dezvoltarea Instrumentelor | Crearea instrumentelor de interogare a bazei de date și introspecția schemei | [Lab 06](./11-MCPServerHandsOnLabs/06-Tools/README.md) |
+| 11.6 | Implementarea Serverului MCP | Construirea serverului FastMCP cu integrarea bazei de date | [Lab 05](./11-MCPServerHandsOnLabs/05-MCP-Server/README.md) |
+| 11.7 | Dezvoltarea Uneltelor | Crearea uneltelor de interogare a bazei de date și introspecția schemei | [Lab 06](./11-MCPServerHandsOnLabs/06-Tools/README.md) |
 | 11.8 | Căutare Semantică | Implementarea vectorilor de încorporare cu Azure OpenAI și pgvector | [Lab 07](./11-MCPServerHandsOnLabs/07-Semantic-Search/README.md) |
-| 11.9 | Testare & Depanare | Strategii de testare, instrumente de depanare și metode de validare | [Lab 08](./11-MCPServerHandsOnLabs/08-Testing/README.md) |
+| 11.9 | Testare & Depanare | Strategii de testare, unelte de depanare și metode de validare | [Lab 08](./11-MCPServerHandsOnLabs/08-Testing/README.md) |
 | 11.10 | Integrarea cu VS Code | Configurarea integrării MCP în VS Code și utilizarea AI Chat | [Lab 09](./11-MCPServerHandsOnLabs/09-VS-Code/README.md) |
 | 11.11 | Strategii de Implementare | Implementare cu Docker, Azure Container Apps și considerații de scalare | [Lab 10](./11-MCPServerHandsOnLabs/10-Deployment/README.md) |
 | 11.12 | Monitorizare | Application Insights, jurnalizare, monitorizarea performanței | [Lab 11](./11-MCPServerHandsOnLabs/11-Monitoring/README.md) |
@@ -117,8 +116,8 @@ Indiferent dacă ești dezvoltator AI, arhitect de sisteme sau inginer software,
 
 #### Exemple de Calculatoare MCP de Bază
 
-| Limbă | Descriere | Link |
-|-------|-----------|------|
+| Limbaj | Descriere | Link |
+|--------|-----------|------|
 | C# | Exemplu de Server MCP | [Vizualizează Codul](./03-GettingStarted/samples/csharp/README.md) |
 | Java | Calculator MCP | [Vizualizează Codul](./03-GettingStarted/samples/java/calculator/README.md) |
 | JavaScript | Demo MCP | [Vizualizează Codul](./03-GettingStarted/samples/javascript/README.md) |
@@ -128,8 +127,8 @@ Indiferent dacă ești dezvoltator AI, arhitect de sisteme sau inginer software,
 
 #### Implementări Avansate MCP
 
-| Limbă | Descriere | Link |
-|-------|-----------|------|
+| Limbaj | Descriere | Link |
+|--------|-----------|------|
 | C# | Exemplu Avansat | [Vizualizează Codul](./04-PracticalImplementation/samples/csharp/README.md) |
 | Java cu Spring | Exemplu de Aplicație Container | [Vizualizează Codul](./04-PracticalImplementation/samples/java/containerapp/README.md) |
 | JavaScript | Exemplu Avansat | [Vizualizează Codul](./04-PracticalImplementation/samples/javascript/README.md) |
@@ -140,7 +139,7 @@ Indiferent dacă ești dezvoltator AI, arhitect de sisteme sau inginer software,
 
 Pentru a beneficia la maximum de acest curriculum, ar trebui să aveți:
 
-- Cunoștințe de bază în programare în cel puțin una dintre următoarele limbi: C#, Java, JavaScript, Python sau TypeScript
+- Cunoștințe de bază în programare în cel puțin unul dintre următoarele limbaje: C#, Java, JavaScript, Python sau TypeScript
 - Înțelegerea modelului client-server și a API-urilor
 - Familiaritate cu conceptele REST și HTTP
 - (Opțional) Fundamente în concepte AI/ML
@@ -157,9 +156,9 @@ Un [Ghid de Studiu](./study_guide.md) cuprinzător este disponibil pentru a vă 
 
 - O hartă vizuală a curriculumului care arată toate subiectele acoperite
 - Detalii despre fiecare secțiune a depozitului
-- Instrucțiuni despre cum să utilizați proiectele de exemplu
+- Indicații despre cum să utilizați proiectele de exemplu
 - Căi de învățare recomandate pentru diferite niveluri de competență
-- Resurse suplimentare pentru a vă completa călătoria de învățare
+- Resurse suplimentare pentru a completa procesul de învățare
 
 ### Jurnal de Modificări
 
@@ -175,7 +174,7 @@ Menținem un [Jurnal de Modificări](./changelog.md) detaliat care urmărește t
 Fiecare lecție din acest ghid include:
 
 1. Explicații clare ale conceptelor MCP  
-2. Exemple de cod live în mai multe limbi  
+2. Exemple de cod live în mai multe limbaje  
 3. Exerciții pentru construirea aplicațiilor MCP reale  
 4. Resurse suplimentare pentru cursanții avansați
 
@@ -183,16 +182,16 @@ Fiecare lecție din acest ghid include:
 
 ### [MCP Dev Days Iulie 2025](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 #### [➡️Urmărește la Cerere - MCP Dev Days](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
-Pregătiți-vă pentru două zile de informații tehnice aprofundate, conexiuni comunitare și învățare practică la MCP Dev Days, un eveniment virtual dedicat Protocolului Model Context (MCP) — standardul emergent care conectează modelele AI și instrumentele pe care se bazează.
-Puteți urmări MCP Dev Days înregistrându-vă pe pagina noastră de evenimente: https://aka.ms/mcpdevdays. 
+Pregătește-te pentru două zile de informații tehnice aprofundate, conexiuni comunitare și învățare practică la MCP Dev Days, un eveniment virtual dedicat Protocolului Model Context (MCP) — standardul emergent care conectează modelele AI și uneltele pe care se bazează.
+Poți urmări MCP Dev Days înregistrându-te pe pagina noastră de eveniment: https://aka.ms/mcpdevdays. 
 
-#### [Ziua 1: Productivitate MCP, Instrumente de Dezvoltare & Comunitate:](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
+#### [Ziua 1: Productivitate MCP, Unelte de Dezvoltare & Comunitate:](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 
-Este dedicată dezvoltatorilor, pentru a utiliza MCP în fluxul lor de lucru și pentru a celebra comunitatea uimitoare MCP. Vom fi alături de membri ai comunității și parteneri precum Arcade, Block, Okta și Neon pentru a vedea cum colaborează cu Microsoft pentru a modela un ecosistem MCP deschis și extensibil. 
-Demonstrații reale în VS Code, Visual Studio, GitHub Copilot și instrumente populare ale comunității
-Fluxuri de lucru practice, orientate pe context
-Sesiuni și perspective conduse de comunitate
-Indiferent dacă abia începeți cu MCP sau deja construiți cu el, Ziua 1 va oferi inspirație și sfaturi practice.
+Este dedicată dezvoltatorilor, pentru a utiliza MCP în fluxul lor de lucru și pentru a celebra comunitatea MCP. Vom fi alături de membri ai comunității și parteneri precum Arcade, Block, Okta și Neon pentru a vedea cum colaborează cu Microsoft pentru a modela un ecosistem MCP deschis și extensibil.  
+Demonstrații reale în VS Code, Visual Studio, GitHub Copilot și unelte populare ale comunității  
+Fluxuri de lucru practice, orientate pe context  
+Sesiuni și perspective conduse de comunitate  
+Indiferent dacă abia începi cu MCP sau construiești deja cu el, Ziua 1 va oferi inspirație și sfaturi practice.
 
 #### [Ziua 2: Construiește Servere MCP cu Încredere](https://developer.microsoft.com/en-us/reactor/series/S-1563/)
 
@@ -204,19 +203,19 @@ Este dedicată constructorilor MCP. Vom aprofunda strategiile de implementare ș
 - Dezvoltare bazată pe prompturi
 - Cele mai bune practici de securitate
 - Utilizarea blocurilor de construcție precum Functions, ACA și API Management
-- Alinierea registrului și instrumentele (1P + 3P)
+- Alinierea registrului și unelte (1P + 3P)
 
-Dacă sunteți dezvoltator, constructor de instrumente sau strateg de produse AI, această zi este plină de perspectivele de care aveți nevoie pentru a construi soluții MCP scalabile, sigure și pregătite pentru viitor.
+Dacă ești dezvoltator, constructor de unelte sau strateg de produse AI, această zi este plină de informații de care ai nevoie pentru a construi soluții MCP scalabile, sigure și pregătite pentru viitor.
 
 ### MCP Boot Camp August 2025
-Învățați în sesiuni video intensive cum să creați servere MCP, să integrați cu VS Code și să implementați profesional pe Azure, bazat pe conținutul curriculumului MCP pentru Începători. Plecați cu abilități practice într-o tehnologie pe care companiile mari o folosesc deja.
+Învață în sesiuni video intensive cum să creezi servere MCP, să integrezi cu VS Code și să implementezi profesional pe Azure, bazat pe conținutul curriculumului MCP pentru Începători. Pleacă cu abilități practice într-o tehnologie pe care companii majore o folosesc deja.
 
 #### [➡️Urmărește la Cerere MCP Bootcamp | Engleză](https://developer.microsoft.com/en-us/reactor/series/s-1568/)
 #### [➡️Urmărește la Cerere MCP Bootcamp | Brazilia](https://developer.microsoft.com/en-us/reactor/series/S-1566/)
 #### [➡️Urmărește la Cerere MCP Bootcamp | Spaniolă](https://developer.microsoft.com/en-us/reactor/series/S-1567/)
 
 ### Să Învățăm MCP cu C# - Seria de Tutoriale
-Să învățăm despre Protocolul Model Context (MCP), un cadru de ultimă generație conceput pentru a standardiza interacțiunile dintre modelele AI și aplicațiile client. Prin această sesiune prietenoasă pentru începători, vă vom introduce în MCP și vă vom ghida în crearea primului server MCP.
+Să învățăm despre Protocolul Model Context (MCP), un cadru de ultimă generație conceput pentru a standardiza interacțiunile dintre modelele AI și aplicațiile client. Prin această sesiune prietenoasă pentru începători, te vom introduce în MCP și te vom ghida în crearea primului tău server MCP.
 #### C#: [https://aka.ms/letslearnmcp-csharp](https://aka.ms/letslearnmcp-csharp)
 #### Java: [https://aka.ms/letslearnmcp-java](https://aka.ms/letslearnmcp-java)
 #### JavaScript: [https://aka.ms/letslearnmcp-javascript](https://aka.ms/letslearnmcp-javascript)
@@ -228,13 +227,12 @@ Mulțumiri Microsoft Valued Professional [Shivam Goyal](https://www.linkedin.com
 
 ## 📜 Informații despre Licență
 
-Acest conținut este licențiat sub **Licența MIT**. Pentru termeni și condiții, consultați [LICENSE](../../LICENSE).
+Acest conținut este licențiat sub **Licența MIT**. Pentru termeni și condiții, vezi [LICENSE](../../LICENSE).
 
 ## 🤝 Ghid pentru Contribuții
 
 Acest proiect acceptă contribuții și sugestii. Majoritatea contribuțiilor necesită să fiți de acord cu un
-Acord de Licență pentru Contribuitori (CLA) care declară că aveți dreptul de a, și de fapt acordați,
-drepturile de a utiliza contribuția dvs. Pentru detalii, vizitați <https://cla.opensource.microsoft.com>.
+Acord de Licență pentru Contribuitor (CLA) care declară că aveți dreptul de a, și chiar acordați, drepturile de a utiliza contribuția dvs. Pentru detalii, vizitați <https://cla.opensource.microsoft.com>.
 
 Când trimiteți un pull request, un bot CLA va determina automat dacă trebuie să furnizați
 un CLA și va decora PR-ul corespunzător (de exemplu, verificare de stare, comentariu). Urmați pur și simplu instrucțiunile
@@ -259,7 +257,7 @@ Depozitul este organizat astfel:
 - **CODE_OF_CONDUCT.md, LICENSE, SECURITY.md, SUPPORT.md**: Documente de guvernanță ale proiectului
 
 ## 🎒 Alte Cursuri
-Echipa noastră produce alte cursuri! Consultați:
+Echipa noastră produce alte cursuri! Verifică:
 
 - [**NOU** Edge AI Pentru Începători](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [AI Agenți Pentru Începători](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
@@ -270,21 +268,23 @@ Echipa noastră produce alte cursuri! Consultați:
 - [ML pentru Începători](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
 - [Data Science pentru Începători](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
 - [AI pentru Începători](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Securitate Cibernetică pentru Începători](https://github.com/microsoft/Security-101?WT.mc_id=academic-96948-sayoung)
-- [Dezvoltare Web pentru Începători](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
+- [Cybersecurity pentru Începători](https://github.com/microsoft/Security-101?WT.mc_id=academic-96948-sayoung)
+- [Web Dev pentru Începători](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
 - [IoT pentru Începători](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
 - [Dezvoltare XR pentru Începători](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Stăpânirea GitHub Copilot pentru Programare AI în Echipe](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+- [Stăpânirea GitHub Copilot pentru Programare AI în Pereche](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
 - [Stăpânirea GitHub Copilot pentru Dezvoltatori C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Alegeți-Vă Propria Aventură Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
-## ™️ Notificare privind Mărcile Comerciale
+- [Alege-ți propria aventură Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
 
-Acest proiect poate conține mărci comerciale sau sigle pentru proiecte, produse sau servicii. Utilizarea autorizată a mărcilor comerciale sau siglelor Microsoft trebuie să respecte și să urmeze
-[Directives privind Mărcile Comerciale și Brandul Microsoft](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
-Utilizarea mărcilor comerciale sau siglelor Microsoft în versiuni modificate ale acestui proiect nu trebuie să provoace confuzie sau să implice sponsorizarea de către Microsoft.
-Orice utilizare a mărcilor comerciale sau siglelor terților este supusă politicilor acelor terți.
 
-## Obținerea Ajutorului
+## ™️ Notificare privind mărcile comerciale
+
+Acest proiect poate conține mărci comerciale sau logo-uri pentru proiecte, produse sau servicii. Utilizarea autorizată a mărcilor comerciale sau logo-urilor Microsoft este supusă și trebuie să respecte
+[Directiva Microsoft privind mărcile comerciale și brandurile](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
+Utilizarea mărcilor comerciale sau logo-urilor Microsoft în versiuni modificate ale acestui proiect nu trebuie să provoace confuzie sau să implice sponsorizarea de către Microsoft.
+Orice utilizare a mărcilor comerciale sau logo-urilor terților este supusă politicilor acelor terți.
+
+## Obținerea ajutorului
 
 Dacă întâmpinați dificultăți sau aveți întrebări despre construirea aplicațiilor AI, alăturați-vă:
 
@@ -297,4 +297,4 @@ Dacă aveți feedback despre produs sau întâmpinați erori în timpul construi
 ---
 
 **Declinare de responsabilitate**:  
-Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa natală trebuie considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist uman. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
+Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa natală ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist uman. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.

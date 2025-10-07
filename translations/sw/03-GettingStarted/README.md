@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T14:58:52+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-06T23:46:00+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "sw"
 }
@@ -25,15 +25,17 @@ Sehemu hii ina masomo kadhaa:
 
 - **5 Seva ya Usafirishaji ya stdio**. Usafirishaji wa stdio ni kiwango kilichopendekezwa kwa mawasiliano kati ya seva na mteja wa MCP katika maelezo ya sasa, ikitoa mawasiliano salama kwa msingi wa subprocess, [kwenda kwenye somo](05-stdio-server/README.md)
 
-- **6 Kutiririsha HTTP na MCP (HTTP Inayoweza Kutiririshwa)**. Jifunze kuhusu kutiririsha HTTP ya kisasa, arifa za maendeleo, na jinsi ya kutekeleza seva na wateja wa MCP wa wakati halisi na wa kiwango kikubwa kwa kutumia HTTP Inayoweza Kutiririshwa, [kwenda kwenye somo](06-http-streaming/README.md)
+- **6 Kutiririsha HTTP na MCP (HTTP Inayoweza Kutiririka)**. Jifunze kuhusu kutiririsha HTTP ya kisasa, arifa za maendeleo, na jinsi ya kutekeleza seva na wateja wa MCP wa wakati halisi, [kwenda kwenye somo](06-http-streaming/README.md)
 
-- **7 Kutumia AI Toolkit kwa VSCode** ili kutumia na kujaribu wateja na seva zako za MCP, [kwenda kwenye somo](07-aitk/README.md)
+- **7 Kutumia Zana za AI kwa VSCode** ili kutumia na kujaribu wateja na seva zako za MCP, [kwenda kwenye somo](07-aitk/README.md)
 
 - **8 Upimaji**. Hapa tutazingatia hasa jinsi tunavyoweza kujaribu seva na mteja wetu kwa njia tofauti, [kwenda kwenye somo](08-testing/README.md)
 
 - **9 Uwekaji**. Sura hii itaangalia njia tofauti za kuweka suluhisho zako za MCP, [kwenda kwenye somo](09-deployment/README.md)
 
 - **10 Matumizi ya seva ya hali ya juu**. Sura hii inashughulikia matumizi ya hali ya juu ya seva, [kwenda kwenye somo](./10-advanced/README.md)
+
+- **11 Uthibitishaji**. Sura hii inashughulikia jinsi ya kuongeza uthibitishaji rahisi, kutoka kwa Uthibitishaji wa Msingi hadi kutumia JWT na RBAC. Unahimizwa kuanza hapa na kisha kuangalia Mada za Juu katika Sura ya 5 na kufanya uimarishaji wa usalama wa ziada kupitia mapendekezo katika Sura ya 2, [kwenda kwenye somo](./11-simple-auth/README.md)
 
 Model Context Protocol (MCP) ni itifaki ya wazi inayosawazisha jinsi programu zinavyotoa muktadha kwa LLMs. Fikiria MCP kama bandari ya USB-C kwa programu za AI - inatoa njia ya kawaida ya kuunganisha mifano ya AI na vyanzo vya data na zana tofauti.
 
@@ -43,7 +45,7 @@ Mwisho wa somo hili, utaweza:
 
 - Kuweka mazingira ya maendeleo kwa MCP katika C#, Java, Python, TypeScript, na JavaScript
 - Kujenga na kuweka seva za MCP za msingi zenye vipengele maalum (rasilimali, maelekezo, na zana)
-- Kuunda programu za mwenyeji zinazounganisha na seva za MCP
+- Kuunda programu za mwenyeji zinazounganishwa na seva za MCP
 - Kujaribu na kurekebisha utekelezaji wa MCP
 - Kuelewa changamoto za kawaida za usanidi na suluhisho zake
 - Kuunganisha utekelezaji wako wa MCP na huduma maarufu za LLM
@@ -63,7 +65,7 @@ Kabla ya kuanza maendeleo ya MCP, hakikisha una:
 
 ### SDK Rasmi
 
-Katika sura zijazo utaona suluhisho zilizojengwa kwa kutumia Python, TypeScript, Java, na .NET. Hapa kuna SDK zote zinazoungwa mkono rasmi.
+Katika sura zijazo utaona suluhisho zilizojengwa kwa kutumia Python, TypeScript, Java na .NET. Hapa kuna SDK zote zinazoungwa mkono rasmi.
 
 MCP inatoa SDK rasmi kwa lugha mbalimbali:
 - [C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) - Inasimamiwa kwa ushirikiano na Microsoft
@@ -105,4 +107,4 @@ Kinachofuata: [Kuunda Seva Yako ya Kwanza ya MCP](01-first-server/README.md)
 ---
 
 **Kanusho**:  
-Hati hii imetafsiriwa kwa kutumia huduma ya kutafsiri ya AI [Co-op Translator](https://github.com/Azure/co-op-translator). Ingawa tunajitahidi kwa usahihi, tafadhali fahamu kuwa tafsiri za kiotomatiki zinaweza kuwa na makosa au kutokuwa sahihi. Hati ya asili katika lugha yake ya awali inapaswa kuzingatiwa kama chanzo cha mamlaka. Kwa taarifa muhimu, tafsiri ya kitaalamu ya binadamu inapendekezwa. Hatutawajibika kwa kutoelewana au tafsiri zisizo sahihi zinazotokana na matumizi ya tafsiri hii.
+Hati hii imetafsiriwa kwa kutumia huduma ya kutafsiri ya AI [Co-op Translator](https://github.com/Azure/co-op-translator). Ingawa tunajitahidi kuhakikisha usahihi, tafadhali fahamu kuwa tafsiri za kiotomatiki zinaweza kuwa na makosa au kutokuwa sahihi. Hati ya asili katika lugha yake ya awali inapaswa kuzingatiwa kama chanzo cha mamlaka. Kwa taarifa muhimu, tafsiri ya kitaalamu ya binadamu inapendekezwa. Hatutawajibika kwa kutoelewana au tafsiri zisizo sahihi zinazotokana na matumizi ya tafsiri hii.

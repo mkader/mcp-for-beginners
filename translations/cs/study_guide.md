@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ac390de870be5c02165350f6279a8831",
-  "translation_date": "2025-10-06T15:05:32+00:00",
+  "original_hash": "af27b0acfae6caa134d9701453884df8",
+  "translation_date": "2025-10-06T23:52:48+00:00",
   "source_file": "study_guide.md",
   "language_code": "cs"
 }
@@ -13,9 +13,9 @@ Tento průvodce studiem poskytuje přehled struktury a obsahu repozitáře pro k
 
 ## Přehled repozitáře
 
-Protokol Model Context (MCP) je standardizovaný rámec pro interakce mezi AI modely a klientskými aplikacemi. Původně vytvořený společností Anthropic, MCP je nyní spravován širší komunitou MCP prostřednictvím oficiální organizace na GitHubu. Tento repozitář poskytuje komplexní kurikulum s praktickými příklady kódu v C#, Java, JavaScript, Python a TypeScript, určené pro vývojáře AI, systémové architekty a softwarové inženýry.
+Protokol Model Context (MCP) je standardizovaný rámec pro interakce mezi AI modely a klientskými aplikacemi. Původně vytvořený společností Anthropic, MCP je nyní spravován širší komunitou MCP prostřednictvím oficiální organizace na GitHubu. Tento repozitář poskytuje komplexní kurikulum s praktickými ukázkami kódu v C#, Java, JavaScript, Python a TypeScript, určené pro vývojáře AI, systémové architekty a softwarové inženýry.
 
-## Vizualizovaná mapa kurikula
+## Vizualizace kurikula
 
 ```mermaid
 mindmap
@@ -50,6 +50,7 @@ mindmap
       (AI Toolkit Integration)
       (Testing Frameworks)
       (Advanced Server Usage)
+      (Simple Auth)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -124,7 +125,7 @@ mindmap
 
 ## Struktura repozitáře
 
-Repozitář je organizován do jedenácti hlavních sekcí, z nichž každá se zaměřuje na různé aspekty MCP:
+Repozitář je rozdělen do jedenácti hlavních sekcí, z nichž každá se zaměřuje na různé aspekty MCP:
 
 1. **Úvod (00-Introduction/)**
    - Přehled protokolu Model Context
@@ -147,7 +148,7 @@ Repozitář je organizován do jedenácti hlavních sekcí, z nichž každá se 
      - Rychlý referenční průvodce nejlepšími postupy MCP
    - **Klíčová témata bezpečnosti**:
      - Útoky na injekci promptů a otravu nástrojů
-     - Únos relací a problémy zmateného zástupce
+     - Únosy relací a problémy zmateného zástupce
      - Zranitelnosti při předávání tokenů
      - Nadměrná oprávnění a kontrola přístupu
      - Bezpečnost dodavatelského řetězce pro AI komponenty
@@ -156,7 +157,7 @@ Repozitář je organizován do jedenácti hlavních sekcí, z nichž každá se 
 4. **Začínáme (03-GettingStarted/)**
    - Nastavení a konfigurace prostředí
    - Vytvoření základních MCP serverů a klientů
-   - Integrace s existujícími aplikacemi
+   - Integrace do stávajících aplikací
    - Obsahuje sekce:
      - První implementace serveru
      - Vývoj klienta
@@ -172,11 +173,11 @@ Repozitář je organizován do jedenácti hlavních sekcí, z nichž každá se 
 5. **Praktická implementace (04-PracticalImplementation/)**
    - Použití SDK v různých programovacích jazycích
    - Techniky ladění, testování a validace
-   - Tvorba opakovaně použitelných šablon promptů a pracovních postupů
+   - Vytváření opakovaně použitelných šablon promptů a pracovních postupů
    - Ukázkové projekty s příklady implementace
 
 6. **Pokročilá témata (05-AdvancedTopics/)**
-   - Techniky inženýrství kontextu
+   - Techniky kontextového inženýrství
    - Integrace agentů Foundry
    - Multimodální AI pracovní postupy
    - Ukázky autentizace OAuth2
@@ -186,7 +187,7 @@ Repozitář je organizován do jedenácti hlavních sekcí, z nichž každá se 
    - Strategie směrování
    - Techniky vzorkování
    - Přístupy ke škálování
-   - Úvahy o bezpečnosti
+   - Bezpečnostní úvahy
    - Integrace bezpečnosti Entra ID
    - Integrace webového vyhledávání
 
@@ -199,7 +200,7 @@ Repozitář je organizován do jedenácti hlavních sekcí, z nichž každá se 
 
 8. **Poučení z raného přijetí (07-LessonsfromEarlyAdoption/)**
    - Implementace v reálném světě a úspěšné příběhy
-   - Vytváření a nasazování řešení založených na MCP
+   - Vytváření a nasazení řešení založených na MCP
    - Trendy a budoucí plán
    - **Průvodce Microsoft MCP servery**: Komplexní průvodce 10 produkčně připravenými Microsoft MCP servery včetně:
      - Microsoft Learn Docs MCP Server
@@ -227,7 +228,7 @@ Repozitář je organizován do jedenácti hlavních sekcí, z nichž každá se 
     - **Dokumentace v editoru**: Integrace VS Code s pracovními postupy GitHub Copilot
     - **Správa API Azure**: Integrace podnikových API s vytvořením MCP serveru
     - **GitHub MCP Registry**: Vývoj ekosystému a platforma pro agentickou integraci
-    - Příklady implementace zahrnující podnikové integrace, produktivitu vývojářů a vývoj ekosystému
+    - Příklady implementace zahrnující podnikové integrace, produktivitu vývojářů a rozvoj ekosystému
 
 11. **Praktický workshop (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
     - Komplexní praktický workshop kombinující MCP s AI Toolkit
@@ -238,11 +239,11 @@ Repozitář je organizován do jedenácti hlavních sekcí, z nichž každá se 
       - Laboratoř 2: Pokročilý vývoj MCP serveru
       - Laboratoř 3: Integrace AI Toolkit
       - Laboratoř 4: Nasazení do produkce a škálování
-    - Přístup založený na laboratořích s podrobnými pokyny krok za krokem
+    - Přístup založený na laboratořích s podrobnými pokyny
 
 12. **Laboratoře integrace MCP serveru s databází (11-MCPServerHandsOnLabs/)**
     - **Komplexní 13-laboratorní vzdělávací cesta** pro vytváření produkčně připravených MCP serverů s integrací PostgreSQL
-    - **Implementace analýzy maloobchodních dat v reálném světě** pomocí případu Zava Retail
+    - **Implementace maloobchodní analytiky v reálném světě** pomocí případu Zava Retail
     - **Vzory na podnikové úrovni** včetně Row Level Security (RLS), sémantického vyhledávání a přístupu k datům pro více nájemců
     - **Kompletní struktura laboratoří**:
       - **Laboratoře 00-03: Základy** - Úvod, Architektura, Bezpečnost, Nastavení prostředí
@@ -250,7 +251,7 @@ Repozitář je organizován do jedenácti hlavních sekcí, z nichž každá se 
       - **Laboratoře 07-09: Pokročilé funkce** - Sémantické vyhledávání, Testování a ladění, Integrace VS Code
       - **Laboratoře 10-12: Produkce a nejlepší postupy** - Nasazení, Monitorování, Optimalizace
     - **Pokryté technologie**: FastMCP framework, PostgreSQL, Azure OpenAI, Azure Container Apps, Application Insights
-    - **Výsledky učení**: Produkčně připravené MCP servery, vzory integrace databází, analýzy poháněné AI, podniková bezpečnost
+    - **Výsledky učení**: Produkčně připravené MCP servery, vzory integrace databází, AI-poháněná analytika, podniková bezpečnost
 
 ## Další zdroje
 
@@ -265,9 +266,9 @@ Repozitář obsahuje podpůrné zdroje:
 
 ## Jak používat tento repozitář
 
-1. **Sekvenční učení**: Postupujte podle kapitol v pořadí (00 až 11) pro strukturovaný vzdělávací zážitek.
+1. **Sekvenční učení**: Sledujte kapitoly postupně (00 až 11) pro strukturovaný vzdělávací zážitek.
 2. **Zaměření na konkrétní jazyk**: Pokud vás zajímá konkrétní programovací jazyk, prozkoumejte adresáře s ukázkami implementací ve vašem preferovaném jazyce.
-3. **Praktická implementace**: Začněte sekcí "Začínáme" pro nastavení prostředí a vytvoření prvního MCP serveru a klienta.
+3. **Praktická implementace**: Začněte sekcí "Začínáme" pro nastavení prostředí a vytvoření vašeho prvního MCP serveru a klienta.
 4. **Pokročilé zkoumání**: Jakmile se seznámíte se základy, ponořte se do pokročilých témat pro rozšíření znalostí.
 5. **Zapojení komunity**: Připojte se ke komunitě MCP prostřednictvím diskusí na GitHubu a kanálů na Discordu, abyste se spojili s odborníky a dalšími vývojáři.
 
@@ -335,22 +336,11 @@ Repozitář představuje různé MCP servery, včetně:
 
 Tento repozitář vítá příspěvky od komunity. Viz sekce Příspěvky komunity pro pokyny, jak efektivně přispívat do ekosystému MCP.
 
-## Změny
+----
 
-| Datum | Změny |
-|------|---------||
-| 29. září 2025 | - Přidána sekce 11-MCPServerHandsOnLabs s komplexní 13-laboratorní vzdělávací cestou integrace databází<br>- Aktualizována vizualizovaná mapa kurikula, aby zahrnovala laboratoře integrace databází<br>- Vylepšena struktura repozitáře, aby odrážela jedenáct hlavních sekcí<br>- Přidán podrobný popis integrace PostgreSQL, případu použití maloobchodní analýzy a podnikových vzorů<br>- Aktualizovány pokyny k navigaci, aby zahrnovaly sekce 00-11 |
-| 26. září 2025 | - Přidána případová studie GitHub MCP Registry do sekce 09-CaseStudy<br>- Aktualizovány případové studie, aby odrážely sedm komplexních případových studií<br>- Vylepšeny popisy případových studií konkrétními detaily implementace<br>- Aktualizována vizualizovaná mapa kurikula, aby zahrnovala GitHub MCP Registry<br>- Revidována struktura průvodce studiem, aby odrážela zaměření na vývoj ekosystému |
-| 18. července 2025 | - Aktualizována struktura repozitáře, aby zahrnovala průvodce Microsoft MCP servery<br>- Přidán komplexní seznam 10 produkčně připravených Microsoft MCP serverů<br>- Vylepšena sekce Populární MCP servery o Oficiální Microsoft MCP servery<br>- Aktualizována sekce Případové studie skutečnými příklady souborů<br>- Přidány detaily struktury laboratoří pro praktický workshop |
-| 16. července 2025 | - Aktualizována struktura repozitáře, aby odrážela aktuální obsah<br>- Přidána sekce MCP klienti a nástroje<br>- Přidána sekce Populární MCP servery<br>- Aktualizována vizualizovaná mapa kurikula všemi aktuálními tématy<br>- Vylepšena sekce Pokročilá témata všemi specializovanými oblastmi<br>- Aktualizovány případové studie skutečnými příklady<br>- Ujasněn původ MCP jako vytvořený společností Anthropic |
-| 11. června 2025 | - Počáteční vytvoření průvodce studiem<br>- Přidána vizualizovaná mapa kurikula<br>- Nastíněna struktura repozitáře<br>- Zahrnuty ukázkové projekty a další zdroje |
-| 6. října 2025 | Přidána lekce o pokročilém použití serveru |
-
----
-
-*Tento průvodce studiem byl aktualizován 29. září 2025 a poskytuje přehled repozitáře k tomuto datu. Obsah repozitáře může být po tomto datu aktualizován.*
+*Tento průvodce studiem byl aktualizován 6. října 2025 a poskytuje přehled repozitáře k tomuto datu. Obsah repozitáře může být po tomto datu aktualizován.*
 
 ---
 
 **Prohlášení**:  
-Tento dokument byl přeložen pomocí služby AI pro překlady [Co-op Translator](https://github.com/Azure/co-op-translator). I když se snažíme o přesnost, mějte prosím na paměti, že automatizované překlady mohou obsahovat chyby nebo nepřesnosti. Původní dokument v jeho původním jazyce by měl být považován za autoritativní zdroj. Pro důležité informace doporučujeme profesionální lidský překlad. Nenese odpovědnost za žádná nedorozumění nebo nesprávné interpretace vyplývající z použití tohoto překladu.
+Tento dokument byl přeložen pomocí služby AI pro překlad [Co-op Translator](https://github.com/Azure/co-op-translator). I když se snažíme o přesnost, mějte prosím na paměti, že automatizované překlady mohou obsahovat chyby nebo nepřesnosti. Původní dokument v jeho rodném jazyce by měl být považován za autoritativní zdroj. Pro důležité informace se doporučuje profesionální lidský překlad. Neodpovídáme za žádná nedorozumění nebo nesprávné interpretace vyplývající z použití tohoto překladu.

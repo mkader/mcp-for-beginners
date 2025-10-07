@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "94b861de00829c34912ac36140f6183e",
-  "translation_date": "2025-10-06T15:35:41+00:00",
+  "original_hash": "f400d87053221363769113c24f117248",
+  "translation_date": "2025-10-07T00:28:41+00:00",
   "source_file": "03-GettingStarted/README.md",
   "language_code": "lt"
 }
@@ -15,19 +15,19 @@ _(Spustelėkite paveikslėlį aukščiau, kad peržiūrėtumėte šios pamokos v
 
 Šiame skyriuje yra kelios pamokos:
 
-- **1 Jūsų pirmasis serveris**, pirmoje pamokoje sužinosite, kaip sukurti savo pirmąjį serverį ir patikrinti jį naudojant inspektoriaus įrankį – vertingą būdą testuoti ir derinti serverį, [į pamoką](01-first-server/README.md)
+- **1 Jūsų pirmasis serveris**. Pirmoje pamokoje sužinosite, kaip sukurti savo pirmąjį serverį ir patikrinti jį naudojant inspektoriaus įrankį – vertingą būdą testuoti ir derinti serverį, [į pamoką](01-first-server/README.md)
 
-- **2 Klientas**, šioje pamokoje sužinosite, kaip parašyti klientą, kuris gali prisijungti prie jūsų serverio, [į pamoką](02-client/README.md)
+- **2 Klientas**. Šioje pamokoje sužinosite, kaip parašyti klientą, kuris gali prisijungti prie jūsų serverio, [į pamoką](02-client/README.md)
 
-- **3 Klientas su LLM**, dar geresnis būdas sukurti klientą – pridėti LLM, kad jis galėtų „derėtis“ su jūsų serveriu dėl veiksmų, [į pamoką](03-llm-client/README.md)
+- **3 Klientas su LLM**. Dar geresnis būdas sukurti klientą – pridėti LLM, kad jis galėtų „derėtis“ su jūsų serveriu dėl veiksmų, [į pamoką](03-llm-client/README.md)
 
-- **4 Serverio naudojimas GitHub Copilot Agent režimu Visual Studio Code**. Čia aptarsime, kaip paleisti MCP serverį Visual Studio Code aplinkoje, [į pamoką](04-vscode/README.md)
+- **4 Serverio naudojimas GitHub Copilot Agent režimu Visual Studio Code**. Čia aptarsime MCP serverio paleidimą Visual Studio Code aplinkoje, [į pamoką](04-vscode/README.md)
 
-- **5 stdio Transport Server** stdio transportas yra rekomenduojamas standartas MCP serverio ir kliento komunikacijai pagal dabartinę specifikaciją, užtikrinantis saugų komunikavimą per subprocess, [į pamoką](05-stdio-server/README.md)
+- **5 stdio Transport Server**. stdio transportas yra rekomenduojamas MCP serverio ir kliento komunikacijos standartas dabartinėje specifikacijoje, užtikrinantis saugų komunikavimą per subprocess, [į pamoką](05-stdio-server/README.md)
 
 - **6 HTTP transliavimas su MCP (Streamable HTTP)**. Sužinokite apie modernų HTTP transliavimą, progreso pranešimus ir kaip įgyvendinti mastelio keičiamus, realaus laiko MCP serverius ir klientus naudojant Streamable HTTP, [į pamoką](06-http-streaming/README.md)
 
-- **7 AI įrankių rinkinys VSCode aplinkoje** MCP klientų ir serverių testavimui ir naudojimui, [į pamoką](07-aitk/README.md)
+- **7 AI įrankių naudojimas VSCode** MCP klientų ir serverių testavimui bei naudojimui, [į pamoką](07-aitk/README.md)
 
 - **8 Testavimas**. Čia ypatingą dėmesį skirsime serverio ir kliento testavimui įvairiais būdais, [į pamoką](08-testing/README.md)
 
@@ -35,7 +35,9 @@ _(Spustelėkite paveikslėlį aukščiau, kad peržiūrėtumėte šios pamokos v
 
 - **10 Pažangus serverio naudojimas**. Šiame skyriuje aptariamas pažangus serverio naudojimas, [į pamoką](./10-advanced/README.md)
 
-Modelio konteksto protokolas (MCP) yra atviras protokolas, standartizuojantis, kaip programos teikia kontekstą LLM. Galvokite apie MCP kaip apie USB-C jungtį AI programoms – jis suteikia standartizuotą būdą prijungti AI modelius prie įvairių duomenų šaltinių ir įrankių.
+- **11 Autentifikacija**. Šiame skyriuje aptariama, kaip pridėti paprastą autentifikaciją – nuo Basic Auth iki JWT ir RBAC naudojimo. Rekomenduojama pradėti čia, o tada pereiti prie pažangių temų 5 skyriuje ir atlikti papildomą saugumo stiprinimą pagal 2 skyriaus rekomendacijas, [į pamoką](./11-simple-auth/README.md)
+
+Model Context Protocol (MCP) yra atviras protokolas, standartizuojantis, kaip programos teikia kontekstą LLM. MCP galima palyginti su USB-C jungtimi AI programoms – jis suteikia standartizuotą būdą prijungti AI modelius prie įvairių duomenų šaltinių ir įrankių.
 
 ## Mokymosi tikslai
 
@@ -45,7 +47,7 @@ Pamokos pabaigoje galėsite:
 - Kurti ir diegti pagrindinius MCP serverius su individualiomis funkcijomis (resursais, užklausomis ir įrankiais)
 - Kurti host programas, kurios jungiasi prie MCP serverių
 - Testuoti ir derinti MCP įgyvendinimus
-- Suprasti dažniausiai pasitaikančius nustatymo iššūkius ir jų sprendimus
+- Suprasti dažniausiai pasitaikančias nustatymo problemas ir jų sprendimus
 - Jungti savo MCP įgyvendinimus su populiariomis LLM paslaugomis
 
 ## MCP aplinkos paruošimas
@@ -54,9 +56,9 @@ Prieš pradėdami dirbti su MCP, svarbu paruošti kūrimo aplinką ir suprasti p
 
 ### Reikalavimai
 
-Prieš pradedant MCP kūrimą, įsitikinkite, kad turite:
+Prieš pradėdami MCP kūrimą, įsitikinkite, kad turite:
 
-- **Kūrimo aplinką**: Pasirinkta kalba (C#, Java, Python, TypeScript arba JavaScript)
+- **Kūrimo aplinką**: Pasirinktai kalbai (C#, Java, Python, TypeScript arba JavaScript)
 - **IDE/Redaktorių**: Visual Studio, Visual Studio Code, IntelliJ, Eclipse, PyCharm arba bet kurį modernų kodų redaktorių
 - **Paketų valdymo įrankius**: NuGet, Maven/Gradle, pip arba npm/yarn
 - **API raktus**: Bet kokioms AI paslaugoms, kurias planuojate naudoti savo host programose
@@ -74,7 +76,7 @@ MCP teikia oficialius SDK kelioms kalboms:
 - [Swift SDK](https://github.com/modelcontextprotocol/swift-sdk) - Palaikomas bendradarbiaujant su Loopwork AI
 - [Rust SDK](https://github.com/modelcontextprotocol/rust-sdk) - Oficialus Rust įgyvendinimas
 
-## Pagrindinės išvados
+## Pagrindinės mintys
 
 - MCP kūrimo aplinkos paruošimas yra paprastas naudojant kalbai specifinius SDK
 - MCP serverių kūrimas apima įrankių kūrimą ir registravimą su aiškiais schemomis
@@ -105,4 +107,4 @@ Toliau: [Pirmojo MCP serverio kūrimas](01-first-server/README.md)
 ---
 
 **Atsakomybės atsisakymas**:  
-Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingus aiškinimus, atsiradusius dėl šio vertimo naudojimo.
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingus aiškinimus, kilusius dėl šio vertimo naudojimo.

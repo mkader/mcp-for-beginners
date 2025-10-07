@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ac390de870be5c02165350f6279a8831",
-  "translation_date": "2025-10-06T13:11:15+00:00",
+  "original_hash": "af27b0acfae6caa134d9701453884df8",
+  "translation_date": "2025-10-06T21:50:14+00:00",
   "source_file": "study_guide.md",
   "language_code": "en"
 }
@@ -50,6 +50,7 @@ mindmap
       (AI Toolkit Integration)
       (Testing Frameworks)
       (Advanced Server Usage)
+      (Simple Auth)
       (Deployment Strategies)
     04. Practical Implementation
       ::icon(fa fa-code)
@@ -134,7 +135,7 @@ The repository is divided into eleven main sections, each focusing on different 
 
 2. **Core Concepts (01-CoreConcepts/)**
    - Client-server architecture
-   - Key protocol components
+   - Key components of the protocol
    - Messaging patterns in MCP
 
 3. **Security (02-Security/)**
@@ -155,10 +156,10 @@ The repository is divided into eleven main sections, each focusing on different 
      - Microsoft Prompt Shields integration
 
 4. **Getting Started (03-GettingStarted/)**
-   - Environment setup and configuration
-   - Creating basic MCP servers and clients
-   - Integration with existing applications
-   - Includes sections for:
+   - Setting up and configuring your environment
+   - Building basic MCP servers and clients
+   - Integrating MCP with existing applications
+   - Includes sections on:
      - First server implementation
      - Client development
      - LLM client integration
@@ -171,9 +172,9 @@ The repository is divided into eleven main sections, each focusing on different 
      - Deployment guidelines
 
 5. **Practical Implementation (04-PracticalImplementation/)**
-   - Using SDKs across different programming languages
+   - Using SDKs across various programming languages
    - Debugging, testing, and validation techniques
-   - Crafting reusable prompt templates and workflows
+   - Creating reusable prompt templates and workflows
    - Sample projects with implementation examples
 
 6. **Advanced Topics (05-AdvancedTopics/)**
@@ -192,17 +193,17 @@ The repository is divided into eleven main sections, each focusing on different 
    - Web search integration
 
 7. **Community Contributions (06-CommunityContributions/)**
-   - How to contribute code and documentation
+   - Guidelines for contributing code and documentation
    - Collaborating via GitHub
    - Community-driven enhancements and feedback
    - Using various MCP clients (Claude Desktop, Cline, VSCode)
-   - Working with popular MCP servers including image generation
+   - Working with popular MCP servers, including image generation
 
 8. **Lessons from Early Adoption (07-LessonsfromEarlyAdoption/)**
    - Real-world implementations and success stories
    - Building and deploying MCP-based solutions
    - Trends and future roadmap
-   - **Microsoft MCP Servers Guide**: Comprehensive guide to 10 production-ready Microsoft MCP servers including:
+   - **Microsoft MCP Servers Guide**: Detailed guide to 10 production-ready Microsoft MCP servers, including:
      - Microsoft Learn Docs MCP Server
      - Azure MCP Server (15+ specialized connectors)
      - GitHub MCP Server
@@ -220,7 +221,7 @@ The repository is divided into eleven main sections, each focusing on different 
    - Testing and resilience strategies
 
 10. **Case Studies (09-CaseStudy/)**
-    - **Seven comprehensive case studies** demonstrating MCP versatility across diverse scenarios:
+    - **Seven detailed case studies** showcasing MCP's versatility across various scenarios:
     - **Azure AI Travel Agents**: Multi-agent orchestration with Azure OpenAI and AI Search
     - **Azure DevOps Integration**: Automating workflow processes with YouTube data updates
     - **Real-Time Documentation Retrieval**: Python console client with streaming HTTP
@@ -232,7 +233,7 @@ The repository is divided into eleven main sections, each focusing on different 
 
 11. **Hands-on Workshop (10-StreamliningAIWorkflowsBuildingAnMCPServerWithAIToolkit/)**
     - Comprehensive hands-on workshop combining MCP with AI Toolkit
-    - Building intelligent applications bridging AI models with real-world tools
+    - Building intelligent applications that bridge AI models with real-world tools
     - Practical modules covering fundamentals, custom server development, and production deployment strategies
     - **Lab Structure**:
       - Lab 1: MCP Server Fundamentals
@@ -336,22 +337,11 @@ The repository introduces various MCP servers, including:
 
 This repository welcomes contributions from the community. See the Community Contributions section for guidance on how to contribute effectively to the MCP ecosystem.
 
-## Changelog
+----
 
-| Date | Changes |
-|------|---------||
-| September 29, 2025 | - Added 11-MCPServerHandsOnLabs section with comprehensive 13-lab database integration learning path<br>- Updated Visual Curriculum Map to include Database Integration Labs<br>- Enhanced repository structure to reflect eleven main sections<br>- Added detailed description of PostgreSQL integration, retail analytics use case, and enterprise patterns<br>- Updated navigation guidance to include sections 00-11 |
-| September 26, 2025 | - Added GitHub MCP Registry case study to 09-CaseStudy section<br>- Updated Case Studies to reflect seven comprehensive case studies<br>- Enhanced case study descriptions with specific implementation details<br>- Updated Visual Curriculum Map to include GitHub MCP Registry<br>- Revised study guide structure to reflect ecosystem development focus |
-| July 18, 2025 | - Updated repository structure to include Microsoft MCP Servers Guide<br>- Added comprehensive list of 10 production-ready Microsoft MCP servers<br>- Enhanced Popular MCP Servers section with Official Microsoft MCP Servers<br>- Updated Case Studies section with actual file examples<br>- Added Lab Structure details for Hands-on Workshop |
-| July 16, 2025 | - Updated repository structure to reflect current content<br>- Added MCP Clients and Tools section<br>- Added Popular MCP Servers section<br>- Updated Visual Curriculum Map with all current topics<br>- Enhanced Advanced Topics section with all specialized areas<br>- Updated Case Studies to reflect actual examples<br>- Clarified MCP origin as created by Anthropic |
-| June 11, 2025 | - Initial creation of the study guide<br>- Added Visual Curriculum Map<br>- Outlined repository structure<br>- Included sample projects and additional resources |
-| October 6th, 2025 | Added lesson on advanced server usage |
-
----
-
-*This study guide was updated on September 29, 2025, and provides an overview of the repository as of that date. Repository content may be updated after this date.*
+*This study guide was updated on October 6th, 2025, and provides an overview of the repository as of that date. Repository content may be updated after this date.*
 
 ---
 
 **Disclaimer**:  
-This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we strive for accuracy, please note that automated translations may contain errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is recommended. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.
+This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may contain errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is recommended. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.
