@@ -12,7 +12,6 @@ import logging
 from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent
-from pydantic import AnyUrl
 
 # Configure logging to stderr (never use stdout for logging in stdio servers)
 logging.basicConfig(
