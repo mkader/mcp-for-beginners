@@ -67,10 +67,7 @@ async def list_tools() -> list[Tool]:
         Tool(
             name="get_server_info",
             description="Get information about this MCP server",
-            inputSchema={
-                "type": "object",
-                "properties": {}
-            }
+            inputSchema={}
         )
     ]
 
